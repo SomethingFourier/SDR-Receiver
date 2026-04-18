@@ -632,7 +632,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "U9,R14-15,D2,J3-4,#PWR38,#PWR44",
+    "used_designators": "U9,R14-18,C34,#PWR38-39,#PWR44,#PWR47-50,D2,J3-4",
     "variants": []
   },
   "sheets": [
@@ -646,11 +646,15 @@
     ],
     [
       "e3cca9be-86e6-4baa-9ae2-20fea740dc0f",
-      "SDR_ADC"
+      "ADC"
     ],
     [
       "55c641a1-b41f-4dd2-8726-b4449cdad787",
       "Pico"
+    ],
+    [
+      "09065ae7-5d3e-4f86-b983-86dca844c240",
+      "Ethernet Interface"
     ]
   ],
   "text_variables": {},

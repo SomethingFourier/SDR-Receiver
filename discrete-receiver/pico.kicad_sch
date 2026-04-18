@@ -5302,31 +5302,6 @@
 			)
 		)
 	)
-	(global_label "Pico_USB_D+"
-		(shape bidirectional)
-		(at 270.51 67.31 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "490a1f49-e4b5-4fed-a7c9-5dc79976c67f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 287.3065 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "QSPI_SD3"
 		(shape output)
 		(at 214.63 101.6 180)
@@ -5675,31 +5650,6 @@
 			)
 		)
 	)
-	(global_label "Pico_USB_D-"
-		(shape bidirectional)
-		(at 270.51 69.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "e98f7427-0f51-4224-941a-f2964d383d4b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 287.3065 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "XIN"
 		(shape passive)
 		(at 214.63 110.49 180)
@@ -5724,6 +5674,28 @@
 				(justify right)
 			)
 		)
+	)
+	(hierarchical_label "Pico_USB+"
+		(shape output)
+		(at 270.51 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4311da3c-deb4-42ab-a1ca-8294ad091922")
+	)
+	(hierarchical_label "Pico_USB-"
+		(shape output)
+		(at 270.51 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd3414ee-d61c-4856-8bcb-d6b1cffea424")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
