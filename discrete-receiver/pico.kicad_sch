@@ -1295,7 +1295,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 25.4 38.1 180)
+					(at -22.86 -13.97 0)
 					(length 3.81)
 					(name "GPIO0"
 						(effects
@@ -1313,7 +1313,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 25.4 35.56 180)
+					(at -22.86 -16.51 0)
 					(length 3.81)
 					(name "GPIO1"
 						(effects
@@ -4009,6 +4009,12 @@
 		(uuid "6af62af1-c05c-4870-8ed2-6ef6f29134b6")
 	)
 	(junction
+		(at 199.39 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "733c1960-1ae9-48db-8004-9bdf719db75c")
+	)
+	(junction
 		(at 163.83 25.4)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4067,6 +4073,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "984852fe-6096-4433-9f05-d7c5aef776e1")
+	)
+	(junction
+		(at 191.77 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a82c4456-12cc-481f-8906-a696337be86a")
 	)
 	(junction
 		(at 203.2 25.4)
@@ -4344,6 +4356,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 127) (xy 214.63 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ffd496c-6544-496c-9c13-262db4a55762")
+	)
+	(wire
+		(pts
 			(xy 232.41 33.02) (xy 240.03 33.02)
 		)
 		(stroke
@@ -4604,6 +4626,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 125.73) (xy 191.77 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8221d6d1-9772-474d-ba87-24237ad81e2c")
+	)
+	(wire
+		(pts
 			(xy 208.28 66.04) (xy 208.28 52.07)
 		)
 		(stroke
@@ -4674,6 +4706,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 127) (xy 199.39 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91c136be-a027-4bc4-a386-8d8623795c64")
+	)
+	(wire
+		(pts
 			(xy 115.57 177.8) (xy 115.57 176.53)
 		)
 		(stroke
@@ -4741,6 +4783,16 @@
 			(type default)
 		)
 		(uuid "98939efb-705b-4242-b48d-d9fc49695d3a")
+	)
+	(wire
+		(pts
+			(xy 191.77 129.54) (xy 214.63 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "994aaa35-52e8-4c89-b3e6-e9cfed1fb777")
 	)
 	(wire
 		(pts
@@ -4861,6 +4913,16 @@
 			(type default)
 		)
 		(uuid "b9602bb4-73ad-44b2-a41c-d7865f7e5e86")
+	)
+	(wire
+		(pts
+			(xy 199.39 125.73) (xy 199.39 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9e1e83c-d2b2-42c2-8602-32a9cb4ea49c")
 	)
 	(wire
 		(pts
@@ -5061,6 +5123,16 @@
 			(type default)
 		)
 		(uuid "eb4feb9f-ac54-4892-84bf-c6e134a93620")
+	)
+	(wire
+		(pts
+			(xy 185.42 129.54) (xy 191.77 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec1b979d-a026-4b6e-a641-ca13081b48c2")
 	)
 	(wire
 		(pts
@@ -5675,6 +5747,18 @@
 			)
 		)
 	)
+	(hierarchical_label "Pico_SDA"
+		(shape bidirectional)
+		(at 185.42 127 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "28bfc42d-ea7f-42e3-a833-52aab84c3a54")
+	)
 	(hierarchical_label "Pico_USB+"
 		(shape output)
 		(at 270.51 67.31 0)
@@ -5686,6 +5770,18 @@
 		)
 		(uuid "4311da3c-deb4-42ab-a1ca-8294ad091922")
 	)
+	(hierarchical_label "Pico_SCL"
+		(shape bidirectional)
+		(at 185.42 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify right)
+		)
+		(uuid "58034ae2-57d7-4349-ae95-3aed36b54b19")
+	)
 	(hierarchical_label "Pico_USB-"
 		(shape output)
 		(at 270.51 69.85 0)
@@ -5696,6 +5792,85 @@
 			(justify left)
 		)
 		(uuid "fd3414ee-d61c-4856-8bcb-d6b1cffea424")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 199.39 121.92 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "04ae8994-5326-421b-9a57-26b073f95a82")
+		(property "Reference" "R23"
+			(at 196.342 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 199.39 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.168 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 199.39 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cb6badaf-dfc3-400a-b1c5-a4f9318c6820")
+		)
+		(pin "2"
+			(uuid "a3d0423f-02f9-401f-82c8-9d2dc328fc57")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -5773,6 +5948,83 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 191.77 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1094b9ba-72a5-4142-a0a4-69011968e67f")
+		(property "Reference" "#PWR067"
+			(at 191.77 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 191.77 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 191.77 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83e2a3d1-36a0-42cf-9b7a-6c5d0fb54ae7")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -8662,6 +8914,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 191.77 121.92 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8e19b854-df94-469d-aaf1-87295571d21b")
+		(property "Reference" "R24"
+			(at 188.722 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.7kΩ"
+			(at 191.77 121.92 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.548 121.92 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 191.77 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a2a98b32-7f1e-4e93-8999-8c4b5af3a6bb")
+		)
+		(pin "2"
+			(uuid "793dab07-1a24-4053-8aab-ffa0df8593ff")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sdr_project:ABM8-272-T3")
 		(at 115.57 172.72 0)
 		(unit 1)
@@ -8744,6 +9075,83 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
 					(reference "Y1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 199.39 118.11 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "958f17c1-a49b-4d50-bc10-182d30ba7acf")
+		(property "Reference" "#PWR066"
+			(at 199.39 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 199.39 114.554 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 199.39 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06db1852-415f-4004-a53d-65806b44fb72")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)

@@ -3063,7 +3063,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0b52315f-2be2-4a95-92ef-1680f2afe8a6")
-		(property "Reference" "R"
+		(property "Reference" "R17"
 			(at 52.07 97.028 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3124,7 +3124,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "R17")
 					(unit 1)
 				)
@@ -3143,7 +3143,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "745bc4df-dbea-4a86-8128-ef70b910dde2")
-		(property "Reference" "U"
+		(property "Reference" "U9"
 			(at 197.2467 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3276,7 +3276,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "U9")
 					(unit 1)
 				)
@@ -3294,7 +3294,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82a6b640-46b0-4115-be48-5d990c0f7879")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR039"
 			(at 124.46 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3353,7 +3353,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "#PWR039")
 					(unit 1)
 				)
@@ -3371,7 +3371,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bd19de4-1c6b-4c72-95bd-1295ca83bf90")
-		(property "Reference" "C"
+		(property "Reference" "C34"
 			(at 124.714 98.806 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,7 +3434,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "C34")
 					(unit 1)
 				)
@@ -3452,7 +3452,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a80ee6f9-ed27-4ee8-9bd4-749f02b6ef1e")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR047"
 			(at 124.46 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -3511,7 +3511,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "#PWR047")
 					(unit 1)
 				)
@@ -3529,7 +3529,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "baf86e21-df4d-4d5c-abc9-fbf38c696370")
-		(property "Reference" "R"
+		(property "Reference" "R18"
 			(at 163.068 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3590,7 +3590,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "R18")
 					(unit 1)
 				)
@@ -3609,7 +3609,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d653e72c-3873-46a6-929e-0bf2ed974390")
-		(property "Reference" "J"
+		(property "Reference" "J4"
 			(at 91.44 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3703,7 +3703,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "J4")
 					(unit 1)
 				)
@@ -3721,7 +3721,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d6dba59a-5186-425f-be31-f2fbb0a1e965")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR050"
 			(at 165.1 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -3780,7 +3780,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "#PWR050")
 					(unit 1)
 				)
@@ -3798,7 +3798,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e315e128-e10e-4d17-a00c-e30157c9447b")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR048"
 			(at 48.26 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3857,7 +3857,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "#PWR048")
 					(unit 1)
 				)
@@ -3875,7 +3875,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e3d0b142-b967-41d7-9b41-b385cbf967bc")
-		(property "Reference" "#PWR"
+		(property "Reference" "#PWR049"
 			(at 48.26 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3934,7 +3934,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "#PWR049")
 					(unit 1)
 				)
@@ -3952,7 +3952,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e7a2fc37-9566-4eba-854c-1f72ce7cfcdb")
-		(property "Reference" "R"
+		(property "Reference" "R16"
 			(at 52.07 86.868 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +4013,7 @@
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/09065ae7-5d3e-4f86-b983-86dca844c240"
 					(reference "R16")
 					(unit 1)
 				)

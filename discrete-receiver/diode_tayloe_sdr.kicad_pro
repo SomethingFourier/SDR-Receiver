@@ -501,7 +501,14 @@
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(U10-VDD)": [
+        "1V1"
+      ],
+      "Net-(U10-VDDO)": [
+        "1V1"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -632,7 +639,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "U9,R14-18,C34,#PWR38-39,#PWR44,#PWR47-50,D2,J3-4",
+    "used_designators": "J8,X1-2,JP5,R19-24,R34-39,FB2-4,C35-49,#PWR51-67,#PWR80-85,TP3-5,U4,U10",
     "variants": []
   },
   "sheets": [
@@ -655,6 +662,10 @@
     [
       "09065ae7-5d3e-4f86-b983-86dca844c240",
       "Ethernet Interface"
+    ],
+    [
+      "1cb7dd01-37a8-4d8c-a00b-001bd66b496a",
+      "Clock Generator"
     ]
   ],
   "text_variables": {},
