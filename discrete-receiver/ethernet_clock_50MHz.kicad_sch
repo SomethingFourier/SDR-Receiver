@@ -5,6 +5,324 @@
 	(uuid "d2de0e48-da73-40c1-b2bb-b01eb42268f1")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Oscillator:SG-5032CAN"
 			(pin_names
 				(offset 0.254)
@@ -448,16 +766,57 @@
 			(embedded_fonts no)
 		)
 	)
-	(hierarchical_label "50MHz Clk En"
-		(shape input)
-		(at 137.16 91.44 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(junction
+		(at 130.81 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b25cd403-de07-4fca-afab-65c3fc775434")
+	)
+	(junction
+		(at 144.78 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdf6152e-c7dd-4a53-8c2f-d2e4e989d7bf")
+	)
+	(wire
+		(pts
+			(xy 144.78 101.6) (xy 144.78 99.06)
 		)
-		(uuid "069ee64f-bffc-4c5a-a70e-465b908af6f1")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfc6366f-34dc-4ee4-8774-4aa5ff9e6828")
+	)
+	(wire
+		(pts
+			(xy 130.81 91.44) (xy 137.16 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9564896-200f-4aba-8a6e-225cafc91b65")
+	)
+	(wire
+		(pts
+			(xy 130.81 101.6) (xy 144.78 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f256b00c-3508-4a05-9395-27afca53de52")
+	)
+	(wire
+		(pts
+			(xy 144.78 104.14) (xy 144.78 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff73d337-eb39-4510-9f9c-041610cae0fc")
 	)
 	(hierarchical_label "50MHz Clk"
 		(shape input)
@@ -469,6 +828,83 @@
 			(justify left)
 		)
 		(uuid "7d570c37-77f8-4793-8b00-bc99af9cb6e3")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 130.81 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34fad1eb-5e0d-4131-9aac-91c8beb3e39b")
+		(property "Reference" "#PWR087"
+			(at 130.81 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 130.81 80.264 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 130.81 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "110491f4-9c8d-44c5-aa98-4d8853e4761a")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Oscillator:SG-5032CAN")
@@ -536,20 +972,20 @@
 			)
 		)
 		(pin "3"
-			(uuid "6cb4749a-b5cf-4bb9-aa33-ebf3dd274ebc")
+			(uuid "3fd2634f-c50a-4da8-b301-7131b1d29a50")
 		)
 		(pin "4"
-			(uuid "29e43d00-0181-4114-a7fb-5f6481f0a723")
+			(uuid "2066c911-9b26-4277-aa48-3e078cf89692")
 		)
 		(pin "2"
-			(uuid "ef15a067-9d69-4430-999f-a1539ebe83d9")
+			(uuid "eab6dcd5-3292-44bb-8b7a-33300d9649d5")
 		)
 		(pin "1"
-			(uuid "73645f32-34ca-4887-83ba-e21b12e88dd9")
+			(uuid "89131341-c530-4ecc-b73c-bd7920d2af0a")
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1083c4d0-a64a-4c93-85be-c87080e7fbbb"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
 					(reference "Y2")
 					(unit 1)
 				)
@@ -557,8 +993,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 144.78 99.06 0)
+		(lib_id "Device:R")
+		(at 130.81 87.63 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -566,10 +1002,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9b9c72ff-e744-46cc-bedf-c28ff5fb8a0c")
-		(property "Reference" "#PWR069"
-			(at 144.78 105.41 0)
-			(hide yes)
+		(uuid "8f3ec9c1-af25-4ee9-ae1d-77f2a4312713")
+		(property "Reference" "R27"
+			(at 128.524 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -578,18 +1013,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 144.78 102.616 0)
+		(property "Value" "10k"
+			(at 130.81 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.889 0.889)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 99.06 0)
+			(at 132.588 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -600,7 +1035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 99.06 0)
+			(at 130.81 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -610,8 +1045,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 144.78 99.06 0)
+		(property "Description" "Resistor"
+			(at 130.81 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -622,12 +1057,173 @@
 			)
 		)
 		(pin "1"
-			(uuid "6aca59bf-a2d3-41d5-9fb3-dfd2c03e955b")
+			(uuid "280cda8b-11f7-4966-b18c-699ecf6550a3")
+		)
+		(pin "2"
+			(uuid "250647f6-c7f7-47e3-a521-0f0a5db86f57")
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1083c4d0-a64a-4c93-85be-c87080e7fbbb"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9b9c72ff-e744-46cc-bedf-c28ff5fb8a0c")
+		(property "Reference" "#PWR069"
+			(at 144.78 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 107.696 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3fe37b9b-c75e-41ff-a467-4093da0cf854")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
 					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 130.81 96.52 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e262b41-7f17-4923-b0d5-5397692c9384")
+		(property "Reference" "JP2"
+			(at 125.222 95.25 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Disable 50MHz"
+			(at 114.808 97.536 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 125.73 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a669363e-b798-4b67-b47c-9fd708940e3d")
+		)
+		(pin "2"
+			(uuid "bd931e73-502e-457e-a5f9-47dbca3bd3ca")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -699,11 +1295,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "f73eb3b3-4ca8-44b0-878b-8fb0966fca73")
+			(uuid "b4bfc203-d5ae-403b-80ad-ac31a9538447")
 		)
 		(instances
 			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1083c4d0-a64a-4c93-85be-c87080e7fbbb"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/1c2c6734-c882-4818-b772-faf2ef0a646a"
 					(reference "#PWR068")
 					(unit 1)
 				)
