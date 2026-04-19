@@ -1,0 +1,265 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "SI-52003-F" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "J" (id 0) (at -7.62 21.59 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "SI-52003-F" (id 1) (at -7.62 -26.67 0)
+      (effects (font (size 1.27 1.27)) (justify top left))
+    )
+    (property "Footprint" "SI-52003-F:BEL_SI-52003-F" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Stewart Connector" (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "1 Port RJ45 Magjack Connector Through Hole 10/100 Base-T, AutoMDIX, Power over Ethernet _PoE_" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "SI-52003-F" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "Unavailable" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "SI-52003-F_0_0"
+      (polyline
+        (pts (xy -3.556 -8.001) (xy -2.54 -9.652)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -9.652) (xy -1.524 -8.001)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.683 -9.652) (xy -2.54 -9.652)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -9.652) (xy -1.27 -9.652)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.556 -8.001) (xy -1.524 -8.001)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 -7.874) (xy 0.381 -8.89)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.762 -9.017) (xy 0.254 -10.033)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -7.62) (xy -2.54 -7.874)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -9.779) (xy -2.54 -10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 -7.62) (xy -2.54 -7.62)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -10.16) (xy -7.62 -10.16)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -3.556 -13.081) (xy -2.54 -14.732)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -14.732) (xy -1.524 -13.081)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.683 -14.732) (xy -2.54 -14.732)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -14.732) (xy -1.27 -14.732)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -3.556 -13.081) (xy -1.524 -13.081)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.635 -12.954) (xy 0.381 -13.97)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -0.762 -14.097) (xy 0.254 -15.113)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -12.7) (xy -2.54 -12.954)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -14.859) (xy -2.54 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -7.62 -12.7) (xy -2.54 -12.7)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts (xy -2.54 -15.24) (xy -7.62 -15.24)) (stroke (width 0.1524))
+      )
+      (polyline
+        (pts
+          (xy 0.381 -8.89)
+          (xy 0.0 -8.001)
+          (xy -0.508 -8.509)
+          (xy 0.381 -8.89)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.254 -10.033)
+          (xy -0.127 -9.144)
+          (xy -0.635 -9.652)
+          (xy 0.254 -10.033)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.381 -13.97)
+          (xy 0.0 -13.081)
+          (xy -0.508 -13.589)
+          (xy 0.381 -13.97)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (polyline
+        (pts
+          (xy 0.254 -15.113)
+          (xy -0.127 -14.224)
+          (xy -0.635 -14.732)
+          (xy 0.254 -15.113)
+        )
+        (stroke (width 0.1524)) (fill (type outline))
+      )
+      (text "GRN1" (at 1.27 -7.62 0)
+        (effects (font (size 1.016 1.016)) (justify top left))
+      )
+      (text "GRN2" (at 1.27 -12.7 0)
+        (effects (font (size 1.016 1.016)) (justify top left))
+      )
+      (rectangle (start -7.62 -25.4) (end 7.62 20.32)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin passive line (at -12.7 17.78 0) (length 5.08)
+        (name "TD+"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 15.24 0) (length 5.08)
+        (name "CT"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 12.7 0) (length 5.08)
+        (name "TD-"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 10.16 0) (length 5.08)
+        (name "RD+"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 7.62 0) (length 5.08)
+        (name "RD-"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "5"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 5.08 0) (length 5.08)
+        (name "VC+_P8"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "8"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 2.54 0) (length 5.08)
+        (name "VC-_P9"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "9"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 0.0 0) (length 5.08)
+        (name "VC+_P10"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "10"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -10.16 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -7.62 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -15.24 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "C2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -12.7 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "A2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -2.54 0) (length 5.08)
+        (name "VC-_P11"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "11"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -20.32 0) (length 5.08)
+        (name "SHIELD"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "S1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 -22.86 0) (length 5.08)
+        (name "SHIELD__1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "S2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)

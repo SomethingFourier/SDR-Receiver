@@ -2894,7 +2894,7 @@
 			)
 		)
 	)
-	(global_label "VBUS"
+	(global_label "USB_5V"
 		(shape output)
 		(at 44.45 34.29 0)
 		(fields_autoplaced yes)
@@ -2907,7 +2907,7 @@
 		)
 		(uuid "9c1bbb25-e771-4839-a90d-439c5604a763")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3338 34.29 0)
+			(at 54.5109 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4572,7 +4572,7 @@
 		)
 	)
 	(sheet
-		(at 201.676 68.834)
+		(at 176.276 43.434)
 		(size 41.148 32.258)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4588,7 +4588,7 @@
 		)
 		(uuid "09065ae7-5d3e-4f86-b983-86dca844c240")
 		(property "Sheetname" "Ethernet Interface"
-			(at 201.676 68.1224 0)
+			(at 176.276 42.7224 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4599,7 +4599,7 @@
 			)
 		)
 		(property "Sheetfile" "ethernet_interface.kicad_sch"
-			(at 201.676 101.6766 0)
+			(at 176.276 76.2766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4613,6 +4613,72 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 16.51)
+		(size 34.29 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "1083c4d0-a64a-4c93-85be-c87080e7fbbb")
+		(property "Sheetname" "Ethernet Clock 50MHz"
+			(at 138.43 15.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet_clock_50MHz.kicad_sch"
+			(at 138.43 29.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "50MHz Clk" input
+			(at 172.72 22.86 0)
+			(uuid "19862c92-120a-42e9-9d5a-c5bca8ec3bb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "50MHz Clk En" input
+			(at 138.43 22.86 180)
+			(uuid "f2aad088-be31-4764-ac4a-bd66a223028c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+					(page "7")
 				)
 			)
 		)

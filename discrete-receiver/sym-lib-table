@@ -1,4 +1,7 @@
 (sym_lib_table
 	(version 7)
 	(lib (name "sdr_project") (type "KiCad") (uri "${KIPRJMOD}/sdr_project.kicad_sym") (options "") (descr ""))
+	(lib (name "J00-0045NL") (type "KiCad") (uri "${KIPRJMOD}/J00-0045NL.kicad_sym") (options "") (descr ""))
+	(lib (name "MB10S") (type "KiCad") (uri "${KIPRJMOD}/MB10S.kicad_sym") (options "") (descr ""))
+	(lib (name "SI-52003-F") (type "KiCad") (uri "${KIPRJMOD}/SI-52003-F.kicad_sym") (options "") (descr ""))
 )
