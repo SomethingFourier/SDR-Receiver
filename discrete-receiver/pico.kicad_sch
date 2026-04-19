@@ -3922,6 +3922,12 @@
 		(uuid "059da5a4-aabf-4709-af63-be0cac128309")
 	)
 	(junction
+		(at 41.91 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08961b32-e3fb-4d38-9836-d5444fab6c81")
+	)
+	(junction
 		(at 161.29 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4723,6 +4729,16 @@
 	)
 	(wire
 		(pts
+			(xy 41.91 40.64) (xy 41.91 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73fe3865-70dc-46bb-8a8b-1e765990f89b")
+	)
+	(wire
+		(pts
 			(xy 171.45 33.02) (xy 179.07 33.02)
 		)
 		(stroke
@@ -4820,6 +4836,16 @@
 			(type default)
 		)
 		(uuid "8221d6d1-9772-474d-ba87-24237ad81e2c")
+	)
+	(wire
+		(pts
+			(xy 41.91 40.64) (xy 66.04 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84e22f08-b754-48ed-a000-3d50ee5bb95c")
 	)
 	(wire
 		(pts
@@ -5093,7 +5119,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 30.48) (xy 41.91 53.34)
+			(xy 41.91 30.48) (xy 41.91 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6324,10 +6350,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "07212ad2-b321-428a-a517-0acaea4be4d3")
 		(property "Reference" "U14"
-			(at 52.07 40.64 0)
+			(at 52.07 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6337,7 +6362,7 @@
 			)
 		)
 		(property "Value" "LM66100DCK"
-			(at 52.07 43.18 0)
+			(at 52.07 44.704 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
