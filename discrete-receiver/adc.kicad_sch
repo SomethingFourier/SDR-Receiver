@@ -972,6 +972,12 @@
 		(uuid "51cf5dea-9960-49e0-a48a-265f3eea87c1")
 	)
 	(junction
+		(at 86.36 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53f77333-a09d-4915-b33f-5166822c6c4e")
+	)
+	(junction
 		(at 149.86 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1191,6 +1197,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 109.22) (xy 86.36 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e40e1c7-57c0-4dd1-ac97-8dd6f5547ec5")
+	)
+	(wire
+		(pts
 			(xy 127 80.01) (xy 137.16 80.01)
 		)
 		(stroke
@@ -1291,13 +1307,23 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 113.03) (xy 87.63 113.03)
+			(xy 86.36 107.95) (xy 86.36 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c2fedd51-0ffb-41f4-b2ac-2d4fd147b387")
+		(uuid "ce458ac6-0983-4f13-aa01-7e55257dc35f")
+	)
+	(wire
+		(pts
+			(xy 86.36 113.03) (xy 87.63 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cebf6047-8b81-45ab-903a-2575be690035")
 	)
 	(wire
 		(pts
@@ -1308,6 +1334,16 @@
 			(type default)
 		)
 		(uuid "d64ec8d8-742b-44d7-9618-6ea2ad85fab0")
+	)
+	(wire
+		(pts
+			(xy 86.36 109.22) (xy 87.63 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cd62f4-31fa-463b-b9ac-05247f997612")
 	)
 	(wire
 		(pts
@@ -1586,6 +1622,85 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/e3cca9be-86e6-4baa-9ae2-20fea740dc0f"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 91.44 109.22 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1b249ee7-1a13-421c-9032-0fa196fb3739")
+		(property "Reference" "R28"
+			(at 91.44 107.188 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 91.44 109.22 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 110.998 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 91.44 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8dc47539-b326-4bfe-929a-6c4f927c0ebc")
+		)
+		(pin "2"
+			(uuid "406a5bdb-1b07-4966-b3ab-49e28b9635a2")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/e3cca9be-86e6-4baa-9ae2-20fea740dc0f"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -2903,7 +3018,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 85.09 113.03 0)
+		(at 86.36 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2913,7 +3028,7 @@
 		(dnp no)
 		(uuid "9061d7c0-8732-47c2-a12d-f43c4686d89a")
 		(property "Reference" "#PWR061"
-			(at 85.09 116.84 0)
+			(at 86.36 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2924,7 +3039,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 85.09 109.474 0)
+			(at 86.36 104.394 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2934,7 +3049,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 113.03 0)
+			(at 86.36 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2945,7 +3060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 113.03 0)
+			(at 86.36 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2956,7 +3071,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 85.09 113.03 0)
+			(at 86.36 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3468,12 +3583,12 @@
 		(dnp no)
 		(uuid "f67bc0a5-32a9-49d3-87bb-21684adf2d63")
 		(property "Reference" "R21"
-			(at 91.44 110.998 90)
+			(at 91.44 111.506 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
