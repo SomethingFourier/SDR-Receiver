@@ -929,6 +929,19 @@
 		)
 		(uuid "6760f298-0cce-4179-97c2-d2f5c960f2be")
 	)
+	(text "ADC Module for I and Q output from Receiver"
+		(exclude_from_sim no)
+		(at 217.678 189.738 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3048)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "78aa609a-8236-4768-8eed-22777939ceb8")
+	)
 	(junction
 		(at 80.01 59.69)
 		(diameter 0)

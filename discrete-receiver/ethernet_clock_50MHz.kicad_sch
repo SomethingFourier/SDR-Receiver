@@ -1013,7 +1013,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 130.81 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)

@@ -2120,7 +2120,7 @@
 			)
 		)
 		(property "Value" "OSC"
-			(at 162.56 114.3 0)
+			(at 162.306 115.062 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2439,7 +2439,7 @@
 			)
 		)
 		(property "Value" "I LO"
-			(at 157.48 100.33 0)
+			(at 158.496 98.298 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2752,7 +2752,7 @@
 		(dnp no)
 		(uuid "8c898b90-e78b-4ab3-8d72-1b54b8935414")
 		(property "Reference" "R38"
-			(at 170.18 109.22 90)
+			(at 166.37 104.648 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3019,7 +3019,7 @@
 		(dnp no)
 		(uuid "a33ec5ed-90a2-44c0-8367-44d7003bfb28")
 		(property "Reference" "R37"
-			(at 170.18 104.14 90)
+			(at 166.37 99.568 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3379,7 +3379,7 @@
 			)
 		)
 		(property "Value" "Q LO"
-			(at 158.75 105.41 0)
+			(at 158.242 103.378 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

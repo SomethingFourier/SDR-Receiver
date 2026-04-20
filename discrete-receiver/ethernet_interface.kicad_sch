@@ -2889,6 +2889,32 @@
 		)
 		(uuid "36748199-1a87-4d88-bc54-df5b1aa6cfd0")
 	)
+	(text "Ethernet Transmission Module "
+		(exclude_from_sim no)
+		(at 207.264 189.992 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+				(italic yes)
+			)
+		)
+		(uuid "37d2246d-7654-41e7-929a-bde8ac055b86")
+	)
+	(text "This is the ideal for how the receiver will communicate with the computer \nbecause we want to be able to send all 96 kHz of bandwidth from the ADC \nto the computer, something the built-in USB on the PR2350 is incapable of."
+		(exclude_from_sim no)
+		(at 177.8 170.434 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "55127803-8e37-4e20-a9f1-3fca970d0f2f")
+	)
 	(text "We should consider doing something with this shield connection."
 		(exclude_from_sim no)
 		(at 87.63 192.786 0)
@@ -5161,7 +5187,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1µF"
 			(at 188.468 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5242,7 +5268,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.1µF"
 			(at 182.118 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5322,7 +5348,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 234.95 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5402,7 +5428,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1µF"
 			(at 175.768 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5482,7 +5508,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100Ω"
 			(at 82.55 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5719,7 +5745,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 82.55 165.1 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5798,7 +5824,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 82.55 170.18 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6438,7 +6464,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF"
+		(property "Value" "1µF"
 			(at 213.868 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7234,7 +7260,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "100Ω"
 			(at 82.55 162.56 90)
 			(show_name no)
 			(do_not_autoplace no)

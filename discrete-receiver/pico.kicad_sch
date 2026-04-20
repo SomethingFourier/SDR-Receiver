@@ -3775,6 +3775,18 @@
 		)
 		(uuid "0c96ce61-8daf-4311-840a-bba4ae5b2718")
 	)
+	(text "built-in +1.1V regulator "
+		(exclude_from_sim no)
+		(at 166.624 78.232 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "0db35a2d-c4ca-4949-aee0-cd06daa09413")
+	)
 	(text "Decoupling capacitors for DVDD"
 		(exclude_from_sim no)
 		(at 182.626 23.114 0)
@@ -3868,15 +3880,16 @@
 		)
 		(uuid "a8636ecb-63e6-43b5-b035-f712919fefc3")
 	)
-	(text "This was largely copied from the \nRaspberry Pi Foundation's \"Hardware \nDesign with RP2350\" document, although\nsome modifications were made."
+	(text "This was largely copied from the Raspberry\nPi Foundation's \"Hardware Design with \nRP2350\" document, though some enhancements\nhave been added."
 		(exclude_from_sim no)
-		(at 208.788 174.244 0)
+		(at 178.562 173.99 0)
 		(effects
 			(font
 				(size 2.032 2.032)
-				(thickness 0.254)
+				(thickness 0.4064)
 				(bold yes)
 			)
+			(justify left)
 		)
 		(uuid "bbabf655-161f-48d2-80d5-c0ba1362abe9")
 	)
@@ -3905,7 +3918,7 @@
 	)
 	(text "Linear Voltage Regulator\n5V ––> 3V"
 		(exclude_from_sim no)
-		(at 104.394 21.844 0)
+		(at 94.742 22.86 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -6116,6 +6129,17 @@
 		)
 		(uuid "0c8e95de-bc81-4ac2-93af-e2230ed2d731")
 	)
+	(hierarchical_label "I2S_WS"
+		(shape input)
+		(at 246.38 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0efeac69-1ab3-4885-a177-042e2db47f72")
+	)
 	(hierarchical_label "nRST"
 		(shape input)
 		(at 273.05 123.19 0)
@@ -6184,6 +6208,17 @@
 		)
 		(uuid "58a1aff2-7021-4373-b4e2-640856ef0998")
 	)
+	(hierarchical_label "I2S_SD"
+		(shape input)
+		(at 246.38 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "76431605-4461-4a72-abb8-4bfdd8d59b19")
+	)
 	(hierarchical_label "ETH_RXD1"
 		(shape input)
 		(at 246.38 113.03 0)
@@ -6238,6 +6273,17 @@
 			(justify left)
 		)
 		(uuid "d61f9d7c-6047-44bf-8220-7dc4acd2053b")
+	)
+	(hierarchical_label "I2S_BCLK"
+		(shape input)
+		(at 246.38 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f22e265a-e372-43dd-b196-428de7c40b4b")
 	)
 	(hierarchical_label "ETH_RXD0"
 		(shape input)
@@ -7331,7 +7377,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.889 0.889)
 				)
 				(justify left)
 			)
@@ -11912,7 +11958,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1.5kΩ"
 			(at 265.43 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12489,7 +12535,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.889 0.889)
 				)
 				(justify left)
 			)
