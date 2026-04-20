@@ -639,7 +639,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "C68,L12,#PWR90-92,J4-5",
+    "used_designators": "R16-17,#PWR68-69,#PWR87,SW2-3",
     "variants": []
   },
   "sheets": [
@@ -666,10 +666,6 @@
     [
       "1cb7dd01-37a8-4d8c-a00b-001bd66b496a",
       "Clock Generator"
-    ],
-    [
-      "1c2c6734-c882-4818-b772-faf2ef0a646a",
-      "Ethernet Clock 50MHz"
     ]
   ],
   "text_variables": {},
