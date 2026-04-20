@@ -5,6 +5,8 @@ An open-source, hybrid-architecture Software Defined Radio (SDR) receiver built 
 
 ## System Architecture
 
+<img width="1247" height="371" alt="image" src="https://github.com/user-attachments/assets/fae45174-8ca4-442b-8cc7-b51d152f93e6" />
+
 The receiver is divided into several highly specialized blocks (affectionately named during the whiteboard phase):
 
 * **"His Excellence" (Input Stage):** Antenna input featuring a MABA-007159 transformer/balun.
