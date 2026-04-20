@@ -5,7 +5,8 @@ An open-source, hybrid-architecture Software Defined Radio (SDR) receiver built 
 
 ## System Architecture
 
-<img width="1247" height="371" alt="image" src="https://github.com/user-attachments/assets/fae45174-8ca4-442b-8cc7-b51d152f93e6" />
+<img width="4624" height="1375" alt="PXL_20260420_052435104 RAW-01 MP COVER" src="https://github.com/user-attachments/assets/5752a903-3aa5-44f9-9960-850911437e6b" />
+
 
 The receiver is divided into several highly specialized blocks (affectionately named during the whiteboard phase):
 
