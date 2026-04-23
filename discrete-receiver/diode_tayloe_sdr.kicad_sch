@@ -2871,6 +2871,16 @@
 		)
 		(uuid "96059fea-f6fe-4e24-a872-eb716499d909")
 	)
+	(text "rp2350 generates 50MHz clock from its external 12MHz clock"
+		(exclude_from_sim no)
+		(at 154.686 40.894 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b76a1d7a-004f-4740-a08c-f93563ba3c10")
+	)
 	(text "24.576 MHz osc.\n(allows 48 kHz \nor 96 kHz)"
 		(exclude_from_sim no)
 		(at 268.478 158.242 0)

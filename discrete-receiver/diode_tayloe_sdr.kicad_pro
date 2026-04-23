@@ -652,7 +652,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "J7,#PWR93,T1,T3,JP2",
+    "used_designators": "J7,#PWR93,T1,T3,JP2-4,C68",
     "variants": []
   },
   "sheets": [
