@@ -922,6 +922,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Small_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Small_Open"
+				(at 0 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, small symbol, open"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_0"
+				(circle
+					(center -1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.016 0)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_0_1"
+				(arc
+					(start -0.762 0.7656)
+					(mid 0 1.0189)
+					(end 0.762 0.7656)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Small_Open_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:SolderJumper_2_Open"
 			(pin_numbers
 				(hide yes)
@@ -6230,16 +6396,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "100pF precision\nC10"
-		(exclude_from_sim no)
-		(at 208.28 150.622 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1475d92f-98e0-416c-8dc6-0e959d6e325a")
-	)
 	(text "270º"
 		(exclude_from_sim no)
 		(at 112.522 119.888 0)
@@ -6306,7 +6462,7 @@
 		)
 		(uuid "38a08409-3239-407c-ba2e-9c8ef22635db")
 	)
-	(text "1uF precision\nC12"
+	(text "1uF precision"
 		(exclude_from_sim no)
 		(at 231.14 132.842 0)
 		(effects
@@ -6316,7 +6472,7 @@
 		)
 		(uuid "400695d5-c523-4b6a-a9ef-8ccbcb39e45a")
 	)
-	(text "1uF precision\nC11"
+	(text "1uF precision"
 		(exclude_from_sim no)
 		(at 230.886 112.268 0)
 		(effects
@@ -6367,7 +6523,17 @@
 		)
 		(uuid "51eed6c6-4bc6-4116-9cad-7ba9400b26c7")
 	)
-	(text "47Ω precision\nR4"
+	(text "10-80pF precision"
+		(exclude_from_sim no)
+		(at 208.788 150.368 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "536f4e4e-c3e4-4b4f-801a-cfac7e706756")
+	)
+	(text "47Ω precision"
 		(exclude_from_sim no)
 		(at 188.722 135.89 0)
 		(effects
@@ -6464,7 +6630,7 @@
 		)
 		(uuid "c8609414-0125-4647-991d-c22f49fea156")
 	)
-	(text "100pF precision\nC9"
+	(text "10-80pF precision"
 		(exclude_from_sim no)
 		(at 208.28 94.996 0)
 		(effects
@@ -6474,7 +6640,7 @@
 		)
 		(uuid "db29840f-87d4-4fd9-857d-7f47c050b4e1")
 	)
-	(text "47Ω precision\nR3"
+	(text "47Ω precision"
 		(exclude_from_sim no)
 		(at 189.23 109.982 0)
 		(effects
@@ -6698,6 +6864,12 @@
 		(uuid "665eb275-1e96-49d9-b784-76547288fef8")
 	)
 	(junction
+		(at 25.4 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "671514c3-77cb-470a-b329-f5059c3b26a0")
+	)
+	(junction
 		(at 215.9 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6750,12 +6922,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9142f718-d203-417c-baaa-51346c7bb482")
-	)
-	(junction
-		(at 25.4 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95a2bfcf-4ff9-4c03-b00f-26444405d657")
 	)
 	(junction
 		(at 147.32 39.37)
@@ -6936,6 +7102,16 @@
 			(type default)
 		)
 		(uuid "048358fd-4217-430a-8981-f1aaacb128df")
+	)
+	(wire
+		(pts
+			(xy 25.4 59.69) (xy 27.94 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "048cc484-71e8-4c8d-a0e6-8a813915a972")
 	)
 	(wire
 		(pts
@@ -8359,16 +8535,6 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 59.69) (xy 27.94 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5157e6b-7b51-4e2a-bd3b-5a5c965a967d")
-	)
-	(wire
-		(pts
 			(xy 236.22 113.03) (xy 233.68 113.03)
 		)
 		(stroke
@@ -9475,6 +9641,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Small_Open")
+		(at 25.4 62.23 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ce13848-0912-4925-b035-b263f14da8ef")
+		(property "Reference" "JP2"
+			(at 27.94 62.2299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Jumper_2_Small_Open"
+			(at 24.13 60.9601 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, small symbol, open"
+			(at 25.4 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d988bbe3-c076-46bb-bb39-0cecd6d6a641")
+		)
+		(pin "2"
+			(uuid "3e3f4a65-2020-4ae5-b9d0-4bf2289e034b")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,330pF")
 		(at 115.57 143.51 0)
 		(unit 1)
@@ -9789,7 +10038,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 69.85 0)
+		(at 25.4 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9799,7 +10048,7 @@
 		(dnp no)
 		(uuid "365dcc1c-90c2-4ffa-afda-d753c8eec691")
 		(property "Reference" "#PWR093"
-			(at 25.4 76.2 0)
+			(at 25.4 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9810,7 +10059,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 73.66 0)
+			(at 25.4 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9820,7 +10069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 69.85 0)
+			(at 25.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9831,7 +10080,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 69.85 0)
+			(at 25.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9842,7 +10091,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 69.85 0)
+			(at 25.4 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11901,88 +12150,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 25.4 64.77 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5c7b5fb2-d72d-4b89-a16c-ea0d2df4f5d8")
-		(property "Reference" "JP2"
-			(at 26.67 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 27.94 66.0399 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 30.48 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7d2f9be2-b45d-4f8d-a6e7-5c83f5250b57")
-		)
-		(pin "2"
-			(uuid "edf52597-8f1b-4b13-bd51-388a610f5471")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
-					(reference "JP2")
 					(unit 1)
 				)
 			)

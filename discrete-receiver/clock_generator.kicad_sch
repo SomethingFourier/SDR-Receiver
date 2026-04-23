@@ -1855,7 +1855,7 @@
 		)
 		(uuid "27cb4ac7-5d13-431e-b15b-bad014b68dbd")
 	)
-	(hierarchical_label "SCL"
+	(hierarchical_label "Si5351_SCL"
 		(shape input)
 		(at 125.73 110.49 180)
 		(effects
@@ -1866,7 +1866,7 @@
 		)
 		(uuid "47fdf322-2210-4bd8-8c6a-a4460e6e1a97")
 	)
-	(hierarchical_label "CLK2"
+	(hierarchical_label "CLK_2"
 		(shape output)
 		(at 168.91 110.49 0)
 		(effects
@@ -1877,7 +1877,7 @@
 		)
 		(uuid "6b718331-9bf9-4806-8b88-c65cf14a4a15")
 	)
-	(hierarchical_label "SDA"
+	(hierarchical_label "Si5351_SDA"
 		(shape input)
 		(at 125.73 113.03 180)
 		(effects
