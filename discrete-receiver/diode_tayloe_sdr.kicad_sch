@@ -2922,10 +2922,10 @@
 		(uuid "16780773-d49b-4ff1-8c8a-89e7f8bda6a6")
 	)
 	(junction
-		(at 44.45 54.61)
+		(at 44.45 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "447e8776-b808-463d-a0d8-110ea5a05f31")
+		(uuid "381bbc91-9c5c-41d9-8af6-004c50c4e3d9")
 	)
 	(junction
 		(at 64.77 39.37)
@@ -2958,10 +2958,10 @@
 		(uuid "72a8f901-0e68-458e-9f09-b21c96046bbe")
 	)
 	(junction
-		(at 44.45 49.53)
+		(at 44.45 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b02d30e-94cc-4214-8ea4-ebe49efab7c0")
+		(uuid "7d3a004e-2394-49a0-af03-da55e9bfd5c1")
 	)
 	(junction
 		(at 259.08 130.81)
@@ -3001,7 +3001,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 52.07) (xy 44.45 54.61)
+			(xy 44.45 52.07) (xy 44.45 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3038,6 +3038,26 @@
 			(type default)
 		)
 		(uuid "0f23f1dd-72cf-49ff-ac8f-05ae76522e99")
+	)
+	(wire
+		(pts
+			(xy 44.45 48.26) (xy 44.45 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1000d025-5a5a-4e4a-a19e-104e8e1b5b15")
+	)
+	(wire
+		(pts
+			(xy 44.45 53.34) (xy 44.45 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed7f360-51b0-45a6-bd6a-213df0209a61")
 	)
 	(wire
 		(pts
@@ -3151,16 +3171,6 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 49.53) (xy 83.82 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39df77de-1c04-4f4e-91f5-8e90f7c139e6")
-	)
-	(wire
-		(pts
 			(xy 243.84 66.04) (xy 255.27 66.04)
 		)
 		(stroke
@@ -3221,7 +3231,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 46.99) (xy 44.45 49.53)
+			(xy 44.45 46.99) (xy 44.45 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3431,6 +3441,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 48.26) (xy 83.82 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7afa3b-df3c-473c-a8e4-2eb6b883c589")
+	)
+	(wire
+		(pts
 			(xy 39.37 100.33) (xy 48.26 100.33)
 		)
 		(stroke
@@ -3488,6 +3508,16 @@
 			(type default)
 		)
 		(uuid "b8f217eb-b322-4fe6-962b-7f247dd04289")
+	)
+	(wire
+		(pts
+			(xy 44.45 53.34) (xy 83.82 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc1808c6-a403-426d-8c17-adfa7182a2d4")
 	)
 	(wire
 		(pts
@@ -3658,16 +3688,6 @@
 			(type default)
 		)
 		(uuid "e979d7c6-7de0-45db-b4f8-e1e7cc905bc7")
-	)
-	(wire
-		(pts
-			(xy 44.45 54.61) (xy 83.82 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea137929-3e2d-434f-bce3-32373886d351")
 	)
 	(wire
 		(pts
@@ -6021,7 +6041,7 @@
 			)
 		)
 		(pin "Pico_USB+" output
-			(at 83.82 49.53 180)
+			(at 83.82 53.34 180)
 			(uuid "d743d0b0-45ba-42ba-b6c6-b354696d3dfe")
 			(effects
 				(font
@@ -6031,7 +6051,7 @@
 			)
 		)
 		(pin "Pico_USB-" output
-			(at 83.82 54.61 180)
+			(at 83.82 48.26 180)
 			(uuid "f8f3fe85-40a2-4430-a302-02879f430e59")
 			(effects
 				(font
