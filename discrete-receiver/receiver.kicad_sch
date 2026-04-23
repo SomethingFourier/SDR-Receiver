@@ -10548,7 +10548,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/DATASHEET_H1102NL"
 			(at 52.07 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -12672,7 +12672,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/PSA4-5043+.pdf"
 			(at 71.12 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -13804,7 +13804,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.macom.com/datasheets/MABA-007159-000000.pdf"
 			(at 33.02 49.53 0)
 			(hide yes)
 			(show_name no)
