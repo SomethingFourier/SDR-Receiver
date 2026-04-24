@@ -652,7 +652,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "",
+    "used_designators": "USB1,R1,R4",
     "variants": []
   },
   "sheets": [

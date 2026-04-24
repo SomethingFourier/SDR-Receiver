@@ -6,4 +6,5 @@
 	(lib (name "SI-52003-F") (type "KiCad") (uri "${KIPRJMOD}/SI-52003-F.kicad_sym") (options "") (descr ""))
 	(lib (name "PSA4-5043_") (type "KiCad") (uri "${KIPRJMOD}/PSA4-5043_.kicad_sym") (options "") (descr ""))
 	(lib (name "MABA-007159-000000") (type "KiCad") (uri "${KIPRJMOD}/MABA-007159-000000.kicad_sym") (options "") (descr ""))
+	(lib (name "EasyEDA_Lib") (type "EasyEDA (JLCEDA) Pro") (uri "${KIPRJMOD}/EasyEDA_Lib/EasyEDA_Lib.elibz") (options "") (descr ""))
 )
