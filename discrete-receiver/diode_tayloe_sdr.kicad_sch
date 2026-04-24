@@ -2943,7 +2943,7 @@
 		)
 		(uuid "daa2e893-4f8e-4827-afe8-ba4e6c0b8dc4")
 	)
-	(text "By Jesse Thompson, Peter Kyle, Seth Connell, & Nathan Neidigh"
+	(text "By Jesse Thompson, Nathan Neidigh, Peter Kyle, and Seth Connell"
 		(exclude_from_sim no)
 		(at 177.8 179.832 0)
 		(effects
