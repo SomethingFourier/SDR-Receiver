@@ -6616,6 +6616,18 @@
 		)
 		(uuid "1362cf22-e8ea-4ed3-81c5-a86ebbcea3e6")
 	)
+	(text "In order to output the 50MHz Ethernet clock\nfrom the raspberry pi pico, we'll need to use\nthe pico's PLLs to set the pico base clock to\n150MHz, which is at the official upper limit\nof the rp2350. We then can divide by 3 in the\npico to generate the 50MHz clock."
+		(exclude_from_sim no)
+		(at 254 139.446 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(thickness 0.0953)
+			)
+			(justify left)
+		)
+		(uuid "1fbed640-0a2f-4753-9ed5-350e7e4cb1de")
+	)
 	(text "Decoupling capacitors for DVDD"
 		(exclude_from_sim no)
 		(at 182.626 23.114 0)
