@@ -6618,7 +6618,7 @@
 	)
 	(text "In order to output the 50MHz Ethernet clock\nfrom the raspberry pi pico, we'll need to use\nthe pico's PLLs to set the pico base clock to\n150MHz, which is at the official upper limit\nof the rp2350. We then can divide by 3 in the\npico to generate the 50MHz clock."
 		(exclude_from_sim no)
-		(at 254 139.446 0)
+		(at 257.302 128.524 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -8352,6 +8352,30 @@
 		(uuid "cc2b386e-c8be-48aa-a95d-a2da24fb10b7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 46.2862 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "JaqieMuxSelect"
+		(shape input)
+		(at 246.38 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d28b1d03-2486-40a1-bd05-dbdf15afa5ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 263.8189 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

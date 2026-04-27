@@ -2992,6 +2992,17 @@
 		)
 		(uuid "f708caf6-a4e5-48d0-adbf-0112f15e3f88")
 	)
+	(text "Do filtering here..."
+		(exclude_from_sim no)
+		(at 240.538 112.014 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+				(thickness 0.0953)
+			)
+		)
+		(uuid "389f76f4-6540-47e5-b338-36c814c22e3a")
+	)
 	(text "By connecting the ADJ pin to V- (gnd) with this jumper,\nthe POE module will output 5.65V rather than 5V,\nallowing us to use a low-noise LDO to get as clean \nof a 5V rail as possible."
 		(exclude_from_sim no)
 		(at 114.3 79.248 0)
@@ -3105,6 +3116,12 @@
 		(uuid "5edf3179-5581-4c79-833c-ef107fd3623e")
 	)
 	(junction
+		(at 231.14 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1e05d24-381e-4f37-84ab-e623816d8343")
+	)
+	(junction
 		(at 104.14 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3127,6 +3144,16 @@
 	(no_connect
 		(at 198.12 121.92)
 		(uuid "e7889d82-006c-4ace-a01c-48252eaa470d")
+	)
+	(wire
+		(pts
+			(xy 231.14 111.76) (xy 231.14 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09d4b640-61c9-4c00-b9c6-53eb68c412c4")
 	)
 	(wire
 		(pts
@@ -3157,6 +3184,16 @@
 			(type default)
 		)
 		(uuid "1b0aa9a8-7196-420c-a238-097c5f7184cf")
+	)
+	(wire
+		(pts
+			(xy 231.14 83.82) (xy 233.68 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fcc6772-218c-4846-9064-bcf07fa79ef1")
 	)
 	(wire
 		(pts
@@ -3230,7 +3267,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 83.82) (xy 233.68 83.82)
+			(xy 222.25 83.82) (xy 231.14 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3337,6 +3374,16 @@
 			(type default)
 		)
 		(uuid "8acc0276-a5c6-4508-9c70-ce1fa58f938a")
+	)
+	(wire
+		(pts
+			(xy 248.92 106.68) (xy 248.92 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b2d5203-5c53-4d1d-8c46-7733b4d8cbec")
 	)
 	(wire
 		(pts
@@ -7312,6 +7359,83 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
 					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 248.92 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fc2bb4f4-7742-4717-a9c6-3c76a62b4e7f")
+		(property "Reference" "#PWR0119"
+			(at 248.92 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDDA"
+			(at 248.92 102.616 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 248.92 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4f5a7d7e-28d0-476c-969c-b24c327cfab1")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
