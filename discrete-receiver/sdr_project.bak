@@ -1563,7 +1563,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -15.24 0)
+				(at -12.7 -13.97 0)
 				(length 2.54)
 				(name "M0"
 					(effects
