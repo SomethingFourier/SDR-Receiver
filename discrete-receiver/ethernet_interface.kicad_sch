@@ -5700,17 +5700,6 @@
 				)
 			)
 		)
-		(property "Price" "0.006USD"
-			(at 213.36 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 213.36 59.69 0)
 			(hide yes)
@@ -5756,17 +5745,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 213.36 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 213.36 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6090,17 +6068,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 82.55 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 82.55 167.64 0)
 			(hide yes)
@@ -6146,17 +6113,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 82.55 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -6351,43 +6307,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Package" "None"
-			(at 101.6 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 101.6 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
 		(property "MP" "SI-52003-F"
-			(at 101.6 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "Unavailable"
 			(at 101.6 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6768,17 +6688,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 82.55 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 82.55 162.56 0)
 			(hide yes)
@@ -6824,17 +6733,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 82.55 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -7034,17 +6932,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 82.55 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 82.55 170.18 0)
 			(hide yes)
@@ -7090,17 +6977,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 82.55 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7533,17 +7409,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 181.61 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 181.61 59.69 0)
 			(hide yes)
@@ -7589,17 +7454,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 181.61 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 181.61 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -7998,17 +7852,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 165.1 100.33 0)
 			(hide yes)
@@ -8054,17 +7897,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 165.1 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -8264,17 +8096,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 234.95 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 234.95 91.44 0)
 			(hide yes)
@@ -8320,17 +8141,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 234.95 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 234.95 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8532,17 +8342,6 @@
 				)
 			)
 		)
-		(property "Price" "0.006USD"
-			(at 175.26 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 175.26 59.69 0)
 			(hide yes)
@@ -8588,17 +8387,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 175.26 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 175.26 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -8767,17 +8555,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 187.96 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 187.96 59.69 0)
 			(hide yes)
@@ -8823,17 +8600,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 187.96 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 187.96 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -9000,17 +8766,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 82.55 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 82.55 165.1 0)
 			(hide yes)
@@ -9056,17 +8811,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 82.55 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 82.55 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -9345,17 +9089,6 @@
 				)
 			)
 		)
-		(property "Price" "0.007USD"
-			(at 76.2 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 76.2 143.51 0)
 			(hide yes)
@@ -9401,17 +9134,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 76.2 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 76.2 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -9580,17 +9302,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 220.98 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 220.98 59.69 0)
 			(hide yes)
@@ -9636,17 +9347,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 220.98 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
 			(at 220.98 59.69 0)
 			(hide yes)
 			(show_name no)

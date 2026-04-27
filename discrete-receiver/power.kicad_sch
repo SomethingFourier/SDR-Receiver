@@ -4908,17 +4908,6 @@
 				)
 			)
 		)
-		(property "Price" "0.021USD"
-			(at 171.45 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 171.45 97.79 0)
 			(hide yes)
@@ -4964,17 +4953,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 171.45 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 171.45 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5144,17 +5122,6 @@
 				)
 			)
 		)
-		(property "Price" "0.169USD"
-			(at 241.3 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 241.3 86.36 0)
 			(hide yes)
@@ -5200,17 +5167,6 @@
 			)
 		)
 		(property "Category" "Power Management ICs,Linear Voltage Regulators (LDO)"
-			(at 241.3 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Advanced Monolithic Systems"
 			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -6566,17 +6522,6 @@
 				)
 			)
 		)
-		(property "Price" "0.020USD"
-			(at 223.52 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 223.52 88.9 0)
 			(hide yes)
@@ -6622,17 +6567,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 223.52 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 223.52 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -6955,17 +6889,6 @@
 				)
 			)
 		)
-		(property "Price" "0.021USD"
-			(at 175.26 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 175.26 120.65 0)
 			(hide yes)
@@ -7011,17 +6934,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 175.26 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 175.26 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -7192,17 +7104,6 @@
 				)
 			)
 		)
-		(property "Price" "0.020USD"
-			(at 255.27 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 255.27 88.9 0)
 			(hide yes)
@@ -7248,17 +7149,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 255.27 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 255.27 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -7427,17 +7317,6 @@
 				)
 			)
 		)
-		(property "Price" "0.021USD"
-			(at 171.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 171.45 74.93 0)
 			(hide yes)
@@ -7483,17 +7362,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 171.45 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 171.45 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -7740,17 +7608,6 @@
 				)
 			)
 		)
-		(property "Price" "0.007USD"
-			(at 232.41 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 232.41 110.49 0)
 			(hide yes)
@@ -7796,17 +7653,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 232.41 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 232.41 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -8231,17 +8077,6 @@
 				)
 			)
 		)
-		(property "Price" "0.020USD"
-			(at 250.19 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 250.19 110.49 0)
 			(hide yes)
@@ -8287,17 +8122,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 250.19 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 250.19 110.49 0)
 			(hide yes)
 			(show_name no)

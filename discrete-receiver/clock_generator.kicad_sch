@@ -2060,17 +2060,6 @@
 				)
 			)
 		)
-		(property "Price" "0.005USD"
-			(at 173.99 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 173.99 100.33 0)
 			(hide yes)
@@ -2116,17 +2105,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 173.99 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 173.99 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -2328,17 +2306,6 @@
 				)
 			)
 		)
-		(property "Price" "0.009USD"
-			(at 138.43 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 138.43 86.36 0)
 			(hide yes)
@@ -2384,17 +2351,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 138.43 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -2641,17 +2597,6 @@
 				)
 			)
 		)
-		(property "Price" "0.009USD"
-			(at 161.29 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 161.29 87.63 0)
 			(hide yes)
@@ -2697,17 +2642,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 161.29 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 161.29 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -2955,17 +2889,6 @@
 				)
 			)
 		)
-		(property "Price" "0.017USD"
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 147.32 76.2 0)
 			(hide yes)
@@ -3011,17 +2934,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 147.32 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 147.32 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -3190,17 +3102,6 @@
 				)
 			)
 		)
-		(property "Price" "0.017USD"
-			(at 152.4 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 152.4 80.01 0)
 			(hide yes)
@@ -3246,17 +3147,6 @@
 			)
 		)
 		(property "Category" "Filters/EMI Optimization,Ferrite Beads"
-			(at 152.4 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Sunlord"
 			(at 152.4 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -3851,17 +3741,6 @@
 				)
 			)
 		)
-		(property "Price" "0.005USD"
-			(at 173.99 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 173.99 105.41 0)
 			(hide yes)
@@ -3907,17 +3786,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 173.99 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 173.99 105.41 0)
 			(hide yes)
 			(show_name no)

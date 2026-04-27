@@ -4549,17 +4549,6 @@
 				)
 			)
 		)
-		(property "Price" "0.009USD"
-			(at 251.46 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 251.46 134.62 0)
 			(hide yes)
@@ -4605,17 +4594,6 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 251.46 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 251.46 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -4938,17 +4916,6 @@
 				)
 			)
 		)
-		(property "Price" "0.005USD"
-			(at 251.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 251.46 144.78 0)
 			(hide yes)
@@ -4994,17 +4961,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 251.46 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 251.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -5185,17 +5141,6 @@
 			)
 		)
 		(property "Manufacturer Part" "TYPE-C 16P(073)"
-			(at 29.21 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SHOU HAN(首韩)"
 			(at 29.21 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -5629,17 +5574,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 49.53 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 49.53 41.91 0)
 			(hide yes)
@@ -5685,17 +5619,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 49.53 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 49.53 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -5895,17 +5818,6 @@
 				)
 			)
 		)
-		(property "Price" "0.004USD"
-			(at 49.53 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Process" "SMT"
 			(at 49.53 39.37 0)
 			(hide yes)
@@ -5951,17 +5863,6 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 49.53 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 49.53 39.37 0)
 			(hide yes)
 			(show_name no)
