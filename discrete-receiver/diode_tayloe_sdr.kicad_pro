@@ -1120,7 +1120,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "S4,R2,R14-15,R22,R39-47,JP11-17,JP20-22,L11,C6-7,C14,C17,C32,C34,C56-57,C60,C65-67,C69,C79-90,FB3,#PWR16,#PWR46,#PWR48,#PWR89,#PWR98,#PWR101-104,#PWR115-123,U18",
+    "used_designators": "JP7-9,TP6-12",
     "variants": []
   },
   "sheets": [

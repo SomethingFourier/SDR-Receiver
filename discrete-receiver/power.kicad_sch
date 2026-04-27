@@ -499,6 +499,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Converter_DCDC:Ag9905LP"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3446,8 +3569,8 @@
 		(uuid "9aba7faa-1e69-451f-be9d-6e4a6c0789d4")
 	)
 	(rectangle
-		(start 161.798 59.69)
-		(end 263.652 132.842)
+		(start 149.098 59.69)
+		(end 274.32 132.842)
 		(stroke
 			(width 0)
 			(type default)
@@ -3480,7 +3603,7 @@
 	)
 	(text "The ST pins here can be used to determine which power source\nis active. We could hook them up to GPIO pins if we wanted to."
 		(exclude_from_sim no)
-		(at 220.218 121.412 0)
+		(at 210.058 121.412 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -3527,16 +3650,22 @@
 		(uuid "f59d1020-e3a0-4efb-a731-74836bfb75fd")
 	)
 	(junction
-		(at 241.3 114.3)
+		(at 261.62 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "044f3567-10ca-4105-9928-3af2f57a72ab")
+		(uuid "0b1fda5e-7d11-4a8a-b594-35702add33ba")
 	)
 	(junction
-		(at 255.27 83.82)
+		(at 243.84 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1e222168-3b77-4a1e-a94e-34a11acc411f")
+		(uuid "1fa1cff1-c5e1-4185-9448-7940146ed266")
+	)
+	(junction
+		(at 165.1 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2496cf00-e6c5-4949-a49f-4c2e49dc6841")
 	)
 	(junction
 		(at 55.88 87.63)
@@ -3545,31 +3674,31 @@
 		(uuid "26494fc2-65b0-4fc2-9cc3-3cdf2cdc7ceb")
 	)
 	(junction
-		(at 204.47 93.98)
+		(at 194.31 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "265ac0f9-303c-42d4-ae04-1de4b753bde3")
 	)
 	(junction
-		(at 204.47 83.82)
+		(at 194.31 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "271cd8ae-a407-4cb1-b21a-cf44bae072e1")
 	)
 	(junction
-		(at 180.34 86.36)
+		(at 170.18 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27713963-6d63-4a82-85ce-62488a8e2e82")
 	)
 	(junction
-		(at 204.47 86.36)
+		(at 194.31 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "312e49f6-487d-4745-a918-4767e8725dba")
 	)
 	(junction
-		(at 180.34 99.06)
+		(at 170.18 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c984430-04ae-4579-a517-cf9065496cea")
@@ -3581,28 +3710,58 @@
 		(uuid "5edf3179-5581-4c79-833c-ef107fd3623e")
 	)
 	(junction
+		(at 194.31 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cfbdb25-6e67-4261-9db8-5de196e2ff38")
+	)
+	(junction
+		(at 166.37 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8fe781d0-462e-47fe-b1ff-4a9c19734dc1")
+	)
+	(junction
+		(at 161.29 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94c520a8-185d-4a51-bc50-f2a446565c22")
+	)
+	(junction
+		(at 223.52 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96677aaf-cc6d-4d0a-8837-cab8b151a924")
+	)
+	(junction
 		(at 223.52 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a8294fe-e3a4-4226-bc3f-b6fe921def25")
 	)
 	(junction
-		(at 232.41 83.82)
+		(at 236.22 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9effbbac-67d1-4639-a36a-f92a6799b79f")
 	)
 	(junction
-		(at 232.41 106.68)
+		(at 166.37 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b721222d-3b51-4b4f-aeef-577a91485591")
+	)
+	(junction
+		(at 236.22 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b95e6df3-07fe-4f1f-bcbe-215086845985")
 	)
 	(junction
-		(at 250.19 106.68)
+		(at 252.73 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c45868bb-ec05-4515-b19a-42412abeae6d")
+		(uuid "bf9db971-051d-4118-b9d2-0f36150075cd")
 	)
 	(junction
 		(at 104.14 99.06)
@@ -3611,26 +3770,32 @@
 		(uuid "d668218b-296e-4077-8031-ca118e4aca20")
 	)
 	(junction
-		(at 171.45 93.98)
+		(at 261.62 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f04599c7-eb85-4e2c-b419-cc1f5a426967")
+	)
+	(junction
+		(at 161.29 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "feb3aee9-2198-4527-89e7-b2aeeadee191")
 	)
 	(no_connect
-		(at 198.12 76.2)
+		(at 187.96 76.2)
 		(uuid "511f3827-8b23-4583-9e60-b7fd615d03ff")
 	)
 	(no_connect
-		(at 198.12 99.06)
+		(at 187.96 99.06)
 		(uuid "d86e8ec1-6271-43ee-887f-ec4291bda5c8")
 	)
 	(no_connect
-		(at 198.12 121.92)
+		(at 187.96 121.92)
 		(uuid "e7889d82-006c-4ace-a01c-48252eaa470d")
 	)
 	(wire
 		(pts
-			(xy 232.41 83.82) (xy 233.68 83.82)
+			(xy 236.22 83.82) (xy 237.49 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3640,7 +3805,17 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 114.3) (xy 241.3 114.3)
+			(xy 223.52 80.01) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00e2fb39-9ef2-496b-88e4-8f4729076de8")
+	)
+	(wire
+		(pts
+			(xy 236.22 114.3) (xy 243.84 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3650,7 +3825,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 114.3) (xy 250.19 114.3)
+			(xy 243.84 114.3) (xy 252.73 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3690,7 +3865,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 106.68) (xy 232.41 101.6)
+			(xy 236.22 106.68) (xy 236.22 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3710,7 +3885,17 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 86.36) (xy 180.34 99.06)
+			(xy 261.62 78.74) (xy 261.62 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "255ce807-4935-4c6d-8383-6a9b587012d7")
+	)
+	(wire
+		(pts
+			(xy 170.18 86.36) (xy 170.18 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3720,7 +3905,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 71.12) (xy 204.47 83.82)
+			(xy 194.31 71.12) (xy 194.31 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3730,17 +3915,17 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 83.82) (xy 232.41 83.82)
+			(xy 226.06 83.82) (xy 223.52 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "38b7d3c7-e6d4-43c8-acf0-a54731718cb3")
+		(uuid "3b99eb11-7c5d-4685-96d5-e3630e224b61")
 	)
 	(wire
 		(pts
-			(xy 171.45 93.98) (xy 182.88 93.98)
+			(xy 161.29 93.98) (xy 165.1 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3750,7 +3935,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 83.82) (xy 207.01 83.82)
+			(xy 194.31 83.82) (xy 196.85 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3760,7 +3945,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 76.2) (xy 180.34 76.2)
+			(xy 172.72 76.2) (xy 170.18 76.2)
 		)
 		(stroke
 			(width 0)
@@ -3780,17 +3965,17 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 83.82) (xy 223.52 83.82)
+			(xy 166.37 116.84) (xy 172.72 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5e997756-8157-4990-b9cd-49fd162dab59")
+		(uuid "4a39a90c-c6e3-48e0-8b74-776aed87ac85")
 	)
 	(wire
 		(pts
-			(xy 198.12 71.12) (xy 204.47 71.12)
+			(xy 187.96 71.12) (xy 194.31 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3800,7 +3985,17 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 106.68) (xy 250.19 106.68)
+			(xy 222.25 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64605c86-9971-47f4-a6aa-4ffa2c7c7a60")
+	)
+	(wire
+		(pts
+			(xy 236.22 106.68) (xy 252.73 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3820,7 +4015,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 86.36) (xy 204.47 86.36)
+			(xy 170.18 86.36) (xy 194.31 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3850,6 +4045,16 @@
 	)
 	(wire
 		(pts
+			(xy 223.52 78.74) (xy 223.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dcb8e73-f917-41a9-b5e1-c088fd07d67b")
+	)
+	(wire
+		(pts
 			(xy 104.14 99.06) (xy 101.6 99.06)
 		)
 		(stroke
@@ -3857,16 +4062,6 @@
 			(type default)
 		)
 		(uuid "866d8271-d3f2-4f91-8676-bf77e1f46af8")
-	)
-	(wire
-		(pts
-			(xy 248.92 83.82) (xy 255.27 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87689f8c-63a8-4c4e-b144-045bb6c31ead")
 	)
 	(wire
 		(pts
@@ -3880,7 +4075,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 121.92) (xy 180.34 99.06)
+			(xy 170.18 121.92) (xy 170.18 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3890,17 +4085,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 116.84) (xy 182.88 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8acc0276-a5c6-4508-9c70-ce1fa58f938a")
-	)
-	(wire
-		(pts
-			(xy 232.41 83.82) (xy 232.41 96.52)
+			(xy 236.22 83.82) (xy 236.22 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3920,7 +4105,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 116.84) (xy 204.47 116.84)
+			(xy 187.96 116.84) (xy 194.31 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3930,7 +4115,17 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 88.9) (xy 106.68 88.9)
+			(xy 165.1 116.84) (xy 166.37 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6bc3b59-adde-429f-894b-0d0ea418ac88")
+	)
+	(wire
+		(pts
+			(xy 104.14 88.9) (xy 111.76 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3950,7 +4145,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 93.98) (xy 204.47 93.98)
+			(xy 187.96 93.98) (xy 194.31 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3960,7 +4155,7 @@
 	)
 	(wire
 		(pts
-			(xy 207.01 86.36) (xy 204.47 86.36)
+			(xy 196.85 86.36) (xy 194.31 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3970,7 +4165,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 71.12) (xy 182.88 71.12)
+			(xy 161.29 71.12) (xy 166.37 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3980,7 +4175,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 86.36) (xy 204.47 93.98)
+			(xy 194.31 86.36) (xy 194.31 93.98)
 		)
 		(stroke
 			(width 0)
@@ -3990,13 +4185,33 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 76.2) (xy 180.34 86.36)
+			(xy 170.18 76.2) (xy 170.18 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c1cbd731-cf34-4762-aff5-8381dd0d1479")
+	)
+	(wire
+		(pts
+			(xy 166.37 71.12) (xy 172.72 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d588b9b2-0e23-4cb1-a716-c3362afeaf28")
+	)
+	(wire
+		(pts
+			(xy 165.1 93.98) (xy 172.72 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d72ad9ca-8fb9-486b-becc-0e95ec73c43b")
 	)
 	(wire
 		(pts
@@ -4010,7 +4225,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 85.09) (xy 255.27 83.82)
+			(xy 261.62 83.82) (xy 261.62 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4040,7 +4255,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 93.98) (xy 171.45 93.98)
+			(xy 160.02 93.98) (xy 161.29 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4050,7 +4265,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 93.98) (xy 204.47 116.84)
+			(xy 194.31 93.98) (xy 194.31 116.84)
 		)
 		(stroke
 			(width 0)
@@ -4060,7 +4275,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 106.68) (xy 250.19 104.14)
+			(xy 252.73 106.68) (xy 252.73 104.14)
 		)
 		(stroke
 			(width 0)
@@ -4070,7 +4285,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 121.92) (xy 180.34 121.92)
+			(xy 172.72 121.92) (xy 170.18 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4110,7 +4325,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 99.06) (xy 182.88 99.06)
+			(xy 170.18 99.06) (xy 172.72 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4120,7 +4335,7 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 83.82) (xy 204.47 86.36)
+			(xy 194.31 83.82) (xy 194.31 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4164,7 +4379,7 @@
 	)
 	(global_label "DC_in"
 		(shape input)
-		(at 170.18 93.98 180)
+		(at 160.02 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4175,7 +4390,7 @@
 		)
 		(uuid "2dbf6e62-e84b-439e-ac2e-62bf764de239")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.9334 93.98 0)
+			(at 151.7734 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4213,7 +4428,7 @@
 	)
 	(global_label "POE_5.65V"
 		(shape output)
-		(at 106.68 88.9 0)
+		(at 111.76 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4224,7 +4439,7 @@
 		)
 		(uuid "4b97c11e-9c8c-414a-a5c7-52d05002c1de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.7042 88.9 0)
+			(at 124.7842 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4359,7 +4574,7 @@
 	)
 	(global_label "POE_5.65V"
 		(shape input)
-		(at 175.26 116.84 180)
+		(at 165.1 116.84 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4370,7 +4585,7 @@
 		)
 		(uuid "83353e57-2177-4c55-94be-ba56b4022b9d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.2358 116.84 0)
+			(at 152.0758 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4432,7 +4647,7 @@
 	)
 	(hierarchical_label "USB 5V"
 		(shape input)
-		(at 171.45 71.12 180)
+		(at 161.29 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4443,7 +4658,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 92.71 0)
+		(at 261.62 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4453,7 +4668,7 @@
 		(dnp no)
 		(uuid "00f56a65-b36e-43ca-a3d5-b24f0ab05007")
 		(property "Reference" "#PWR041"
-			(at 255.27 99.06 0)
+			(at 261.62 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4464,7 +4679,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 255.27 96.266 0)
+			(at 261.62 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4474,7 +4689,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 92.71 0)
+			(at 261.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4485,7 +4700,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 92.71 0)
+			(at 261.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4496,7 +4711,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 92.71 0)
+			(at 261.62 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4667,19 +4882,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 190.5 104.14 0)
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 256.54 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "10055424-c892-4dcc-abcd-1802add6557e")
-		(property "Reference" "#PWR074"
-			(at 190.5 110.49 0)
-			(hide yes)
+		(uuid "0ab85ba1-b64b-4cc9-a67b-67743acd18ac")
+		(property "Reference" "JP8"
+			(at 253.492 82.804 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4688,18 +4902,18 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 193.802 106.68 0)
+		(property "Value" "SolderJumper_Bridged"
+			(at 255.27 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 104.14 0)
+			(at 256.54 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4710,7 +4924,87 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 104.14 0)
+			(at 256.54 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 256.54 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "37e34844-129d-4f02-b816-04b7edbd3d2b")
+		)
+		(pin "2"
+			(uuid "1515cdcb-a923-4a9f-b661-4dab4fcfa4a2")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "JP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "10055424-c892-4dcc-abcd-1802add6557e")
+		(property "Reference" "#PWR074"
+			(at 180.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 183.642 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4721,7 +5015,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 104.14 0)
+			(at 180.34 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +5039,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 241.3 114.3 0)
+		(at 243.84 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4755,7 +5049,7 @@
 		(dnp no)
 		(uuid "12c30d52-b288-48a1-b105-0d4476a162bb")
 		(property "Reference" "#PWR048"
-			(at 241.3 120.65 0)
+			(at 243.84 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4766,7 +5060,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 241.3 117.856 0)
+			(at 243.84 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4776,7 +5070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 114.3 0)
+			(at 243.84 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4787,7 +5081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 114.3 0)
+			(at 243.84 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4798,7 +5092,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 114.3 0)
+			(at 243.84 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4822,7 +5116,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 171.45 97.79 0)
+		(at 161.29 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4832,7 +5126,7 @@
 		(dnp no)
 		(uuid "1bd136cc-d307-4558-8087-6cacc428a7b8")
 		(property "Reference" "C10"
-			(at 171.45 96.266 0)
+			(at 161.29 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4843,7 +5137,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 171.704 99.314 0)
+			(at 161.544 99.314 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4854,7 +5148,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 169.672 97.79 90)
+			(at 159.512 97.79 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4865,7 +5159,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4876,7 +5170,7 @@
 			)
 		)
 		(property "Description" "25V 10uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4887,7 +5181,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4898,7 +5192,7 @@
 			)
 		)
 		(property "Stock" "3388297"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4909,7 +5203,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4920,7 +5214,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4931,7 +5225,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4942,7 +5236,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4953,7 +5247,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4964,7 +5258,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4975,7 +5269,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 172.974 97.79 0)
+			(at 162.814 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4986,7 +5280,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4997,7 +5291,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5008,7 +5302,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 171.45 97.79 0)
+			(at 161.29 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5035,7 +5329,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Power:LDO, 3.3V, 1A")
-		(at 241.3 86.36 0)
+		(at 243.84 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5046,7 +5340,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c0c9c90-0a72-4554-b73a-9013133fa481")
 		(property "Reference" "U8"
-			(at 241.3 76.2 0)
+			(at 243.84 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5056,7 +5350,7 @@
 			)
 		)
 		(property "Value" "AMS1117"
-			(at 241.3 78.74 0)
+			(at 243.84 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5066,7 +5360,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
-			(at 241.3 96.52 0)
+			(at 243.84 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5078,7 +5372,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121508_Advanced-Monolithic-Systems-AMS1117-3-3_C6186.pdf"
-			(at 239.014 86.233 0)
+			(at 241.554 86.233 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5090,7 +5384,7 @@
 			)
 		)
 		(property "Description" "72dB@(120Hz) 1A Fixed 3.3V Positive electrode SOT-223 Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5101,7 +5395,7 @@
 			)
 		)
 		(property "LCSC" "C6186"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5112,7 +5406,7 @@
 			)
 		)
 		(property "Stock" "1270542"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5123,7 +5417,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5134,7 +5428,7 @@
 			)
 		)
 		(property "Minimum Qty" "2"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5145,7 +5439,7 @@
 			)
 		)
 		(property "Attrition Qty" "0"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5156,7 +5450,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,7 +5461,7 @@
 			)
 		)
 		(property "Category" "Power Management ICs,Linear Voltage Regulators (LDO)"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,7 +5472,7 @@
 			)
 		)
 		(property "Part" "AMS1117-3.3"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5189,7 +5483,7 @@
 			)
 		)
 		(property "Number Of Outputs" "1"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5200,7 +5494,7 @@
 			)
 		)
 		(property "Output Voltage" "3.3V"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5211,7 +5505,7 @@
 			)
 		)
 		(property "Dropout Voltage" "1.3V@(800mA)"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5222,7 +5516,7 @@
 			)
 		)
 		(property "Output Current" "1A"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5233,7 +5527,7 @@
 			)
 		)
 		(property "Output Type" "Fixed"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5244,7 +5538,7 @@
 			)
 		)
 		(property "Output Polarity" "Positive electrode"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5255,7 +5549,7 @@
 			)
 		)
 		(property "Power Supply Rejection Ratio (Psrr)" "72dB@(120Hz)"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5266,7 +5560,7 @@
 			)
 		)
 		(property "Feature" "Overcurrent Protection(OCP);Thermal Protection(TSD)"
-			(at 241.3 86.36 0)
+			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5299,7 +5593,7 @@
 	)
 	(symbol
 		(lib_id "Power_Management:LM66100DCK")
-		(at 190.5 96.52 0)
+		(at 180.34 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5309,7 +5603,7 @@
 		(dnp no)
 		(uuid "1dfc1a3c-2cb1-412d-851d-cf6934d03ae7")
 		(property "Reference" "U14"
-			(at 190.5 88.646 0)
+			(at 180.34 88.646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5319,7 +5613,7 @@
 			)
 		)
 		(property "Value" "LM66100DCK"
-			(at 190.5 90.424 0)
+			(at 180.34 90.424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5329,7 +5623,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 190.5 95.25 0)
+			(at 180.34 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5340,7 +5634,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-			(at 190.5 97.536 0)
+			(at 180.34 97.536 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5351,7 +5645,7 @@
 			)
 		)
 		(property "Description" "Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6"
-			(at 190.5 114.554 0)
+			(at 180.34 114.554 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5389,41 +5683,38 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 232.41 99.06 0)
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 217.17 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2f70c3b9-6786-4862-af98-3e08467001e3")
-		(property "Reference" "FB3"
-			(at 234.95 97.7518 0)
+		(uuid "214c04b0-2e71-42a0-8ef2-915f8afd031c")
+		(property "Reference" "JP9"
+			(at 214.376 82.804 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "FB"
-			(at 234.95 100.2918 0)
+		(property "Value" "SolderJumper_Bridged"
+			(at 216.662 85.598 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 230.632 99.06 90)
+			(at 217.17 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5434,7 +5725,167 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 232.41 99.06 0)
+			(at 217.17 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 217.17 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00afe746-5e25-4d48-b053-0c6b15b42d46")
+		)
+		(pin "2"
+			(uuid "ae542197-0855-475d-8db3-3c6a1526d443")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "JP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 166.37 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "26669428-feaf-4885-b6d3-e50191ea2dd9")
+		(property "Reference" "TP11"
+			(at 167.894 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 167.132 69.342 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a242de6b-b84f-4cea-b5be-4fe03fabcf81")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 236.22 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f70c3b9-6786-4862-af98-3e08467001e3")
+		(property "Reference" "FB3"
+			(at 238.76 97.7518 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FB"
+			(at 238.76 100.2918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.442 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5445,7 +5896,7 @@
 			)
 		)
 		(property "Description" "Ferrite bead, small symbol"
-			(at 232.41 99.06 0)
+			(at 236.22 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5471,8 +5922,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 175.26 124.46 0)
+		(lib_id "Connector:TestPoint")
+		(at 194.31 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5480,30 +5931,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3a53160d-f5b5-43a8-a154-eea91a213c5d")
-		(property "Reference" "#PWR0100"
-			(at 175.26 130.81 0)
-			(hide yes)
+		(uuid "39a40ed0-04ea-4e20-95a6-a74f192ae1e5")
+		(property "Reference" "TP7"
+			(at 195.834 67.564 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 175.26 128.016 0)
+		(property "Value" "TestPoint"
+			(at 194.818 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 124.46 0)
+			(at 199.39 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5514,7 +5966,84 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 124.46 0)
+			(at 199.39 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 194.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e10171d3-ee21-43f2-b53d-c83d7f927be8")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a53160d-f5b5-43a8-a154-eea91a213c5d")
+		(property "Reference" "#PWR0100"
+			(at 165.1 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 128.016 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5525,7 +6054,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 124.46 0)
+			(at 165.1 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5548,8 +6077,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 166.37 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3d18cc4b-8f7d-4bee-995b-a6b1952a402d")
+		(property "Reference" "TP12"
+			(at 167.894 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 167.132 115.062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b2b6919-97f8-41d1-babb-192a42b61b8d")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Regulator_Linear:TPS7A20xxxDBV")
-		(at 214.63 86.36 0)
+		(at 204.47 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5559,7 +6166,7 @@
 		(dnp no)
 		(uuid "4f6c057c-0746-4da8-9e33-e05e61af9b9a")
 		(property "Reference" "U12"
-			(at 214.63 76.2 0)
+			(at 204.47 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5569,7 +6176,7 @@
 			)
 		)
 		(property "Value" "TPS7A20xxxDBV"
-			(at 214.63 78.74 0)
+			(at 204.47 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5579,7 +6186,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 214.63 77.47 0)
+			(at 204.47 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5590,7 +6197,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf"
-			(at 214.63 73.66 0)
+			(at 204.47 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5601,7 +6208,7 @@
 			)
 		)
 		(property "Description" "300 mA Low Dropout Voltage Regulator, Fixed Output, 1.6..6.0Vin, Low-Noise (7μV RMS), 6.5μA IQ LDO, SOT-23"
-			(at 214.63 86.36 0)
+			(at 204.47 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5636,8 +6243,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 165.1 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5048951b-c7f6-43b2-b6da-0a98631f3cb6")
+		(property "Reference" "TP6"
+			(at 160.274 89.916 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 165.608 92.456 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 165.1 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "276357e2-78a9-4a4e-896c-0160a344e656")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Management:LM66100DCK")
-		(at 190.5 119.38 0)
+		(at 180.34 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5648,7 +6333,7 @@
 		(fields_autoplaced yes)
 		(uuid "54bad2a6-e133-416c-908b-0b8ab2465647")
 		(property "Reference" "U15"
-			(at 190.5 109.22 0)
+			(at 180.34 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5658,7 +6343,7 @@
 			)
 		)
 		(property "Value" "LM66100DCK"
-			(at 190.5 111.76 0)
+			(at 180.34 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5668,7 +6353,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 190.5 118.11 0)
+			(at 180.34 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5679,7 +6364,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-			(at 190.5 120.396 0)
+			(at 180.34 120.396 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5690,7 +6375,7 @@
 			)
 		)
 		(property "Description" "Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6"
-			(at 190.5 137.414 0)
+			(at 180.34 137.414 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5729,7 +6414,7 @@
 	)
 	(symbol
 		(lib_id "Power_Management:LM66100DCK")
-		(at 190.5 73.66 0)
+		(at 180.34 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5740,7 +6425,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e88f041-c8f2-4689-ae5b-371e28e75e1f")
 		(property "Reference" "U13"
-			(at 190.5 63.5 0)
+			(at 180.34 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5750,7 +6435,7 @@
 			)
 		)
 		(property "Value" "LM66100DCK"
-			(at 190.5 66.04 0)
+			(at 180.34 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5760,7 +6445,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 190.5 72.39 0)
+			(at 180.34 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5771,7 +6456,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm66100.pdf"
-			(at 190.5 74.676 0)
+			(at 180.34 74.676 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5782,7 +6467,7 @@
 			)
 		)
 		(property "Description" "Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6"
-			(at 190.5 91.694 0)
+			(at 180.34 91.694 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5898,7 +6583,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 241.3 91.44 0)
+		(at 243.84 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5908,7 +6593,7 @@
 		(dnp no)
 		(uuid "66627c02-9b0b-42cc-be13-5f913e522db6")
 		(property "Reference" "#PWR043"
-			(at 241.3 97.79 0)
+			(at 243.84 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5919,7 +6604,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 241.3 94.996 0)
+			(at 243.84 94.996 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5929,7 +6614,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 91.44 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5940,7 +6625,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 91.44 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5951,7 +6636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 241.3 91.44 0)
+			(at 243.84 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +6888,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 223.52 83.82 0)
+		(at 223.52 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6213,7 +6898,7 @@
 		(dnp no)
 		(uuid "7224337d-9359-49a0-8ce8-6b32c6dcad6f")
 		(property "Reference" "#PWR033"
-			(at 223.52 87.63 0)
+			(at 223.52 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6224,7 +6909,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 223.52 79.756 0)
+			(at 223.52 74.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6234,7 +6919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 83.82 0)
+			(at 223.52 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6245,7 +6930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 83.82 0)
+			(at 223.52 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6256,7 +6941,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 223.52 83.82 0)
+			(at 223.52 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6273,6 +6958,160 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 223.52 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8125bedd-fa8a-49e8-afc4-e8e3dca4ea5a")
+		(property "Reference" "TP9"
+			(at 220.98 78.486 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 222.758 81.534 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 223.52 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35231e59-8915-4dab-9c01-ea0c81714765")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 161.29 101.6 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "897012a4-60d6-4adc-b2a2-8863c19dbf64")
+		(property "Reference" "TP8"
+			(at 154.94 101.092 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 154.686 103.378 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 161.29 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3ce4d87-4882-4bb7-ba56-368576ba3128")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -6357,7 +7196,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 101.6 0)
+		(at 161.29 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6367,7 +7206,7 @@
 		(dnp no)
 		(uuid "8f34d174-82c3-42b6-a3d2-e8080d14e7fc")
 		(property "Reference" "#PWR099"
-			(at 171.45 107.95 0)
+			(at 161.29 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6378,7 +7217,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 105.156 0)
+			(at 161.29 105.156 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6388,7 +7227,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 101.6 0)
+			(at 161.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6399,7 +7238,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 101.6 0)
+			(at 161.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6410,7 +7249,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 101.6 0)
+			(at 161.29 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6427,6 +7266,84 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
 					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 78.74 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "951b1fcb-19e0-4de4-bd32-21649476247b")
+		(property "Reference" "TP10"
+			(at 264.16 76.962 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 262.636 80.264 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23ac9c8d-e14c-4da4-9830-3130ced1d3eb")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
@@ -6649,7 +7566,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 81.28 0)
+		(at 180.34 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6659,7 +7576,7 @@
 		(dnp no)
 		(uuid "a8c48a1e-ffa2-4552-a0ac-8ad689deb41c")
 		(property "Reference" "#PWR073"
-			(at 190.5 87.63 0)
+			(at 180.34 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6670,7 +7587,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.802 83.82 0)
+			(at 183.642 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6680,7 +7597,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 81.28 0)
+			(at 180.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6691,7 +7608,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 81.28 0)
+			(at 180.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6702,7 +7619,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 81.28 0)
+			(at 180.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6803,7 +7720,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 175.26 120.65 0)
+		(at 165.1 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6813,7 +7730,7 @@
 		(dnp no)
 		(uuid "ae41e6cb-02cc-483e-905b-c6e17bfc5bc5")
 		(property "Reference" "C11"
-			(at 175.26 119.126 0)
+			(at 165.1 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6824,7 +7741,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 175.514 122.174 0)
+			(at 165.354 122.174 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6835,7 +7752,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 173.482 120.65 90)
+			(at 163.322 120.65 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6846,7 +7763,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6857,7 +7774,7 @@
 			)
 		)
 		(property "Description" "25V 10uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6868,7 +7785,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6879,7 +7796,7 @@
 			)
 		)
 		(property "Stock" "3388297"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6890,7 +7807,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6901,7 +7818,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6912,7 +7829,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6923,7 +7840,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6934,7 +7851,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6945,7 +7862,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6956,7 +7873,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 176.784 120.65 0)
+			(at 166.624 120.65 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6967,7 +7884,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6978,7 +7895,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6989,7 +7906,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 175.26 120.65 0)
+			(at 165.1 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7015,9 +7932,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 231.14 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af69e73c-e821-4447-8c89-a2198a275c59")
+		(property "Reference" "JP7"
+			(at 230.886 80.518 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_Bridged"
+			(at 230.632 81.788 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 231.14 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8705746-89cd-4df4-9275-4411d2030f42")
+		)
+		(pin "2"
+			(uuid "97796fdb-f8d8-497b-b8b0-cc37416dfe62")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "0603,10uF,(2)_1")
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 255.27 88.9 0)
+		(at 261.62 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7028,7 +8024,7 @@
 		(fields_autoplaced yes)
 		(uuid "b13beadc-2394-4977-b10e-e1dd05fd32a9")
 		(property "Reference" "C67"
-			(at 257.81 86.3599 0)
+			(at 264.16 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7039,7 +8035,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 257.81 88.9 0)
+			(at 264.16 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7050,7 +8046,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 253.492 88.9 90)
+			(at 259.842 87.63 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7061,7 +8057,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7072,7 +8068,7 @@
 			)
 		)
 		(property "Description" "10uF 25V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7083,7 +8079,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7094,7 +8090,7 @@
 			)
 		)
 		(property "Stock" "3475471"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7105,7 +8101,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7116,7 +8112,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7127,7 +8123,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7138,7 +8134,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7149,7 +8145,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7160,7 +8156,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7171,7 +8167,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 257.81 91.44 0)
+			(at 264.16 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7182,7 +8178,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7193,7 +8189,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7204,7 +8200,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 255.27 88.9 0)
+			(at 261.62 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7231,7 +8227,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 171.45 74.93 0)
+		(at 161.29 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7241,7 +8237,7 @@
 		(dnp no)
 		(uuid "b4fa3a35-3b68-42d2-b5ca-ffaf573bb30c")
 		(property "Reference" "C9"
-			(at 171.45 73.406 0)
+			(at 161.29 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7252,7 +8248,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 171.704 76.454 0)
+			(at 161.544 76.454 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7263,7 +8259,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 169.672 74.93 90)
+			(at 159.512 74.93 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7274,7 +8270,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7285,7 +8281,7 @@
 			)
 		)
 		(property "Description" "25V 10uF X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7296,7 +8292,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7307,7 +8303,7 @@
 			)
 		)
 		(property "Stock" "3388297"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7318,7 +8314,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7329,7 +8325,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7340,7 +8336,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7351,7 +8347,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7362,7 +8358,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7373,7 +8369,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7384,7 +8380,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 172.974 74.93 0)
+			(at 162.814 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7395,7 +8391,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7406,7 +8402,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7417,7 +8413,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 171.45 74.93 0)
+			(at 161.29 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7444,7 +8440,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 255.27 83.82 0)
+		(at 261.62 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7454,7 +8450,7 @@
 		(dnp no)
 		(uuid "b861a83f-31e2-49df-927a-094df6756e1c")
 		(property "Reference" "#PWR042"
-			(at 255.27 87.63 0)
+			(at 261.62 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7465,7 +8461,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 255.27 80.01 0)
+			(at 261.62 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7475,7 +8471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 83.82 0)
+			(at 261.62 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7486,7 +8482,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 83.82 0)
+			(at 261.62 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7497,7 +8493,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 255.27 83.82 0)
+			(at 261.62 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7521,7 +8517,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,100pF")
-		(at 232.41 110.49 0)
+		(at 236.22 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7532,7 +8528,7 @@
 		(fields_autoplaced yes)
 		(uuid "c20eea58-11b0-49d7-8382-eb2ac46f182d")
 		(property "Reference" "C32"
-			(at 234.95 107.9499 0)
+			(at 238.76 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7543,7 +8539,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 234.95 110.49 0)
+			(at 238.76 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7554,7 +8550,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 230.632 110.49 90)
+			(at 234.442 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7565,7 +8561,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10C101JB8NNNC_C14858.pdf"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7576,7 +8572,7 @@
 			)
 		)
 		(property "Description" "100pF 50V C0G ±5% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7587,7 +8583,7 @@
 			)
 		)
 		(property "LCSC" "C14858"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7598,7 +8594,7 @@
 			)
 		)
 		(property "Stock" "6208356"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7609,7 +8605,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7620,7 +8616,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7631,7 +8627,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7642,7 +8638,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7653,7 +8649,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7664,7 +8660,7 @@
 			)
 		)
 		(property "Part" "CL10C101JB8NNNC"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7675,7 +8671,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 234.95 113.03 0)
+			(at 238.76 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7686,7 +8682,7 @@
 			)
 		)
 		(property "Tolerance" "±5%"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7697,7 +8693,7 @@
 			)
 		)
 		(property "Capacitance" "100pF"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,7 +8704,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "C0G"
-			(at 232.41 110.49 0)
+			(at 236.22 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7735,7 +8731,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 78.74 0)
+		(at 161.29 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7745,7 +8741,7 @@
 		(dnp no)
 		(uuid "e1f7e6a7-0348-4043-8218-9a45f383d47c")
 		(property "Reference" "#PWR096"
-			(at 171.45 85.09 0)
+			(at 161.29 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7756,7 +8752,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 171.45 82.296 0)
+			(at 161.29 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7766,7 +8762,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 78.74 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7777,7 +8773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 78.74 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7788,7 +8784,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 171.45 78.74 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7990,7 +8986,7 @@
 	(symbol
 		(lib_name "0603,10uF,(2)_1")
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 250.19 110.49 0)
+		(at 252.73 110.49 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8001,7 +8997,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5304f37-b5ec-4df5-b2b7-5172aeacf146")
 		(property "Reference" "C34"
-			(at 252.73 107.9499 0)
+			(at 255.27 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8012,7 +9008,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 252.73 110.49 0)
+			(at 255.27 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8023,7 +9019,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 248.412 110.49 90)
+			(at 250.952 110.49 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8034,7 +9030,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8045,7 +9041,7 @@
 			)
 		)
 		(property "Description" "10uF 25V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8056,7 +9052,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8067,7 +9063,7 @@
 			)
 		)
 		(property "Stock" "3475471"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8078,7 +9074,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8089,7 +9085,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8100,7 +9096,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8111,7 +9107,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8122,7 +9118,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8133,7 +9129,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8144,7 +9140,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 252.73 113.03 0)
+			(at 255.27 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8155,7 +9151,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8166,7 +9162,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8177,7 +9173,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 250.19 110.49 0)
+			(at 252.73 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8204,7 +9200,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 214.63 93.98 0)
+		(at 204.47 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8214,7 +9210,7 @@
 		(dnp no)
 		(uuid "f6c262a9-c004-491d-9167-e21b50f5b732")
 		(property "Reference" "#PWR072"
-			(at 214.63 100.33 0)
+			(at 204.47 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8225,7 +9221,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 97.536 0)
+			(at 204.47 97.536 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8235,7 +9231,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 93.98 0)
+			(at 204.47 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8246,7 +9242,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 93.98 0)
+			(at 204.47 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8257,7 +9253,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 214.63 93.98 0)
+			(at 204.47 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8281,7 +9277,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 127 0)
+		(at 180.34 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8291,7 +9287,7 @@
 		(dnp no)
 		(uuid "f9bfb9ee-9434-4dec-9237-37b1535e53d8")
 		(property "Reference" "#PWR075"
-			(at 190.5 133.35 0)
+			(at 180.34 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8302,7 +9298,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 193.802 129.54 0)
+			(at 183.642 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8312,7 +9308,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 127 0)
+			(at 180.34 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8323,7 +9319,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 127 0)
+			(at 180.34 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8334,7 +9330,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 190.5 127 0)
+			(at 180.34 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8358,7 +9354,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 250.19 104.14 0)
+		(at 252.73 104.14 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8368,7 +9364,7 @@
 		(dnp no)
 		(uuid "fc2bb4f4-7742-4717-a9c6-3c76a62b4e7f")
 		(property "Reference" "#PWR0119"
-			(at 250.19 107.95 0)
+			(at 252.73 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8379,7 +9375,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 250.19 100.076 0)
+			(at 252.73 100.076 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8389,7 +9385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 250.19 104.14 0)
+			(at 252.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8400,7 +9396,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 250.19 104.14 0)
+			(at 252.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8411,7 +9407,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 250.19 104.14 0)
+			(at 252.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
