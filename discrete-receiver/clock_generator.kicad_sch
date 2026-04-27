@@ -1593,6 +1593,17 @@
 		)
 		(uuid "253374c2-ceb5-4b97-887b-7f34a02fca50")
 	)
+	(text "This is the clock module for the the taloe detector. \nCLK0 runs the clock for I and CLK1 runs the clock for Q. \nCLK1 lags CLK2 by "
+		(exclude_from_sim no)
+		(at 178.562 170.688 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33ddac39-becc-45db-b6e2-446a5cbd1b3f")
+	)
 	(text "24.576 MHz"
 		(exclude_from_sim no)
 		(at 132.08 100.076 0)

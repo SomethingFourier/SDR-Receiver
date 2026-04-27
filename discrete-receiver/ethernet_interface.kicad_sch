@@ -3941,7 +3941,7 @@
 		)
 		(uuid "90894b01-c6c6-4a52-a6fd-5ccd2aea5093")
 	)
-	(text "TO DO:\n- Determine if ethernet chip can do 12kΩ instead of 12.1kΩ\n- JLC the rest"
+	(text "TO DO:\n- Determine if ethernet chip can do 12kΩ instead of 12.1kΩ (Done)\n- JLC the rest"
 		(exclude_from_sim no)
 		(at 49.022 229.87 0)
 		(effects
