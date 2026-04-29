@@ -1120,7 +1120,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "#PWR70,R26,JP7-9,TP6-12",
+    "used_designators": "L12",
     "variants": []
   },
   "sheets": [
