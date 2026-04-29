@@ -4989,7 +4989,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U16"
-				(at 1.27 15.24 0)
+				(at 0.508 10.922 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -4999,7 +4999,7 @@
 				)
 			)
 			(property "Value" "PSA4-5043_"
-				(at 1.27 12.7 0)
+				(at 2.286 9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -5020,7 +5020,7 @@
 					(justify bottom)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/PSA4-5043+.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5043,90 +5043,6 @@
 				)
 			)
 			(symbol "PSA4-5043__0_0"
-				(polyline
-					(pts
-						(xy -7.62 10.16) (xy -7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 0) (xy -12.7 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 0) (xy -7.62 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -10.16) (xy 10.16 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.8034) (xy 0 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy -7.62 10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 15.24 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(pin bidirectional line
 					(at 15.24 0 180)
 					(length 5.08)
@@ -5166,7 +5082,7 @@
 			)
 			(symbol "PSA4-5043__1_0"
 				(pin bidirectional line
-					(at 0 -11.43 90)
+					(at 1.27 -10.16 90)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -5184,7 +5100,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 0 -11.43 90)
+					(at 1.27 -10.16 90)
 					(length 5.08)
 					(hide yes)
 					(name "GND__1"
@@ -5200,6 +5116,20 @@
 								(size 1.016 1.016)
 							)
 						)
+					)
+				)
+			)
+			(symbol "PSA4-5043__1_1"
+				(polyline
+					(pts
+						(xy -7.62 10.16) (xy -7.62 -10.16) (xy 10.16 0) (xy -7.62 10.16)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
 					)
 				)
 			)
@@ -5465,26 +5395,24 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -11.176 8.128 0)
+			(property "Reference" "U5"
+				(at -10.16 7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Value" "ADE-12+"
-				(at 1.016 8.382 0)
+				(at 5.842 7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
 			(property "Footprint" "sdr_project:ADE12"
@@ -5607,39 +5535,6 @@
 				)
 			)
 			(symbol "ADE-12+_0_1"
-				(circle
-					(center -7.874 -2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -0.508 5.08)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.524 0.508)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 1.524 0.254) (xy 1.524 -0.508) (xy 3.81 -0.508)
@@ -5697,6 +5592,18 @@
 						(width 0)
 						(type solid)
 						(color 0 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -7.874 -2.54)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 132 0 0 1)
 					)
 					(fill
 						(type none)
@@ -5987,6 +5894,18 @@
 						(type none)
 					)
 				)
+				(circle
+					(center -0.508 5.08)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 132 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(bezier
 					(pts
 						(xy -0.508 3.302) (xy 0 2.032) (xy 0.508 3.302) (xy 0.508 3.302)
@@ -6177,6 +6096,18 @@
 						(width 0)
 						(type solid)
 						(color 0 0 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.524 0.508)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 132 0 0 1)
 					)
 					(fill
 						(type none)
@@ -8560,7 +8491,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U18"
-				(at 30.226 -5.334 0)
+				(at 24.13 -1.524 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -8570,7 +8501,7 @@
 				)
 			)
 			(property "Value" "SN74LVC1G3157DBVR"
-				(at 30.48 -14.732 90)
+				(at 20.828 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -8653,10 +8584,10 @@
 					)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(pin input line
@@ -16207,7 +16138,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 50.8 0)
+		(at 72.39 49.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16217,7 +16148,7 @@
 		(dnp no)
 		(uuid "45d7c3df-97d9-4bc0-8ebb-ce01fcdc6eda")
 		(property "Reference" "#PWR047"
-			(at 71.12 57.15 0)
+			(at 72.39 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16228,7 +16159,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 54.61 0)
+			(at 72.39 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16238,7 +16169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 50.8 0)
+			(at 72.39 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16249,7 +16180,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 50.8 0)
+			(at 72.39 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16260,7 +16191,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 50.8 0)
+			(at 72.39 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17708,7 +17639,7 @@
 		(fields_autoplaced yes)
 		(uuid "693bfaf2-b646-4c1d-ac3b-a17e255d3094")
 		(property "Reference" "U16"
-			(at 72.39 24.13 0)
+			(at 71.628 28.448 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17718,7 +17649,7 @@
 			)
 		)
 		(property "Value" "PSA4-5043_"
-			(at 72.39 26.67 0)
+			(at 73.406 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20455,10 +20386,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "91de532a-9e17-4bd0-8225-91e7befaa165")
 		(property "Reference" "U18"
-			(at 98.806 162.814 0)
+			(at 92.71 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20468,7 +20398,7 @@
 			)
 		)
 		(property "Value" "SN74LVC1G3157DBVR"
-			(at 99.06 172.212 90)
+			(at 87.122 155.702 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
