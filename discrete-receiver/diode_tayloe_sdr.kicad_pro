@@ -1120,7 +1120,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "T1,TP1-2,R14-15,R43-47,JP3-4,JP14-17,J3,J7,U1,U5,U19-20,FB1,#PWR2-9,#PWR88,#PWR101-102,#PWR105-109,#PWR115-117,#PWR120,C1-6,C12,C58-59,C61-64,C68-75,C79-81,C85-90,L3-10,L12-19",
+    "used_designators": "T1,TP1-2,R14-15,R43-47,JP3-4,JP11-17,JP20-22,J3,J7,U1,U5,U16,U18-20,FB1,#PWR2-9,#PWR39,#PWR46-47,#PWR88-89,#PWR98,#PWR101-102,#PWR105-109,#PWR115-117,#PWR120,#PWR123,C1-7,C12,C55-59,C61-66,C68-75,C79-81,C85-90,L2-19",
     "variants": []
   },
   "sheets": [
@@ -1159,6 +1159,14 @@
     [
       "51415671-faa3-4682-86ef-d9865cc6a50e",
       "Charles"
+    ],
+    [
+      "8647ec6f-e8f0-4852-b9db-d60b6a18fbc7",
+      "Jaquavis"
+    ],
+    [
+      "0811a985-c39e-470e-b379-1c06ccf39cf9",
+      "Low Noise Amplifier"
     ]
   ],
   "text_variables": {},

@@ -3646,7 +3646,7 @@
 		)
 		(uuid "7c1d5508-6497-48cd-8866-db6512d83ca7")
 	)
-	(text "Solder jumpers to bypass\n the DC-blocking capacitors.\nThese should soldered unless \nwe need to block DC."
+	(text "Solder jumpers to bypass\n the DC-blocking capacitors.\nThese should be soldered unless \nwe need to block DC."
 		(exclude_from_sim no)
 		(at 226.822 75.946 0)
 		(effects
