@@ -303,342 +303,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "capacitor cap"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -0.508) (xy 1.524 -0.508)
-					)
-					(stroke
-						(width 0.3302)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:L_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at 0.762 1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "L_Small"
-				(at 0.762 -1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_Small_0_1"
-				(arc
-					(start 0 2.032)
-					(mid 0.5058 1.524)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 -0.508)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -1.524)
-					(end 0 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_JLCPCB-Capacitors:0603,10uF,(2)"
 			(pin_numbers
 				(hide yes)
@@ -919,6 +583,648 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Capacitors:0805,100nF"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 2.032 1.668 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF"
+				(at 2.032 -0.3782 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:C_0805"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B104KCFNNNE_C28233.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C28233"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "1168020"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.009USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Basic Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "CL21B104KCFNNNE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Voltage Rated" "100V"
+				(at 2.032 -2.0462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Capacitance" "100nF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Temperature Coefficient" "X7R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "0805,100nF_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0.635) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -0.635) (xy 1.27 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "0805,100nF_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.175)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_JLCPCB-Inductors:4.7uH,25mA"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 1.2673 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4.7uH,25mA"
+				(at 1.2673 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:L_1206"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2302231101_FH--Guangdong-Fenghua-Advanced-Tech-CMI321609U4R7KT_C1049.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "25mA 4.7uH ±10% 650mΩ 1206 Inductors (SMD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C1049"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "14122"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.019USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "20"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Inductors/Coils/Transformers,Inductors (SMD)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "CMI321609U4R7KT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Inductance" "4.7uH"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Q @ Freq" "35@10MHz"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Frequency - Self Resonant" "35MHz"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Tolerance" "±10%"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Rated Current" "25mA"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DC Resistance (DCR)" "650mΩ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "L_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "4.7uH,25mA_0_1"
+				(arc
+					(start 0 2.54)
+					(mid 0.6323 1.905)
+					(end 0 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.27)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "4.7uH,25mA_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -1371,16 +1677,16 @@
 		(uuid "4089ced4-27eb-4ad3-bd9c-88fc764fe3a8")
 	)
 	(junction
-		(at 147.32 85.09)
+		(at 163.83 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1ffc5609-6f64-47e5-9efd-8f715cd837cf")
+		(uuid "12285ea9-5b9a-4b76-a44d-c49776a8bfdb")
 	)
 	(junction
-		(at 153.67 85.09)
+		(at 156.21 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "44ff8a2d-6c96-4610-9e3f-917114004dea")
+		(uuid "2a67c5b2-44ff-489e-be70-8394bc3ef0c7")
 	)
 	(junction
 		(at 147.32 101.6)
@@ -1389,10 +1695,10 @@
 		(uuid "72940552-73ba-45c8-8f6d-317b5004bb6d")
 	)
 	(junction
-		(at 158.75 92.71)
+		(at 147.32 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ba3d1952-3b85-46e7-ad26-c5a18f39e758")
+		(uuid "98d6e7bd-906f-4e32-a903-2a1d56f97952")
 	)
 	(wire
 		(pts
@@ -1406,23 +1712,13 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 85.09) (xy 147.32 92.71)
+			(xy 147.32 85.09) (xy 147.32 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1181762f-9d88-4b4a-b4e6-371cfec45065")
-	)
-	(wire
-		(pts
-			(xy 158.75 92.71) (xy 163.83 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "258064c8-3a4e-41b2-8024-dee124b9dae6")
+		(uuid "1cba79ef-bf81-434f-9c10-8baf0721759e")
 	)
 	(wire
 		(pts
@@ -1436,7 +1732,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 92.71) (xy 158.75 92.71)
+			(xy 156.21 92.71) (xy 163.83 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1446,17 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 101.6) (xy 115.57 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fe3c0cd-c2ee-45d2-a3f7-23f3762f2c35")
-	)
-	(wire
-		(pts
-			(xy 147.32 85.09) (xy 153.67 85.09)
+			(xy 147.32 85.09) (xy 156.21 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1476,16 +1762,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 85.09) (xy 163.83 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5fab916-e75c-4234-a816-91ca538a898e")
-	)
-	(wire
-		(pts
 			(xy 147.32 97.79) (xy 147.32 101.6)
 		)
 		(stroke
@@ -1493,6 +1769,16 @@
 			(type default)
 		)
 		(uuid "ea411734-32ea-4fc7-86a3-a6ce61a1ee1f")
+	)
+	(wire
+		(pts
+			(xy 156.21 85.09) (xy 163.83 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee0ff25e-1f03-4127-b610-5f127dd885a3")
 	)
 	(wire
 		(pts
@@ -1605,7 +1891,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 158.75 92.71 0)
+		(at 163.83 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1615,7 +1901,7 @@
 		(dnp no)
 		(uuid "5326311e-e131-4447-b64c-fa5a19731764")
 		(property "Reference" "#PWR039"
-			(at 158.75 99.06 0)
+			(at 163.83 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1626,7 +1912,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 158.75 96.266 0)
+			(at 163.83 96.266 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1636,7 +1922,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 92.71 0)
+			(at 163.83 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1647,7 +1933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 92.71 0)
+			(at 163.83 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1658,7 +1944,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 92.71 0)
+			(at 163.83 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1980,7 +2266,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF,(2)")
-		(at 153.67 88.9 0)
+		(at 156.21 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1988,10 +2274,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "890624c5-a4bb-459b-a5f5-98772b1d812b")
 		(property "Reference" "C7"
-			(at 156.21 86.3599 0)
+			(at 156.21 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2002,7 +2287,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 156.21 88.9 0)
+			(at 156.464 90.424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2013,7 +2298,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:C_0603"
-			(at 151.892 88.9 90)
+			(at 154.432 88.9 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2024,7 +2309,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106MA8NRNC_C96446.pdf"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2035,7 +2320,7 @@
 			)
 		)
 		(property "Description" "10uF 25V X5R ±20% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2046,7 +2331,7 @@
 			)
 		)
 		(property "LCSC" "C96446"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2057,7 +2342,7 @@
 			)
 		)
 		(property "Stock" "3475471"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2068,7 +2353,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2079,7 +2364,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2090,7 +2375,7 @@
 			)
 		)
 		(property "Attrition Qty" "8"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2101,7 +2386,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2112,7 +2397,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2123,7 +2408,7 @@
 			)
 		)
 		(property "Part" "CL10A106MA8NRNC"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2134,7 +2419,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 156.21 91.44 0)
+			(at 157.734 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2145,7 +2430,7 @@
 			)
 		)
 		(property "Tolerance" "±20%"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2156,7 +2441,7 @@
 			)
 		)
 		(property "Capacitance" "10uF"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2167,7 +2452,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X5R"
-			(at 153.67 88.9 0)
+			(at 156.21 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2193,8 +2478,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 110.49 101.6 270)
+		(lib_id "PCM_JLCPCB-Capacitors:0805,100nF")
+		(at 111.76 101.6 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2202,9 +2487,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9f092bea-b741-4e66-a4fc-858c51d84039")
-		(property "Reference" "C55"
-			(at 110.49 99.06 90)
+		(uuid "aa042e56-e16e-4559-b822-da9db057888a")
+		(property "Reference" "C12"
+			(at 111.76 99.314 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2214,17 +2499,17 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 110.49 104.394 90)
+			(at 114.554 100.838 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.889 0.889)
+					(size 0.8 0.8)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 110.49 101.6 0)
+		(property "Footprint" "PCM_JLCPCB:C_0805"
+			(at 111.76 103.378 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2234,8 +2519,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 110.49 101.6 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL21B104KCFNNNE_C28233.pdf"
+			(at 111.76 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2245,8 +2530,161 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 110.49 101.6 0)
+		(property "Description" "100V 100nF X7R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C28233"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "1168020"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.009USD"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL21B104KCFNNNE"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "100V"
+			(at 109.22 100.838 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "100nF"
+			(at 111.76 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 111.76 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2257,15 +2695,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "d1a4da69-4105-49fa-82b3-14a754cec89d")
+			(uuid "dbed1d8b-5f29-4610-b965-fc03d3dc8afa")
 		)
 		(pin "1"
-			(uuid "8a307877-38a9-46ee-8b30-7bbfc9970038")
+			(uuid "1e2e701a-ab5f-43c8-add1-38132ba7ead4")
 		)
 		(instances
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/0811a985-c39e-470e-b379-1c06ccf39cf9"
-					(reference "C55")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -2282,10 +2720,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c0dc93e1-e629-4ad6-a6ec-14dbd50354ee")
 		(property "Reference" "C56"
-			(at 166.37 86.3599 0)
+			(at 163.83 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2296,7 +2733,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 166.37 88.9 0)
+			(at 164.084 90.424 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2428,7 +2865,7 @@
 			)
 		)
 		(property "Voltage Rated" "16V"
-			(at 166.37 91.44 0)
+			(at 165.1 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2564,8 +3001,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Small")
-		(at 147.32 95.25 0)
+		(lib_id "PCM_JLCPCB-Inductors:4.7uH,25mA")
+		(at 147.32 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2574,9 +3011,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cce8d520-cfb8-4445-b63e-2f4f114494ba")
+		(uuid "c8dcf6d4-004f-4773-b841-2027d33df28f")
 		(property "Reference" "L2"
-			(at 148.59 93.9799 0)
+			(at 148.59 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2586,19 +3023,19 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7uH"
-			(at 148.59 96.52 0)
+		(property "Value" "4.7uH,25mA"
+			(at 148.59 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.889 0.889)
+					(size 0.8 0.8)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 147.32 95.25 0)
+		(property "Footprint" "PCM_JLCPCB:L_1206"
+			(at 145.542 93.98 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2608,8 +3045,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 147.32 95.25 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2302231101_FH--Guangdong-Fenghua-Advanced-Tech-CMI321609U4R7KT_C1049.pdf"
+			(at 147.32 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2619,8 +3056,184 @@
 				)
 			)
 		)
-		(property "Description" "Inductor, small symbol"
-			(at 147.32 95.25 0)
+		(property "Description" "25mA 4.7uH ±10% 650mΩ 1206 Inductors (SMD) ROHS"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1049"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "14122"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.019USD"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Inductors/Coils/Transformers,Inductors (SMD)"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "FH(Guangdong Fenghua Advanced Tech)"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CMI321609U4R7KT"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Inductance" "4.7uH"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Q @ Freq" "35@10MHz"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Frequency - Self Resonant" "35MHz"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rated Current" "25mA"
+			(at 147.32 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DC Resistance (DCR)" "650mΩ"
+			(at 147.32 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2631,10 +3244,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e77ff3fd-b009-4646-9cf6-63fa56b21c8e")
+			(uuid "5280099f-fcaa-4b5f-8963-76e2f54470cf")
 		)
 		(pin "2"
-			(uuid "1f59a66e-f837-4b7e-9694-5344df16a789")
+			(uuid "853cc707-473e-4517-a92b-8ae199bf7fba")
 		)
 		(instances
 			(project "diode_tayloe_sdr"

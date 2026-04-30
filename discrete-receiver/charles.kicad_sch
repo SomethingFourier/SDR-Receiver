@@ -840,16 +840,22 @@
 		(uuid "abe6c331-f0d5-43bd-bff5-43616614f5ec")
 	)
 	(junction
-		(at 139.7 101.6)
+		(at 139.7 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "add0162a-3c72-452a-a93c-d8c7a658d7d9")
+		(uuid "ae5fffff-4c26-4ef9-b33c-ca8074b15710")
 	)
 	(junction
 		(at 179.07 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b653fc69-1b4c-4f63-98ee-4c0bba4ad539")
+	)
+	(junction
+		(at 139.7 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b72773bd-abdc-47ab-8a1b-e18c327d8477")
 	)
 	(junction
 		(at 107.95 106.68)
@@ -862,12 +868,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "df0f6a1e-cfd1-41a5-a1a6-a1fed4e9ce0e")
-	)
-	(junction
-		(at 139.7 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e522be30-6caa-4320-ab6c-8eee08f4375d")
 	)
 	(junction
 		(at 125.73 101.6)
@@ -890,6 +890,16 @@
 			(type default)
 		)
 		(uuid "099f707c-0930-4bf8-b647-60e4cffbcb91")
+	)
+	(wire
+		(pts
+			(xy 139.7 101.6) (xy 148.59 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ba3ec9-90be-48c7-a668-299780c28a57")
 	)
 	(wire
 		(pts
@@ -1063,16 +1073,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 106.68) (xy 148.59 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a8647d4-7700-41ce-a4bf-d56bba51bc40")
-	)
-	(wire
-		(pts
 			(xy 187.96 101.6) (xy 193.04 101.6)
 		)
 		(stroke
@@ -1140,16 +1140,6 @@
 			(type default)
 		)
 		(uuid "aeb531f6-8ad3-453d-b640-ad23c894badb")
-	)
-	(wire
-		(pts
-			(xy 139.7 101.6) (xy 148.59 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af1f878b-f20b-4538-a5f1-3b0459a9c394")
 	)
 	(wire
 		(pts
@@ -1240,6 +1230,16 @@
 			(type default)
 		)
 		(uuid "d18b40a0-91bf-4e77-aaca-361f0e53b0be")
+	)
+	(wire
+		(pts
+			(xy 139.7 106.68) (xy 148.59 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d38de6be-478d-4c1f-bb41-496db74f9194")
 	)
 	(wire
 		(pts
@@ -1356,7 +1356,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1210_3225Metric"
 			(at 107.95 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -1448,7 +1448,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 179.07 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -1508,98 +1508,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 139.7 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "261b02c5-3b6f-4193-8fee-20be24f70966")
-		(property "Reference" "C61"
-			(at 139.954 102.616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "91pF"
-			(at 140.208 105.664 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.889 0.889)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 139.7 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C541440"
-			(at 139.7 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ff3a317-9969-4c5c-a13a-42fde6bd3abd")
-		)
-		(pin "2"
-			(uuid "ab3c4fea-e9c9-4c48-8046-9182d2bfd28c")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/51415671-faa3-4682-86ef-d9865cc6a50e"
-					(reference "C61")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L_Small")
 		(at 203.2 101.6 90)
 		(unit 1)
@@ -1630,7 +1538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:L_0805"
 			(at 203.2 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1720,7 +1628,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 130.81 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -1887,7 +1795,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 170.18 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -1979,7 +1887,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EasyEDA_Lib:IND-SMD_L2.2-W1.6"
 			(at 187.96 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2069,7 +1977,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:L_0603"
 			(at 170.18 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2159,7 +2067,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EasyEDA_Lib:IND-SMD_L2.2-W1.6"
 			(at 118.11 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2220,6 +2128,98 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 139.7 104.14 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9bf2d5ba-a1d7-40a0-a1ec-74e7b83b0e29")
+		(property "Reference" "C61"
+			(at 139.954 102.616 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "91pF"
+			(at 140.208 105.664 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.889 0.889)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0402"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C541440"
+			(at 139.7 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7cbc42ab-5fc6-4506-9200-d219720333c7")
+		)
+		(pin "2"
+			(uuid "84c839cf-2722-4faa-8a31-d1189bda78ad")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/51415671-faa3-4682-86ef-d9865cc6a50e"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 99.06 104.14 180)
 		(unit 1)
 		(body_style 1)
@@ -2251,7 +2251,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 99.06 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2343,7 +2343,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2433,7 +2433,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 118.11 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2523,7 +2523,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 157.48 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2613,7 +2613,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_APV_AHW2520"
 			(at 157.48 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -2705,7 +2705,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "EasyEDA_Lib:IND-SMD_L2.4-W1.7"
 			(at 148.59 104.14 0)
 			(hide yes)
 			(show_name no)

@@ -870,6 +870,244 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EasyEDA_Lib:SN74LVC1G3157DBVR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U17"
+				(at -5.842 13.208 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "EasyEDA_Lib:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch Circuit:2:1 Number of Channels:1 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Turn-on time:5.7ns Ron:6Ω Turn-off time:3.8ns Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C Con:17.3pF Bandwidth:300MHz Propagation Delay (tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "SN74LVC1G3157DBVR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "TI(德州仪器)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier Part" "C10426"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "单刀双掷模拟开关"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SN74LVC1G3157DBVR_1_1"
+				(polyline
+					(pts
+						(xy -3.81 15.24) (xy -3.81 -17.78) (xy 3.81 -13.97) (xy 3.81 11.43) (xy -3.81 15.24)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -6.35 -5.08 0)
+					(length 2.54)
+					(name "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 -17.78 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -6.35 5.08 0)
+					(length 2.54)
+					(name "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 1.27 15.24 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -1.27 -19.05 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:Jumper_2_Small_Open"
 			(pin_numbers
 				(hide yes)
@@ -5606,226 +5844,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "sdr_project:SN74LVC1G3157DBVR"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U18"
-				(at 24.13 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "SN74LVC1G3157DBVR"
-				(at 20.828 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Footprint" "DBV6"
-				(at 7.62 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc1g3157"
-				(at 7.112 -17.78 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "SN74LVC1G3157DBVR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "DBV6 DBV6-M DBV6-L"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SN74LVC1G3157DBVR_1_1"
-				(polyline
-					(pts
-						(xy 26.67 2.54) (xy 26.67 -30.48) (xy 34.29 -26.67) (xy 34.29 -1.27) (xy 26.67 2.54)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at 24.13 -17.78 0)
-					(length 2.54)
-					(name "B2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 31.75 -30.48 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 24.13 -7.62 0)
-					(length 2.54)
-					(name "B1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 36.83 -12.7 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 31.75 2.54 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 29.21 -31.75 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 12.7 162.56)
@@ -6240,7 +6258,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 113.03) (xy 46.99 110.49)
+			(xy 46.99 110.49) (xy 46.99 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6380,7 +6398,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 59.69) (xy 147.32 57.15)
+			(xy 147.32 57.15) (xy 147.32 59.69)
 		)
 		(stroke
 			(width 0)
@@ -8943,100 +8961,6 @@
 		)
 	)
 	(symbol
-		(lib_id "sdr_project:SN74LVC1G3157DBVR")
-		(at 15.24 80.01 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "434e3f6c-f313-48e7-865c-68559fa28a19")
-		(property "Reference" "U18"
-			(at 39.37 81.534 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G3157DBVR"
-			(at 33.782 78.232 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "DBV6"
-			(at 22.86 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc1g3157"
-			(at 22.352 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 15.24 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "addb997c-a4d7-4d87-a3e2-2ecc8976bd29")
-		)
-		(pin "6"
-			(uuid "fb315c8b-b778-41c6-bc29-9af5c7640102")
-		)
-		(pin "5"
-			(uuid "60d3c204-099d-449e-ac1a-68c21315c4b7")
-		)
-		(pin "4"
-			(uuid "295c3bbe-27e8-41fd-844a-1a0d93b01d6d")
-		)
-		(pin "3"
-			(uuid "3184c3ce-0751-406d-9b6f-9e0855c65c72")
-		)
-		(pin "1"
-			(uuid "fce1c219-cde4-4f92-9ae3-e8709a79c6b3")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
-					(reference "U18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 59.69 0)
 		(unit 1)
@@ -9168,7 +9092,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Ethernet LAN 10/100 Base-Tx Transformer with Center Taps"
 			(at 158.75 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9179,31 +9103,7 @@
 				)
 			)
 		)
-		(property "PARTREV" "NA"
-			(at 158.75 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STNADARD" "Manufacturer Recommendation"
-			(at 158.75 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Pulse Electronics"
+		(property "LCSC" "C20623173"
 			(at 158.75 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -9326,8 +9226,8 @@
 				)
 			)
 		)
-		(property "Height" "2.08"
-			(at 212.09 445.72 0)
+		(property "LCSC" "C3176671"
+			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9335,79 +9235,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Mini-Circuits"
-			(at 212.09 545.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "ADE-12+"
-			(at 212.09 645.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "139-ADE-12"
-			(at 212.09 745.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Mini-Circuits/ADE-12%2b?qs=xZ%2FP%252Ba9zWqb%2FGrCkDwq39A%3D%3D"
-			(at 212.09 845.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 212.09 945.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 212.09 1045.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 			)
 		)
 		(pin "6"
@@ -10636,7 +10463,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:R_0603"
 			(at 127.508 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -10658,8 +10485,19 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0603, 47Ω, ±1%"
 			(at 125.73 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1002"
+			(at 125.73 107.95 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10756,101 +10594,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sdr_project:SN74LVC1G3157DBVR")
-		(at 135.89 26.67 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8125bc90-7817-41b5-81e4-f4f1f6d5c2e4")
-		(property "Reference" "U20"
-			(at 111.76 28.194 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G3157DBVR"
-			(at 117.348 24.892 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "DBV6"
-			(at 128.27 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc1g3157"
-			(at 128.778 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ecd22aef-85a8-4f44-85f6-e2d227297cc7")
-		)
-		(pin "6"
-			(uuid "ce114f39-2992-43eb-9c66-f2ae273a2b3f")
-		)
-		(pin "5"
-			(uuid "369bb527-c793-4e02-8790-3935326aacc7")
-		)
-		(pin "4"
-			(uuid "6b5af7d9-b7b0-4d92-917f-7e6fb4f7b877")
-		)
-		(pin "3"
-			(uuid "0c764b95-6924-4694-80f0-c060035dbb1a")
-		)
-		(pin "1"
-			(uuid "c11a2318-03dc-4c62-b4ca-2e5c972d85f1")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
-					(reference "U20")
 					(unit 1)
 				)
 			)
@@ -11140,6 +10883,108 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_Lib:SN74LVC1G3157DBVR")
+		(at 146.05 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "92e9278f-064c-46b1-aaee-5f73f8a85749")
+		(property "Reference" "U19"
+			(at 140.208 26.162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 146.05 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA_Lib:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+			(at 146.05 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+			(at 146.05 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch Circuit:2:1 Number of Channels:1 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Turn-on time:5.7ns Ron:6Ω Turn-off time:3.8ns Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C Con:17.3pF Bandwidth:300MHz Propagation Delay (tp"
+			(at 146.05 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C10426"
+			(at 146.05 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "08dbe8fc-30dd-4beb-bb46-b6a380f1997d")
+		)
+		(pin "4"
+			(uuid "0fa076b5-9f6f-4d67-bb21-1f61e6c0cadc")
+		)
+		(pin "5"
+			(uuid "acb175b2-a48b-4f70-95cd-cbd5fa46f147")
+		)
+		(pin "2"
+			(uuid "d0c00320-8da3-42b8-868e-453c053f81dc")
+		)
+		(pin "3"
+			(uuid "dcb94d3a-1fae-4ef6-bbb1-8e90d1111fd0")
+		)
+		(pin "1"
+			(uuid "eb84279e-6f6d-4b2b-a005-d7ec7f1647d0")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -11535,100 +11380,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "sdr_project:SN74LVC1G3157DBVR")
-		(at 115.57 26.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b0cb27bf-9dc5-4a3e-8f9a-7ba97af29652")
-		(property "Reference" "U19"
-			(at 139.7 28.194 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74LVC1G3157DBVR"
-			(at 134.112 24.892 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "DBV6"
-			(at 123.19 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74lvc1g3157"
-			(at 122.682 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "09ae80ea-c9cb-4c41-b32a-65804522c873")
-		)
-		(pin "6"
-			(uuid "fd87e0f8-f7f9-42af-a799-d373895a702d")
-		)
-		(pin "5"
-			(uuid "6970865b-4278-4794-9087-3761b8d8e542")
-		)
-		(pin "4"
-			(uuid "a66348f6-168c-40eb-83e9-5acdf4e75410")
-		)
-		(pin "3"
-			(uuid "b901afe2-2a2b-4357-a7b4-1ceec306abde")
-		)
-		(pin "1"
-			(uuid "10d98be1-dcce-4eac-bcec-3f78e1d728d7")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
-					(reference "U19")
 					(unit 1)
 				)
 			)
@@ -12579,6 +12330,211 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_Lib:SN74LVC1G3157DBVR")
+		(at 45.72 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dfce950b-483c-4e5c-97a8-31814764a07e")
+		(property "Reference" "U18"
+			(at 39.878 79.502 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 45.72 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA_Lib:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+			(at 45.72 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+			(at 45.72 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch Circuit:2:1 Number of Channels:1 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Turn-on time:5.7ns Ron:6Ω Turn-off time:3.8ns Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C Con:17.3pF Bandwidth:300MHz Propagation Delay (tp"
+			(at 45.72 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C10426"
+			(at 45.72 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "3fc0779c-8fff-4202-9ffe-d8bcbe8a01ed")
+		)
+		(pin "4"
+			(uuid "6ca2ebf2-855c-48a6-aa72-2b61f30602d3")
+		)
+		(pin "5"
+			(uuid "71e3021b-8bb8-4cba-966a-5f3b5f6313ed")
+		)
+		(pin "2"
+			(uuid "85e432a1-8366-4bcd-b3b5-b8f482b8814f")
+		)
+		(pin "3"
+			(uuid "a1c4c75e-a45e-4bda-b204-0f4ef0f0cc07")
+		)
+		(pin "1"
+			(uuid "1ce3cca3-57b7-4ff9-98bb-cb90a390dacd")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "U18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_Lib:SN74LVC1G3157DBVR")
+		(at 105.41 39.37 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eebdb942-cf5e-405b-bc62-cb25df437369")
+		(property "Reference" "U17"
+			(at 111.252 26.162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 105.41 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA_Lib:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch Circuit:2:1 Number of Channels:1 Voltage - Supply:1.65V~5.5V Voltage - Supply:1.65V~5.5V Turn-on time:5.7ns Ron:6Ω Turn-off time:3.8ns Operating Temperature:-40°C~+85°C Operating Temperature:-40°C~+85°C Con:17.3pF Bandwidth:300MHz Propagation Delay (tp"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C10426"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "6"
+			(uuid "4de22cbc-ac06-4b88-9ccf-fc2d5f138897")
+		)
+		(pin "4"
+			(uuid "096ad077-b3c8-45fd-9700-702e19672f36")
+		)
+		(pin "5"
+			(uuid "7d6a9a71-4095-47e0-8feb-3dcde56b1532")
+		)
+		(pin "2"
+			(uuid "0e110eea-a6ae-47aa-868c-02a6709317ed")
+		)
+		(pin "3"
+			(uuid "5012972d-fc91-4bdf-a06a-c03a07f40ff9")
+		)
+		(pin "1"
+			(uuid "52bdc3de-d34b-457b-951b-a97d79153a36")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "U17")
 					(unit 1)
 				)
 			)

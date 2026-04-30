@@ -479,23 +479,13 @@
 		(at 160.02 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ad501c81-bc51-46cf-a1c6-827073413fcd")
+		(uuid "7d45198f-fbcf-4838-95cc-824d25719bbc")
 	)
 	(junction
 		(at 144.78 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f1daa13a-35a2-408f-8925-6a1b459b3c9e")
-	)
-	(wire
-		(pts
-			(xy 165.1 93.98) (xy 160.02 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0846d74e-2f97-4a44-a1ad-eb49b15419ed")
 	)
 	(wire
 		(pts
@@ -536,6 +526,16 @@
 			(type default)
 		)
 		(uuid "8bf2053b-c948-4b24-8db2-cc39ba414c1e")
+	)
+	(wire
+		(pts
+			(xy 160.02 93.98) (xy 165.1 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d404bec7-1fc7-4eea-9a4c-b73cf7fbc1b0")
 	)
 	(wire
 		(pts
@@ -602,7 +602,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 144.78 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -692,7 +692,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:L_0805"
 			(at 152.4 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -838,7 +838,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e9eabeea-15cc-4516-8ab0-fe559af86031")
+		(uuid "ea37be35-0df2-49c7-9c18-fe98946f3307")
 		(property "Reference" "C66"
 			(at 160.274 94.996 0)
 			(show_name no)
@@ -861,7 +861,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "PCM_JLCPCB:C_0402"
 			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -906,10 +906,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ece3d1b6-6d31-4c2a-8f39-9ec47e7f1aff")
+			(uuid "d34a338e-dbda-44a7-8546-1d2bbb66c162")
 		)
 		(pin "2"
-			(uuid "caefd4ab-b4b6-4eca-9944-4c4a4700ee98")
+			(uuid "9be2d699-5516-4484-88e8-bba5ef6ecc06")
 		)
 		(instances
 			(project "diode_tayloe_sdr"
