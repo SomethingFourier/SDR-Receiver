@@ -6652,7 +6652,7 @@
 				(justify right)
 			)
 		)
-		(pin "I_out" output
+		(pin "I_out" input
 			(at 190.5 133.35 180)
 			(uuid "88aa48f7-8c09-4040-b927-76aa70ae5e4a")
 			(effects
@@ -6682,7 +6682,7 @@
 				(justify right)
 			)
 		)
-		(pin "Q_out" output
+		(pin "Q_out" input
 			(at 190.5 130.81 180)
 			(uuid "fc2e262c-dc2f-4456-a344-cc51e5b60740")
 			(effects
