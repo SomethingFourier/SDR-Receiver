@@ -8265,6 +8265,30 @@
 		)
 		(uuid "ffdcfb25-ebd1-4df0-8561-02e595acb8af")
 	)
+	(global_label "VHF BP Filter Mux Select"
+		(shape input)
+		(at 246.38 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00681ce9-bca0-4157-bc6d-7a794c2cbe4c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.7371 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "QSPI_SD3"
 		(shape input)
 		(at 64.77 171.45 0)

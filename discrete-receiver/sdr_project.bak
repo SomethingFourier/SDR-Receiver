@@ -4717,6 +4717,7 @@
 			(at 27.94 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4727,6 +4728,7 @@
 			(at 27.94 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4800,49 +4802,13 @@
 				)
 			)
 		)
-		(symbol "SN74LVC1G3157DBVR_0_1"
+		(symbol "SN74LVC1G3157DBVR_1_1"
 			(polyline
 				(pts
-					(xy 7.62 5.08) (xy 7.62 -10.16)
+					(xy 0 15.24) (xy 0 -17.78) (xy 7.62 -13.97) (xy 7.62 11.43) (xy 0 15.24)
 				)
 				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -10.16) (xy 48.26 -10.16)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 48.26 5.08) (xy 7.62 5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 48.26 -10.16) (xy 48.26 5.08)
-				)
-				(stroke
-					(width 0.127)
+					(width 0)
 					(type default)
 				)
 				(fill
@@ -4850,8 +4816,8 @@
 				)
 			)
 			(pin input line
-				(at 0 0 0)
-				(length 7.62)
+				(at -2.54 -5.08 0)
+				(length 2.54)
 				(name "B2"
 					(effects
 						(font
@@ -4868,8 +4834,8 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -2.54 0)
-				(length 7.62)
+				(at 5.08 -17.78 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -4886,8 +4852,8 @@
 				)
 			)
 			(pin input line
-				(at 0 -5.08 0)
-				(length 7.62)
+				(at -2.54 5.08 0)
+				(length 2.54)
 				(name "B1"
 					(effects
 						(font
@@ -4904,8 +4870,8 @@
 				)
 			)
 			(pin input line
-				(at 55.88 -5.08 180)
-				(length 7.62)
+				(at 10.16 0 180)
+				(length 2.54)
 				(name "A"
 					(effects
 						(font
@@ -4922,8 +4888,8 @@
 				)
 			)
 			(pin power_in line
-				(at 55.88 -2.54 180)
-				(length 7.62)
+				(at 5.08 15.24 270)
+				(length 2.54)
 				(name "VCC"
 					(effects
 						(font
@@ -4940,8 +4906,8 @@
 				)
 			)
 			(pin input line
-				(at 55.88 0 180)
-				(length 7.62)
+				(at 2.54 -19.05 90)
+				(length 2.54)
 				(name "S"
 					(effects
 						(font
