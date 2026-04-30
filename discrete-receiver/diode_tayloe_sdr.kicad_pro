@@ -1120,7 +1120,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "C12,L12",
+    "used_designators": "J3,U5,U19-20,#PWR2,#PWR88,#PWR105-109,C6,C12,C58-59,C61-64,C70-75,C89-90,L3-10,L12-19",
     "variants": []
   },
   "sheets": [
