@@ -2993,7 +2993,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590903610744123392"
+		(property "Datasheet" "https://statics.cirrus.com/pubs/proDatasheet/CS5340_F2.pdf"
 			(at 68.58 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -3005,6 +3005,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 68.58 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Clone Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8590903610744123392"
 			(at 68.58 87.63 0)
 			(hide yes)
 			(show_name no)
