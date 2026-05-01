@@ -5573,6 +5573,66 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "DC blocking cap"
+		(exclude_from_sim no)
+		(at 164.084 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "341eeaa6-f4e4-4cdf-8f99-ed970e7ae187")
+	)
+	(text "Recenter at 2.4V"
+		(exclude_from_sim no)
+		(at 87.122 36.322 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "38837127-6d19-4264-aa24-962cf3596fc8")
+	)
+	(text "DC blocking cap"
+		(exclude_from_sim no)
+		(at 201.422 45.466 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "449d606e-83f7-40c2-93d8-45d9ca3c55ab")
+	)
+	(text "DC blocking cap"
+		(exclude_from_sim no)
+		(at 158.496 50.546 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6ecb86dc-4c31-4509-ba08-9e80e0dc59b6")
+	)
+	(text "Recenter at 2.4V"
+		(exclude_from_sim no)
+		(at 136.652 21.082 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a3aa9cc7-2b44-4942-b60a-6263dfc9aed2")
+	)
+	(text "Recenter at 2.4V"
+		(exclude_from_sim no)
+		(at 212.344 48.006 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aae163c1-d6f4-4599-9b94-fc8be1eacc12")
+	)
 	(text "TO DO:\n- Get precision components for Tayloe Detector from JLCPCB\n- Get components for filters from JLCPCB"
 		(exclude_from_sim no)
 		(at 108.458 218.948 0)
@@ -5583,6 +5643,16 @@
 			(justify left)
 		)
 		(uuid "f5993bae-fbc1-4d4f-8ed6-fda57b2add86")
+	)
+	(text "DC blocking cap"
+		(exclude_from_sim no)
+		(at 123.444 28.194 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fd477be9-4015-4758-abc2-8b47d9e6fa90")
 	)
 	(junction
 		(at 191.77 58.42)
@@ -9292,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf"
 			(at 146.05 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10449,7 +10519,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf"
 			(at 45.72 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -10552,7 +10622,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/cn/lit/gpn/sn74lvc1g3157"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf"
 			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)
