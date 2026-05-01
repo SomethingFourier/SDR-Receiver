@@ -2895,7 +2895,7 @@
 					)
 				)
 			)
-			(property "Value" "ADE-12+"
+			(property "Value" "ADE-1+"
 				(at 5.842 7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2917,7 +2917,7 @@
 					(justify left top)
 				)
 			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADE-12+.pdf"
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADE-1+.pdf"
 				(at 34.29 -194.92 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2929,7 +2929,7 @@
 					(justify left top)
 				)
 			)
-			(property "Description" "RF Mixer Level 7, SMT Double Balanced Mixer, RF/LO Freq 50 - 1000 MHz"
+			(property "Description" "RF Mixer Level 7, SMT Double Balanced Mixer, RF/LO Freq 500kHz - 500 MHz"
 				(at 37.338 -52.07 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2940,8 +2940,8 @@
 					)
 				)
 			)
-			(property "Height" "2.08"
-				(at 34.29 -394.92 0)
+			(property "LCSC" "C2942210"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2949,79 +2949,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "Mini-Circuits"
-				(at 34.29 -494.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "ADE-12+"
-				(at 34.29 -594.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "139-ADE-12"
-				(at 34.29 -694.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Mini-Circuits/ADE-12%2b?qs=xZ%2FP%252Ba9zWqb%2FGrCkDwq39A%3D%3D"
-				(at 34.29 -794.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Arrow Part Number" ""
-				(at 34.29 -894.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Arrow Price/Stock" ""
-				(at 34.29 -994.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
 				)
 			)
 			(symbol "ADE-12+_0_1"
@@ -3985,10 +3912,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 13.97 -5.08 180)
+				(pin passive line
+					(at 13.97 2.54 180)
 					(length 3.81)
-					(name "GND"
+					(name "IF"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4004,9 +3931,9 @@
 					)
 				)
 				(pin passive line
-					(at 13.97 2.54 180)
+					(at -5.08 10.16 270)
 					(length 3.81)
-					(name "IF"
+					(name "RF"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4021,10 +3948,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 10.16 270)
+				(pin power_in line
+					(at 13.97 -5.08 180)
 					(length 3.81)
-					(name "RF"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5691,12 +5618,6 @@
 		(uuid "301fc2ab-c5c2-4270-b1eb-6e1981af2f10")
 	)
 	(junction
-		(at 125.73 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b129f7a-896b-4cd8-988f-83bc61b414f5")
-	)
-	(junction
 		(at 166.37 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5731,6 +5652,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75d396e4-e652-4b06-8dae-bb0e0d674dda")
+	)
+	(junction
+		(at 125.73 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bd45288-6e85-4fcc-89af-4198054b6bce")
 	)
 	(junction
 		(at 125.73 92.71)
@@ -5885,16 +5812,6 @@
 			(type default)
 		)
 		(uuid "2954e07e-7e64-46dc-a75e-df65e27e86d5")
-	)
-	(wire
-		(pts
-			(xy 134.62 45.72) (xy 134.62 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29578f09-9121-42d7-9469-d0eb1a24131e")
 	)
 	(wire
 		(pts
@@ -6188,6 +6105,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 43.18) (xy 125.73 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89b9c4a0-bdd1-4264-b36e-71875b7c82b9")
+	)
+	(wire
+		(pts
 			(xy 111.76 44.45) (xy 121.92 44.45)
 		)
 		(stroke
@@ -6275,16 +6202,6 @@
 			(type default)
 		)
 		(uuid "a1c75b93-bd43-4dac-b0a0-18c90da63574")
-	)
-	(wire
-		(pts
-			(xy 125.73 41.91) (xy 125.73 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1cee847-7083-44a9-97bf-8c909a81c237")
 	)
 	(wire
 		(pts
@@ -6425,16 +6342,6 @@
 			(type default)
 		)
 		(uuid "d9cacd0e-e104-4ff1-b658-b59e3df8653d")
-	)
-	(wire
-		(pts
-			(xy 134.62 41.91) (xy 125.73 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daa54517-c9f8-4e3c-ac96-b4b2bc176fe8")
 	)
 	(wire
 		(pts
@@ -7035,8 +6942,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x04_Socket"
-			(at 120.142 51.054 90)
+		(property "Value" "External Filter"
+			(at 125.984 50.546 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7402,6 +7309,83 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 125.73 43.18 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1ce8d586-7efe-40b0-9d83-01c0e3897130")
+		(property "Reference" "#PWR0130"
+			(at 125.73 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2.4V_A"
+			(at 130.302 41.148 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 125.73 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8aad2405-339e-4049-a7e1-85d7e6081f64")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -7885,83 +7869,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 134.62 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "41d41e99-3ae8-422d-bdc1-a6dbc55b0ba4")
-		(property "Reference" "#PWR0109"
-			(at 134.62 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 134.62 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 134.62 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "06e439ee-28ce-46f4-9327-d1a1536c4e6f")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
-					(reference "#PWR0109")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 62.23 97.79 90)
 		(unit 1)
@@ -8187,7 +8094,7 @@
 				)
 			)
 		)
-		(property "Value" "ADE-12+"
+		(property "Value" "ADE-1+"
 			(at 183.642 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8209,7 +8116,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADE-12+.pdf"
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADE-1+.pdf"
 			(at 212.09 245.72 0)
 			(hide yes)
 			(show_name no)
@@ -8221,7 +8128,7 @@
 				(justify left top)
 			)
 		)
-		(property "Description" "RF Mixer Level 7, SMT Double Balanced Mixer, RF/LO Freq 50 - 1000 MHz"
+		(property "Description" "RF Mixer Level 7, SMT Double Balanced Mixer, RF/LO Freq 500kHz - 500 MHz"
 			(at 215.138 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -8232,7 +8139,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3176671"
+		(property "LCSC" "C2942210"
 			(at 177.8 50.8 0)
 			(hide yes)
 			(show_name no)
