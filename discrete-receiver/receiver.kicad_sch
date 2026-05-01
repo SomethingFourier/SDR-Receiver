@@ -8436,7 +8436,7 @@
 				)
 			)
 		)
-		(property "Value" "VDDA"
+		(property "Value" "+5V_A"
 			(at 193.04 84.836 0)
 			(show_name no)
 			(do_not_autoplace no)

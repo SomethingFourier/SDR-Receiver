@@ -1927,7 +1927,7 @@
 		)
 		(uuid "78aa609a-8236-4768-8eed-22777939ceb8")
 	)
-	(text "PLAN A"
+	(text "ADC"
 		(exclude_from_sim no)
 		(at 77.216 38.354 0)
 		(effects
