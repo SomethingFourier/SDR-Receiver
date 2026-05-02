@@ -8,15 +8,17 @@ An open-source, hybrid-architecture Software Defined Radio (SDR) receiver built 
 
 <img alt="System Block Diagram" src="SDR Block Diagram.drawio_light.png" />
 
+The receiver is divided into distinct HF and VHF signal paths. Each path utilizes a dedicated antenna equipped with an isolation transformer to prevent ground loops.
 
-The receiver is divided into several highly specialized blocks (affectionately named during the whiteboard phase):
+* HF Path: The isolated signal is routed directly to a multiplexer.
+* VHF Path: The signal passes through a low-noise amplifier (LNA) followed by a band-pass filter. This filter prevents image frequencies from interfering with the desired intermediate frequency (IF). The signal is then mixed down by a double-balanced diode ring mixer and sent to the multiplexer.
 
-* **"His Excellence" (Input Stage):** Antenna input featuring a MABA-007159 transformer/balun.
-* **"The William" (RF Front-End):** Low-Noise Amplifier (LNA) utilizing the PSA4-5043.
-* **"Charles" & "Jaquavis" (Filter Banks):** Selectable filter pathways for signal conditioning before the mixer.
-* **The Tayloe Detector:** An SN74CBT3253DBQR multiplexer acting as a quadrature detector/mixer, driven by an MS5351M clock generator.
-* **"The Squared" (ADC):** A CJC5340 I2S Analog-to-Digital Converter handling the I/Q baseband signals.
-* **"Marple" (The Brain):** The Raspberry Pi RP2350A handling DSP, I2S ingestion, and network communication.
+A multiplexer selects between the HF signal and the down-converted VHF signal, feeding the active path into a shared low-pass filter.
+
+After the low-pass filter, the signal makes its way to the Tayloe detector. The Tayloe detector mixes the signal down to be centered at 0Hz with both an in-phase and a quadrature output. These I and Q outputs then are fed into the analog-to-digital converter. As this is a first revision board, as a backup and insurance measure, we've also connected the I and Q outputs to a 3.5mm jack for use with an external sound card.
+
+The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to SDR software either over a USB C or Ethernet connection. It will receive commands to change the tuning frequency, and relay that information to the clock generator for this SDR, the si5351. It will also interface with a small I2C OLED display and a couple buttons for a local user interface. It will receive the SDR I and Q data from the ADC via I2S, and send that data over either the USB C or Ethernet connection to the computer running the SDR software.
+
 
 ## Hardware Specifications
 
