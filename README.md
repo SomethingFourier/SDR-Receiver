@@ -33,14 +33,12 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 
 ## Filter Designs
 
-Our RF pathways rely on custom-designed selectable filters for optimal signal-to-noise performance.
-
-### Charles (Selectable Filters 28 - 148 MHz)
-*Features 2 external filters (~1.5dB attenuation) and a 110-140 MHz ~6.0 attenuation filter.*
+### Charles (Selectable Filters 110-140 MHz)
+*This filter simulation graph shows a passband attenuation much greater than what will actually be observed*
 <img width="2113" height="1305" alt="Charles Filter Design" src="https://github.com/user-attachments/assets/c4828647-cf6e-4e16-ace0-0cf2b7938558" />
 
 ### Jaquavis (30 MHz LPF/HPF)
-*Provides ~7dB of attenuation paired with a 10W attenuator loop.*
+*This filter simulation graph shows a passband attenuation much greater than what will actually be observed*
 <img width="1793" height="1007" alt="Jaquavis Filter Design" src="https://github.com/user-attachments/assets/c8b24a2c-a5b2-4d73-b45e-37aa08584d01" />
 
 ---
