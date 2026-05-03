@@ -23,7 +23,7 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 ## Hardware Specifications
 
 * **Microcontroller:** Raspberry Pi RP2350A (with W25Q128JVS Flash)
-* **Detector Type:** Quadrature Sampling Detector (Tayloe)
+* **Mixer Architecture** Dual-Conversion Zero-IF (Double-Balanced Mixer first stage, Tayloe QSD second stage)
 * **Clocking:** MS5351M (driven by a 24.576 MHz oscillator)
 * **Network / Comms:** LAN8720A Ethernet PHY (10/100)
 * **Power Supply:** USB-C (5V) or Power over Ethernet (PoE via Ag9905LP module delivering a clean 5.65V stepped down by LDOs)
