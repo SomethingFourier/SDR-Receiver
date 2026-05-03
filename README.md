@@ -25,8 +25,8 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 * **Microcontroller:** Raspberry Pi RP2350A (with W25Q128JVS Flash)
 * **Mixer Architecture** Dual-Conversion Zero-IF (Double-Balanced Mixer first stage, Tayloe QSD second stage)
 * **Clocking:** MS5351M (driven by a 24.576 MHz oscillator)
-* **Network / Comms:** LAN8720A Ethernet PHY (10/100)
-* **Power Supply:** USB-C (5V) or Power over Ethernet (PoE via Ag9905LP module delivering a clean 5.65V stepped down by LDOs)
+* **Network / Comms:** LAN8720A Ethernet PHY (10/100) using RP2350 Programmable IO
+* **Power Supply:** USB-C (5V), DC Barrel Jack Input, or Power over Ethernet (PoE via Ag9905LP module delivering a clean 5.65V stepped down by LDOs)
 * **Baseband Amplification:** OPA1612 op-amps for ultra-low noise I/Q amplification
 
 ---
@@ -45,17 +45,17 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 
 ## RP2350 GPIO Mapping
 
-For firmware development, refer to the following PIO and hardware pin mapping based on our schematic routing:
-
 | GPIO Pin | Function | Subsystem |
 | :--- | :--- | :--- |
-| **0 - 1** | `I2C SDA / SCL` | Control |
-| **10 - 13**| `ETH TX_EN, TXD0, TXD1, CRS_DV`| Ethernet (LAN8720A) |
-| **14 - 15**| `ETH RXD0, RXD1` | Ethernet (LAN8720A) |
-| **18 - 19**| `I2C SDA / SCL` (Pico alternate) | Control / MS5351M |
-| **26** | `I2S MCLK` | ADC ("The Squared") |
-| **27** | `I2S WS` (Word Select) | ADC ("The Squared") |
-| **28** | `I2S DATA` | ADC ("The Squared") |
+| **0 - 1** | `I2C SDA / I2C SCL` | I2C |
+| **2 - 3** | `Select button / Enter button` | UI Buttons |
+| **8** | `VHF BPFilter Mux select` | General |
+| **9** | `Mux U18 Select` | General |
+| **10 - 12** | `Ethernet TX Enable, TXD0, TXD1` | Eth TX (Programmable IO) |
+| **13 - 15** | `Ethernet Carrier Sense/Data Valid, RXD0, RXD1` | Eth RX (Programmable IO) |
+| **16 - 18** | `LAN8720A Management Data I/O, CLK, Reset` | Eth Manage (Programmable IO) |
+| **19 - 21** | `I2S CLK, Word Select, Data` | I2S (Programmable IO) |
+| **23** | `Ethernet 50 MHz Clk output` | Programmable IO |
 | **56 - 60**| `QSPI` (SCLK, SDO, SD1-3, SS) | Flash Memory |
 
 *(Note: Pin mapping is subject to change as the board layout is finalized. Refer to `pico.kicad_sch` for the raw schematic).*
