@@ -9088,30 +9088,6 @@
 			)
 		)
 	)
-	(global_label "ADC_M0"
-		(shape input)
-		(at 246.38 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "431c3919-f30e-4098-a9a8-40aae78cc797")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.6223 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "QSPI_SCLK"
 		(shape input)
 		(at 49.53 168.91 180)
@@ -9481,30 +9457,6 @@
 			)
 		)
 	)
-	(global_label "ADC_M1"
-		(shape input)
-		(at 246.38 92.71 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e03f6cca-f5dc-4bd1-8515-0f74dffe1a02")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 256.6223 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "XIN"
 		(shape passive)
 		(at 142.24 167.64 0)
@@ -9751,6 +9703,17 @@
 		)
 		(uuid "a6e2ae60-43ba-49c5-9662-174aebccfc9a")
 	)
+	(hierarchical_label "ADC_M0"
+		(shape output)
+		(at 246.38 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9be0af4-09af-4ff4-be35-07a0d60b56a8")
+	)
 	(hierarchical_label "I2S_SCLK"
 		(shape input)
 		(at 246.38 123.19 0)
@@ -9761,6 +9724,17 @@
 			(justify left)
 		)
 		(uuid "c316eb60-b22a-4a9d-9267-25243f8b8020")
+	)
+	(hierarchical_label "ADC_M1"
+		(shape output)
+		(at 246.38 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c98ec43c-8bd9-46a2-9e23-5ea46060f77d")
 	)
 	(hierarchical_label "ETH_TXD1"
 		(shape output)

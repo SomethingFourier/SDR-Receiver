@@ -3271,6 +3271,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 104.14) (xy 124.46 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c1767f8-814d-4087-8c5f-64b368284a6e")
+	)
+	(wire
+		(pts
 			(xy 120.65 62.23) (xy 133.35 62.23)
 		)
 		(stroke
@@ -3298,6 +3308,16 @@
 			(type default)
 		)
 		(uuid "1113a55f-7d4b-4168-a0a1-ddcaa4844176")
+	)
+	(wire
+		(pts
+			(xy 124.46 140.97) (xy 134.62 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12c5906e-26c9-4325-a1b5-fe14bc03d12d")
 	)
 	(wire
 		(pts
@@ -3331,7 +3351,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 137.16) (xy 134.62 137.16)
+			(xy 121.92 143.51) (xy 121.92 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27053c77-552a-4136-a17b-6b7b12f45bff")
+	)
+	(wire
+		(pts
+			(xy 127 137.16) (xy 134.62 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3351,7 +3381,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 105.41) (xy 123.19 105.41)
+			(xy 120.65 101.6) (xy 127 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3371,6 +3401,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 104.14) (xy 124.46 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aadc971-8fa9-46c8-a638-c374bf757575")
+	)
+	(wire
+		(pts
 			(xy 55.88 39.37) (xy 59.69 39.37)
 		)
 		(stroke
@@ -3378,6 +3418,26 @@
 			(type default)
 		)
 		(uuid "3b1116c6-75bd-43ab-b5c6-84c2a6f60c8d")
+	)
+	(wire
+		(pts
+			(xy 121.92 106.68) (xy 120.65 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bbe5473-be5a-4f0c-9443-dc3e419274a8")
+	)
+	(wire
+		(pts
+			(xy 134.62 143.51) (xy 121.92 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca77111-adf4-43a7-bf69-be44fd853de1")
 	)
 	(wire
 		(pts
@@ -3461,7 +3521,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 105.41) (xy 123.19 137.16)
+			(xy 127 101.6) (xy 127 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3501,7 +3561,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 100.33) (xy 128.27 100.33)
+			(xy 120.65 96.52) (xy 132.08 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3591,7 +3651,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 134.62) (xy 134.62 134.62)
+			(xy 129.54 134.62) (xy 134.62 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3651,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 132.08) (xy 134.62 132.08)
+			(xy 132.08 132.08) (xy 134.62 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3711,7 +3771,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 102.87) (xy 125.73 134.62)
+			(xy 129.54 99.06) (xy 129.54 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3761,7 +3821,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 100.33) (xy 128.27 132.08)
+			(xy 132.08 96.52) (xy 132.08 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3891,7 +3951,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 102.87) (xy 125.73 102.87)
+			(xy 120.65 99.06) (xy 129.54 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6711,7 +6771,7 @@
 			)
 		)
 		(pin "I2S_SCLK" input
-			(at 120.65 100.33 0)
+			(at 120.65 96.52 0)
 			(uuid "17aa7a5d-88a3-42cf-8fa2-510153cd4572")
 			(effects
 				(font
@@ -6721,7 +6781,7 @@
 			)
 		)
 		(pin "I2S_SD" input
-			(at 120.65 102.87 0)
+			(at 120.65 99.06 0)
 			(uuid "d903b054-a0c8-43e3-b57f-e9e27cc783a0")
 			(effects
 				(font
@@ -6731,7 +6791,7 @@
 			)
 		)
 		(pin "I2S_WS" input
-			(at 120.65 105.41 0)
+			(at 120.65 101.6 0)
 			(uuid "298a36de-7cdd-4f3f-9043-b84468f18262")
 			(effects
 				(font
@@ -6743,6 +6803,26 @@
 		(pin "50MHz Clk Out" input
 			(at 120.65 49.53 0)
 			(uuid "2c701db9-c4b2-43c8-8b19-8ad4b80f3cf3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADC_M0" output
+			(at 120.65 104.14 0)
+			(uuid "02719e10-cba1-4b83-9123-b563932cc60e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADC_M1" output
+			(at 120.65 106.68 0)
+			(uuid "ad681829-c22c-4dbd-a710-a62797ccad32")
 			(effects
 				(font
 					(size 1.27 1.27)
