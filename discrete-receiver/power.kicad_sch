@@ -6349,10 +6349,22 @@
 		(uuid "90c9650d-161b-4e15-946f-8d37c2566b59")
 	)
 	(junction
+		(at 69.85 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "90dd9c6d-38b6-427c-9a09-55865ddc3e7c")
+	)
+	(junction
 		(at 25.4 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94c520a8-185d-4a51-bc50-f2a446565c22")
+	)
+	(junction
+		(at 77.47 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95d7d48a-4024-44e2-a19e-3383c296c67b")
 	)
 	(junction
 		(at 73.66 35.56)
@@ -7928,6 +7940,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 138.43) (xy 69.85 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af5eaf9c-6c2a-403b-bfa9-1d16c3f69ec2")
+	)
+	(wire
+		(pts
 			(xy 147.32 45.72) (xy 153.67 45.72)
 		)
 		(stroke
@@ -8058,6 +8080,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 146.05) (xy 77.47 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c644a584-5486-4f9c-945d-d37dd8cae0d7")
+	)
+	(wire
+		(pts
 			(xy 147.32 45.72) (xy 147.32 57.15)
 		)
 		(stroke
@@ -8175,6 +8207,16 @@
 			(type default)
 		)
 		(uuid "db48a6c2-11e9-401d-94b4-bdb0dfacafca")
+	)
+	(wire
+		(pts
+			(xy 69.85 144.78) (xy 69.85 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbf42ae3-e5b4-4d9f-b75e-77492450951e")
 	)
 	(wire
 		(pts
@@ -22847,6 +22889,99 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
 					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 69.85 142.24 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c2abb970-91e4-4859-bd3e-0fd685e61dfc")
+		(property "Reference" "C116"
+			(at 69.85 140.716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF 25V"
+			(at 69.596 144.018 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C970685"
+			(at 69.85 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c2c85601-7153-40c4-9f2c-6a36267b777a")
+		)
+		(pin "2"
+			(uuid "6f59f04e-553b-408b-81a4-04bbfad01d3e")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/d8c494fb-8bd9-4682-9cb3-a775cb7c5b47"
+					(reference "C116")
 					(unit 1)
 				)
 			)
