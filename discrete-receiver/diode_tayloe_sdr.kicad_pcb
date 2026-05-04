@@ -2024,7 +2024,7 @@
 	(footprint "PCM_JLCPCB:R_0402"
 		(layer "F.Cu")
 		(uuid "0669ccb6-617f-46d9-94d8-7245bc51cdd4")
-		(at 227.195 111.075)
+		(at 226.25 141.5)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R12"
@@ -3858,7 +3858,7 @@
 			(at -0.13 -1.91 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7f6b0238-5cc7-495b-86a2-b8085f673884")
+			(uuid "bf98fea6-bc68-4f8a-aefa-7f60f26050be")
 			(effects
 				(font
 					(size 1 1)
@@ -3869,7 +3869,7 @@
 		(property "Value" "1N4004W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
-			(uuid "5f2b55d6-f887-482a-b282-3063ad315392")
+			(uuid "a2b974e5-88fa-4e23-af47-90ee384163e9")
 			(effects
 				(font
 					(size 1 1)
@@ -3882,7 +3882,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "93528a25-533c-4532-ace6-22535caac738")
+			(uuid "64e893bc-f276-43a2-a5a9-6c3f58737b4f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3895,7 +3895,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "287817e5-843a-4479-b7e7-4bc591906481")
+			(uuid "3c12ceaa-f17c-4d41-920d-6daa2173fdc6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +5533,7 @@
 	(footprint "PCM_JLCPCB:D_0603"
 		(layer "F.Cu")
 		(uuid "10a7905d-7324-4689-a252-b3dd2c2fcffb")
-		(at 222.135 118.525)
+		(at 96 32.5)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D6"
@@ -22480,7 +22480,7 @@
 	(footprint "PCM_JLCPCB:D_0603"
 		(layer "F.Cu")
 		(uuid "3e5da8d0-6b33-4e33-9d4c-585a800263af")
-		(at 222.135 115.915)
+		(at 92.79 32.5)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D5"
@@ -28134,7 +28134,7 @@
 	(footprint "PCM_JLCPCB:D_0603"
 		(layer "F.Cu")
 		(uuid "505f755a-7ffd-4457-b65f-df5cf629e4a5")
-		(at 222.135 121.135)
+		(at 99.29 32.5)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D7"
@@ -29374,7 +29374,7 @@
 		(property "Reference" "JP14"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "335e05c7-ba68-4665-a7f8-9a9783471e0c")
+			(uuid "a53881b0-b19c-4c88-b99d-5fb5df8bc473")
 			(effects
 				(font
 					(size 1 1)
@@ -29385,7 +29385,7 @@
 		(property "Value" "SolderJumper_2_Bridged"
 			(at 0 1.9 0)
 			(layer "F.Fab")
-			(uuid "5eb508bd-2185-4422-8698-de8fe621b287")
+			(uuid "fd179e70-f17f-4e66-982e-e50f16c80f7f")
 			(effects
 				(font
 					(size 1 1)
@@ -29398,7 +29398,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "24e3a35f-4e39-44b2-b6a8-ad5099a1ba89")
+			(uuid "27d2a2a9-8821-42b8-8516-2496e1118d54")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29411,7 +29411,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "67025385-2c56-4121-bb98-69191543bdb4")
+			(uuid "66fd70cb-a124-4918-9fc4-6336d4ce52f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32781,7 +32781,7 @@
 	(footprint "EasyEDA_Lib:BNC-TH_DOSIN-801-0051"
 		(layer "F.Cu")
 		(uuid "5da300bd-f84b-48df-864f-a441beea1899")
-		(at 101.014967 135.468217 -90)
+		(at 87.491009 134.457368 -90)
 		(property "Reference" "RF2"
 			(at 8.531783 -6.2005 90)
 			(layer "F.SilkS")
@@ -51423,7 +51423,7 @@
 		(property "Reference" "JP13"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "b68970d4-0451-4b07-88ac-83deb1ecdbab")
+			(uuid "14e30f71-9b48-4ec4-bf10-2157db9e6d8c")
 			(effects
 				(font
 					(size 1 1)
@@ -51434,7 +51434,7 @@
 		(property "Value" "SolderJumper_2_Open"
 			(at 0 1.9 0)
 			(layer "F.Fab")
-			(uuid "68a11402-3d97-41af-8c98-7224b09684bc")
+			(uuid "99c4e3f0-8ff6-479d-802d-23c9bc8c9137")
 			(effects
 				(font
 					(size 1 1)
@@ -51447,7 +51447,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4d67c9cb-52f7-470e-9e50-b20270b6f475")
+			(uuid "002e923f-1bed-49d8-856e-45f490bbf1ce")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51460,7 +51460,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9cdc50de-fc5a-4358-be53-856f3ceedf91")
+			(uuid "4a3d4c74-8604-4f28-9f4b-68a0b351a440")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51983,7 +51983,7 @@
 	(footprint "EasyEDA_Lib:USB-C-SMD_TYPE-C16PIN_C668624"
 		(layer "F.Cu")
 		(uuid "8f1ca0d5-2792-4912-a57b-3386a63650c5")
-		(at 96.32 35.524 180)
+		(at 112.5 35.524 180)
 		(property "Reference" "USB1"
 			(at 0 -3.9125 0)
 			(layer "F.SilkS")
@@ -63193,7 +63193,7 @@
 		(property "Reference" "JP11"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "cfa9d32e-3574-4e81-b2c4-3ff32975cf04")
+			(uuid "841faabc-124e-472c-a834-0c49e38cffa4")
 			(effects
 				(font
 					(size 1 1)
@@ -63204,7 +63204,7 @@
 		(property "Value" "SolderJumper_2_Open"
 			(at 0 1.9 0)
 			(layer "F.Fab")
-			(uuid "82f54800-bfe8-40af-80f1-687cdade3918")
+			(uuid "fdfeb97f-f65e-470b-b96f-227425390d9c")
 			(effects
 				(font
 					(size 1 1)
@@ -63217,7 +63217,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0e177ecf-51ba-4dc1-b318-21a2628c2318")
+			(uuid "0c3aa4df-5633-4cb0-96e7-78d829b416b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63230,7 +63230,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ba878759-2535-443e-8fdc-b70860c074f7")
+			(uuid "aae18bf4-dadc-4fd4-9936-4b912f09e5e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65362,7 +65362,7 @@
 	(footprint "PCM_JLCPCB:R_0402"
 		(layer "F.Cu")
 		(uuid "b4543dd6-6ee9-480f-aa8d-e58f8caf6acb")
-		(at 227.195 109.225)
+		(at 226.5 142.75)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R11"
@@ -66092,7 +66092,7 @@
 	(footprint "PCM_JLCPCB:D_0805"
 		(layer "F.Cu")
 		(uuid "b66805e0-0f0a-4e0d-93ea-eae7a1493d26")
-		(at 243.355 114.685)
+		(at 102.5 32.75)
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D13"
@@ -69727,7 +69727,7 @@
 			(at -0.13 -1.91 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "e728e323-41f0-4191-9511-55b4f25dee0e")
+			(uuid "33ae5ee9-99e5-4298-8d36-096d81e760f3")
 			(effects
 				(font
 					(size 1 1)
@@ -69738,7 +69738,7 @@
 		(property "Value" "1N4004W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
-			(uuid "1aa955f8-932f-4f31-9b06-b77cbab371fb")
+			(uuid "05bbdd03-ef9d-4759-b82d-bd0d6c85dceb")
 			(effects
 				(font
 					(size 1 1)
@@ -69751,7 +69751,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8e6ab440-248d-413a-9a02-f50847e5d5b9")
+			(uuid "926454cd-75df-490b-a7a0-0ca102628458")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -69764,7 +69764,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c3c3e27b-98a7-4f96-af68-96377bd47efc")
+			(uuid "2b0b23b3-8d0f-4336-a7b4-c63867ad37c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77549,7 +77549,7 @@
 			(at -0.13 -1.91 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "7858f20a-3781-4ad8-bc5f-d077e5728a8e")
+			(uuid "c9df42a7-46f6-4643-9076-743e02486b35")
 			(effects
 				(font
 					(size 1 1)
@@ -77560,7 +77560,7 @@
 		(property "Value" "1N4004W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
-			(uuid "12541cc6-e239-4f38-8a8f-93b47161cf45")
+			(uuid "aa556fe1-5727-47df-9c65-4fd5fbb643e1")
 			(effects
 				(font
 					(size 1 1)
@@ -77573,7 +77573,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "255160f2-20d0-44ee-85a1-9e83815bb525")
+			(uuid "b5ea8b19-686a-4feb-b166-b75f009fb50e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -77586,7 +77586,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0700316b-14fb-47ba-a273-17cd2328d985")
+			(uuid "218682d1-6881-46bf-953c-610dfa49d71b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78725,7 +78725,7 @@
 		(property "Reference" "JP12"
 			(at 0 -1.8 0)
 			(layer "F.SilkS")
-			(uuid "6fc1e172-b8bf-4731-88e9-f6a9dc3187e1")
+			(uuid "bbcb3b68-7813-481d-aa28-f647c6f22eeb")
 			(effects
 				(font
 					(size 1 1)
@@ -78736,7 +78736,7 @@
 		(property "Value" "SolderJumper_2_Bridged"
 			(at 0 1.9 0)
 			(layer "F.Fab")
-			(uuid "d6b2b2b1-6e63-4e35-b55a-34b7fd276451")
+			(uuid "385d3b8f-6567-494a-ba5e-2be8e967f97a")
 			(effects
 				(font
 					(size 1 1)
@@ -78749,7 +78749,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "17f13a84-5df6-4f41-bdd2-7adff03a9d0a")
+			(uuid "57a9a670-c05b-45a2-97a9-ea06277434b6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -78762,7 +78762,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a89100e7-c7ad-4dad-bb19-8fd94d21b9cc")
+			(uuid "c43fb2b9-5fe3-4452-8fd6-407354c67ea8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83622,7 +83622,7 @@
 	(footprint "EasyEDA_Lib:BNC-TH_DOSIN-801-0051"
 		(layer "F.Cu")
 		(uuid "e3e7be4e-7f54-4843-a6de-9aacab992234")
-		(at 125.514967 135.468217 -90)
+		(at 119.432568 134.468217 -90)
 		(property "Reference" "RF1"
 			(at 8.531783 -6.2005 90)
 			(layer "F.SilkS")
@@ -90604,7 +90604,7 @@
 			(at -0.13 -1.91 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "214c337c-1ac8-4104-8430-290c59256a2b")
+			(uuid "e5e93cdd-0a01-4869-8ede-77a2a61c90e2")
 			(effects
 				(font
 					(size 1 1)
@@ -90615,7 +90615,7 @@
 		(property "Value" "1N4004W"
 			(at 0 2.1 0)
 			(layer "F.Fab")
-			(uuid "e950e153-b6f7-4286-83bd-910aa2ce1733")
+			(uuid "7a1e3615-b9b2-4eb5-9535-5d89d38f31d7")
 			(effects
 				(font
 					(size 1 1)
@@ -90628,7 +90628,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3dedb084-0832-4d0a-9889-0fb8e678844c")
+			(uuid "ed60b0f4-69b7-4950-a99c-3397af226dcf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90641,7 +90641,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a57120e-6816-447a-9c0a-00728bd2beef")
+			(uuid "7de1f590-f295-4fb6-b866-efe91440c879")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -94699,7 +94699,7 @@
 	(footprint "PCM_JLCPCB:D_0603"
 		(layer "F.Cu")
 		(uuid "fe9fadff-fb38-442f-b54e-c35c83c91cff")
-		(at 222.135 113.305)
+		(at 89.5 32.5)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
