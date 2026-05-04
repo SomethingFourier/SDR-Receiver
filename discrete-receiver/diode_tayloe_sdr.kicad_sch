@@ -7008,6 +7008,26 @@
 				(justify left)
 			)
 		)
+		(pin "M0" input
+			(at 134.62 140.97 180)
+			(uuid "de8f5752-6973-4d52-8bd4-476be7878f50")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "M1" input
+			(at 134.62 143.51 180)
+			(uuid "6449f6fb-71bd-4eed-98cb-54b65c26ccab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
