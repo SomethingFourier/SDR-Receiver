@@ -341,7 +341,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -356,7 +356,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -366,8 +366,8 @@
 					)
 				)
 			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -398,7 +398,7 @@
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -420,10 +420,34 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "+5V_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -434,9 +458,9 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "+5V_1_1"
 				(pin power_in line
-					(at 0 0 270)
+					(at 0 0 90)
 					(length 0)
 					(name ""
 						(effects
@@ -470,10 +494,10 @@
 		(uuid "2af9eecb-36c6-4965-a7a7-ea0e0db6e54a")
 	)
 	(junction
-		(at 152.4 99.06)
+		(at 160.02 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3db82cb2-b1af-4ba3-a728-c69836b5dab9")
+		(uuid "587fb3f1-364f-4089-ba27-1fdb03d373b0")
 	)
 	(junction
 		(at 160.02 93.98)
@@ -509,7 +533,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 99.06) (xy 152.4 99.06)
+			(xy 144.78 99.06) (xy 160.02 99.06)
 		)
 		(stroke
 			(width 0)
@@ -519,13 +543,23 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 99.06) (xy 160.02 99.06)
+			(xy 176.53 97.79) (xy 176.53 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8bf2053b-c948-4b24-8db2-cc39ba414c1e")
+		(uuid "6d458245-0ca1-47f3-9572-8ba2c13a8333")
+	)
+	(wire
+		(pts
+			(xy 176.53 99.06) (xy 160.02 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7beb7829-782f-4b6e-b810-b39aac89d4eb")
 	)
 	(wire
 		(pts
@@ -568,6 +602,83 @@
 			(justify right)
 		)
 		(uuid "be31a5bb-6842-4a09-94c9-9d2436be8082")
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 176.53 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "493be50a-1dfb-4514-b8f7-767c14f3def7")
+		(property "Reference" "#PWR0134"
+			(at 176.53 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2.4V_A"
+			(at 181.102 95.758 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 176.53 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abe1d915-3b2a-4af4-99ad-afb67a1b9076")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/8647ec6f-e8f0-4852-b9db-d60b6a18fbc7"
+					(reference "#PWR0134")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -746,83 +857,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/8647ec6f-e8f0-4852-b9db-d60b6a18fbc7"
 					(reference "L11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 152.4 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e9228825-f125-4b94-950d-579552c8c873")
-		(property "Reference" "#PWR089"
-			(at 152.4 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 152.4 102.616 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4da4ff5e-d5a3-4195-8375-4030032acc87")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/8647ec6f-e8f0-4852-b9db-d60b6a18fbc7"
-					(reference "#PWR089")
 					(unit 1)
 				)
 			)
