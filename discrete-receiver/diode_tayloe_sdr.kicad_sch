@@ -4142,7 +4142,7 @@
 			(uuid "0b058a46-7cb9-4104-9e49-77482a943320")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "X1")
 					(unit 1)
@@ -4220,7 +4220,7 @@
 			(uuid "2b14531a-52fc-4443-8f70-35add7b5ee72")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR092")
 					(unit 1)
@@ -4297,7 +4297,7 @@
 			(uuid "58936379-1ae4-4497-a32f-f74345fd3368")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR038")
 					(unit 1)
@@ -4375,7 +4375,7 @@
 			(uuid "44fc9cd8-2046-42f1-86de-2b65c6a0f7b2")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR081")
 					(unit 1)
@@ -4452,7 +4452,7 @@
 			(uuid "108a9ba7-511f-4ade-a088-b74a3d4e54cb")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR090")
 					(unit 1)
@@ -4667,7 +4667,7 @@
 			(uuid "407f7734-6b46-46e7-9366-9012a63428c1")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "C48")
 					(unit 1)
@@ -4745,7 +4745,7 @@
 			(uuid "e614347d-2550-4181-b64c-f44b563cf354")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR082")
 					(unit 1)
@@ -4822,7 +4822,7 @@
 			(uuid "7c738204-e7ac-42fa-acfd-4f9cac9c2d60")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR091")
 					(unit 1)
@@ -5066,7 +5066,7 @@
 			(uuid "f2de24f1-14fd-404c-9194-518b8f094658")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R34")
 					(unit 1)
@@ -5233,7 +5233,7 @@
 			(uuid "52010ff8-189b-4147-8a73-41ff6844bed2")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "USB1")
 					(unit 1)
@@ -5312,7 +5312,7 @@
 			(uuid "7bf71d03-ce6e-4f52-9cdd-c7ee3efed078")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR080")
 					(unit 1)
@@ -5400,7 +5400,7 @@
 			(uuid "2a67c290-3f25-4a66-8f9f-8ead35ed9ec3")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "J5")
 					(unit 1)
@@ -5480,7 +5480,7 @@
 			(uuid "0aa71757-eec9-4358-8b78-3918d36df31a")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "JP6")
 					(unit 1)
@@ -5724,7 +5724,7 @@
 			(uuid "d2de946e-fc72-402d-887e-22a442dde1f0")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R4")
 					(unit 1)
@@ -5968,7 +5968,7 @@
 			(uuid "1d3b8630-9d49-47d2-910e-4b8f8efd5019")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R1")
 					(unit 1)
@@ -6045,7 +6045,7 @@
 			(uuid "d5f67b81-f0e9-424d-9f76-3140e9a84e5a")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR044")
 					(unit 1)
@@ -6128,7 +6128,7 @@
 			(uuid "929a1551-7e3a-43a3-beae-139d6a57ec9e")
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "J4")
 					(unit 1)
@@ -6275,7 +6275,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "5")
 				)
@@ -6381,7 +6381,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "6")
 				)
@@ -6597,7 +6597,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "4")
 				)
@@ -6693,7 +6693,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "2")
 				)
@@ -6749,7 +6749,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "7")
 				)
@@ -6855,7 +6855,7 @@
 			)
 		)
 		(instances
-			(project "diode_tayloe_sdr"
+			(project "tayloe_detector"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "3")
 				)
