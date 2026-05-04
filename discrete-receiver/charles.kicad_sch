@@ -3743,7 +3743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_APV_AHW2520"
+		(property "Footprint" "sdr_project:L_APV_AHW2520"
 			(at 157.48 101.6 0)
 			(hide yes)
 			(show_name no)
