@@ -7128,7 +7128,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical"
+		(property "Footprint" "Frohne Connectors:Conn_Coaxial_Frohne"
 			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -13317,7 +13317,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical"
+		(property "Footprint" "Frohne Connectors:Conn_Coaxial_Frohne"
 			(at 17.78 39.37 0)
 			(hide yes)
 			(show_name no)
