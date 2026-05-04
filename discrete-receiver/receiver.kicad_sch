@@ -5500,19 +5500,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "DC blocking cap"
+	(text "RF signal is centered at 2.4V"
 		(exclude_from_sim no)
-		(at 164.084 37.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "341eeaa6-f4e4-4cdf-8f99-ed970e7ae187")
-	)
-	(text "Recenter at 2.4V"
-		(exclude_from_sim no)
-		(at 87.122 36.322 0)
+		(at 60.96 60.706 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5522,43 +5512,13 @@
 	)
 	(text "DC blocking cap"
 		(exclude_from_sim no)
-		(at 201.422 45.466 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "449d606e-83f7-40c2-93d8-45d9ca3c55ab")
-	)
-	(text "DC blocking cap"
-		(exclude_from_sim no)
-		(at 158.496 50.546 0)
+		(at 168.656 50.546 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "6ecb86dc-4c31-4509-ba08-9e80e0dc59b6")
-	)
-	(text "Recenter at 2.4V"
-		(exclude_from_sim no)
-		(at 136.652 21.082 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "a3aa9cc7-2b44-4942-b60a-6263dfc9aed2")
-	)
-	(text "Recenter at 2.4V"
-		(exclude_from_sim no)
-		(at 212.344 48.006 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "aae163c1-d6f4-4599-9b94-fc8be1eacc12")
 	)
 	(text "TO DO:\n- Get precision components for Tayloe Detector from JLCPCB\n- Get components for filters from JLCPCB"
 		(exclude_from_sim no)
@@ -5571,18 +5531,8 @@
 		)
 		(uuid "f5993bae-fbc1-4d4f-8ed6-fda57b2add86")
 	)
-	(text "DC blocking cap"
-		(exclude_from_sim no)
-		(at 123.444 28.194 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "fd477be9-4015-4758-abc2-8b47d9e6fa90")
-	)
 	(junction
-		(at 191.77 58.42)
+		(at 212.09 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02b8283e-0160-4fd2-b90b-5e963e662bf0")
@@ -5678,7 +5628,7 @@
 		(uuid "ddd3640d-9ad6-4b90-bcd6-ba5d3c8c363d")
 	)
 	(junction
-		(at 191.77 55.88)
+		(at 212.09 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f44fcd6c-ccc0-40a7-9619-79512e4d7697")
@@ -5835,6 +5785,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 39.37) (xy 193.04 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d2497d1-634a-4bd0-bf1e-d374fb675d5c")
+	)
+	(wire
+		(pts
 			(xy 182.88 101.6) (xy 179.07 101.6)
 		)
 		(stroke
@@ -5845,7 +5805,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 60.96) (xy 199.39 58.42)
+			(xy 219.71 60.96) (xy 219.71 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5865,7 +5825,17 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 58.42) (xy 191.77 60.96)
+			(xy 172.72 48.26) (xy 175.26 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35383ff5-f1c4-4b4d-8da4-ddb227f133e6")
+	)
+	(wire
+		(pts
+			(xy 212.09 58.42) (xy 212.09 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6195,7 +6165,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 55.88) (xy 191.77 58.42)
+			(xy 212.09 55.88) (xy 212.09 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6245,7 +6215,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 60.96) (xy 199.39 60.96)
+			(xy 212.09 60.96) (xy 219.71 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6262,16 +6232,6 @@
 			(type default)
 		)
 		(uuid "a75dd877-4ab2-4fbe-8e90-64baa7e66ff7")
-	)
-	(wire
-		(pts
-			(xy 152.4 39.37) (xy 172.72 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab349512-02da-45c4-b8eb-e1b20841470b")
 	)
 	(wire
 		(pts
@@ -6345,7 +6305,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 39.37) (xy 172.72 40.64)
+			(xy 193.04 39.37) (xy 193.04 40.64)
 		)
 		(stroke
 			(width 0)
@@ -6395,7 +6355,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 53.34) (xy 191.77 55.88)
+			(xy 212.09 53.34) (xy 212.09 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6623,7 +6583,7 @@
 	)
 	(global_label "VHF IF"
 		(shape input)
-		(at 191.77 48.26 0)
+		(at 212.09 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6633,7 +6593,7 @@
 		)
 		(uuid "e539a6d1-0a98-4998-a429-e4bc778cf871")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.9239 48.26 0)
+			(at 221.2439 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6691,7 +6651,7 @@
 	)
 	(hierarchical_label "LO_VFO"
 		(shape input)
-		(at 162.56 48.26 180)
+		(at 172.72 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8094,8 +8054,221 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Capacitors:0402,100nF")
+		(at 179.07 48.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "532c3809-9e73-49e1-b398-575a6c3217ef")
+		(property "Reference" "C97"
+			(at 177.546 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 180.594 48.006 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:C_0402"
+			(at 179.07 50.038 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "16V 100nF X7R ±10% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "20208285"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "CL05B104KO5NNNC"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rated" "16V"
+			(at 179.07 46.736 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Tolerance" "±10%"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Capacitance" "100nF"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Temperature Coefficient" "X7R"
+			(at 179.07 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dd047674-4e3d-42dd-a127-765df6450267")
+		)
+		(pin "1"
+			(uuid "f14b2f15-136e-4ea0-b952-b72ba30fc9ce")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "C97")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "sdr_project:ADE-12+")
-		(at 177.8 50.8 0)
+		(at 198.12 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8105,7 +8278,7 @@
 		(dnp no)
 		(uuid "5a348efc-5a08-4a44-a291-52674f33e564")
 		(property "Reference" "U5"
-			(at 167.64 43.434 0)
+			(at 187.96 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8115,7 +8288,7 @@
 			)
 		)
 		(property "Value" "ADE-1+"
-			(at 183.642 43.434 0)
+			(at 203.962 43.434 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8125,7 +8298,7 @@
 			)
 		)
 		(property "Footprint" "sdr_project:ADE12"
-			(at 212.09 145.72 0)
+			(at 232.41 145.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8137,7 +8310,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADE-1+.pdf"
-			(at 212.09 245.72 0)
+			(at 232.41 245.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8149,7 +8322,7 @@
 			)
 		)
 		(property "Description" "RF Mixer Level 7, SMT Double Balanced Mixer, RF/LO Freq 500kHz - 500 MHz"
-			(at 215.138 102.87 0)
+			(at 235.458 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8160,7 +8333,7 @@
 			)
 		)
 		(property "LCSC" "C2942210"
-			(at 177.8 50.8 0)
+			(at 198.12 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8443,7 +8616,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 199.39 58.42 0)
+		(at 219.71 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8453,7 +8626,7 @@
 		(dnp no)
 		(uuid "706d343a-d4c2-4d04-8df7-1253b8b6a704")
 		(property "Reference" "#PWR0132"
-			(at 199.39 62.23 0)
+			(at 219.71 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8464,7 +8637,7 @@
 			)
 		)
 		(property "Value" "+2.4V_A"
-			(at 203.962 56.388 0)
+			(at 224.282 56.388 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8474,7 +8647,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 58.42 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8485,7 +8658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 58.42 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8496,7 +8669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 199.39 58.42 0)
+			(at 219.71 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
