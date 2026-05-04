@@ -2308,6 +2308,315 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "PCM_JLCPCB-Diodes:General,1N4004W"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 2.032 0.834 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1N4004W"
+				(at 2.032 -1.2122 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.8 0.8)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251425_hongjiacheng-1N4004W_C18199087.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55°C~+150°C 1A 1V@1A 2uA@400V 30A 400V Independent SOD-123FL Diodes - General Purpose ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C18199087"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Stock" "162028"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Price" "0.011USD"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Process" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Minimum Qty" "15"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Attrition Qty" "10"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Class" "Preferred Component"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Category" "Diodes,Diodes - General Purpose"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "hongjiacheng"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Part" "1N4004W"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Forward Voltage (Vf@If)" "1V@1.0A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Voltage (Vr)" "400V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Average Rectified Current (Io)" "1A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Diode Configuration" "Single"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Reverse Leakage Current" "2uA@400V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "General,1N4004W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy 0 -1.27) (xy 1.27 1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "General,1N4004W_1_1"
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 3.81 270)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCM_JLCPCB-Resistors:0402,10kΩ"
 			(pin_numbers
 				(hide yes)
@@ -5550,6 +5859,12 @@
 		(uuid "091ab7bf-6d7c-4550-9cfc-741537e9589b")
 	)
 	(junction
+		(at 25.4 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ced01e3-9b63-4d4f-86c2-297bc3e1b3ca")
+	)
+	(junction
 		(at 139.7 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5592,6 +5907,18 @@
 		(uuid "62f6f609-8d6f-4d92-9dc8-b927bff66247")
 	)
 	(junction
+		(at 121.92 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "65b109cd-13ca-4a62-ba41-b4de969ae4c4")
+	)
+	(junction
+		(at 121.92 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "660bc9aa-01bb-448e-9e0e-461c6cff0db8")
+	)
+	(junction
 		(at 139.7 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5604,16 +5931,22 @@
 		(uuid "66a09ac9-b24f-444f-b4e7-77f213f9803b")
 	)
 	(junction
-		(at 25.4 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "671514c3-77cb-470a-b329-f5059c3b26a0")
-	)
-	(junction
 		(at 68.58 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6da2fe9f-c736-4852-8249-991da5bf78a4")
+	)
+	(junction
+		(at 25.4 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "756531f4-2190-45a5-aeae-58a0728293a3")
+	)
+	(junction
+		(at 125.73 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78e8fd54-b0d2-4d65-b69a-44aecaaefa00")
 	)
 	(junction
 		(at 125.73 44.45)
@@ -5628,6 +5961,24 @@
 		(uuid "904ca179-2048-4cf8-adbf-7d5f620a931a")
 	)
 	(junction
+		(at 130.81 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "981c692d-5298-4c44-99b7-d25071d87098")
+	)
+	(junction
+		(at 25.4 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0aaf420-a47c-4246-a3d2-dd830d0adcdb")
+	)
+	(junction
+		(at 125.73 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1ef9cce-0389-43a7-a9a4-a3debf6c3721")
+	)
+	(junction
 		(at 62.23 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5638,6 +5989,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4e1c4c5-e5dd-4ac5-ac25-de1e67d9363d")
+	)
+	(junction
+		(at 25.4 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea8775e2-6062-46a0-b22f-47cbb828d4da")
 	)
 	(junction
 		(at 212.09 55.88)
@@ -5661,6 +6018,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 53.34) (xy 25.4 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0626011c-eac5-41d0-92e9-b1f7dc7ebdce")
+	)
+	(wire
+		(pts
 			(xy 44.45 113.03) (xy 44.45 111.76)
 		)
 		(stroke
@@ -5681,6 +6048,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 130.81) (xy 125.73 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d1fb38b-e756-43e8-b9c1-3ba201107649")
+	)
+	(wire
+		(pts
+			(xy 25.4 39.37) (xy 25.4 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e306b7d-d1d9-4aea-9a1d-1ad5a2530b6a")
+	)
+	(wire
+		(pts
 			(xy 139.7 58.42) (xy 144.78 58.42)
 		)
 		(stroke
@@ -5691,7 +6078,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 128.27) (xy 130.81 128.27)
+			(xy 114.3 130.81) (xy 121.92 130.81)
 		)
 		(stroke
 			(width 0)
@@ -5791,6 +6178,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 130.81) (xy 130.81 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ed41fa9-cbd1-4fb3-b84e-9911cd7cbe1c")
+	)
+	(wire
+		(pts
 			(xy 212.09 60.96) (xy 224.79 60.96)
 		)
 		(stroke
@@ -5838,6 +6235,16 @@
 			(type default)
 		)
 		(uuid "482e1a6a-d79a-4a00-95b8-778b00aac88c")
+	)
+	(wire
+		(pts
+			(xy 21.59 45.72) (xy 25.4 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5abe03c0-32d1-4136-baee-12d701290375")
 	)
 	(wire
 		(pts
@@ -5901,6 +6308,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 53.34) (xy 25.4 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72679781-91d6-4dfe-920a-1e6e261e2d4d")
+	)
+	(wire
+		(pts
 			(xy 81.28 82.55) (xy 68.58 82.55)
 		)
 		(stroke
@@ -5951,7 +6368,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 59.69) (xy 25.4 59.69)
+			(xy 17.78 59.69) (xy 25.4 59.69)
 		)
 		(stroke
 			(width 0)
@@ -6031,6 +6448,26 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 123.19) (xy 140.97 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08cff96-ec75-4825-946f-51e3e1a4c231")
+	)
+	(wire
+		(pts
+			(xy 114.3 130.81) (xy 114.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0e781ab-a204-4314-ae37-182a5be3e2ab")
+	)
+	(wire
+		(pts
 			(xy 212.09 55.88) (xy 212.09 58.42)
 		)
 		(stroke
@@ -6068,6 +6505,26 @@
 			(type default)
 		)
 		(uuid "a75dd877-4ab2-4fbe-8e90-64baa7e66ff7")
+	)
+	(wire
+		(pts
+			(xy 25.4 39.37) (xy 27.94 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a947063b-27cb-4f9d-acdf-15b1ed29ecd3")
+	)
+	(wire
+		(pts
+			(xy 22.86 39.37) (xy 25.4 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ff4c7d-dd21-4251-8cc6-61f8691201de")
 	)
 	(wire
 		(pts
@@ -6131,6 +6588,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 130.81) (xy 130.81 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f31dd9-11b2-4f0b-a6f6-77dc9bd65870")
+	)
+	(wire
+		(pts
 			(xy 62.23 92.71) (xy 68.58 92.71)
 		)
 		(stroke
@@ -6171,7 +6638,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 123.19) (xy 140.97 123.19)
+			(xy 119.38 123.19) (xy 121.92 123.19)
 		)
 		(stroke
 			(width 0)
@@ -6221,6 +6688,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 123.19) (xy 125.73 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92e1b63-f7da-4cb3-91e6-9f66fdb5d6b7")
+	)
+	(wire
+		(pts
 			(xy 130.81 118.11) (xy 139.7 118.11)
 		)
 		(stroke
@@ -6261,7 +6738,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 44.45) (xy 22.86 59.69)
+			(xy 17.78 44.45) (xy 17.78 59.69)
 		)
 		(stroke
 			(width 0)
@@ -6538,7 +7015,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Small_Open")
-		(at 130.81 130.81 270)
+		(at 130.81 133.35 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6549,7 +7026,7 @@
 		(fields_autoplaced yes)
 		(uuid "009e6db7-1467-4e41-a2b8-8d22e1341650")
 		(property "Reference" "JP17"
-			(at 133.35 130.8099 90)
+			(at 133.35 133.3499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6560,7 +7037,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Small_Open"
-			(at 129.54 129.5401 90)
+			(at 129.54 132.0801 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6572,7 +7049,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 130.81 130.81 0)
+			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6583,7 +7060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 130.81 0)
+			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6594,7 +7071,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, small symbol, open"
-			(at 130.81 130.81 0)
+			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6611,7 +7088,7 @@
 			(uuid "3354a2ab-4d8c-455b-a971-8cd1553b1d79")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP17")
 					(unit 1)
@@ -6621,7 +7098,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 127 123.19 0)
+		(at 114.3 123.19 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -6632,7 +7109,7 @@
 		(dnp no)
 		(uuid "02064404-58a1-456c-90aa-3cc2ebab44f1")
 		(property "Reference" "J7"
-			(at 127 120.142 0)
+			(at 114.3 120.142 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6642,7 +7119,7 @@
 			)
 		)
 		(property "Value" "Her Excellency"
-			(at 123.444 125.476 90)
+			(at 110.744 125.476 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6652,7 +7129,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical"
-			(at 127 123.19 0)
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6663,7 +7140,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 123.19 0)
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6674,7 +7151,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 127 123.19 0)
+			(at 114.3 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6691,7 +7168,7 @@
 			(uuid "43a16663-8916-4680-abb1-e0a1a48d41b3")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "J7")
 					(unit 1)
@@ -6768,7 +7245,7 @@
 			(uuid "7748a865-c420-4b49-9e3f-6cb20ebf1931")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0128")
 					(unit 1)
@@ -6854,7 +7331,7 @@
 			(uuid "56aafbcf-b0b9-45ad-9eaa-4415a5342fb3")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "J3")
 					(unit 1)
@@ -6864,7 +7341,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 133.35 0)
+		(at 130.81 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6874,7 +7351,7 @@
 		(dnp no)
 		(uuid "05ef8709-b91c-4ea7-8d20-bfb4e9b78c0e")
 		(property "Reference" "#PWR0116"
-			(at 130.81 139.7 0)
+			(at 130.81 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6885,7 +7362,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 136.906 0)
+			(at 130.81 139.446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6895,7 +7372,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 133.35 0)
+			(at 130.81 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6906,7 +7383,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 133.35 0)
+			(at 130.81 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6917,7 +7394,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 133.35 0)
+			(at 130.81 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6931,7 +7408,7 @@
 			(uuid "5044132c-0c6f-4b00-acab-edf31ab69f9d")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0116")
 					(unit 1)
@@ -7008,7 +7485,7 @@
 			(uuid "6c39ccf9-5350-4511-ab15-ea784a501422")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0108")
 					(unit 1)
@@ -7085,7 +7562,7 @@
 			(uuid "46a955d9-e402-423b-b9d6-e43241ec427e")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR046")
 					(unit 1)
@@ -7162,7 +7639,7 @@
 			(uuid "8aad2405-339e-4049-a7e1-85d7e6081f64")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0130")
 					(unit 1)
@@ -7239,7 +7716,7 @@
 			(uuid "5c52dd12-9e13-4d34-911a-f6c495ff178c")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0138")
 					(unit 1)
@@ -7316,7 +7793,7 @@
 			(uuid "baa8e137-c687-4878-a999-74f1f4ea7b67")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0136")
 					(unit 1)
@@ -7393,7 +7870,7 @@
 			(uuid "b2627e81-8d20-473b-8369-0637693fc53f")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0150")
 					(unit 1)
@@ -7476,7 +7953,7 @@
 			(uuid "3e3f4a65-2020-4ae5-b9d0-4bf2289e034b")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP2")
 					(unit 1)
@@ -7556,7 +8033,7 @@
 			(uuid "76b7c708-bff0-49ad-875e-69ccc04d3e45")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP15")
 					(unit 1)
@@ -7636,7 +8113,7 @@
 			(uuid "980acec8-a86d-45ec-9c6c-4672632c3cb4")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP12")
 					(unit 1)
@@ -7850,7 +8327,7 @@
 			(uuid "90fd4e30-0c1b-411f-9f07-ebb50521d3a2")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C86")
 					(unit 1)
@@ -7927,7 +8404,7 @@
 			(uuid "ea9bd73c-bc82-41f7-8cd8-a4048111b4af")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR093")
 					(unit 1)
@@ -8004,7 +8481,7 @@
 			(uuid "69528883-e098-43db-8c26-49b3df0d0d0c")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0106")
 					(unit 1)
@@ -8081,7 +8558,7 @@
 			(uuid "ebe126de-c241-4903-acb1-0504e80a7902")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0135")
 					(unit 1)
@@ -8161,7 +8638,7 @@
 			(uuid "fbbea1e8-1916-43fb-9c32-5b96e32404d1")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP16")
 					(unit 1)
@@ -8243,7 +8720,7 @@
 			(uuid "d757ea79-a71f-4adb-a920-fbee92cb9416")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP11")
 					(unit 1)
@@ -8320,7 +8797,7 @@
 			(uuid "3d5a6670-1745-4364-a95b-b1adaffa0094")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0113")
 					(unit 1)
@@ -8397,7 +8874,7 @@
 			(uuid "87c5d44b-69a7-46b0-8ff9-136fc3208b8f")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0137")
 					(unit 1)
@@ -8520,7 +8997,7 @@
 			(uuid "fa467852-3646-4fd3-82ec-6a8e265d81a2")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "T1")
 					(unit 1)
@@ -8597,7 +9074,7 @@
 			(uuid "50452dbe-8ac4-4632-8a47-d8070d838d6f")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0109")
 					(unit 1)
@@ -8810,7 +9287,7 @@
 			(uuid "f14b2f15-136e-4ea0-b952-b72ba30fc9ce")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C97")
 					(unit 1)
@@ -8914,7 +9391,7 @@
 			(uuid "7bfe7517-1e36-4b23-a4be-debe05c917e1")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "U5")
 					(unit 1)
@@ -8991,7 +9468,7 @@
 			(uuid "c58f652a-2919-4878-95ce-8a1bedabb7de")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0140")
 					(unit 1)
@@ -9068,7 +9545,7 @@
 			(uuid "e83302e6-87d0-41e6-9a67-a3fe7af7ae54")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0133")
 					(unit 1)
@@ -9304,7 +9781,7 @@
 			(uuid "4e90df87-5f6b-41d2-9313-9b9c79b65fa4")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C103")
 					(unit 1)
@@ -9381,7 +9858,7 @@
 			(uuid "77fbb265-622c-4219-8335-654a09e23c60")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0139")
 					(unit 1)
@@ -9458,7 +9935,7 @@
 			(uuid "548d66b5-3c45-415d-aa2a-1693c0f987a1")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0132")
 					(unit 1)
@@ -9694,7 +10171,7 @@
 			(uuid "9016bf52-af20-4cec-bf5c-050ffe0946eb")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C87")
 					(unit 1)
@@ -9784,9 +10261,255 @@
 			(uuid "0a562b9a-f01a-4854-9680-0a04b1436911")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:General,1N4004W")
+		(at 125.73 127 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8453e8e6-d894-467e-94c7-b6ea4fe0e476")
+		(property "Reference" "D12"
+			(at 126.746 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4004W"
+			(at 128.016 130.048 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 127.508 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251425_hongjiacheng-1N4004W_C18199087.pdf"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55°C~+150°C 1A 1V@1A 2uA@400V 30A 400V Independent SOD-123FL Diodes - General Purpose ROHS"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18199087"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "162028"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.011USD"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Diodes - General Purpose"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "1N4004W"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "1V@1.0A"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "400V"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Average Rectified Current (Io)" "1A"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Single"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current" "2uA@400V"
+			(at 125.73 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "40315b34-a241-4b70-8116-68783e4a9ef5")
+		)
+		(pin "1"
+			(uuid "6e1894a1-3f3f-4fe8-be60-cc0e59609f92")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -9919,9 +10642,255 @@
 			(uuid "ca285faa-b96b-492c-8e06-00b097f3698d")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "T2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:General,1N4004W")
+		(at 25.4 49.53 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "893678a7-8a4d-4db1-ae3e-b6b120880c57")
+		(property "Reference" "D9"
+			(at 26.162 52.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4004W"
+			(at 27.686 52.578 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 27.178 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251425_hongjiacheng-1N4004W_C18199087.pdf"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55°C~+150°C 1A 1V@1A 2uA@400V 30A 400V Independent SOD-123FL Diodes - General Purpose ROHS"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18199087"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "162028"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.011USD"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Diodes - General Purpose"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "1N4004W"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "1V@1.0A"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "400V"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Average Rectified Current (Io)" "1A"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Single"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current" "2uA@400V"
+			(at 25.4 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "94ccee19-12e7-4146-93d2-ff5937dee4c4")
+		)
+		(pin "1"
+			(uuid "70e80a17-a3ae-4a3c-a68f-50c4a33aa1a3")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -10021,7 +10990,7 @@
 			(uuid "eb84279e-6f6d-4b2b-a005-d7ec7f1647d0")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "U19")
 					(unit 1)
@@ -10098,7 +11067,7 @@
 			(uuid "5bc96fc8-a14c-4467-886b-a31b14c58e9c")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR098")
 					(unit 1)
@@ -10342,7 +11311,7 @@
 			(uuid "156bcfe0-fc32-479e-ba6d-82ea339df1e7")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "R46")
 					(unit 1)
@@ -10578,7 +11547,7 @@
 			(uuid "9d41aef9-1c81-4d40-b95b-611253bf56e9")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C101")
 					(unit 1)
@@ -10660,9 +11629,255 @@
 			(uuid "dfc9773e-abb2-4b55-96cb-5794378f5dab")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:General,1N4004W")
+		(at 21.59 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a37c9260-42d5-405e-ad19-a73d924d9984")
+		(property "Reference" "D10"
+			(at 20.828 45.72 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4004W"
+			(at 19.304 46.482 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 19.812 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251425_hongjiacheng-1N4004W_C18199087.pdf"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55°C~+150°C 1A 1V@1A 2uA@400V 30A 400V Independent SOD-123FL Diodes - General Purpose ROHS"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18199087"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "162028"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.011USD"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Diodes - General Purpose"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "1N4004W"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "1V@1.0A"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "400V"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Average Rectified Current (Io)" "1A"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Single"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current" "2uA@400V"
+			(at 21.59 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "91f215ac-fa5c-4852-9766-5636137952e8")
+		)
+		(pin "1"
+			(uuid "b50e66c3-376e-4cd3-baad-68d9c5030653")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -10737,7 +11952,7 @@
 			(uuid "c05ef050-a9b9-460e-8405-87262a3aaf00")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0102")
 					(unit 1)
@@ -10819,7 +12034,7 @@
 			(uuid "4e1aebaa-b335-4d6a-86b2-5f16fae0c329")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP20")
 					(unit 1)
@@ -11055,7 +12270,7 @@
 			(uuid "869e4bf6-9911-4dd0-a455-af1578cbff42")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C105")
 					(unit 1)
@@ -11269,7 +12484,7 @@
 			(uuid "249e6c51-bd70-43e0-8490-9f1051c8e640")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C104")
 					(unit 1)
@@ -11483,7 +12698,7 @@
 			(uuid "18917af6-c46f-457e-af5d-105856f12f79")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C102")
 					(unit 1)
@@ -11697,7 +12912,7 @@
 			(uuid "c0a8ec65-8b3a-4ec5-89cc-ed959a8fafe1")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "C106")
 					(unit 1)
@@ -11777,7 +12992,7 @@
 			(uuid "21aac8cc-5e41-4c7b-b987-5d330a421a0e")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP14")
 					(unit 1)
@@ -11857,7 +13072,7 @@
 			(uuid "bc0ee861-25eb-4c15-b8d8-48235f011674")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP22")
 					(unit 1)
@@ -11959,7 +13174,7 @@
 			(uuid "1ce3cca3-57b7-4ff9-98bb-cb90a390dacd")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "U18")
 					(unit 1)
@@ -12062,7 +13277,7 @@
 			(uuid "52bdc3de-d34b-457b-951b-a97d79153a36")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "U17")
 					(unit 1)
@@ -12072,7 +13287,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 22.86 39.37 0)
+		(at 17.78 39.37 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -12083,7 +13298,7 @@
 		(dnp no)
 		(uuid "f055b834-2162-46c5-ba90-7ba163a38da2")
 		(property "Reference" "J1"
-			(at 22.86 36.322 0)
+			(at 17.78 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12093,7 +13308,7 @@
 			)
 		)
 		(property "Value" "His Excellence"
-			(at 19.05 39.6632 90)
+			(at 13.97 39.6632 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12103,7 +13318,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:BNC_TEConnectivity_1478204_Vertical"
-			(at 22.86 39.37 0)
+			(at 17.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12114,7 +13329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 22.86 39.37 0)
+			(at 17.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12125,7 +13340,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 22.86 39.37 0)
+			(at 17.78 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12142,7 +13357,7 @@
 			(uuid "28b7d64a-e640-41a9-96bd-7cc3154a686f")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "J1")
 					(unit 1)
@@ -12219,7 +13434,7 @@
 			(uuid "caa9ca5b-f668-40dd-93cc-ba320a1d23bd")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0115")
 					(unit 1)
@@ -12299,9 +13514,255 @@
 			(uuid "4eb7889c-46b3-4f07-8b42-fdb56c073b89")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "JP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:General,1N4004W")
+		(at 121.92 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa34f5b5-0d7a-4078-b4c8-4a22a5d2dadc")
+		(property "Reference" "D11"
+			(at 121.158 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4004W"
+			(at 119.634 123.952 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_SOD-123FL"
+			(at 120.142 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309251425_hongjiacheng-1N4004W_C18199087.pdf"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55°C~+150°C 1A 1V@1A 2uA@400V 30A 400V Independent SOD-123FL Diodes - General Purpose ROHS"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C18199087"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Stock" "162028"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Price" "0.011USD"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Process" "SMT"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Minimum Qty" "15"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Class" "Preferred Component"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Category" "Diodes,Diodes - General Purpose"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "hongjiacheng"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "1N4004W"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Forward Voltage (Vf@If)" "1V@1.0A"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Voltage (Vr)" "400V"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Average Rectified Current (Io)" "1A"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Diode Configuration" "Single"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Reverse Leakage Current" "2uA@400V"
+			(at 121.92 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fd2b63d8-ed34-4d1a-97e8-36f87774574e")
+		)
+		(pin "1"
+			(uuid "6ae56775-f81c-4b86-9cca-7a3a2d92ceed")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -12376,7 +13837,7 @@
 			(uuid "f1112226-4f33-4c8d-a3f6-6d30533c4e6e")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0141")
 					(unit 1)
@@ -12453,7 +13914,7 @@
 			(uuid "ca3f539d-a5e1-4cf0-94fc-0e95d59e9745")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0105")
 					(unit 1)
@@ -12530,7 +13991,7 @@
 			(uuid "5b616554-7f95-4c1d-a65e-f6c2ecfd82b5")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(reference "#PWR0107")
 					(unit 1)
@@ -12597,7 +14058,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(page "11")
 				)
@@ -12663,7 +14124,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(page "9")
 				)
@@ -12769,7 +14230,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(page "8")
 				)
@@ -12835,7 +14296,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4"
 					(page "10")
 				)

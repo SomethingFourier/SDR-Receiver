@@ -1168,7 +1168,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "R11-12,R19,R36,D5-8,#PWR1-2,#PWR11,#PWR55,J4,J8,AUDIO1",
+    "used_designators": "D9-12",
     "variants": []
   },
   "sheets": [
