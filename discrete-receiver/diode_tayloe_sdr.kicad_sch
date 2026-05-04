@@ -609,14 +609,14 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Audio:AudioJack3"
+		(symbol "EasyEDA_Lib:PJ-3126-5A"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 8.89 0)
+			(property "Reference" "AUDIO"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -625,8 +625,8 @@
 					)
 				)
 			)
-			(property "Value" "AudioJack3"
-				(at 0 6.35 0)
+			(property "Value" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -635,7 +635,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "EasyEDA_Lib:AUDIO-TH_PJ-3126-5A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -646,7 +646,7 @@
 					)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/PJ-3126-5A/157148.html"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -657,7 +657,7 @@
 					)
 				)
 			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
+			(property "Description" "Connector Type:3.5mm Headphone Jack Current Rating:500mA Voltage Rating (Max):30V Contact Material:Phosphor Bronze Contact Plating:Gold"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -668,7 +668,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones phones TRS connector"
+			(property "Manufacturer Part" "PJ-3126-5A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -679,7 +679,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Jack*"
+			(property "Manufacturer" "韩国韩荣"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -690,24 +690,45 @@
 					)
 				)
 			)
-			(symbol "AudioJack3_0_1"
+			(property "Supplier Part" "C145816"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Supplier" "LCSC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part Name" "3.5mm耳机座"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PJ-3126-5A_1_0"
 				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -2.54)
+					(start -7.112 -3.556)
+					(end -5.588 1.778)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -716,52 +737,99 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
+						(xy -1.016 2.54) (xy -0.762 1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 3.81)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
+						(xy -1.016 -5.08) (xy -0.762 -4.064)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "AudioJack3_1_1"
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy -6.35 5.08) (xy -6.35 5.08) (xy -6.35 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy -4.064 2.54) (xy -4.064 2.54) (xy -4.572 1.778) (xy -4.572 1.778) (xy -5.08 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.016 0) (xy -1.016 0) (xy -1.016 2.54) (xy -1.016 2.54) (xy -1.27 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy -1.016 -2.54) (xy -1.016 -2.54) (xy -1.016 -5.08) (xy -1.016 -5.08) (xy -1.27 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy -2.032 -5.08) (xy -2.032 -5.08) (xy -2.54 -4.318) (xy -2.54 -4.318) (xy -3.048 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 6.35 5.08 180)
+					(length 5.08)
+					(name "1"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.0254 0.0254)
 							)
 						)
 					)
-					(number "R"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -769,17 +837,17 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name ""
+				(pin unspecified line
+					(at 6.35 2.54 180)
+					(length 5.08)
+					(name "2"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 0.0254 0.0254)
 							)
 						)
 					)
-					(number "S"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -787,17 +855,53 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name ""
+				(pin unspecified line
+					(at 6.35 0 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "T"
+				)
+				(pin unspecified line
+					(at 6.35 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 6.35 -5.08 180)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 0.0254 0.0254)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3120,8 +3224,16 @@
 		(uuid "af6ac8f5-4052-480a-b3ae-3ed58d94a5c1")
 	)
 	(no_connect
+		(at 40.64 125.73)
+		(uuid "04b91948-415d-4c75-8c22-70ce699fc6fd")
+	)
+	(no_connect
 		(at 45.72 62.23)
 		(uuid "53b65373-c8bc-4de1-be72-71a3ccbcc3e0")
+	)
+	(no_connect
+		(at 40.64 123.19)
+		(uuid "b0524df0-1947-4938-866d-b1dc0770b380")
 	)
 	(no_connect
 		(at 45.72 64.77)
@@ -3209,16 +3321,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 96.52) (xy 33.02 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24b201aa-a742-41f2-9137-4ff9020dbc91")
-	)
-	(wire
-		(pts
 			(xy 227.33 135.89) (xy 219.71 135.89)
 		)
 		(stroke
@@ -3276,16 +3378,6 @@
 			(type default)
 		)
 		(uuid "380a181a-24c8-4156-9599-a68a184d47ab")
-	)
-	(wire
-		(pts
-			(xy 20.32 99.06) (xy 34.29 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aa5c2e9-87b6-4343-8d62-62b86d9bf49c")
 	)
 	(wire
 		(pts
@@ -3379,6 +3471,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 96.52) (xy 34.29 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d6e8069-f4cd-44d6-8a58-1ad3b7656555")
+	)
+	(wire
+		(pts
 			(xy 123.19 105.41) (xy 123.19 137.16)
 		)
 		(stroke
@@ -3416,6 +3518,16 @@
 			(type default)
 		)
 		(uuid "6be392da-b429-4b0d-993b-cc46afd95dd8")
+	)
+	(wire
+		(pts
+			(xy 20.32 99.06) (xy 34.29 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d477b46-598d-4fff-96b5-f27c2bf6ba2a")
 	)
 	(wire
 		(pts
@@ -3476,16 +3588,6 @@
 			(type default)
 		)
 		(uuid "8791e785-2c75-45fc-b34a-29b99177c4d9")
-	)
-	(wire
-		(pts
-			(xy 40.64 129.54) (xy 40.64 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cdcdd5d-c798-4a7e-baa8-5f791d751034")
 	)
 	(wire
 		(pts
@@ -3649,26 +3751,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 129.54) (xy 40.64 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9e77acd-83af-4933-b435-342b4bf080b9")
-	)
-	(wire
-		(pts
-			(xy 34.29 93.98) (xy 33.02 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db10f675-79ff-440f-a7ca-7b82dfb90d9c")
-	)
-	(wire
-		(pts
 			(xy 181.61 129.54) (xy 181.61 133.35)
 		)
 		(stroke
@@ -3779,6 +3861,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 93.98) (xy 34.29 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1651eeb-dc67-4314-9274-23f85af80f7f")
+	)
+	(wire
+		(pts
 			(xy 53.34 39.37) (xy 55.88 39.37)
 		)
 		(stroke
@@ -3809,7 +3901,7 @@
 	)
 	(global_label "I out 3.5mm"
 		(shape input)
-		(at 39.37 124.46 0)
+		(at 40.64 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3819,7 +3911,7 @@
 		)
 		(uuid "57c47b7a-a80e-44e3-a86c-332feb6bd410")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.3293 124.46 0)
+			(at 55.5993 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3907,7 +3999,7 @@
 	)
 	(global_label "Q out 3.5mm"
 		(shape input)
-		(at 39.37 127 0)
+		(at 40.64 128.27 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3917,7 +4009,7 @@
 		)
 		(uuid "ab9e4440-f91b-4c6e-9d3d-61e1a25435c9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.055 127 0)
+			(at 56.325 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4145,7 +4237,7 @@
 			(uuid "0b058a46-7cb9-4104-9e49-77482a943320")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "X1")
 					(unit 1)
@@ -4223,7 +4315,7 @@
 			(uuid "2b14531a-52fc-4443-8f70-35add7b5ee72")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR092")
 					(unit 1)
@@ -4300,7 +4392,7 @@
 			(uuid "58936379-1ae4-4497-a32f-f74345fd3368")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR038")
 					(unit 1)
@@ -4378,7 +4470,7 @@
 			(uuid "44fc9cd8-2046-42f1-86de-2b65c6a0f7b2")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR081")
 					(unit 1)
@@ -4455,7 +4547,7 @@
 			(uuid "108a9ba7-511f-4ade-a088-b74a3d4e54cb")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR090")
 					(unit 1)
@@ -4670,9 +4762,153 @@
 			(uuid "407f7734-6b46-46e7-9366-9012a63428c1")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_Lib:PJ-3126-5A")
+		(at 34.29 125.73 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "252e8fc0-1851-4cc5-bcb8-324094b78a32")
+		(property "Reference" "AUDIO1"
+			(at 22.86 125.476 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "I/Q Out"
+			(at 22.86 123.444 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA_Lib:AUDIO-TH_PJ-3126-5A"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/PJ-3126-5A/157148.html"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Connector Type:3.5mm Headphone Jack Current Rating:500mA Voltage Rating (Max):30V Contact Material:Phosphor Bronze Contact Plating:Gold"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "PJ-3126-5A"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "韩国韩荣"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C145816"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part Name" "3.5mm耳机座"
+			(at 34.29 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "2e6fe74d-c5d2-4f2c-99dd-72ff0fab6a48")
+		)
+		(pin "2"
+			(uuid "536278db-7059-4cb5-ab97-45f67f2c1031")
+		)
+		(pin "1"
+			(uuid "b0dbe53c-8756-45ed-9476-5e1552e2e976")
+		)
+		(pin "4"
+			(uuid "3f7e7acd-a9a3-4af4-9661-17b6142bf268")
+		)
+		(pin "5"
+			(uuid "51d6909e-b1c7-4dac-b295-06658a7000a3")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
+					(reference "AUDIO1")
 					(unit 1)
 				)
 			)
@@ -4748,7 +4984,7 @@
 			(uuid "e614347d-2550-4181-b64c-f44b563cf354")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR082")
 					(unit 1)
@@ -4825,7 +5061,7 @@
 			(uuid "7c738204-e7ac-42fa-acfd-4f9cac9c2d60")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR091")
 					(unit 1)
@@ -5069,7 +5305,7 @@
 			(uuid "f2de24f1-14fd-404c-9194-518b8f094658")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R34")
 					(unit 1)
@@ -5236,7 +5472,7 @@
 			(uuid "52010ff8-189b-4147-8a73-41ff6844bed2")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "USB1")
 					(unit 1)
@@ -5313,7 +5549,7 @@
 			(uuid "8c9719b3-4eb2-4e55-b4f0-fc4bb2601846")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR0149")
 					(unit 1)
@@ -5323,7 +5559,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Socket")
-		(at 39.37 96.52 0)
+		(at 39.37 99.06 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5331,10 +5568,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "98ad593a-2f6b-43d4-8164-37cd1d12f1dd")
 		(property "Reference" "J5"
-			(at 40.64 96.5199 0)
+			(at 40.64 99.0601 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5345,7 +5581,7 @@
 			)
 		)
 		(property "Value" "Display Connector"
-			(at 40.64 99.0599 0)
+			(at 40.64 96.5201 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5355,8 +5591,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 39.37 96.52 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 39.37 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5367,7 +5603,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 96.52 0)
+			(at 39.37 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5378,7 +5614,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 39.37 96.52 0)
+			(at 39.37 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5401,7 +5637,7 @@
 			(uuid "2a67c290-3f25-4a66-8f9f-8ead35ed9ec3")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "J5")
 					(unit 1)
@@ -5441,7 +5677,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
 			(at 27.94 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5481,7 +5717,7 @@
 			(uuid "0aa71757-eec9-4358-8b78-3918d36df31a")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "JP6")
 					(unit 1)
@@ -5725,7 +5961,7 @@
 			(uuid "d2de946e-fc72-402d-887e-22a442dde1f0")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R4")
 					(unit 1)
@@ -5969,7 +6205,7 @@
 			(uuid "1d3b8630-9d49-47d2-910e-4b8f8efd5019")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "R1")
 					(unit 1)
@@ -6046,92 +6282,9 @@
 			(uuid "d5f67b81-f0e9-424d-9f76-3140e9a84e5a")
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(reference "#PWR044")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3")
-		(at 34.29 127 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e94a6c3b-d72a-4338-8698-5bbe6b8ae440")
-		(property "Reference" "J4"
-			(at 32.766 118.872 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "IQ Out"
-			(at 32.766 120.65 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS)"
-			(at 34.29 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "S"
-			(uuid "cb67746d-0005-43c1-8469-2111ce48b245")
-		)
-		(pin "R"
-			(uuid "cc53cf2a-ea67-4643-842a-05826bcddc9b")
-		)
-		(pin "T"
-			(uuid "929a1551-7e3a-43a3-beae-139d6a57ec9e")
-		)
-		(instances
-			(project "tayloe_detector"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -6276,7 +6429,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "5")
 				)
@@ -6382,7 +6535,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "6")
 				)
@@ -6598,7 +6751,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "4")
 				)
@@ -6694,7 +6847,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "2")
 				)
@@ -6750,7 +6903,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "7")
 				)
@@ -6856,7 +7009,7 @@
 			)
 		)
 		(instances
-			(project "tayloe_detector"
+			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
 					(page "3")
 				)
