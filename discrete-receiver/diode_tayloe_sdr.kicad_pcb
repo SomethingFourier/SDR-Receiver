@@ -1213,6 +1213,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -1224,6 +1225,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7601,6 +7603,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -7612,6 +7615,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12474,6 +12478,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -12485,6 +12490,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -16991,6 +16997,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -17002,6 +17009,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -32828,6 +32836,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -32839,6 +32848,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -39117,6 +39127,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -39128,6 +39139,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -41643,6 +41655,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -41654,6 +41667,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -42798,6 +42812,206 @@
 		)
 		(embedded_fonts no)
 	)
+	(footprint "Inductor_SMD:L_APV_AHW2520"
+		(layer "F.Cu")
+		(uuid "7a552789-1bfa-4188-9827-5a1f1c7a359e")
+		(at 196.04 128.07)
+		(descr "Inductor, APV, ANR252010, 2.5x2.0x1.0mm, (http://en.apvind.com/public/upload/20240407/3375c395e460caa8519b4d637d9113ce.pdf)")
+		(tags "wirewound power shielded")
+		(property "Reference" "L7"
+			(at 0 -2.04 0)
+			(layer "F.SilkS")
+			(uuid "4968aa52-7642-4d54-8c32-0343a81ae876")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "22nH"
+			(at 0 2.05 0)
+			(layer "F.Fab")
+			(uuid "a3a721d2-13d0-479f-8745-d669d75ceb58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c680374c-2206-4b5c-9157-2a8736cd09d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b3bc4b0d-52b9-4d6c-9f36-2aef2cb64f40")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "inductor/SMD"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e9d2c5a0-c6f0-4812-88ae-8ae9325b2988")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C7427075"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bafc568-e8e4-4da9-9799-454785fbb308")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/51415671-faa3-4682-86ef-d9865cc6a50e/baef339b-92c2-4195-84f7-da43d41c0050")
+		(sheetname "/Receiver/Charles/")
+		(sheetfile "charles.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.725 1.35)
+			(end 1.675 1.35)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "525267a2-5372-45c2-b81c-3a7a25affd86")
+		)
+		(fp_line
+			(start -1.7 -1.35)
+			(end 1.7 -1.35)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9889b528-250a-4011-9388-a8d6123be8ee")
+		)
+		(fp_line
+			(start -1.825 -1.35)
+			(end 1.8136 -1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "874ab162-aa6b-4fa7-86c6-02bd31e942d2")
+		)
+		(fp_line
+			(start -1.825 1.35)
+			(end -1.825 -1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "32f9f46d-b6a3-4d1b-9c37-5ed0be0ef765")
+		)
+		(fp_line
+			(start -1.825 1.35)
+			(end 1.8136 1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d3e5b347-a8ac-4535-b1c6-bc1fc21e70eb")
+		)
+		(fp_line
+			(start 1.815 -1.35)
+			(end 1.815 1.35)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "68540dc6-3177-4e4b-be77-1e68226df3f4")
+		)
+		(fp_rect
+			(start -1.575 -1)
+			(end 1.565 1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "416cacbd-a9b1-4818-ae4e-31fea796315b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "e71d0c82-8d66-4aa9-81d3-bcf7a700dc0d")
+			(effects
+				(font
+					(size 0.62 0.62)
+					(thickness 0.09)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -1.15 0)
+			(size 1.02 2.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(C61-Pad2)")
+			(pintype "passive")
+			(uuid "f2d39a87-1155-4356-ba25-6d9c29f17d3f")
+		)
+		(pad "2" smd roundrect
+			(at 1.14 0)
+			(size 1.02 2.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(C62-Pad2)")
+			(pintype "passive")
+			(uuid "c337c6aa-9c8c-4853-80c5-2bed4b340f54")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_APV_ANR252010.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "PCM_JLCPCB:C_0402"
 		(layer "F.Cu")
 		(uuid "7bf14dc0-f2bb-4fc0-9bce-1d074e43b84a")
@@ -43932,6 +44146,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -43943,6 +44158,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -44176,6 +44392,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -44187,6 +44404,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -46821,6 +47039,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -46832,6 +47051,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -52787,8 +53007,8 @@
 			(unit
 				(name "A")
 				(pins "46" "49" "50" "48" "47" "60" "56" "57" "59" "58" "55" "21" "22"
-					"2" "3" "26" "24" "25" "39" "23" "6" "54" "61" "45" "20" "38" "30" "1"
-					"11" "53" "44" "52" "51" "4" "5" "7" "8" "9" "10" "12" "13" "14" "15"
+					"2" "3" "26" "24" "25" "6" "39" "23" "54" "61" "38" "1" "20" "11" "30"
+					"45" "53" "44" "52" "51" "4" "5" "7" "8" "9" "10" "12" "13" "14" "15"
 					"16" "17" "18" "19" "27" "28" "29" "31" "32" "33" "34" "35" "36" "37"
 					"40" "41" "42" "43"
 				)
@@ -55742,6 +55962,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -55753,6 +55974,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -56160,6 +56382,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -56171,6 +56394,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -62252,6 +62476,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -62263,6 +62488,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -64508,6 +64734,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -64519,6 +64746,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -83449,6 +83677,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -83460,6 +83689,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
