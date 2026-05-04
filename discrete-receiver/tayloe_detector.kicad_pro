@@ -473,7 +473,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "diode_tayloe_sdr.kicad_pro",
+    "filename": "tayloe_detector.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -1120,7 +1120,7 @@
         "uuid": "d18d178d-3f10-4d68-9036-eae71a7d091a"
       }
     ],
-    "used_designators": "T1,TP1-2,R14-15,R43-47,JP3-4,JP14-17,J3,J7,U1,U5,U19-20,FB1,#PWR2-9,#PWR88,#PWR101-102,#PWR105-109,#PWR115-117,#PWR120,C1-6,C12,C58-59,C61-64,C68-75,C79-81,C85-90,L3-10,L12-19",
+    "used_designators": "R46,#PWR150",
     "variants": []
   },
   "sheets": [
@@ -1153,8 +1153,20 @@
       "Power"
     ],
     [
-      "fde1c388-fcf2-4984-a9ca-79e8d884a81b",
+      "751ff83c-860e-458a-b47c-a02b34d5585d",
       "Tayloe Detector"
+    ],
+    [
+      "51415671-faa3-4682-86ef-d9865cc6a50e",
+      "Charles"
+    ],
+    [
+      "8647ec6f-e8f0-4852-b9db-d60b6a18fbc7",
+      "Jaquavis"
+    ],
+    [
+      "0811a985-c39e-470e-b379-1c06ccf39cf9",
+      "Low Noise Amplifier"
     ]
   ],
   "text_variables": {},
