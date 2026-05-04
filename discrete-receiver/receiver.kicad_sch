@@ -6814,30 +6814,6 @@
 			)
 		)
 	)
-	(global_label "IF"
-		(shape input)
-		(at 59.69 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7e8d50d5-9f68-4fea-be49-ecc9416b6a83")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 55.0114 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "VHF BP Filter Mux Select"
 		(shape input)
 		(at 138.43 60.96 180)
@@ -6851,6 +6827,30 @@
 		(uuid "83ef6a23-afaf-46f6-bb6a-0495c5cf91eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.0729 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VHF IF"
+		(shape input)
+		(at 59.69 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99a52b5f-04a1-4dc7-8192-187140080392")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 50.5361 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6886,7 +6886,7 @@
 			)
 		)
 	)
-	(global_label "RF_2"
+	(global_label "HF"
 		(shape input)
 		(at 59.69 105.41 180)
 		(fields_autoplaced yes)
@@ -6896,9 +6896,9 @@
 			)
 			(justify right)
 		)
-		(uuid "c98e8308-b779-4483-a4bd-af6e1a624ad3")
+		(uuid "b5175213-336f-40b8-87d4-94308f296349")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.1691 105.41 0)
+			(at 54.2857 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

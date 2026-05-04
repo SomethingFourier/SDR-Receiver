@@ -3170,6 +3170,12 @@
 		(uuid "fae6ea5e-c57e-449b-b927-942654c50856")
 	)
 	(junction
+		(at 181.61 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0329dcbd-acbc-4ad1-90aa-50d927ac30e2")
+	)
+	(junction
 		(at 45.72 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3188,16 +3194,16 @@
 		(uuid "5dcee612-579f-4dac-b4d8-51479c9e9d83")
 	)
 	(junction
-		(at 234.95 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6ac70736-e52b-40a2-b358-8d6df917e763")
-	)
-	(junction
 		(at 259.08 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72a8f901-0e68-458e-9f09-b21c96046bbe")
+	)
+	(junction
+		(at 234.95 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77324689-0466-49c1-ad5d-b7e56074e289")
 	)
 	(junction
 		(at 45.72 48.26)
@@ -3206,22 +3212,16 @@
 		(uuid "7d3a004e-2394-49a0-af03-da55e9bfd5c1")
 	)
 	(junction
-		(at 185.42 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "806f1e71-0906-4b57-9521-0d8c3c5232a5")
-	)
-	(junction
-		(at 181.61 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3636562-bb80-47d1-bf9e-187db5a53a57")
-	)
-	(junction
 		(at 259.08 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af6ac8f5-4052-480a-b3ae-3ed58d94a5c1")
+	)
+	(junction
+		(at 185.42 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed83f5bf-5252-4e97-abe6-1a41a2d45e91")
 	)
 	(no_connect
 		(at 40.64 125.73)
@@ -3271,7 +3271,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 104.14) (xy 124.46 104.14)
+			(xy 120.65 104.14) (xy 128.27 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3311,7 +3311,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 140.97) (xy 134.62 140.97)
+			(xy 128.27 140.97) (xy 142.24 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3321,7 +3321,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 133.35) (xy 181.61 133.35)
+			(xy 173.99 133.35) (xy 181.61 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3351,7 +3351,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 143.51) (xy 121.92 106.68)
+			(xy 125.73 143.51) (xy 125.73 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3361,7 +3361,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 137.16) (xy 134.62 137.16)
+			(xy 130.81 137.16) (xy 142.24 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3381,7 +3381,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 101.6) (xy 127 101.6)
+			(xy 120.65 101.6) (xy 130.81 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3401,7 +3401,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 104.14) (xy 124.46 140.97)
+			(xy 128.27 104.14) (xy 128.27 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3421,7 +3421,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 120.65 106.68)
+			(xy 125.73 106.68) (xy 120.65 106.68)
 		)
 		(stroke
 			(width 0)
@@ -3431,7 +3431,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 143.51) (xy 121.92 143.51)
+			(xy 142.24 143.51) (xy 125.73 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3521,7 +3521,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 101.6) (xy 127 137.16)
+			(xy 130.81 101.6) (xy 130.81 137.16)
 		)
 		(stroke
 			(width 0)
@@ -3561,7 +3561,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 96.52) (xy 132.08 96.52)
+			(xy 120.65 96.52) (xy 135.89 96.52)
 		)
 		(stroke
 			(width 0)
@@ -3651,7 +3651,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 134.62) (xy 134.62 134.62)
+			(xy 133.35 134.62) (xy 142.24 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3661,7 +3661,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 144.78) (xy 234.95 144.78)
+			(xy 173.99 144.78) (xy 234.95 144.78)
 		)
 		(stroke
 			(width 0)
@@ -3691,7 +3691,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 130.81) (xy 185.42 130.81)
+			(xy 173.99 130.81) (xy 185.42 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3711,7 +3711,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 132.08) (xy 134.62 132.08)
+			(xy 135.89 132.08) (xy 142.24 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3771,7 +3771,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 129.54 134.62)
+			(xy 133.35 99.06) (xy 133.35 134.62)
 		)
 		(stroke
 			(width 0)
@@ -3821,7 +3821,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 96.52) (xy 132.08 132.08)
+			(xy 135.89 96.52) (xy 135.89 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3951,7 +3951,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 99.06) (xy 129.54 99.06)
+			(xy 120.65 99.06) (xy 133.35 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6991,7 +6991,7 @@
 		)
 	)
 	(sheet
-		(at 134.62 128.016)
+		(at 142.24 128.016)
 		(size 31.75 19.304)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7007,7 +7007,7 @@
 		)
 		(uuid "e3cca9be-86e6-4baa-9ae2-20fea740dc0f")
 		(property "Sheetname" "ADC"
-			(at 134.62 127.3044 0)
+			(at 142.24 127.3044 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7018,7 +7018,7 @@
 			)
 		)
 		(property "Sheetfile" "adc.kicad_sch"
-			(at 134.62 147.9046 0)
+			(at 142.24 147.9046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7029,7 +7029,7 @@
 			)
 		)
 		(pin "Analog_In_Left" input
-			(at 166.37 133.35 0)
+			(at 173.99 133.35 0)
 			(uuid "24ff7b8f-8031-4d7c-a921-4bdfae76d8cb")
 			(effects
 				(font
@@ -7039,7 +7039,7 @@
 			)
 		)
 		(pin "Analog_In_Right" input
-			(at 166.37 130.81 0)
+			(at 173.99 130.81 0)
 			(uuid "af448ad6-a341-49e1-84be-52b53c222482")
 			(effects
 				(font
@@ -7049,7 +7049,7 @@
 			)
 		)
 		(pin "I2S_MCLK" input
-			(at 166.37 144.78 0)
+			(at 173.99 144.78 0)
 			(uuid "1fa1df89-867d-4474-84f4-6af93ea089f3")
 			(effects
 				(font
@@ -7059,7 +7059,7 @@
 			)
 		)
 		(pin "I2S_SCLK" output
-			(at 134.62 132.08 180)
+			(at 142.24 132.08 180)
 			(uuid "818ef5c2-e89a-4b78-b71f-71d9564619c8")
 			(effects
 				(font
@@ -7069,7 +7069,7 @@
 			)
 		)
 		(pin "I2S_SD" output
-			(at 134.62 134.62 180)
+			(at 142.24 134.62 180)
 			(uuid "85c1d21b-4aef-4215-a9fa-ec1c39f1044d")
 			(effects
 				(font
@@ -7079,7 +7079,7 @@
 			)
 		)
 		(pin "I2S_WS" output
-			(at 134.62 137.16 180)
+			(at 142.24 137.16 180)
 			(uuid "092a8432-be80-4a4c-8ba0-74dfc0ac5d30")
 			(effects
 				(font
@@ -7089,7 +7089,7 @@
 			)
 		)
 		(pin "M0" input
-			(at 134.62 140.97 180)
+			(at 142.24 140.97 180)
 			(uuid "de8f5752-6973-4d52-8bd4-476be7878f50")
 			(effects
 				(font
@@ -7099,7 +7099,7 @@
 			)
 		)
 		(pin "M1" input
-			(at 134.62 143.51 180)
+			(at 142.24 143.51 180)
 			(uuid "6449f6fb-71bd-4eed-98cb-54b65c26ccab")
 			(effects
 				(font
