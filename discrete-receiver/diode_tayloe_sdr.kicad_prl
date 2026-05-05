@@ -52,7 +52,7 @@
       "shapes"
     ],
     "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
-    "zone_display_mode": 1
+    "zone_display_mode": 0
   },
   "git": {
     "integration_disabled": false,
@@ -105,7 +105,7 @@
       103,
       103,
       103,
-      103
+      51
     ],
     "custom_group_rules": [],
     "expanded_rows": [],
