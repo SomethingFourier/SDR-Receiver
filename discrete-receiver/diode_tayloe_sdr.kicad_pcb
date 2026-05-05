@@ -102532,8 +102532,8 @@
 	)
 	(via
 		(at 76.935 64.515)
-		(size 0.6)
-		(drill 0.3)
+		(size 1)
+		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net "+3.3V_SI5351")
 		(uuid "1ca1be88-2492-4e26-ab6f-36ac6542fa8f")
@@ -102900,8 +102900,8 @@
 	)
 	(via
 		(at 69.75 64.65)
-		(size 0.6)
-		(drill 0.3)
+		(size 1)
+		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net "+3.3V_ADC")
 		(uuid "9c534b97-38b2-46f8-84c5-c34ad0a54d9a")
@@ -103028,8 +103028,8 @@
 	)
 	(via
 		(at 83.95 64.55)
-		(size 0.6)
-		(drill 0.3)
+		(size 1)
+		(drill 0.5)
 		(layers "F.Cu" "B.Cu")
 		(net "+3.3V_CLK")
 		(uuid "27e67201-6120-4091-8d78-2d991a810d73")
