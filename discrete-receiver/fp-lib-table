@@ -4,4 +4,5 @@
 	(lib (name "EasyEDA_Lib") (type "EasyEDA / JLCEDA Pro") (uri "${KIPRJMOD}/EasyEDA_Lib/EasyEDA_Lib.elibz") (options "") (descr ""))
 	(lib (name "Conn_Coaxial_Frohne") (type "KiCad") (uri "${KIPRJMOD}/Conn_Coaxial_Frohne.pretty") (options "") (descr ""))
 	(lib (name "Frohne Connectors") (type "KiCad") (uri "/home/pkcubed/Documents/GitHub/SDR-Receiver/Frohne Connectors.pretty") (options "") (descr ""))
+	(lib (name "CJC5340") (type "KiCad") (uri "/Users/jesse/Downloads/CJC5340.pretty") (options "") (descr ""))
 )
