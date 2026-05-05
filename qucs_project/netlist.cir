@@ -1,0 +1,45 @@
+* Qucs 26.1.0  /home/neidna/QucsWorkspace/ENGR357_SDR_prj/SDR_Noise_Analysis.sch
+.INCLUDE "/usr/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+.INCLUDE "/home/neidna/QucsWorkspace/ENGR357_SDR_prj/lib/OPA161x.LIB"
+.INCLUDE "/usr/share/qucs-s/spicelibrary/xfmr.cir"
+XX1  _net0 _net1 VCC 0 _net1 OPA161X 
+
+R2 _net1 _net3  47 tc1=0.0 tc2=0.0 
+R3 _net3 _net4  10K tc1=0.0 tc2=0.0 
+R1 _net5 in  50 tc1=0.0 tc2=0.0 
+R4 0 I_diff  50 tc1=0.0 tc2=0.0 
+V2 VCC 0 DC 5
+V3 VDDA2 0 DC 2.5
+V1 _net5 0 DC 0 SIN(0 -10UV 100K 0 0 0) AC -10UV ACPHASE 0
+XX3  _net2 _net3 VCC 0 _net4 OPA161X 
+X_Tr1_W1 0 in VDDA2 _net0  XFMR RATIO=0.5
+X_Tr1_W2 0 in _net2 VDDA2  XFMR RATIO=0.5
+C1 _net4 I_diff  10U 
+
+.control
+
+*ac dec 84 1 200k
+*let v_sig_out = V(I_diff)
+*let v_sig_in = V(in)
+*let transfer = v_sig_out / v_sig_in
+
+set sqrnoise
+
+noise v(I_diff) V1 dec 84 1 200K
+*let k = 1.3806e-23
+*let T = 300
+*let Rs = 50
+*let noise_src_density = 4 * k * T * Rs
+*let snr_in = (abs(ac1.v_sig_in)^2) / noise_src_density
+*let snr_in_db = 10 * log10(snr_in)
+*let snr_out = (abs(ac1.v_sig_out)^2) / noise1.onoise_spectrum
+*let snr_out_db = 10 * log10(snr_out)
+*let noise_factor = snr_in / snr_out
+*let NF = 10*log10(noise_factor)
+write spice4qucs.custom1.plot noise1.onoise_spectrum noise1.inoise_spectrum noise1.onoise_total noise1.inoise_total
+destroy all
+reset
+
+exit
+.endc
+.END
