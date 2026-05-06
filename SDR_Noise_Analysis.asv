@@ -1,0 +1,49 @@
+k = 1.3806e-23; T = 300; R = 68; %50 + 18 Ohms of muxes
+B = 3e3; %Bandwidth
+Vs = 1e-6; %Signal Voltage
+noise_floor_db = 10*log10(k * T);
+
+LNA_gain_db = 23;
+LNA_gain= 10^(LNA_gain_db/10);
+LNA_NF = 0.73;
+LNA_F = 10^(LNA_NF/10);
+Charles_NF = 4; %110 to 160 MHz Bandpass Filter
+Charles_F = 10^(Charles_NF/10);
+diode_NF = 7;
+diode_F = 10^(diode_NF/10);
+Jaquavis_NF = 1.2; %30 MHz Low Pass Filter
+Jaquavis_F = 10^(Jaquavis_NF/10);
+MUX_NF = 6;
+MUX1_F = 10^(MUX_NF/10);
+
+%Tayloe Detector (Simulated Results)
+%MUX2_NF = 10% Ohms
+
+V_sig_in = 10e-6;
+V_sig_out = 2e-3;
+thermalPnoise_spectrum = 4 * k * T * 50;
+inputnoisetotal = 2.32e-9; %V^2 or power
+onoise_total = 9.69e-5; %V^2
+onoise_spectrum = (0.5e-9); % V^2 / Hz
+
+snr_in = V_sig_in^2 / inputnoisetotal;
+snr_out = V_sig_out^2 / onoise_total;
+TD_F = snr_in / snr_out;
+TD_NF = 10*log10(TD_F);
+
+
+fprintf('The noise %.2f dB\n the noise factor is %.4f\n', TD_NF, TD_F)
+antenna_noise = 1;
+noise_eq_f = LNA_F+ (Charles_F-1)/(LNA_gain) + (diode_F-1)/(LNA_gain*1/Charles_F) + (Jaquavis_F-1)/(LNA_gain*1/Charles_F * 1/diode_F) + (MUX1_F-1)/(LNA_gain*1/Charles_F*1/diode_F*1/Jaquavis_F)+(TD_F-1)/(LNA_gain*1/Charles_F*1/diode_F*1/Jaquavis_F*1/MUX1_F);
+noise_eq_nf = 10*log10(noise_eq_f);
+
+fprintf('the Noise figure of the reciever is %.3f\n',noise_eq_nf);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+HF_eq_F = Jaquavis_F + (MUX1_F-1)/(1/Jaquavis_F) + (TD_F-1)/(1/Jaquavis_F*1/MUX1_F);
+HF_eq_NF = 10* log10(HF_eq_F);
+
+fprintf('the Noise figure of the HF reciever is %.3f\n',HF_eq_NF)
+
+
