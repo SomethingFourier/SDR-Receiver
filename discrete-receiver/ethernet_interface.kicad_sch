@@ -6305,7 +6305,7 @@
 				(justify bottom)
 			)
 		)
-		(property "MF" "Stewart Connector"
+		(property "LCSC" "C6488114"
 			(at 101.6 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6314,19 +6314,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "SI-52003-F"
-			(at 101.6 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(pin "10"
