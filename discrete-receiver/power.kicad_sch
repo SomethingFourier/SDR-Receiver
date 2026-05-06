@@ -11977,6 +11977,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2832141"
+			(at 83.82 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "8ebeb0af-c903-47bd-a02e-2c25ee493542")
 		)
@@ -12686,7 +12697,7 @@
 		(dnp no)
 		(uuid "239bea88-9653-4d4d-a1f9-6da1f95ea463")
 		(property "Reference" "R3"
-			(at 136.144 39.37 0)
+			(at 136.652 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15021,6 +15032,17 @@
 				)
 			)
 		)
+		(property "LCSC" "C2832141"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "b3a84c7c-c263-4487-9a02-eda96c09e0f2")
 		)
@@ -15283,7 +15305,7 @@
 		(dnp no)
 		(uuid "5d0a0677-4926-4058-8bfb-7d44a3d6c574")
 		(property "Reference" "R10"
-			(at 135.636 46.482 0)
+			(at 136.906 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15672,6 +15694,17 @@
 		)
 		(property "Description" "Ideal Diode With Input Polarity Protection 1.5 - 5.5V  Input Voltage, 1.5A Output Current, Ron 141 mOhm, SC-70-6"
 			(at 83.82 105.664 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2832141"
+			(at 83.82 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18280,7 +18313,7 @@
 		(dnp no)
 		(uuid "8cf4162e-c3d0-445e-88a1-57eff5bdfbed")
 		(property "Reference" "R35"
-			(at 141.986 46.482 0)
+			(at 143.002 50.038 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18624,7 +18657,7 @@
 		(dnp no)
 		(uuid "90acae1a-6977-47ed-a050-4580076f04cf")
 		(property "Reference" "R27"
-			(at 141.986 38.862 0)
+			(at 143.002 42.418 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19515,7 +19548,7 @@
 		(dnp no)
 		(uuid "93a34161-fb63-43ca-adee-030e1d9bab49")
 		(property "Reference" "C34"
-			(at 181.864 38.862 0)
+			(at 183.134 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19526,7 +19559,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 183.388 40.6401 0)
+			(at 181.61 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19658,7 +19691,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 183.388 43.1801 0)
+			(at 182.118 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19803,10 +19836,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9926750f-1ff8-449b-a72d-92ee5fe45f68")
 		(property "Reference" "C33"
-			(at 175.26 38.0999 0)
+			(at 174.244 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19817,7 +19849,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 175.26 40.64 0)
+			(at 172.72 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19971,7 +20003,7 @@
 			)
 		)
 		(property "Voltage Rated" "16V"
-			(at 175.26 43.18 0)
+			(at 172.974 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20118,7 +20150,7 @@
 		(dnp no)
 		(uuid "9c37697e-3cf6-4de8-98f6-85c6a9cbc575")
 		(property "Reference" "C105"
-			(at 145.034 40.64 90)
+			(at 145.288 40.894 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20348,10 +20380,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9e22da99-a200-415d-93de-a2d358d6f54a")
 		(property "Reference" "C32"
-			(at 166.37 38.0999 0)
+			(at 165.354 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20362,7 +20393,7 @@
 			)
 		)
 		(property "Value" "100pF"
-			(at 166.37 40.64 0)
+			(at 164.084 39.116 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20494,7 +20525,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 166.37 43.18 0)
+			(at 164.084 42.164 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
