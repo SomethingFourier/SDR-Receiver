@@ -1,5 +1,5 @@
 # SDR-Receiver 📻
-**Super Heterodyne Direct Conversion Hybrid I/Q SDR Receiver**
+**Hybrid Super Heterodyne Direct Conversion I/Q SDR Receiver**
 
 An open-source, hybrid-architecture Software Defined Radio (SDR) receiver built around the RP2350 microcontroller. This project blends superheterodyne and direct-conversion (Tayloe detector) techniques. It's been designed to listen to the 2-meter band, but offers a wide range of tunable frequencies. It features both USB C (USB 1.1) and Ethernet data communication, as well as Power over Ethernet (PoE) capabilities.
 
