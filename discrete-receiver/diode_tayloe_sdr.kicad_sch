@@ -4156,12 +4156,6 @@
 		(uuid "0329dcbd-acbc-4ad1-90aa-50d927ac30e2")
 	)
 	(junction
-		(at 45.72 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "381bbc91-9c5c-41d9-8af6-004c50c4e3d9")
-	)
-	(junction
 		(at 55.88 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4172,6 +4166,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5dcee612-579f-4dac-b4d8-51479c9e9d83")
+	)
+	(junction
+		(at 45.72 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e9083d5-3eaf-4430-86fe-52a349bbf7fa")
 	)
 	(junction
 		(at 259.08 138.43)
@@ -4186,10 +4186,10 @@
 		(uuid "77324689-0466-49c1-ad5d-b7e56074e289")
 	)
 	(junction
-		(at 45.72 48.26)
+		(at 45.72 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7d3a004e-2394-49a0-af03-da55e9bfd5c1")
+		(uuid "a8cc1bfe-de64-443c-a60b-f88d06364c1c")
 	)
 	(junction
 		(at 259.08 130.81)
@@ -4288,6 +4288,16 @@
 			(type default)
 		)
 		(uuid "1113a55f-7d4b-4168-a0a1-ddcaa4844176")
+	)
+	(wire
+		(pts
+			(xy 123.19 146.05) (xy 123.19 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11223b4d-cc2b-4911-9099-27f5a1f76922")
 	)
 	(wire
 		(pts
@@ -4521,6 +4531,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 146.05) (xy 123.19 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6096e9bf-c49d-4a6e-a31e-18366e239941")
+	)
+	(wire
+		(pts
 			(xy 185.42 130.81) (xy 190.5 130.81)
 		)
 		(stroke
@@ -4648,6 +4668,16 @@
 			(type default)
 		)
 		(uuid "9716a878-887c-4ec4-a7ce-6b4e4a6d090a")
+	)
+	(wire
+		(pts
+			(xy 123.19 109.22) (xy 120.65 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d3de3d4-8bda-4473-a8c8-152b5ee454d8")
 	)
 	(wire
 		(pts
@@ -8664,7 +8694,7 @@
 	)
 	(sheet
 		(at 83.82 42.418)
-		(size 36.83 65.786)
+		(size 36.83 70.612)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -8690,7 +8720,7 @@
 			)
 		)
 		(property "Sheetfile" "pico.kicad_sch"
-			(at 83.82 108.7886 0)
+			(at 83.82 113.6146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8890,6 +8920,16 @@
 				(justify right)
 			)
 		)
+		(pin "~{ADC_RST}" input
+			(at 120.65 109.22 0)
+			(uuid "704c9e8c-dc05-4f69-8afb-cbe727ea1bf7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a"
@@ -9052,7 +9092,7 @@
 	)
 	(sheet
 		(at 142.24 128.016)
-		(size 31.75 19.304)
+		(size 31.75 21.844)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9078,7 +9118,7 @@
 			)
 		)
 		(property "Sheetfile" "adc.kicad_sch"
-			(at 142.24 147.9046 0)
+			(at 142.24 150.4446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9161,6 +9201,16 @@
 		(pin "M1" input
 			(at 142.24 143.51 180)
 			(uuid "6449f6fb-71bd-4eed-98cb-54b65c26ccab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{ADC_RST}" input
+			(at 142.24 146.05 180)
+			(uuid "c476cebf-aee2-4541-8159-949360c8274d")
 			(effects
 				(font
 					(size 1.27 1.27)

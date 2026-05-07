@@ -9247,6 +9247,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 153.67) (xy 259.08 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b698f61-f20d-43a1-ad07-8237a80b0097")
+	)
+	(wire
+		(pts
 			(xy 182.88 57.15) (xy 147.32 57.15)
 		)
 		(stroke
@@ -9404,6 +9414,16 @@
 			(type default)
 		)
 		(uuid "38b220fa-572e-4ea2-b114-09704af61aee")
+	)
+	(wire
+		(pts
+			(xy 264.16 153.67) (xy 259.08 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c21beb3-f1a6-4035-8cee-b54fef669126")
 	)
 	(wire
 		(pts
@@ -9757,16 +9777,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 156.21) (xy 259.08 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9964b7d8-390c-411a-98b2-654335667602")
-	)
-	(wire
-		(pts
 			(xy 247.65 33.02) (xy 254 33.02)
 		)
 		(stroke
@@ -10077,16 +10087,6 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 130.81) (xy 246.38 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dbe68ece-f2ba-4010-abac-9e61817aae60")
-	)
-	(wire
-		(pts
 			(xy 147.32 52.07) (xy 147.32 49.53)
 		)
 		(stroke
@@ -10184,6 +10184,16 @@
 			(type default)
 		)
 		(uuid "e8670012-0d77-47fb-8274-aaf70a6f775b")
+	)
+	(wire
+		(pts
+			(xy 264.16 156.21) (xy 264.16 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2fa012-a96a-4751-88ef-b7a5465998cf")
 	)
 	(wire
 		(pts
@@ -11038,6 +11048,17 @@
 			(justify left)
 		)
 		(uuid "a9be0af4-09af-4ff4-be35-07a0d60b56a8")
+	)
+	(hierarchical_label "~{ADC_RST}"
+		(shape input)
+		(at 246.38 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8a442c1-bd4f-4572-a941-5a35e16b67a2")
 	)
 	(hierarchical_label "I2S_SCLK"
 		(shape input)
@@ -22038,6 +22059,83 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
 					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 264.16 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7b16723-dd00-410f-a783-dbe73ce343cf")
+		(property "Reference" "#PWR020"
+			(at 264.16 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 264.16 159.766 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 264.16 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42f34df8-55ac-4be6-b587-f24b8c86e55d")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/55c641a1-b41f-4dd2-8726-b4449cdad787"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
