@@ -9653,6 +9653,17 @@
 				(justify bottom)
 			)
 		)
+		(property "Rotation Offset" "270"
+			(at 158.75 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "16"
 			(uuid "49452715-309c-4c26-8711-3d25f10d9e58")
 		)
@@ -12460,6 +12471,17 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 146.05 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "08dbe8fc-30dd-4beb-bb46-b6a380f1997d")
 		)
@@ -13744,6 +13766,17 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 45.72 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "6"
 			(uuid "3fc0779c-8fff-4202-9ffe-d8bcbe8a01ed")
 		)
@@ -13837,6 +13870,17 @@
 			)
 		)
 		(property "LCSC" "C10426"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
 			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)

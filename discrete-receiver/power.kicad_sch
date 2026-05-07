@@ -9948,6 +9948,17 @@
 				(justify bottom)
 			)
 		)
+		(property "Rotation Offset" "90"
+			(at 88.9 245.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9737f3f5-847a-42b8-b057-fda142a7f76e")
 		)
@@ -10907,6 +10918,17 @@
 			)
 		)
 		(property "LCSC" "C2832141"
+			(at 83.82 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
 			(at 83.82 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -12195,6 +12217,17 @@
 			)
 		)
 		(property "Part" "SMAJ58A"
+			(at 121.92 255.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
 			(at 121.92 255.27 0)
 			(hide yes)
 			(show_name no)
@@ -13623,10 +13656,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "54bad2a6-e133-416c-908b-0b8ab2465647")
 		(property "Reference" "U15"
-			(at 83.82 123.19 0)
+			(at 83.82 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13636,7 +13668,7 @@
 			)
 		)
 		(property "Value" "LM66100DCK"
-			(at 83.82 125.73 0)
+			(at 83.82 127 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13679,6 +13711,17 @@
 			)
 		)
 		(property "LCSC" "C2832141"
+			(at 83.82 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
 			(at 83.82 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -13804,6 +13847,17 @@
 			)
 		)
 		(property "LCSC" "C237000"
+			(at 163.83 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
 			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -14328,6 +14382,17 @@
 			)
 		)
 		(property "LCSC" "C2832141"
+			(at 83.82 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "90"
 			(at 83.82 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -15231,6 +15296,17 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+			)
+		)
+		(property "Rotation Offset" "90"
+			(at 88.9 266.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -17944,6 +18020,17 @@
 				)
 			)
 		)
+		(property "Rotation Offset" "180"
+			(at 166.37 251.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1964b47f-0a7f-438b-8e5f-ade79097cea0")
 		)
@@ -20629,6 +20716,17 @@
 			)
 		)
 		(property "LCSC" "C970685"
+			(at 104.14 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rotation Offset" "180"
 			(at 104.14 156.21 0)
 			(hide yes)
 			(show_name no)
