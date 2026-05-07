@@ -10099,29 +10099,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C521210"
-			(at 22.86 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 22.86 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "内孔 BNC 弯头"
+		(property "LCSC" "C521210"
 			(at 22.86 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -11419,29 +11397,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C521210"
-			(at 109.22 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 109.22 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "内孔 BNC 弯头"
+		(property "LCSC" "C521210"
 			(at 109.22 123.19 0)
 			(hide yes)
 			(show_name no)

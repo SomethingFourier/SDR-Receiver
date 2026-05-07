@@ -10838,29 +10838,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C3294699"
-			(at 128.27 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 128.27 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "800mA、低噪声、低静态电流、高电源抑制比、低压差线性稳压器"
+		(property "LCSC" "C500795"
 			(at 128.27 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -12531,51 +12509,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "SGM2212-3.3XKC3G/TR"
-			(at 128.27 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "SGMICRO(圣邦微)"
-			(at 128.27 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier Part" "C3294699"
-			(at 128.27 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 128.27 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "800mA、低噪声、低静态电流、高电源抑制比、低压差线性稳压器"
+		(property "LCSC" "C500795"
 			(at 128.27 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -14256,29 +14190,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C3294699"
-			(at 128.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 128.27 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "800mA、低噪声、低静态电流、高电源抑制比、低压差线性稳压器"
+		(property "LCSC" "C500795"
 			(at 128.27 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -15157,29 +15069,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C237000"
-			(at 163.83 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 163.83 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "精密运放RS8551XF"
+		(property "LCSC" "C237000"
 			(at 163.83 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -21331,29 +21221,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C3294699"
-			(at 128.27 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 128.27 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "800mA、低噪声、低静态电流、高电源抑制比、低压差线性稳压器"
+		(property "LCSC" "C500795"
 			(at 128.27 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -23633,29 +23501,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C22392180"
-			(at 116.84 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 116.84 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "800mV~6V 1A 6V"
+		(property "LCSC" "C22392180"
 			(at 116.84 45.72 0)
 			(hide yes)
 			(show_name no)

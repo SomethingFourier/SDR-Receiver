@@ -3941,17 +3941,6 @@
 		)
 		(uuid "90894b01-c6c6-4a52-a6fd-5ccd2aea5093")
 	)
-	(text "TO DO:\n- Determine if ethernet chip can do 12kΩ instead of 12.1kΩ (Done)\n- JLC the rest"
-		(exclude_from_sim no)
-		(at 49.022 229.87 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-			)
-			(justify left)
-		)
-		(uuid "d05afbdc-2c56-434d-9a1f-70a0afec9f20")
-	)
 	(junction
 		(at 76.2 139.7)
 		(diameter 0)
@@ -6242,10 +6231,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "63d74123-5e49-48e2-b2d4-09ac245687e3")
 		(property "Reference" "J6"
@@ -6505,6 +6494,17 @@
 			)
 		)
 		(property "Description" "LAN8720 Ethernet PHY with RMII interface, QFN-24"
+			(at 199.39 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17146"
 			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)

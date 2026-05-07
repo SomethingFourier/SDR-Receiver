@@ -6377,29 +6377,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C145816"
-			(at 34.29 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 34.29 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "3.5mm耳机座"
+		(property "LCSC" "C145816"
 			(at 34.29 125.73 0)
 			(hide yes)
 			(show_name no)
