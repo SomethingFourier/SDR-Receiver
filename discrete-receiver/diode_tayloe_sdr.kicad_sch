@@ -7294,10 +7294,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "98ad593a-2f6b-43d4-8164-37cd1d12f1dd")
 		(property "Reference" "J5"
 			(at 40.64 99.0601 0)
