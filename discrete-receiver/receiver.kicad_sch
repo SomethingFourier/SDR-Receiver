@@ -8343,7 +8343,7 @@
 		(in_bom no)
 		(on_board yes)
 		(in_pos_files no)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ce13848-0912-4925-b035-b263f14da8ef")
 		(property "Reference" "JP2"
@@ -8425,7 +8425,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2f904138-16bf-4e29-be49-459f7330a1b8")
 		(property "Reference" "JP15"
@@ -8505,7 +8505,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "2fc9564b-4088-4a11-83e8-43b74d41e87e")
 		(property "Reference" "JP12"
@@ -9030,7 +9030,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "3f76915b-f56a-4d4f-8d6a-3f88194ff07d")
 		(property "Reference" "JP16"
@@ -9110,7 +9110,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "41ef2f2a-396e-4e36-8d1c-8d34469824da")
 		(property "Reference" "JP11"
@@ -12739,7 +12739,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a22ffdd0-4573-42c7-8a83-958c58c6a030")
 		(property "Reference" "JP13"
@@ -13144,7 +13144,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "a551ca92-eb05-40fd-b1f3-021648cc1425")
 		(property "Reference" "JP20"
@@ -13517,7 +13517,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "ca5942e3-4642-4134-b995-49a4fdf1efbd")
 		(property "Reference" "JP14"
@@ -13597,7 +13597,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "d17fd635-4097-4863-87f1-5faea923b3ae")
 		(property "Reference" "JP22"
@@ -14196,7 +14196,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "f524b3a8-a1c2-41c0-ab7e-cfa4c072e5ad")
 		(property "Reference" "JP21"

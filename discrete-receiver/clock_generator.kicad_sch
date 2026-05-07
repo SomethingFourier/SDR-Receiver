@@ -3228,7 +3228,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "550ea552-6194-4e53-b198-2d0fdab2adf3")
 		(property "Reference" "JP31"

@@ -21127,7 +21127,7 @@
 		(dnp no)
 		(uuid "c4a92bf8-defc-4907-971f-afc46364e3ad")
 		(property "Reference" "L1"
-			(at 174.752 69.088 90)
+			(at 174.752 69.85 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21137,13 +21137,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.3uH"
-			(at 174.752 70.612 90)
+		(property "Value" "AOTA-B201610S3R3-101-T"
+			(at 172.974 66.802 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.8 0.8)
+					(size 0.381 0.381)
 				)
 				(justify left)
 			)
@@ -21181,17 +21181,6 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "AOTA-B201610S3R3-101-T"
-			(at 173.99 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Manufacturer" "ABRACON"
 			(at 173.99 69.85 0)
 			(hide yes)
@@ -21203,29 +21192,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C42411119"
-			(at 173.99 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 173.99 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part Name" "3.3uH 2.4A"
+		(property "LCSC" "C42411119"
 			(at 173.99 69.85 0)
 			(hide yes)
 			(show_name no)
