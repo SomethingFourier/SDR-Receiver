@@ -94,6 +94,10 @@
           ""
         ],
         [
+          "copper_edge_clearance|106727293|46651793|571f80d2-7b56-4664-b600-f44269e1abab|910ed2cb-4e31-44cc-bd6b-de193b872fa1",
+          "this is literally the footprint of the connector; kicad silly"
+        ],
+        [
           "copper_edge_clearance|82992579|47640000|87bbe309-6cca-4e39-856e-a197b1631844|6c71a4dd-b44d-4905-9c8f-bb5cd9e3ea54",
           ""
         ],
@@ -108,6 +112,10 @@
         [
           "copper_edge_clearance|88825000|47640000|7d47c57d-4505-45bc-aff6-8022c2b50be8|25a52b75-48c5-45f8-8300-bdcd64c38eee",
           ""
+        ],
+        [
+          "copper_edge_clearance|94072707|46651793|d7f19650-3843-4006-a92f-0ca592fd470d|298bf029-62be-4ba1-a18a-c0fd80fe6019",
+          "this is literally the footprint of the connector; kicad silly"
         ]
       ],
       "meta": {
