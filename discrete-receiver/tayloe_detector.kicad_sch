@@ -433,7 +433,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
+		(symbol "Jumper:SolderJumper_2_Bridged"
 			(pin_numbers
 				(hide yes)
 			)
@@ -456,7 +456,7 @@
 					)
 				)
 			)
-			(property "Value" "SolderJumper_2_Open"
+			(property "Value" "SolderJumper_2_Bridged"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -478,7 +478,7 @@
 				)
 			)
 			(property "Datasheet" ""
-				(at 0 -7.62 0)
+				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -488,7 +488,7 @@
 					)
 				)
 			)
-			(property "Description" "Solder Jumper, 2-pole, open"
+			(property "Description" "Solder Jumper, 2-pole, closed/bridged"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -510,7 +510,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
+			(property "ki_fp_filters" "SolderJumper*Bridged*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -521,7 +521,18 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_2_Open_0_1"
+			(symbol "SolderJumper_2_Bridged_0_1"
+				(rectangle
+					(start -0.508 0.508)
+					(end 0.508 -0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy -0.254 1.016) (xy -0.254 -1.016)
@@ -571,7 +582,7 @@
 					)
 				)
 			)
-			(symbol "SolderJumper_2_Open_1_1"
+			(symbol "SolderJumper_2_Bridged_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 3.81)
@@ -4423,6 +4434,12 @@
 		(uuid "23192a3d-4afa-4a94-a97e-7f43a2e1984f")
 	)
 	(junction
+		(at 120.65 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2675e32a-8fe7-42a8-891c-f1d840c48ec5")
+	)
+	(junction
 		(at 185.42 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4477,34 +4494,16 @@
 		(uuid "74946038-635c-4168-9252-7a8bf7a3c6e0")
 	)
 	(junction
-		(at 120.65 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "76832c4a-6c3d-46cc-bee1-f01b7b7b25d2")
-	)
-	(junction
 		(at 200.66 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87fdf9cc-2f46-4fa8-9cbe-6d3fcd18815a")
 	)
 	(junction
-		(at 220.98 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b6962ba-d146-4dc0-a774-776200ef5af2")
-	)
-	(junction
 		(at 200.66 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fcb8d2e-d63c-4443-99dd-e9b505b33846")
-	)
-	(junction
-		(at 90.17 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9237ac35-6986-4a6d-82cd-0ddaaa2c36fd")
 	)
 	(junction
 		(at 123.19 100.33)
@@ -4523,6 +4522,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9fdc9204-fbc4-4911-9925-da68e758b62c")
+	)
+	(junction
+		(at 90.17 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac51b8c2-2606-4f72-8881-927bec94c10f")
 	)
 	(junction
 		(at 96.52 82.55)
@@ -4549,22 +4554,10 @@
 		(uuid "b8022e4d-b6bc-40f5-80bd-8b884c68fb2f")
 	)
 	(junction
-		(at 220.98 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cc7fa6b6-bf3c-452b-a0a0-bca53804ada8")
-	)
-	(junction
 		(at 200.66 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce48cfb1-bb4f-4de5-8948-bd49ce007dd3")
-	)
-	(junction
-		(at 210.82 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d31d274a-f300-4b6c-991a-24abc99fd506")
 	)
 	(junction
 		(at 185.42 69.85)
@@ -4583,12 +4576,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dcaeb68e-09cb-41c8-a45d-a72e98ff14eb")
-	)
-	(junction
-		(at 210.82 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea1c2331-60bf-4471-a2ff-6c015d06aa08")
 	)
 	(junction
 		(at 82.55 157.48)
@@ -4623,16 +4610,6 @@
 			(type default)
 		)
 		(uuid "014d6f53-6f4b-4cd0-86e9-50330f6b9a59")
-	)
-	(wire
-		(pts
-			(xy 219.71 110.49) (xy 220.98 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "082562f8-0857-4248-baff-2e1351ce61ab")
 	)
 	(wire
 		(pts
@@ -4716,23 +4693,13 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 110.49) (xy 212.09 110.49)
+			(xy 200.66 110.49) (xy 212.09 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1b3f1c64-b0b2-44c6-86c3-addc65ae1450")
-	)
-	(wire
-		(pts
-			(xy 219.71 90.17) (xy 220.98 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f6e76ca-ee3f-4a1b-a07f-c6b3cd0ff163")
 	)
 	(wire
 		(pts
@@ -4766,16 +4733,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 110.49) (xy 210.82 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29ff8600-5567-45bc-a49b-d80de36da24e")
-	)
-	(wire
-		(pts
 			(xy 92.71 82.55) (xy 96.52 82.55)
 		)
 		(stroke
@@ -4793,16 +4750,6 @@
 			(type default)
 		)
 		(uuid "2b6b2166-3af5-4563-bc93-4275ab5c3099")
-	)
-	(wire
-		(pts
-			(xy 220.98 104.14) (xy 220.98 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30733a56-0ac3-4358-abe9-71ff74e243b5")
 	)
 	(wire
 		(pts
@@ -4906,16 +4853,6 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 90.17) (xy 220.98 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "519aeb62-ff94-4532-8249-4fb1769a75be")
-	)
-	(wire
-		(pts
 			(xy 105.41 157.48) (xy 113.03 157.48)
 		)
 		(stroke
@@ -4946,16 +4883,6 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 110.49) (xy 224.79 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cd7a712-8fe7-4341-8f46-05126247eed2")
-	)
-	(wire
-		(pts
 			(xy 69.85 110.49) (xy 69.85 113.03)
 		)
 		(stroke
@@ -4966,7 +4893,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 90.17) (xy 212.09 90.17)
+			(xy 200.66 90.17) (xy 212.09 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5016,16 +4943,6 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 90.17) (xy 210.82 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66f67d8d-4710-4e9f-95d4-a16a1222ce0e")
-	)
-	(wire
-		(pts
 			(xy 148.59 85.09) (xy 123.19 85.09)
 		)
 		(stroke
@@ -5063,16 +4980,6 @@
 			(type default)
 		)
 		(uuid "71bb20c2-07ea-4274-a425-d4d086ffd4eb")
-	)
-	(wire
-		(pts
-			(xy 220.98 83.82) (xy 220.98 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7425bb92-72b0-44d9-9ed0-26fde49eaa93")
 	)
 	(wire
 		(pts
@@ -5296,16 +5203,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 104.14) (xy 210.82 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bded14c5-eacd-48a9-a0bb-12a793cd6a4d")
-	)
-	(wire
-		(pts
 			(xy 163.83 87.63) (xy 166.37 87.63)
 		)
 		(stroke
@@ -5323,16 +5220,6 @@
 			(type default)
 		)
 		(uuid "c408cd55-20da-4fa5-9e1c-7fabf81edcb9")
-	)
-	(wire
-		(pts
-			(xy 210.82 83.82) (xy 210.82 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c93625d2-6222-46d8-a9f6-67917f251d4b")
 	)
 	(wire
 		(pts
@@ -5549,7 +5436,7 @@
 	)
 	(hierarchical_label "Q_out"
 		(shape output)
-		(at 224.79 110.49 0)
+		(at 229.87 110.49 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5571,7 +5458,7 @@
 	)
 	(hierarchical_label "I_out"
 		(shape output)
-		(at 224.79 90.17 0)
+		(at 229.87 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5579,88 +5466,6 @@
 			(justify left)
 		)
 		(uuid "e47fc4a9-8591-42db-be45-85b9447abec5")
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 215.9 83.82 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "00b81115-7309-4306-8ed7-bb73d1ed4127")
-		(property "Reference" "JP3"
-			(at 214.376 81.534 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 217.1699 81.28 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 215.9 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 215.9 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4beab351-691c-4971-adeb-3392b4b01005")
-		)
-		(pin "2"
-			(uuid "31268fc7-bd8a-4fd5-9f58-800cbb1ac7d0")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
-					(reference "JP3")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -6311,83 +6116,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
 					(reference "C83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 120.65 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1dfd2e55-ada8-4c3f-a069-7914ad08000e")
-		(property "Reference" "#PWR0122"
-			(at 120.65 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V_A"
-			(at 120.65 153.416 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 120.65 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 120.65 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "81574591-424c-431c-b6b8-5771b12b3d1b")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
-					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -8447,7 +8175,7 @@
 		(dnp no)
 		(uuid "5015c7c4-7b47-4c98-8d7e-b815f65dfba0")
 		(property "Reference" "C118"
-			(at 217.424 110.49 0)
+			(at 213.36 108.204 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8458,7 +8186,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 214.376 110.744 0)
+			(at 212.09 109.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8590,7 +8318,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 215.9 112.014 0)
+			(at 216.662 109.728 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8720,6 +8448,86 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 224.79 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5a467364-16cb-4347-9145-593225a0c50d")
+		(property "Reference" "JP3"
+			(at 224.79 88.138 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 224.79 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 224.79 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 224.79 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "40c9a2fd-94d8-49c6-8c17-a7ad862da0e2")
+		)
+		(pin "1"
+			(uuid "0fddcd00-eafc-4f7f-a170-9e6ebb0e8806")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -8945,6 +8753,86 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Bridged")
+		(at 224.79 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp no)
+		(uuid "5c466421-b642-410e-9b33-58356ace9555")
+		(property "Reference" "JP4"
+			(at 224.79 108.458 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Bridged"
+			(at 224.79 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 224.79 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 224.79 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b88eaa34-cec1-46cc-9bbe-ac33fc384f79")
+		)
+		(pin "1"
+			(uuid "a2f4029f-cbf2-42a8-a6b9-b73cdb68b5fb")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
@@ -10447,83 +10335,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 90.17 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a4483fa0-1f11-4219-9edf-c630405db327")
-		(property "Reference" "#PWR0121"
-			(at 90.17 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V_A"
-			(at 90.17 153.416 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.17 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 90.17 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c86710c-298e-4dc1-97e4-f0732fb78378")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
-					(reference "#PWR0121")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "SolderJumper_2_Open_1")
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 187.96 125.73 180)
@@ -11444,6 +11255,160 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 120.65 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ce517936-73ba-44dc-8dde-3b1607997544")
+		(property "Reference" "#PWR0156"
+			(at 120.65 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+4.8V_A"
+			(at 120.65 153.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 120.65 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d59df068-8e33-4333-92ac-08088db710f5")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
+					(reference "#PWR0156")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 90.17 157.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d19ae580-0a63-4a2f-90ca-1c7f53b4c048")
+		(property "Reference" "#PWR0155"
+			(at 90.17 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+4.8V_A"
+			(at 90.17 153.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 90.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 90.17 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e9160ed-280b-427d-a201-dc3afb06a52d")
+		)
+		(instances
+			(project "diode_tayloe_sdr"
+				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
+					(reference "#PWR0155")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 73.66 165.1 0)
 		(unit 1)
@@ -11973,7 +11938,7 @@
 		(dnp no)
 		(uuid "efcf09f8-4710-4c75-8ea8-4dd48318f06a")
 		(property "Reference" "C117"
-			(at 217.424 90.17 0)
+			(at 213.36 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11984,7 +11949,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 214.376 90.424 0)
+			(at 212.09 89.408 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12116,7 +12081,7 @@
 			)
 		)
 		(property "Voltage Rated" "25V"
-			(at 215.9 91.694 0)
+			(at 216.916 89.408 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12169,88 +12134,6 @@
 			(project "diode_tayloe_sdr"
 				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
 					(reference "C117")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 215.9 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files no)
-		(dnp no)
-		(uuid "f3b771b0-441a-4267-87a8-07ef7265b807")
-		(property "Reference" "JP4"
-			(at 214.376 101.854 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 217.1699 101.6 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 215.9 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 215.9 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5fe46069-6a56-489a-aed8-f0eb3543ef4d")
-		)
-		(pin "2"
-			(uuid "b95f4a42-3a7f-4095-a86d-845e689ae6d7")
-		)
-		(instances
-			(project "diode_tayloe_sdr"
-				(path "/d18d178d-3f10-4d68-9036-eae71a7d091a/c96fbd90-62d0-401a-a1f5-d4c4d983c9a4/751ff83c-860e-458a-b47c-a02b34d5585d"
-					(reference "JP4")
 					(unit 1)
 				)
 			)
