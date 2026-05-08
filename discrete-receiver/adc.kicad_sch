@@ -3006,17 +3006,6 @@
 		)
 		(uuid "cd1bac68-a109-4bcc-82bf-255156a8ca5a")
 	)
-	(text "unsure if these\nresistors are\nnecessary or\nnot... the\ndatasheet just\nassigns a 1 to\nM1 and a 0 to\nM0 for 196 kHz\n"
-		(exclude_from_sim no)
-		(at 147.574 109.982 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "6760f298-0cce-4179-97c2-d2f5c960f2be")
-	)
 	(text "ADC Module for I and Q output from Receiver"
 		(exclude_from_sim no)
 		(at 217.678 189.738 0)

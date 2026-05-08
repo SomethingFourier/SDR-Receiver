@@ -4077,10 +4077,10 @@
 	)
 	(text "Tayloe Detector"
 		(exclude_from_sim no)
-		(at 127.762 61.468 0)
+		(at 138.176 66.548 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 5.08 5.08)
 				(thickness 0.254)
 				(bold yes)
 			)
