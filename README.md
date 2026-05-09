@@ -44,19 +44,26 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 ---
 
 ## RP2350 GPIO Mapping
-
 | GPIO Pin | Function | Subsystem |
 | :--- | :--- | :--- |
 | **0 - 1** | `I2C SDA / I2C SCL` | I2C |
 | **2 - 3** | `Select button / Enter button` | UI Buttons |
-| **8** | `VHF BPFilter Mux select` | General |
-| **9** | `Mux U18 Select` | General |
+| **4** | `Red LED` | LED |
+| **5** | `Green LED` | LED |
+| **6 - 7** | `ADC M0 / ADC M1` | ADC Mode |
+| **8** | `VHF BP Filter Mux select` | Mux Selects |
+| **9** | `Mux U18 Select` | Mux Selects |
 | **10 - 12** | `Ethernet TX Enable, TXD0, TXD1` | Eth TX (Programmable IO) |
 | **13 - 15** | `Ethernet Carrier Sense/Data Valid, RXD0, RXD1` | Eth RX (Programmable IO) |
 | **16 - 18** | `LAN8720A Management Data I/O, CLK, Reset` | Eth Manage (Programmable IO) |
 | **19 - 21** | `I2S CLK, Word Select, Data` | I2S (Programmable IO) |
+| **22** | `Extra GPIO` | General |
 | **23** | `Ethernet 50 MHz Clk output` | Programmable IO |
-| **56 - 60**| `QSPI` (SCLK, SDO, SD1-3, SS) | Flash Memory |
+| **24 - 25** | `Extra GPIO` | General |
+| **26** | `White LED` | LED |
+| **27 - 28** | `Extra GPIO` | General |
+| **29** | `Yellow LED` | LED |
+| **56 - 60** | `QSPI` (SCLK, SDO, SD1-3, SS) | Flash Memory |
 
 *(Note: Pin mapping is subject to change as the board layout is finalized. Refer to `pico.kicad_sch` for the raw schematic).*
 
