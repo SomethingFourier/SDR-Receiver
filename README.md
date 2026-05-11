@@ -71,4 +71,4 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 
 ## Getting Started
 
-At this point, we are waiting for our designed board to be fabricated, assembled, and sent back to us. When we do receive our 5 boards, we'll go through the steps outlined in the [board bringup plan](board-bringup.md) to safely get our board working, finding any errors we may have made.
+At this point, we are waiting for our designed board to be fabricated, assembled, and sent back to us. When we do receive our 5 boards, we'll go through the steps outlined in the [board bring-up plan](board-bring-up.md) to safely get our board working, finding any errors we may have made.
