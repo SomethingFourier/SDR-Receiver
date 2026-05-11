@@ -71,4 +71,4 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 
 ## Getting Started
 
-*(Instructions for cloning the repo, opening the KiCad project, and compiling the initial firmware will go here).*
+At this point, we are waiting for our designed board to be fabricated, assembled, and sent back to us. When we do receive our 5 boards, we'll go through the steps outlined in the [board bringup plan](board-bringup.md) to safely get our board working, finding any errors we may have made.
