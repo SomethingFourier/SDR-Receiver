@@ -3006,6 +3006,19 @@
 		)
 		(uuid "cd1bac68-a109-4bcc-82bf-255156a8ca5a")
 	)
+	(text "C121 and C106 incorrect\nkicad symbols and models"
+		(exclude_from_sim no)
+		(at 114.3 61.214 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 255 0 34 1)
+			)
+		)
+		(uuid "4124cb2c-a5da-4489-8755-c94e4ee64a6a")
+	)
 	(text "ADC Module for I and Q output from Receiver"
 		(exclude_from_sim no)
 		(at 217.678 189.738 0)
@@ -6986,10 +6999,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "5c55d646-12b1-4c8f-b1d6-cfacaf96a6a7")
 		(property "Reference" "C121"
 			(at 91.44 96.52 90)
@@ -11107,10 +11120,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "e7607b48-9b3e-4661-b153-f1ad5a8cdf47")
 		(property "Reference" "C106"
 			(at 91.44 59.69 90)
