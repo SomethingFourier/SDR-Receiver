@@ -37,7 +37,7 @@ The whole SDR is built around the rp2350 microprocessor. The rp2350 will talk to
 *This filter simulation graph shows a passband attenuation much greater than what will actually be observed*
 <img width="2113" height="1305" alt="Charles Filter Design" src="https://github.com/user-attachments/assets/c4828647-cf6e-4e16-ace0-0cf2b7938558" />
 
-### Jaquavis (30 MHz LPF/HPF)
+### Jaquavis (30 MHz LPF)
 *This filter simulation graph shows a passband attenuation much greater than what will actually be observed*
 <img width="1793" height="1007" alt="Jaquavis Filter Design" src="https://github.com/user-attachments/assets/c8b24a2c-a5b2-4d73-b45e-37aa08584d01" />
 
