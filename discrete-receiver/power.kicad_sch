@@ -5509,12 +5509,6 @@
 		(uuid "5edf3179-5581-4c79-833c-ef107fd3623e")
 	)
 	(junction
-		(at 140.97 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5f216a48-af34-42a1-bdeb-0b21eed99af9")
-	)
-	(junction
 		(at 100.33 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5531,12 +5525,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "64f17d64-478f-4da2-b9be-da03bf68dff3")
-	)
-	(junction
-		(at 125.73 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "66385229-4f2b-47a2-a1dd-1a1247e81d46")
 	)
 	(junction
 		(at 158.75 66.04)
@@ -5765,6 +5753,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dda1e2d5-caaa-4232-9c4e-12bef51fdfa7")
+	)
+	(junction
+		(at 140.97 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de283319-2323-460e-bcf6-0872165fcd93")
 	)
 	(junction
 		(at 181.61 88.9)
@@ -6364,7 +6358,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 66.04) (xy 140.97 66.04)
+			(xy 138.43 66.04) (xy 140.97 66.04)
 		)
 		(stroke
 			(width 0)
@@ -6381,16 +6375,6 @@
 			(type default)
 		)
 		(uuid "55bdb4de-cec6-4d17-a909-072eaa1f8633")
-	)
-	(wire
-		(pts
-			(xy 125.73 66.04) (xy 127 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "569574de-2860-4b42-8e56-4acb62612a2c")
 	)
 	(wire
 		(pts
@@ -6674,7 +6658,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 66.04) (xy 125.73 66.04)
+			(xy 124.46 66.04) (xy 128.27 66.04)
 		)
 		(stroke
 			(width 0)
@@ -19794,7 +19778,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Bridged")
-		(at 130.81 66.04 180)
+		(at 133.35 66.04 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19804,7 +19788,7 @@
 		(dnp no)
 		(uuid "a564d8f1-ced5-4c52-9024-afa949424397")
 		(property "Reference" "JP30"
-			(at 130.81 63.754 0)
+			(at 133.35 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19814,7 +19798,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 132.08 63.754 0)
+			(at 134.62 63.754 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19824,7 +19808,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
-			(at 130.81 66.04 0)
+			(at 133.35 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19835,7 +19819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 59.69 0)
+			(at 133.35 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19846,7 +19830,7 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
-			(at 130.81 60.96 0)
+			(at 133.35 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
