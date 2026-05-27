@@ -44,7 +44,7 @@
 - ✅ check pin 10 tp I_LO for clock 0 out
 - ⬜ write code and check clk 1 and clk2 out at Q_Lo and JP 31
 
-- ## Test mux and filters
+## Test mux and filters
 - ⬜ break Jp 21 and JP22
 - ✅ resistance check 4.8 V bus to ground (large value expected)
 - ✅ resistance check 2.4 V bus to ground (large value expected)
