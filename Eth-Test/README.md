@@ -14,6 +14,9 @@
 | 18 | LAN8720 Reset |
 
 ## Referenced Repositories and Projects
+
 https://github.com/rscott2049/pico-rmii-ethernet_nce
+
 https://github.com/sandeepmistry/pico-rmii-ethernet
+
 https://mongoose.ws/documentation/tutorials/rp2040/pico-rmii/
