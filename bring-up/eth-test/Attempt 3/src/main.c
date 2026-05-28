@@ -38,9 +38,12 @@ static void setup_50mhz_clock(uint gpio_pin) {
   // Configure GPOUT2 to output sys clock divided by 6
   // GPOUT typically outputs clk_sys/divisor
   // We need 300MHz / 6 = 50MHz
-  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 6);
+  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 3);
   
-  printf("50MHz clock configured on GPIO %d\n", gpio_pin);
+  uint32_t sys_clk = clock_get_hz(clk_sys);
+  printf("System clock: %lu Hz (%.1f MHz)\n", sys_clk, (float)sys_clk / 1e6);
+  printf("50MHz clock configured on GPIO %d (divisor: 3)\n", gpio_pin);
+  printf("Expected output: %.1f MHz\n", (float)sys_clk / 1e6 / 6);
 }
 
 // Simple MDIO bit-bang test to diagnose PHY wiring before driver init

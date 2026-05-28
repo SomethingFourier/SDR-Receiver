@@ -116,4 +116,7 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
  /usr/include/newlib/string.h /usr/include/newlib/strings.h \
  /usr/include/newlib/sys/string.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_rx.pio.h
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_rx.pio.h \
+ /home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/clocks.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/clocks.h
