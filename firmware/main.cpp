@@ -1,7 +1,3 @@
-// C Libraries
-#include <stdio.h>
-#include <stdlib.h>
-
 // Native Pico libraries
 #include <pico/stdlib.h>
 #include <pico/stdio.h>
@@ -34,13 +30,19 @@ dI2Srx g_I2Srx;
 
 int main (void)
 {
-    // DAC configuration pins
-    gpio_init(DAC_MD1);
-    gpio_init(DAC_FMT);
-    gpio_set_dir(DAC_MD1, GPIO_OUT);
-    gpio_set_dir(DAC_FMT, GPIO_OUT);
-    gpio_put(DAC_MD1, 0); // Master mode 512*f_s
-    gpio_put(DAC_FMT, 0); // FMT = 0 for I2S
+    // LED config
+    gpio_init(LED_RED);
+    gpio_init(LED_GREEN);
+    gpio_init(LED_WHITE);
+    gpio_init(LED_YELLOW);
+    gpio_set_dir(LED_RED, GPIO_OUT);
+    gpio_set_dir(LED_GREEN, GPIO_OUT);
+    gpio_set_dir(LED_WHITE, GPIO_OUT);
+    gpio_set_dir(LED_YELLOW, GPIO_OUT);
+    gpio_put(LED_RED, 0);
+    gpio_put(LED_GREEN, 0);
+    gpio_put(LED_WHITE, 0);
+    gpio_put(LED_YELLOW, 0);
     
     // pico-sdk initializations
     stdio_init_all();
