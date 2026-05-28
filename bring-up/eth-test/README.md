@@ -21,4 +21,5 @@
 
 ## Testing Status
 * An error was found with the LAN8720 strapping configuration. The LED2/nINTSEL pin is used to determine whether the LAN8720 will generate a 50MHz clock, or it will receive a 50MHz clock. For this project, the LAN8720 is wired to receive a 50MHz clock from the rp2350, however the strapping pin is incorrectly pulled. To fix this, the 2nd Ethernet LED needs to be oriented inversely, where the anode is connected through a current limitting resistor to +3.3V, and the cathode is connected to the LED2/nINTSEL pin. To get Ethernet to work (and consequently lose this LED's functionality), R31 and R32 will need to be removed, and a 10k resistor from the Eth LED 2 net to +3.3V will need to be added.
+* The LAN8720 chip on our board was not wired with a pullup resistor on the reset pin. We need the rp2350 to drive the reset pin push-pull.
 * A hello world webpage test works! Flash the UF2 file located here: Attempt 3/external/pico-rmii-ethernet/build-rp2350/examples/httpd/pico_rmii_ethernet_httpd.uf2
