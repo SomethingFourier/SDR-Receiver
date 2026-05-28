@@ -326,6 +326,99 @@ uint32_t dSi5351::Set_Frequency_Integer_Quadrature(uint32_t target_hz)
     return best_frequency;
 } // Set_Frequency_Integer_Quadrature()
 
+uint32_t dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk)
+{
+    if (target_hz == 0u || clk > 2u)
+    {
+        return 0;
+    }
+
+    uint32_t best_multiplier = 0;
+    uint32_t best_multisynth_divider = 0;
+    uint32_t best_frequency = 0;
+    uint32_t best_error = UINT_MAX;
+
+    // Integer-mode search: N in valid PLL range, even M for integer multisynth mode.
+    for (uint32_t n = 25; n <= 36; ++n)
+    {
+        uint32_t vco_hz = XTAL_HZ * n;
+        if (vco_hz < 600000000u || vco_hz > 900000000u)
+        {
+            continue;
+        }
+
+        for (uint32_t m = 6; m <= 254; m += 2)
+        {
+            uint32_t f_hz = vco_hz / m;
+            uint32_t err = (f_hz > target_hz) ? (f_hz - target_hz) : (target_hz - f_hz);
+            if (err < best_error)
+            {
+                best_error = err;
+                best_multiplier = n;
+                best_multisynth_divider = m;
+                best_frequency = f_hz;
+            }
+        }
+    }
+
+    if (best_multiplier == 0u || best_multisynth_divider == 0u)
+    {
+        return 0;
+    }
+
+    uint8_t pll_data[8];
+    uint8_t ms_data[8];
+    Pack_Integer_Params(best_multiplier, pll_data);
+    Pack_Integer_Params(best_multisynth_divider, ms_data);
+
+    if (!Stop_Outputs())
+    {
+        return 0;
+    }
+
+    // Program PLLA
+    if (!Write_Block(SI5351_REG_PLLA_BASE, pll_data, 8))
+    {
+        return 0;
+    }
+
+    // MS0 base = 42, MS1 base = 50, MS2 base = 58 (8 bytes each)
+    uint8_t ms_base = SI5351_REG_MS0_BASE + (uint8_t)(clk * 8u);
+    if (!Write_Block(ms_base, ms_data, 8))
+    {
+        return 0;
+    }
+
+    // CLK0 ctrl = 16, CLK1 ctrl = 17, CLK2 ctrl = 18
+    // 0x4F: not powered down, integer mode, PLLA source, MSn source, 8 mA drive
+    uint8_t clk_ctrl_reg = SI5351_REG_CLK0_CTRL + (uint8_t)clk;
+    if (!Reg_Write(clk_ctrl_reg, 0x4Fu))
+    {
+        return 0;
+    }
+
+    // CLK0_PHOFF = 165, CLK1_PHOFF = 166, CLK2_PHOFF = 167; set to 0 (no phase shift)
+    uint8_t phoff_reg = SI5351_REG_CLK0_PHOFF + (uint8_t)clk;
+    if (!Reg_Write(phoff_reg, 0x00u))
+    {
+        return 0;
+    }
+
+    // Reset PLLA (bit 5)
+    if (!Reg_Write(SI5351_REG_PLL_RESET, 0x20u))
+    {
+        return 0;
+    }
+
+    if (!Start_Outputs())
+    {
+        return 0;
+    }
+
+    actual_frequency = best_frequency;
+    return best_frequency;
+} // Set_Frequency_Integer_Clk()
+
 uint32_t dSi5351::Get_Actual_Frequency()
 {
     return actual_frequency;

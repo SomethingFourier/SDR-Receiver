@@ -22,24 +22,9 @@ int dMUX::Get_Receiver_Configuration_State()
     return state;
 } // Get_Receiver_Configuration_State
 
-bool dMUX::Set_Receiver_Configuration_State(int configuration_number)
+bool dMUX::Set_Receiver_Configuration_State(enum receiver_configuration configuration_number)
 {
-    if (!configuration_number) 
-    {
-        state = dMUX::receiver_configuration::HF;
-        return true;
-    }
-    else if (configuration_number == 1)
-    {
-        state = dMUX::receiver_configuration::VHF_CHARLES;
-        return true;
-    }
-    else if (configuration_number == 2)
-    {
-        state = dMUX::receiver_configuration::VHF_EXTERNAL;
-        return true;
-    }
-    else return false;
+    state = receiver_number;
 } // Set_Receiver_Configuration_State
 
 void dMUX::Configure_For_VHF_Charles()

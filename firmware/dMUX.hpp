@@ -6,21 +6,23 @@ class dMUX
 public:
 	dMUX();
 
+    enum receiver_configuration
+    {
+        HF,
+        VHF_CHARLES,
+        VHF_EXTERNAL
+    };
+
 	// Public API
     int Get_Receiver_Configuration_State();
-    bool Set_Receiver_Configuration_State(int configuration_number);
+    bool Set_Receiver_Configuration_State(receiver_configuration configuration_number);
 
 private:
     void Configure_For_VHF_Charles();
     void Configure_For_VHF_External();
     void Configure_For_HF();
 
-	enum receiver_configuration
-    {
-        HF,
-        VHF_CHARLES,
-        VHF_EXTERNAL
-    } state = HF;
+	receiver_configuration state = receiver_configuration::HF;
 	
     dMUX(const dMUX&);
     void operator=(const dMUX&);

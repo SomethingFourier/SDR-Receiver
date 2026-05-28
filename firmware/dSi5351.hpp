@@ -15,6 +15,7 @@ public:
 	bool Stop_Outputs();
 	uint32_t Program_With_Exact_Parameters(uint32_t target_frequency, uint32_t phase_offset_divider, uint32_t pll_multiplier_integer, uint32_t pll_multiplier_numerator, uint32_t pll_multiplier_denominator, uint32_t pll_parameter_1, uint32_t pll_parameter_2, uint32_t pll_parameter_3);
 	uint32_t Set_Frequency_Integer_Quadrature(uint32_t target_hz);
+	uint32_t Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk);
 	uint32_t Get_Actual_Frequency();
 	char Get_PLLA_Mode();
 

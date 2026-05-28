@@ -10,6 +10,7 @@
 #include <pico/stdlib.h>
 #include <pico/stdio.h>
 #include <pico/types.h>
+#include <pico/multicore.h>
 
 // TinyUSB
 extern "C" {
@@ -90,7 +91,7 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count)
 
             if (parameter_count == 8)
             {
-                g_Si5351.Program_With_Exact_Parameters(requested_frequency, clk_N, clk_a, clk_b, clk_c, clk_P1, clk_P2, clk_P3);
+                multicore_fifo_push_blocking((uint32_t)requested_frequency);
 
                 char pll_mode = g_Si5351.Get_PLLA_Mode();
                 int frequency_offset = 0; // The actual_frequency perfectly tracks the requested frequency
