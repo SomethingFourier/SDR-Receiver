@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware
+CMAKE_SOURCE_DIR = /home/neidna/SDR-Receiver/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build
+CMAKE_BINARY_DIR = /home/neidna/SDR-Receiver/firmware/build
 
 # Utility rule file for pico_status_led_ws2812_pio_h.
 
@@ -68,9 +68,9 @@ include pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws281
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h: pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
 
-pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 1 /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
+pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h: /home/neidna/opt/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ws2812.pio.h"
+	cd /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led && ../../../../pioasm-install/pioasm/pioasm -o c-sdk -v 1 /home/neidna/opt/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led/ws2812.pio.h
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/codegen:
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/codegen
@@ -85,10 +85,10 @@ pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
+	cd /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led && $(CMAKE_COMMAND) -P CMakeFiles/pico_status_led_ws2812_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jesse/Desktop/Project/SDR-Receiver/firmware /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_status_led /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake "--color=$(COLOR)" pico_status_led_ws2812_pio_h
+	cd /home/neidna/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neidna/SDR-Receiver/firmware /home/neidna/opt/pico-sdk/src/rp2_common/pico_status_led /home/neidna/SDR-Receiver/firmware/build /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/DependInfo.cmake "--color=$(COLOR)" pico_status_led_ws2812_pio_h
 .PHONY : pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/depend
 

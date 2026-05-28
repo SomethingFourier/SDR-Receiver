@@ -1,0 +1,137 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "/usr/bin/git"
+		}
+	],
+	"backtrace" : 14,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"find_package",
+			"__FetchContent_populateSubbuild",
+			"__FetchContent_doPopulation",
+			"__FetchContent_Populate",
+			"cmake_language",
+			"FetchContent_Populate",
+			"pico_init_picotool",
+			"pico_add_dis_output",
+			"pico_define_boot_stage2"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake/Modules/FindGit.cmake",
+			"/usr/share/cmake/Modules/FetchContent.cmake",
+			"/usr/share/cmake/Modules/FetchContent.cmake:1991:EVAL",
+			"/home/neidna/opt/pico-sdk/tools/Findpicotool.cmake",
+			"/home/neidna/opt/pico-sdk/tools/CMakeLists.txt",
+			"/home/neidna/opt/pico-sdk/src/cmake/on_device.cmake",
+			"/home/neidna/opt/pico-sdk/src/rp2350/boot_stage2/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 6
+			},
+			{
+				"command" : 9,
+				"file" : 6,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 8,
+				"file" : 6,
+				"line" : 63,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 54,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 4,
+				"line" : 168,
+				"parent" : 3
+			},
+			{
+				"file" : 3,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 3,
+				"line" : 48,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 1991,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 2010,
+				"parent" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1622,
+				"parent" : 10
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1887,
+				"parent" : 11
+			},
+			{
+				"file" : 0,
+				"parent" : 12
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 13
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "Git::Git::@9e89cb6b53d747b62405",
+	"imported" : true,
+	"local" : true,
+	"name" : "Git::Git",
+	"nameOnDisk" : "git",
+	"paths" : 
+	{
+		"build" : "pico-sdk/src/rp2350/boot_stage2",
+		"source" : "/home/neidna/opt/pico-sdk/src/rp2350/boot_stage2"
+	},
+	"sources" : [],
+	"type" : "EXECUTABLE"
+}

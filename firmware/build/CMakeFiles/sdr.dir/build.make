@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware
+CMAKE_SOURCE_DIR = /home/neidna/SDR-Receiver/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build
+CMAKE_BINARY_DIR = /home/neidna/SDR-Receiver/firmware/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sdr.dir/depend.make
@@ -73,1324 +73,1310 @@ CMakeFiles/sdr.dir/codegen:
 .PHONY : CMakeFiles/sdr.dir/codegen
 
 CMakeFiles/sdr.dir/main.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/main.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/main.cpp
+CMakeFiles/sdr.dir/main.cpp.o: /home/neidna/SDR-Receiver/firmware/main.cpp
 CMakeFiles/sdr.dir/main.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sdr.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/main.cpp.o -MF CMakeFiles/sdr.dir/main.cpp.o.d -o CMakeFiles/sdr.dir/main.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sdr.dir/main.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/main.cpp.o -MF CMakeFiles/sdr.dir/main.cpp.o.d -o CMakeFiles/sdr.dir/main.cpp.o -c /home/neidna/SDR-Receiver/firmware/main.cpp
 
 CMakeFiles/sdr.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/main.cpp > CMakeFiles/sdr.dir/main.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/main.cpp > CMakeFiles/sdr.dir/main.cpp.i
 
 CMakeFiles/sdr.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/main.cpp -o CMakeFiles/sdr.dir/main.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/main.cpp -o CMakeFiles/sdr.dir/main.cpp.s
 
 CMakeFiles/sdr.dir/dSi5351.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/dSi5351.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSi5351.cpp
+CMakeFiles/sdr.dir/dSi5351.cpp.o: /home/neidna/SDR-Receiver/firmware/dSi5351.cpp
 CMakeFiles/sdr.dir/dSi5351.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdr.dir/dSi5351.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dSi5351.cpp.o -MF CMakeFiles/sdr.dir/dSi5351.cpp.o.d -o CMakeFiles/sdr.dir/dSi5351.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSi5351.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sdr.dir/dSi5351.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dSi5351.cpp.o -MF CMakeFiles/sdr.dir/dSi5351.cpp.o.d -o CMakeFiles/sdr.dir/dSi5351.cpp.o -c /home/neidna/SDR-Receiver/firmware/dSi5351.cpp
 
 CMakeFiles/sdr.dir/dSi5351.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/dSi5351.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSi5351.cpp > CMakeFiles/sdr.dir/dSi5351.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/dSi5351.cpp > CMakeFiles/sdr.dir/dSi5351.cpp.i
 
 CMakeFiles/sdr.dir/dSi5351.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/dSi5351.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSi5351.cpp -o CMakeFiles/sdr.dir/dSi5351.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/dSi5351.cpp -o CMakeFiles/sdr.dir/dSi5351.cpp.s
 
 CMakeFiles/sdr.dir/dI2C.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/dI2C.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2C.cpp
+CMakeFiles/sdr.dir/dI2C.cpp.o: /home/neidna/SDR-Receiver/firmware/dI2C.cpp
 CMakeFiles/sdr.dir/dI2C.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sdr.dir/dI2C.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dI2C.cpp.o -MF CMakeFiles/sdr.dir/dI2C.cpp.o.d -o CMakeFiles/sdr.dir/dI2C.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2C.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sdr.dir/dI2C.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dI2C.cpp.o -MF CMakeFiles/sdr.dir/dI2C.cpp.o.d -o CMakeFiles/sdr.dir/dI2C.cpp.o -c /home/neidna/SDR-Receiver/firmware/dI2C.cpp
 
 CMakeFiles/sdr.dir/dI2C.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/dI2C.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2C.cpp > CMakeFiles/sdr.dir/dI2C.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/dI2C.cpp > CMakeFiles/sdr.dir/dI2C.cpp.i
 
 CMakeFiles/sdr.dir/dI2C.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/dI2C.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2C.cpp -o CMakeFiles/sdr.dir/dI2C.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/dI2C.cpp -o CMakeFiles/sdr.dir/dI2C.cpp.s
 
 CMakeFiles/sdr.dir/dSSD1306.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/dSSD1306.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSSD1306.cpp
+CMakeFiles/sdr.dir/dSSD1306.cpp.o: /home/neidna/SDR-Receiver/firmware/dSSD1306.cpp
 CMakeFiles/sdr.dir/dSSD1306.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sdr.dir/dSSD1306.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dSSD1306.cpp.o -MF CMakeFiles/sdr.dir/dSSD1306.cpp.o.d -o CMakeFiles/sdr.dir/dSSD1306.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSSD1306.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sdr.dir/dSSD1306.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dSSD1306.cpp.o -MF CMakeFiles/sdr.dir/dSSD1306.cpp.o.d -o CMakeFiles/sdr.dir/dSSD1306.cpp.o -c /home/neidna/SDR-Receiver/firmware/dSSD1306.cpp
 
 CMakeFiles/sdr.dir/dSSD1306.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/dSSD1306.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSSD1306.cpp > CMakeFiles/sdr.dir/dSSD1306.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/dSSD1306.cpp > CMakeFiles/sdr.dir/dSSD1306.cpp.i
 
 CMakeFiles/sdr.dir/dSSD1306.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/dSSD1306.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dSSD1306.cpp -o CMakeFiles/sdr.dir/dSSD1306.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/dSSD1306.cpp -o CMakeFiles/sdr.dir/dSSD1306.cpp.s
 
 CMakeFiles/sdr.dir/dI2Srx.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/dI2Srx.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2Srx.cpp
+CMakeFiles/sdr.dir/dI2Srx.cpp.o: /home/neidna/SDR-Receiver/firmware/dI2Srx.cpp
 CMakeFiles/sdr.dir/dI2Srx.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sdr.dir/dI2Srx.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dI2Srx.cpp.o -MF CMakeFiles/sdr.dir/dI2Srx.cpp.o.d -o CMakeFiles/sdr.dir/dI2Srx.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2Srx.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sdr.dir/dI2Srx.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/dI2Srx.cpp.o -MF CMakeFiles/sdr.dir/dI2Srx.cpp.o.d -o CMakeFiles/sdr.dir/dI2Srx.cpp.o -c /home/neidna/SDR-Receiver/firmware/dI2Srx.cpp
 
 CMakeFiles/sdr.dir/dI2Srx.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/dI2Srx.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2Srx.cpp > CMakeFiles/sdr.dir/dI2Srx.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/dI2Srx.cpp > CMakeFiles/sdr.dir/dI2Srx.cpp.i
 
 CMakeFiles/sdr.dir/dI2Srx.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/dI2Srx.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/dI2Srx.cpp -o CMakeFiles/sdr.dir/dI2Srx.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/dI2Srx.cpp -o CMakeFiles/sdr.dir/dI2Srx.cpp.s
 
 CMakeFiles/sdr.dir/interrupts.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/interrupts.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/interrupts.cpp
+CMakeFiles/sdr.dir/interrupts.cpp.o: /home/neidna/SDR-Receiver/firmware/interrupts.cpp
 CMakeFiles/sdr.dir/interrupts.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sdr.dir/interrupts.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/interrupts.cpp.o -MF CMakeFiles/sdr.dir/interrupts.cpp.o.d -o CMakeFiles/sdr.dir/interrupts.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/interrupts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sdr.dir/interrupts.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/interrupts.cpp.o -MF CMakeFiles/sdr.dir/interrupts.cpp.o.d -o CMakeFiles/sdr.dir/interrupts.cpp.o -c /home/neidna/SDR-Receiver/firmware/interrupts.cpp
 
 CMakeFiles/sdr.dir/interrupts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/interrupts.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/interrupts.cpp > CMakeFiles/sdr.dir/interrupts.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/interrupts.cpp > CMakeFiles/sdr.dir/interrupts.cpp.i
 
 CMakeFiles/sdr.dir/interrupts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/interrupts.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/interrupts.cpp -o CMakeFiles/sdr.dir/interrupts.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/interrupts.cpp -o CMakeFiles/sdr.dir/interrupts.cpp.s
 
 CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-cdc_functions.cpp
+CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o: /home/neidna/SDR-Receiver/firmware/USB-cdc_functions.cpp
 CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o -MF CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o.d -o CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-cdc_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o -MF CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o.d -o CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o -c /home/neidna/SDR-Receiver/firmware/USB-cdc_functions.cpp
 
 CMakeFiles/sdr.dir/USB-cdc_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/USB-cdc_functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-cdc_functions.cpp > CMakeFiles/sdr.dir/USB-cdc_functions.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/USB-cdc_functions.cpp > CMakeFiles/sdr.dir/USB-cdc_functions.cpp.i
 
 CMakeFiles/sdr.dir/USB-cdc_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/USB-cdc_functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-cdc_functions.cpp -o CMakeFiles/sdr.dir/USB-cdc_functions.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/USB-cdc_functions.cpp -o CMakeFiles/sdr.dir/USB-cdc_functions.cpp.s
 
 CMakeFiles/sdr.dir/USB-audio_functions.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/USB-audio_functions.cpp.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-audio_functions.cpp
+CMakeFiles/sdr.dir/USB-audio_functions.cpp.o: /home/neidna/SDR-Receiver/firmware/USB-audio_functions.cpp
 CMakeFiles/sdr.dir/USB-audio_functions.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sdr.dir/USB-audio_functions.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/USB-audio_functions.cpp.o -MF CMakeFiles/sdr.dir/USB-audio_functions.cpp.o.d -o CMakeFiles/sdr.dir/USB-audio_functions.cpp.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-audio_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sdr.dir/USB-audio_functions.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/USB-audio_functions.cpp.o -MF CMakeFiles/sdr.dir/USB-audio_functions.cpp.o.d -o CMakeFiles/sdr.dir/USB-audio_functions.cpp.o -c /home/neidna/SDR-Receiver/firmware/USB-audio_functions.cpp
 
 CMakeFiles/sdr.dir/USB-audio_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/USB-audio_functions.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-audio_functions.cpp > CMakeFiles/sdr.dir/USB-audio_functions.cpp.i
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/SDR-Receiver/firmware/USB-audio_functions.cpp > CMakeFiles/sdr.dir/USB-audio_functions.cpp.i
 
 CMakeFiles/sdr.dir/USB-audio_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/USB-audio_functions.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/USB-audio_functions.cpp -o CMakeFiles/sdr.dir/USB-audio_functions.cpp.s
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/SDR-Receiver/firmware/USB-audio_functions.cpp -o CMakeFiles/sdr.dir/USB-audio_functions.cpp.s
 
 CMakeFiles/sdr.dir/usb_descriptors.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/usb_descriptors.c.o: /Users/jesse/Desktop/Project/SDR-Receiver/firmware/usb_descriptors.c
+CMakeFiles/sdr.dir/usb_descriptors.c.o: /home/neidna/SDR-Receiver/firmware/usb_descriptors.c
 CMakeFiles/sdr.dir/usb_descriptors.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/sdr.dir/usb_descriptors.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/usb_descriptors.c.o -MF CMakeFiles/sdr.dir/usb_descriptors.c.o.d -o CMakeFiles/sdr.dir/usb_descriptors.c.o -c /Users/jesse/Desktop/Project/SDR-Receiver/firmware/usb_descriptors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/sdr.dir/usb_descriptors.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/usb_descriptors.c.o -MF CMakeFiles/sdr.dir/usb_descriptors.c.o.d -o CMakeFiles/sdr.dir/usb_descriptors.c.o -c /home/neidna/SDR-Receiver/firmware/usb_descriptors.c
 
 CMakeFiles/sdr.dir/usb_descriptors.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/usb_descriptors.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Desktop/Project/SDR-Receiver/firmware/usb_descriptors.c > CMakeFiles/sdr.dir/usb_descriptors.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/SDR-Receiver/firmware/usb_descriptors.c > CMakeFiles/sdr.dir/usb_descriptors.c.i
 
 CMakeFiles/sdr.dir/usb_descriptors.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/usb_descriptors.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Desktop/Project/SDR-Receiver/firmware/usb_descriptors.c -o CMakeFiles/sdr.dir/usb_descriptors.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o: /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s"
-	/usr/bin/cc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o: /Users/jesse/Software/Pico/tinyusb/src/device/usbd.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o -c /Users/jesse/Software/Pico/tinyusb/src/device/usbd.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/device/usbd.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/device/usbd.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o: /Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o -c /Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o: /Users/jesse/Software/Pico/tinyusb/src/tusb.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o -c /Users/jesse/Software/Pico/tinyusb/src/tusb.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/tusb.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/tusb.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o: /Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o -c /Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o: /Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o -c /Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/sdr.dir/flags.make
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
-
-CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/SDR-Receiver/firmware/usb_descriptors.c -o CMakeFiles/sdr.dir/usb_descriptors.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o: /home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o -c /home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o: /home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o -c /home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o: /home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o: /home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o: /home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o: /home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o: /home/neidna/opt/pico-sdk/src/common/pico_time/time.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_time/time.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_time/time.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o: /home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o: /home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o: /home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o: /home/neidna/opt/pico-sdk/src/common/pico_util/queue.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o -c /home/neidna/opt/pico-sdk/src/common/pico_util/queue.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o   -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s"
+	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o -c /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o -c /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o: /home/neidna/tinyusb/src/device/usbd.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o -c /home/neidna/tinyusb/src/device/usbd.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/device/usbd.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/device/usbd.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o: /home/neidna/tinyusb/src/class/audio/audio_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o -c /home/neidna/tinyusb/src/class/audio/audio_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/audio/audio_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/audio/audio_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o: /home/neidna/tinyusb/src/class/cdc/cdc_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o -c /home/neidna/tinyusb/src/class/cdc/cdc_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/cdc/cdc_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/cdc/cdc_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o: /home/neidna/tinyusb/src/class/dfu/dfu_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o -c /home/neidna/tinyusb/src/class/dfu/dfu_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/dfu/dfu_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/dfu/dfu_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o: /home/neidna/tinyusb/src/class/hid/hid_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o -c /home/neidna/tinyusb/src/class/hid/hid_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/hid/hid_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/hid/hid_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o: /home/neidna/tinyusb/src/class/midi/midi_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o -c /home/neidna/tinyusb/src/class/midi/midi_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/midi/midi_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o: /home/neidna/tinyusb/src/class/msc/msc_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o -c /home/neidna/tinyusb/src/class/msc/msc_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/msc/msc_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o: /home/neidna/tinyusb/src/class/mtp/mtp_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o -c /home/neidna/tinyusb/src/class/mtp/mtp_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/mtp/mtp_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/mtp/mtp_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/neidna/tinyusb/src/class/net/ecm_rndis_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/neidna/tinyusb/src/class/net/ecm_rndis_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/net/ecm_rndis_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/net/ecm_rndis_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o: /home/neidna/tinyusb/src/class/net/ncm_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o -c /home/neidna/tinyusb/src/class/net/ncm_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/net/ncm_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o: /home/neidna/tinyusb/src/class/printer/printer_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o -c /home/neidna/tinyusb/src/class/printer/printer_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/printer/printer_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/printer/printer_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o: /home/neidna/tinyusb/src/class/vendor/vendor_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o -c /home/neidna/tinyusb/src/class/vendor/vendor_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/vendor/vendor_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/vendor/vendor_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o: /home/neidna/tinyusb/src/class/video/video_device.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o -c /home/neidna/tinyusb/src/class/video/video_device.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/class/video/video_device.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/class/video/video_device.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o: /home/neidna/tinyusb/src/tusb.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o -c /home/neidna/tinyusb/src/tusb.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/tusb.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/tusb.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o: /home/neidna/tinyusb/src/common/tusb_fifo.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o -c /home/neidna/tinyusb/src/common/tusb_fifo.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/src/common/tusb_fifo.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/src/common/tusb_fifo.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o: /home/neidna/tinyusb/hw/bsp/rp2040/family.c
+CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o -MF CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o.d -o CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o -c /home/neidna/tinyusb/hw/bsp/rp2040/family.c
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/tinyusb/hw/bsp/rp2040/family.c > CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.i
+
+CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/tinyusb/hw/bsp/rp2040/family.c -o CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/sdr.dir/flags.make
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o: CMakeFiles/sdr.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 # Object files for target sdr
 sdr_OBJECTS = \
@@ -1403,206 +1389,204 @@ sdr_OBJECTS = \
 "CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o" \
 "CMakeFiles/sdr.dir/USB-audio_functions.cpp.o" \
 "CMakeFiles/sdr.dir/usb_descriptors.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" \
-"CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o" \
+"CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
 
 # External object files for target sdr
 sdr_EXTERNAL_OBJECTS =
 
-sdr: CMakeFiles/sdr.dir/main.cpp.o
-sdr: CMakeFiles/sdr.dir/dSi5351.cpp.o
-sdr: CMakeFiles/sdr.dir/dI2C.cpp.o
-sdr: CMakeFiles/sdr.dir/dSSD1306.cpp.o
-sdr: CMakeFiles/sdr.dir/dI2Srx.cpp.o
-sdr: CMakeFiles/sdr.dir/interrupts.cpp.o
-sdr: CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o
-sdr: CMakeFiles/sdr.dir/USB-audio_functions.cpp.o
-sdr: CMakeFiles/sdr.dir/usb_descriptors.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
-sdr: CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
-sdr: CMakeFiles/sdr.dir/build.make
-sdr: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
-sdr: /Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
-sdr: CMakeFiles/sdr.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking CXX executable sdr"
+sdr.elf: CMakeFiles/sdr.dir/main.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/dSi5351.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/dI2C.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/dSSD1306.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/dI2Srx.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/interrupts.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/USB-audio_functions.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/usb_descriptors.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2350/pico_platform/platform.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/hardware_claim/claim.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/sem.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/lock_core.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/mutex.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_sync/critical_section.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/time.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_time/timeout_helper.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/datetime.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/pheap.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/common/pico_util/queue.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/device/usbd.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/audio/audio_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/cdc/cdc_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/dfu/dfu_rt_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/hid/hid_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/midi/midi_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/msc/msc_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/mtp/mtp_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ecm_rndis_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/net/ncm_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/printer/printer_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/vendor/vendor_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/class/video/video_device.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/tusb.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/src/common/tusb_fifo.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/tinyusb/hw/bsp/rp2040/family.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+sdr.elf: CMakeFiles/sdr.dir/home/neidna/opt/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+sdr.elf: CMakeFiles/sdr.dir/build.make
+sdr.elf: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
+sdr.elf: /home/neidna/opt/pico-sdk/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
+sdr.elf: CMakeFiles/sdr.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/neidna/SDR-Receiver/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Linking CXX executable sdr.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sdr.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/objdump -h /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr > sdr.dis
-	/usr/bin/objdump -d /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr >> sdr.dis
-	/opt/homebrew/bin/picotool coprodis --quiet sdr.dis sdr.dis
-	CMAKE_OBJCOPY-NOTFOUND -Oihex /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr sdr.hex
-	CMAKE_OBJCOPY-NOTFOUND -Obinary /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr sdr.bin
-	/opt/homebrew/bin/picotool uf2 convert --quiet /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr sdr.uf2 --family rp2350-arm-s --abs-block
+	/usr/bin/arm-none-eabi-objdump -h /home/neidna/SDR-Receiver/firmware/build/sdr.elf > sdr.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/neidna/SDR-Receiver/firmware/build/sdr.elf >> sdr.dis
+	_deps/picotool/picotool coprodis --quiet sdr.dis sdr.dis
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/neidna/SDR-Receiver/firmware/build/sdr.elf sdr.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/neidna/SDR-Receiver/firmware/build/sdr.elf sdr.bin
+	_deps/picotool/picotool uf2 convert --quiet /home/neidna/SDR-Receiver/firmware/build/sdr.elf sdr.uf2 --family rp2350-arm-s --abs-block
 
 # Rule to build all files generated by this target.
-CMakeFiles/sdr.dir/build: sdr
+CMakeFiles/sdr.dir/build: sdr.elf
 .PHONY : CMakeFiles/sdr.dir/build
 
 CMakeFiles/sdr.dir/clean:
@@ -1610,6 +1594,6 @@ CMakeFiles/sdr.dir/clean:
 .PHONY : CMakeFiles/sdr.dir/clean
 
 CMakeFiles/sdr.dir/depend:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/jesse/Desktop/Project/SDR-Receiver/firmware /Users/jesse/Desktop/Project/SDR-Receiver/firmware /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/sdr.dir/DependInfo.cmake "--color=$(COLOR)" sdr
+	cd /home/neidna/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neidna/SDR-Receiver/firmware /home/neidna/SDR-Receiver/firmware /home/neidna/SDR-Receiver/firmware/build /home/neidna/SDR-Receiver/firmware/build /home/neidna/SDR-Receiver/firmware/build/CMakeFiles/sdr.dir/DependInfo.cmake "--color=$(COLOR)" sdr
 .PHONY : CMakeFiles/sdr.dir/depend
 

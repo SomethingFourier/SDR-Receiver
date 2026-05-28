@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware
+CMAKE_SOURCE_DIR = /home/neidna/SDR-Receiver/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build
+CMAKE_BINARY_DIR = /home/neidna/SDR-Receiver/firmware/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/src/common/pico_divider_headers//CMakeFiles/progress.marks
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles 0
+	cd /home/neidna/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/neidna/SDR-Receiver/firmware/build/CMakeFiles /home/neidna/SDR-Receiver/firmware/build/pico-sdk/src/common/pico_divider_headers//CMakeFiles/progress.marks
+	cd /home/neidna/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neidna/SDR-Receiver/firmware/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/clean
+	cd /home/neidna/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,17 +103,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/preinstall
+	cd /home/neidna/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/preinstall
+	cd /home/neidna/SDR-Receiver/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/common/pico_divider_headers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/neidna/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -135,6 +135,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/neidna/SDR-Receiver/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

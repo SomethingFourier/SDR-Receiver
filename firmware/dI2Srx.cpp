@@ -11,19 +11,13 @@
 #include "dSSD1306.hpp"
 
 #include "interrupts.hpp"
-#include "i2s_receiver.pio.h"
+#include "i2s_receiver.pio"
 
 #define I2S_SD      14
 #define I2S_BCLK    15
 #define I2S_WS      16
 
-dI2Srx::dI2Srx() // Constructor
-{
-    A_buffer_ready = false;
-    B_buffer_ready = false;
-}
-
-void dI2Srx::Init(PIO i2s_pio_instance)
+dI2Srx::dI2Srx(PIO i2s_pio_instance)
 {
     // DMA configuration
     audio_A_dma_channel = dma_claim_unused_channel(true);
@@ -92,8 +86,9 @@ void dI2Srx::Init(PIO i2s_pio_instance)
         );
 
         // Do not start DMA or enable IRQs here; Core 1 will do that after launch
-        multicore_launch_core1(dAudio::core1_entry);
+        multicore_launch_core1(dI2Srx::core1_entry);
     }
+}
 }
 
 int * dI2Srx::Get_A_Buffer()
@@ -136,7 +131,7 @@ void dI2Srx::core1_entry()
     irq_set_exclusive_handler(DMA_IRQ_0, dma_irq0_handler);
     irq_set_enabled(DMA_IRQ_0, true);
 
-    // Start the first channel; chaining will trigger the partner alternately
+    // Start the first channel; chaining will trigger the partner automatically
     dma_channel_start(g_Audio.audio_A_dma_channel);
 
     // Remain on Core 1; DMA IRQ will do the work
