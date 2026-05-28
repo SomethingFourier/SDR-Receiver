@@ -1,2 +1,0 @@
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/rp2350 template/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/edit_cache.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/rp2350 template/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/rebuild_cache.dir
