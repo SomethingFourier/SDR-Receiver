@@ -21,9 +21,10 @@
 #include "bsp/board_api.h"
 #include "tusb.h"
 
-#define DAC_MD1     11
-#define DAC_FMT     10
-#define DEV_LED     25
+#define LED_RED     4
+#define LED_GREEN   5
+#define LED_WHITE   26
+#define LED_YELLOW  29
 
 // driver globals
 dI2C g_I2C;

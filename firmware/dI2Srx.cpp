@@ -13,11 +13,11 @@
 #include "interrupts.hpp"
 #include "i2s_receiver.pio.h"
 
-#define MIN_I2S_PIN     14
+#define MIN_I2S_PIN     19
 #define I2S_PIN_COUNT   3
-#define I2S_SD          14
-#define I2S_BCLK        15
-#define I2S_WS          16
+#define I2S_SD          21
+#define I2S_BCLK        19
+#define I2S_WS          20
 
 dI2Srx::dI2Srx(PIO i2s_pio_instance)
 {
