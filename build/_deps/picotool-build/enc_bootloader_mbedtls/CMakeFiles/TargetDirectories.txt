@@ -1,2 +1,0 @@
-/home/neidna/SDR-Receiver/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/edit_cache.dir
-/home/neidna/SDR-Receiver/build/_deps/picotool-build/enc_bootloader_mbedtls/CMakeFiles/rebuild_cache.dir

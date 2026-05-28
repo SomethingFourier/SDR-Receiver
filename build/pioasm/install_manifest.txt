@@ -1,5 +1,0 @@
-/home/neidna/SDR-Receiver/build/pioasm-install/pioasm/pioasm
-/home/neidna/SDR-Receiver/build/pioasm-install/pioasm/pioasmTargets.cmake
-/home/neidna/SDR-Receiver/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/home/neidna/SDR-Receiver/build/pioasm-install/pioasm/pioasmConfig.cmake
-/home/neidna/SDR-Receiver/build/pioasm-install/pioasm/pioasmConfigVersion.cmake

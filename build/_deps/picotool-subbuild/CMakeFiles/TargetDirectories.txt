@@ -1,3 +1,0 @@
-/home/neidna/SDR-Receiver/build/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/home/neidna/SDR-Receiver/build/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/home/neidna/SDR-Receiver/build/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir

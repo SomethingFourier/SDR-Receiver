@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/neidna/SDR-Receiver/build/pioasm/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
