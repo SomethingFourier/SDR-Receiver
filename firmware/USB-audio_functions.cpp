@@ -11,7 +11,7 @@
 #include <pico/stdio.h>
 #include <pico/types.h>
 
-#include "dAudio.hpp"
+#include "dI2Srx.hpp"
 
 // TinyUSB
 extern "C" {
@@ -97,33 +97,38 @@ bool tud_audio_tx_done_pre_load_cb(uint8_t rhport, uint8_t itf, uint8_t ep_in, u
 void audio_task(void)
 {
     // Ensure we are configured and the host is ready for audio
-    if (!tud_ready() || !tud_audio_mounted()) {
+    if (!tud_ready() || !tud_audio_mounted())
+    {
         // Option to flush ready flags here if not connected to avoid stale data
         return;
     }
 
-    if (g_Audio.A_buffer_ready) {
+    if (g_I2Srx.A_buffer_ready)
+    {
         // Fix up raw I2S data if your dAudio driver requires it (e.g. byte packing/shifting)
-        g_Audio.Fix_A_Samples(); 
+        g_I2Srx.Fix_A_Samples(); 
         
         // Write the completely filled DMA buffer to TinyUSB.
         // tud_audio_write expects the size in bytes. 
         // 96 32-bit words * 4 bytes/word = 384 bytes
-        uint16_t written = tud_audio_write((uint8_t *)g_Audio.Get_A_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
+        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_A_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
         
-        if (written > 0) {
+        if (written > 0)
+        {
             // Un-flag the buffer so DMA can overwrite it again
-            g_Audio.A_buffer_ready = false; 
+            g_I2Srx.A_buffer_ready = false; 
         }
     }
 
-    if (g_Audio.B_buffer_ready) {
-        g_Audio.Fix_B_Samples();
+    if (g_I2Srx.B_buffer_ready)
+    {
+        g_I2Srx.Fix_B_Samples();
 
-        uint16_t written = tud_audio_write((uint8_t *)g_Audio.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
+        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
         
-        if (written > 0) {
-            g_Audio.B_buffer_ready = false;
+        if (written > 0) 
+        {
+            g_I2Srx.B_buffer_ready = false;
         }
     }
 }

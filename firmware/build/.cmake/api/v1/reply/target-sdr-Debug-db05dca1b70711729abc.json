@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "rp2350_testing"
+			"path" : "sdr"
 		}
 	],
 	"backtrace" : 1,
@@ -16,16 +16,20 @@
 			"pico_add_extra_outputs",
 			"target_link_libraries",
 			"pico_define_boot_stage2",
+			"add_dependencies",
+			"pico_generate_pio_header",
 			"add_custom_command",
 			"pico_add_dis_output",
-			"target_compile_definitions"
+			"target_compile_definitions",
+			"target_include_directories"
 		],
 		"files" : 
 		[
 			"CMakeLists.txt",
 			"/Users/jesse/Software/Pico/pico-sdk/src/CMakeLists.txt",
 			"/Users/jesse/Software/Pico/pico-sdk/src/cmake/on_device.cmake",
-			"/Users/jesse/Software/Pico/pico-sdk/src/rp2350/boot_stage2/CMakeLists.txt"
+			"/Users/jesse/Software/Pico/pico-sdk/src/rp2350/boot_stage2/CMakeLists.txt",
+			"/Users/jesse/Software/Pico/pico-sdk/tools/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -41,7 +45,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 43,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
@@ -59,7 +63,7 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 34,
+				"line" : 44,
 				"parent" : 0
 			},
 			{
@@ -79,21 +83,39 @@
 			},
 			{
 				"command" : 7,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 265,
+				"parent" : 9
+			},
+			{
+				"command" : 9,
 				"file" : 2,
 				"line" : 76,
 				"parent" : 2
 			},
 			{
-				"command" : 6,
+				"command" : 8,
 				"file" : 2,
 				"line" : 60,
-				"parent" : 9
+				"parent" : 11
 			},
 			{
-				"command" : 8,
+				"command" : 10,
 				"file" : 2,
 				"line" : 93,
 				"parent" : 2
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 272,
+				"parent" : 9
 			}
 		]
 	},
@@ -110,7 +132,39 @@
 		},
 		{
 			"backtrace" : 5,
+			"id" : "pico_stdio::@d2414feb1b3aa36aaee4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "pico_multicore::@9a13c1d01dbacaad7b33"
+		},
+		{
+			"backtrace" : 5,
 			"id" : "hardware_i2c::@bdef0ded4bb164050636"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_spi::@eafa2cefbeacba1047b8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_dma::@0fb4e5fe7d96da9dd1e8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_pio::@e01f79172179c7736f7b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_irq::@381ff19abb5cef8d2924"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "tinyusb_device::@36e52159cb4e937c58c5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "tinyusb_board::@36e52159cb4e937c58c5"
 		}
 	],
 	"compileGroups" : 
@@ -246,6 +300,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_NEWLIB_INTERFACE=1"
 				},
 				{
@@ -302,10 +360,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_USB=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDLIB=1"
 				},
 				{
@@ -339,6 +393,14 @@
 				{
 					"backtrace" : 5,
 					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_DEVICE=1"
 				},
 				{
 					"backtrace" : 5,
@@ -385,8 +447,8 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 11,
-					"define" : "PICO_TARGET_NAME=\"rp2350_testing\""
+					"backtrace" : 13,
+					"define" : "PICO_TARGET_NAME=\"sdr\""
 				},
 				{
 					"backtrace" : 5,
@@ -396,12 +458,28 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 14,
+					"path" : "/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build"
+				},
+				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/include"
 				},
 				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/tinyusb/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/tinyusb/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/boards/pico_sdk"
 				},
 				{
 					"backtrace" : 5,
@@ -651,31 +729,6 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/common/pico_usb_reset_interface_headers/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/include"
 				},
 				{
@@ -691,12 +744,42 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
 				}
 			],
 			"language" : "CXX",
@@ -713,7 +796,12 @@
 				0,
 				1,
 				2,
-				52
+				3,
+				4,
+				5,
+				7,
+				8,
+				59
 			]
 		},
 		{
@@ -831,6 +919,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_NEWLIB_INTERFACE=1"
 				},
 				{
@@ -887,10 +979,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_USB=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDLIB=1"
 				},
 				{
@@ -924,6 +1012,14 @@
 				{
 					"backtrace" : 5,
 					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_DEVICE=1"
 				},
 				{
 					"backtrace" : 5,
@@ -970,8 +1066,8 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 11,
-					"define" : "PICO_TARGET_NAME=\"rp2350_testing\""
+					"backtrace" : 13,
+					"define" : "PICO_TARGET_NAME=\"sdr\""
 				},
 				{
 					"backtrace" : 5,
@@ -981,12 +1077,28 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 14,
+					"path" : "/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build"
+				},
+				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/include"
 				},
 				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/tinyusb/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/tinyusb/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/boards/pico_sdk"
 				},
 				{
 					"backtrace" : 5,
@@ -1236,31 +1348,6 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/common/pico_usb_reset_interface_headers/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/include"
 				},
 				{
@@ -1276,12 +1363,42 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
 				}
 			],
 			"language" : "C",
@@ -1295,22 +1412,16 @@
 			},
 			"sourceIndexes" : 
 			[
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
 				9,
 				10,
 				11,
+				12,
 				13,
 				14,
 				15,
 				16,
 				17,
 				18,
-				19,
 				20,
 				21,
 				22,
@@ -1330,20 +1441,20 @@
 				36,
 				37,
 				38,
+				39,
 				40,
 				41,
-				46,
-				50,
-				51,
+				42,
+				43,
+				44,
+				45,
+				47,
+				48,
 				53,
-				54,
-				56,
 				57,
 				58,
-				59,
 				60,
 				61,
-				62,
 				63,
 				64,
 				65,
@@ -1367,7 +1478,16 @@
 				83,
 				84,
 				85,
-				86
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95
 			]
 		},
 		{
@@ -1485,6 +1605,10 @@
 				},
 				{
 					"backtrace" : 5,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 5,
 					"define" : "LIB_PICO_NEWLIB_INTERFACE=1"
 				},
 				{
@@ -1541,10 +1665,6 @@
 				},
 				{
 					"backtrace" : 5,
-					"define" : "LIB_PICO_STDIO_USB=1"
-				},
-				{
-					"backtrace" : 5,
 					"define" : "LIB_PICO_STDLIB=1"
 				},
 				{
@@ -1578,6 +1698,14 @@
 				{
 					"backtrace" : 5,
 					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIB_TINYUSB_DEVICE=1"
 				},
 				{
 					"backtrace" : 5,
@@ -1624,8 +1752,8 @@
 					"define" : "PICO_RP2350=1"
 				},
 				{
-					"backtrace" : 11,
-					"define" : "PICO_TARGET_NAME=\"rp2350_testing\""
+					"backtrace" : 13,
+					"define" : "PICO_TARGET_NAME=\"sdr\""
 				},
 				{
 					"backtrace" : 5,
@@ -1635,12 +1763,28 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 14,
+					"path" : "/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build"
+				},
+				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/include"
 				},
 				{
 					"backtrace" : 5,
 					"path" : "/Users/jesse/Software/Pico/tinyusb/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/tinyusb/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/boards/pico_sdk"
 				},
 				{
 					"backtrace" : 5,
@@ -1890,31 +2034,6 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/common/pico_usb_reset_interface_headers/include"
-				},
-				{
-					"backtrace" : 5,
-					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/include"
 				},
 				{
@@ -1930,38 +2049,72 @@
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
 					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/include"
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/include"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				12,
-				39,
-				42,
-				43,
-				44,
-				45,
-				47,
-				48,
+				19,
+				46,
 				49,
-				55
+				50,
+				51,
+				52,
+				54,
+				55,
+				56,
+				62
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
+			"backtrace" : 10,
+			"id" : "sdr_i2s_receiver_pio_h::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 5,
 			"id" : "bs2_default_library::@9e89cb6b53d747b62405"
 		}
 	],
-	"id" : "rp2350_testing::@6890427a1f51a3e7e1df",
+	"id" : "sdr::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -1981,7 +2134,7 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "-Map=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/rp2350_testing.map",
+				"fragment" : "-Map=/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/sdr.map",
 				"role" : "flags"
 			},
 			{
@@ -3200,20 +3353,56 @@
 		},
 		{
 			"backtrace" : 5,
+			"id" : "pico_stdio::@d2414feb1b3aa36aaee4"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "pico_multicore::@9a13c1d01dbacaad7b33"
+		},
+		{
+			"backtrace" : 5,
 			"id" : "hardware_i2c::@bdef0ded4bb164050636"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_spi::@eafa2cefbeacba1047b8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_dma::@0fb4e5fe7d96da9dd1e8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_pio::@e01f79172179c7736f7b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "hardware_irq::@381ff19abb5cef8d2924"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "tinyusb_device::@36e52159cb4e937c58c5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "tinyusb_board::@36e52159cb4e937c58c5"
 		}
 	],
-	"name" : "rp2350_testing",
-	"nameOnDisk" : "rp2350_testing",
+	"name" : "sdr",
+	"nameOnDisk" : "sdr",
 	"orderDependencies" : 
 	[
 		{
-			"backtrace" : 10,
+			"backtrace" : 12,
 			"id" : "picotool::@6890427a1f51a3e7e1df"
 		},
 		{
+			"backtrace" : 12,
+			"id" : "sdr::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 10,
-			"id" : "rp2350_testing::@6890427a1f51a3e7e1df"
+			"id" : "sdr_i2s_receiver_pio_h::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 
@@ -3233,19 +3422,18 @@
 				3,
 				4,
 				5,
-				6,
 				7,
 				8,
 				9,
 				10,
 				11,
+				12,
 				13,
 				14,
 				15,
 				16,
 				17,
 				18,
-				19,
 				20,
 				21,
 				22,
@@ -3265,21 +3453,21 @@
 				36,
 				37,
 				38,
+				39,
 				40,
 				41,
-				46,
-				50,
-				51,
-				52,
+				42,
+				43,
+				44,
+				45,
+				47,
+				48,
 				53,
-				54,
-				56,
 				57,
 				58,
 				59,
 				60,
 				61,
-				62,
 				63,
 				64,
 				65,
@@ -3303,23 +3491,33 @@
 				83,
 				84,
 				85,
-				86
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				12,
-				39,
-				42,
-				43,
-				44,
-				45,
-				47,
-				48,
+				6,
+				19,
+				46,
 				49,
-				55
+				50,
+				51,
+				52,
+				54,
+				55,
+				56,
+				62
 			]
 		}
 	],
@@ -3334,13 +3532,54 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "dSi5351.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "dI2C.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dSi5351.cpp",
+			"path" : "dSSD1306.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dI2Srx.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "interrupts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "i2s_receiver.pio",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USB-cdc_functions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "USB-audio_functions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "usb_descriptors.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -3682,37 +3921,31 @@
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c",
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c",
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c",
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c",
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 5,
-			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c",
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -3844,7 +4077,25 @@
 		{
 			"backtrace" : 5,
 			"compileGroupIndex" : 1,
-			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
+			"path" : "/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c",
 			"sourceGroupIndex" : 0
 		}
 	],

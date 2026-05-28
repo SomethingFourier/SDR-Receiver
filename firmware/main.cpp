@@ -12,7 +12,7 @@
 #include "dSi5351.hpp"
 #include "dSSD1306.hpp"
 #include "dI2C.hpp"
-#include "dAudio.hpp"
+#include "dI2Srx.hpp"
 
 // TinyUSB
 #include "USB-cdc_functions.hpp"
@@ -29,7 +29,7 @@
 dI2C g_I2C;
 dSi5351 g_Si5351;
 dSSD1306 g_SSD1306;
-dAudio g_Audio;
+dI2Srx g_I2Srx;
 
 int main (void)
 {
@@ -49,7 +49,7 @@ int main (void)
     g_I2C.Init();
     g_SSD1306.Init();
     g_Si5351.Init();
-    g_Audio.Init();
+    g_I2Srx.Init();
     tusb_init();
 
     while (true)

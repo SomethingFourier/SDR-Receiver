@@ -140,23 +140,16 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/lib/cmake/picotool/picotoolConfigVersion.cmake"
   "/opt/homebrew/lib/cmake/picotool/picotoolTargets-release.cmake"
   "/opt/homebrew/lib/cmake/picotool/picotoolTargets.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in"
   "/opt/homebrew/share/cmake/Modules/CMakeASMInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakePrintHelpers.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-ASM.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
@@ -181,7 +174,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
-  "/opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake"
@@ -210,8 +202,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.3.1/CMakeASMCompiler.cmake"
-  "CMakeFiles/4.3.1/CMakeASMCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "generated/pico_base/pico/version.h"
   "generated/pico_base/pico/config_autogen.h"
@@ -330,7 +320,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/rp2350_testing.dir/DependInfo.cmake"
+  "CMakeFiles/sdr.dir/DependInfo.cmake"
+  "CMakeFiles/sdr_i2s_receiver_pio_h.dir/DependInfo.cmake"
   "pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/DependInfo.cmake"

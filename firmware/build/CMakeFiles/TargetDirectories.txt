@@ -1,4 +1,5 @@
-/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/rp2350_testing.dir
+/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/sdr.dir
+/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/sdr_i2s_receiver_pio_h.dir
 /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/edit_cache.dir
 /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/CMakeFiles/rebuild_cache.dir
 /Users/jesse/Desktop/Project/SDR-Receiver/firmware/build/pico-sdk/CMakeFiles/edit_cache.dir

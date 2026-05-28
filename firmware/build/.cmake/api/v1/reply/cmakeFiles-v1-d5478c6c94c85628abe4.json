@@ -59,36 +59,6 @@
 			"path" : "build/CMakeFiles/4.3.1/CMakeCXXCompiler.cmake"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeDetermineASMCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeCompilerIdDetection.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in"
-		},
-		{
 			"isGenerated" : true,
 			"path" : "build/CMakeFiles/4.3.1/CMakeASMCompiler.cmake"
 		},
@@ -310,11 +280,6 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeTestASMCompiler.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
 			"path" : "/opt/homebrew/share/cmake/Modules/Internal/CMakeASMLinkerInformation.cmake"
 		},
 		{
@@ -331,16 +296,6 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/Internal/CMakeInspectASMLinker.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CMakeASMCompiler.cmake.in"
 		},
 		{
 			"isCMake" : true,

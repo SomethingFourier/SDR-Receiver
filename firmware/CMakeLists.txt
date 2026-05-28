@@ -55,4 +55,4 @@ target_link_libraries(sdr
 )
 
 # Generate map, bin, hex, and UF2 files
-pico_add_extra_outputs(rp2350_testing)
+pico_add_extra_outputs(sdr)

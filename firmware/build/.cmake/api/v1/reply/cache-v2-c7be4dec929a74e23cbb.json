@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "rp2350_testing"
+			"value" : "sdr"
 		},
 		{
 			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
@@ -2043,6 +2043,42 @@
 		},
 		{
 			"name" : "rp2350_testing_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/jesse/Desktop/Project/SDR-Receiver/firmware"
+		},
+		{
+			"name" : "sdr_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/jesse/Desktop/Project/SDR-Receiver/firmware/build"
+		},
+		{
+			"name" : "sdr_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "sdr_SOURCE_DIR",
 			"properties" : 
 			[
 				{

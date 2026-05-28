@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rp2350_testing
+# Target rules for targets named sdr
 
 # Build rule for target.
-rp2350_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rp2350_testing
-.PHONY : rp2350_testing
+sdr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdr
+.PHONY : sdr
 
 # fast build rule for target.
-rp2350_testing/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/build
-.PHONY : rp2350_testing/fast
+sdr/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/build
+.PHONY : sdr/fast
+
+#=============================================================================
+# Target rules for targets named sdr_i2s_receiver_pio_h
+
+# Build rule for target.
+sdr_i2s_receiver_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sdr_i2s_receiver_pio_h
+.PHONY : sdr_i2s_receiver_pio_h
+
+# fast build rule for target.
+sdr_i2s_receiver_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr_i2s_receiver_pio_h.dir/build.make CMakeFiles/sdr_i2s_receiver_pio_h.dir/build
+.PHONY : sdr_i2s_receiver_pio_h/fast
 
 #=============================================================================
 # Target rules for targets named bs2_default
@@ -207,12 +220,60 @@ pico_status_led_ws2812_pio_h/fast:
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build.make pico-sdk/src/rp2_common/pico_status_led/CMakeFiles/pico_status_led_ws2812_pio_h.dir/build
 .PHONY : pico_status_led_ws2812_pio_h/fast
 
+USB-audio_functions.o: USB-audio_functions.cpp.o
+.PHONY : USB-audio_functions.o
+
+# target to build an object file
+USB-audio_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-audio_functions.cpp.o
+.PHONY : USB-audio_functions.cpp.o
+
+USB-audio_functions.i: USB-audio_functions.cpp.i
+.PHONY : USB-audio_functions.i
+
+# target to preprocess a source file
+USB-audio_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-audio_functions.cpp.i
+.PHONY : USB-audio_functions.cpp.i
+
+USB-audio_functions.s: USB-audio_functions.cpp.s
+.PHONY : USB-audio_functions.s
+
+# target to generate assembly for a file
+USB-audio_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-audio_functions.cpp.s
+.PHONY : USB-audio_functions.cpp.s
+
+USB-cdc_functions.o: USB-cdc_functions.cpp.o
+.PHONY : USB-cdc_functions.o
+
+# target to build an object file
+USB-cdc_functions.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-cdc_functions.cpp.o
+.PHONY : USB-cdc_functions.cpp.o
+
+USB-cdc_functions.i: USB-cdc_functions.cpp.i
+.PHONY : USB-cdc_functions.i
+
+# target to preprocess a source file
+USB-cdc_functions.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-cdc_functions.cpp.i
+.PHONY : USB-cdc_functions.cpp.i
+
+USB-cdc_functions.s: USB-cdc_functions.cpp.s
+.PHONY : USB-cdc_functions.s
+
+# target to generate assembly for a file
+USB-cdc_functions.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/USB-cdc_functions.cpp.s
+.PHONY : USB-cdc_functions.cpp.s
+
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.o: Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.i: Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -220,7 +281,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.s: Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -228,7 +289,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -236,7 +297,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.o: User
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -244,7 +305,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.i: User
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -252,7 +313,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.s: User
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -260,7 +321,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.o: Users/jesse
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -268,7 +329,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/jesse
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -276,7 +337,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/jesse
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -284,7 +345,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.o: Users/jesse/Sof
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -292,7 +353,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.i: Users/jesse/Sof
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -300,7 +361,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.s: Users/jesse/Sof
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o
@@ -308,7 +369,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.o: Users/jesse/Softw
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -316,7 +377,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.i: Users/jesse/Softw
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -324,7 +385,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.s: Users/jesse/Softw
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o
@@ -332,7 +393,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.o: Users/jesse/Soft
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i
@@ -340,7 +401,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.i: Users/jesse/Soft
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s
@@ -348,7 +409,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.s: Users/jesse/Soft
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/time.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -356,7 +417,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.o: Users/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -364,7 +425,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -372,7 +433,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o
@@ -380,7 +441,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.o: Users/jesse/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -388,7 +449,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.i: Users/jesse/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -396,7 +457,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.s: Users/jesse/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o
@@ -404,7 +465,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.o: Users/jesse/Sof
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -412,7 +473,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.i: Users/jesse/Sof
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -420,7 +481,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.s: Users/jesse/Sof
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.o: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o
@@ -428,7 +489,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.o: Users/jesse/Sof
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.i: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -436,7 +497,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.i: Users/jesse/Sof
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.s: Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -444,7 +505,7 @@ Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.s: Users/jesse/Sof
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/common/pico_util/queue.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.o: Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o
@@ -452,7 +513,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.i: Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i
@@ -460,7 +521,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.s: Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s
@@ -468,7 +529,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2350/pico_platform/platform.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -476,7 +537,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -484,7 +545,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -492,7 +553,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -500,7 +561,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: User
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -508,7 +569,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: User
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -516,7 +577,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: User
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
@@ -524,7 +585,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.o: Us
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
@@ -532,7 +593,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.i: Us
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
@@ -540,15 +601,39 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.s: Us
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.o
+
+# target to build an object file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -556,7 +641,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -564,7 +649,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -572,7 +657,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -580,7 +665,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -588,7 +673,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
@@ -596,7 +681,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.o: Users/jess
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -604,7 +689,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -612,7 +697,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -620,7 +705,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.o: Users/jess
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -628,7 +713,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -636,7 +721,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -644,15 +729,39 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.o
+
+# target to build an object file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -660,7 +769,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -668,15 +777,39 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.o
+
+# target to build an object file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.o
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.i
+
+# target to preprocess a source file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.i
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.s
+
+# target to generate assembly for a file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -684,7 +817,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -692,7 +825,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -700,7 +833,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_s
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -708,7 +841,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_s
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -716,7 +849,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_s
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -724,7 +857,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: Users/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -732,7 +865,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -740,7 +873,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -748,7 +881,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.o: Users/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -756,7 +889,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -764,7 +897,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -772,7 +905,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -780,7 +913,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -788,7 +921,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -796,7 +929,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -804,7 +937,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -812,7 +945,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -820,7 +953,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -828,7 +961,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: 
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -836,7 +969,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: 
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -844,7 +977,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -852,7 +985,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -860,7 +993,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -868,7 +1001,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -876,7 +1009,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -884,7 +1017,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -892,7 +1025,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -900,7 +1033,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -908,7 +1041,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -916,7 +1049,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -924,7 +1057,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: Users/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -932,7 +1065,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -940,7 +1073,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -948,7 +1081,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: U
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -956,7 +1089,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: U
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -964,7 +1097,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: U
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -972,7 +1105,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_int
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -980,7 +1113,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_int
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -988,7 +1121,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_int
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -996,7 +1129,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.o: Users/jesse/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -1004,7 +1137,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o:
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -1012,7 +1145,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i:
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -1020,7 +1153,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s:
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
@@ -1028,7 +1161,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
@@ -1036,7 +1169,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
@@ -1044,7 +1177,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
@@ -1052,7 +1185,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
@@ -1060,7 +1193,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o:
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
@@ -1068,7 +1201,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -1076,7 +1209,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.o: Use
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1084,7 +1217,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Use
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1092,7 +1225,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Use
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
@@ -1100,7 +1233,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -1108,7 +1241,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enu
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1116,7 +1249,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enu
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1124,7 +1257,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enu
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -1132,7 +1265,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.o: Users/jess
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -1140,7 +1273,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -1148,7 +1281,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
@@ -1156,7 +1289,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.o:
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
@@ -1164,7 +1297,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o:
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -1172,7 +1305,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.o: Users
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1180,7 +1313,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1188,7 +1321,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
@@ -1196,7 +1329,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -1204,7 +1337,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -1212,7 +1345,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -1220,15 +1353,39 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o
+
+# target to build an object file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
+
+# target to preprocess a source file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
+
+# target to generate assembly for a file
+Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
@@ -1236,7 +1393,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.i:
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
@@ -1244,7 +1401,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.s:
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -1252,7 +1409,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: U
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -1260,7 +1417,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: U
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -1268,7 +1425,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: U
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -1276,7 +1433,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.o: Users/je
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1284,7 +1441,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1292,7 +1449,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -1300,7 +1457,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.o: Users/
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1308,7 +1465,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1316,7 +1473,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -1324,7 +1481,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -1332,7 +1489,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -1340,7 +1497,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -1348,7 +1505,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -1356,7 +1513,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -1364,7 +1521,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -1372,7 +1529,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -1380,7 +1537,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -1388,7 +1545,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -1396,7 +1553,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/stan
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -1404,7 +1561,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/stan
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -1412,7 +1569,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/stan
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -1420,7 +1577,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.o: Users/jess
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1428,7 +1585,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1436,7 +1593,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
@@ -1444,7 +1601,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1452,7 +1609,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: 
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1460,87 +1617,15 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: 
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o
-
-# target to build an object file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i
-
-# target to preprocess a source file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s
-
-# target to generate assembly for a file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o
-
-# target to build an object file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i
-
-# target to preprocess a source file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s
-
-# target to generate assembly for a file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o
-
-# target to build an object file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i
-
-# target to preprocess a source file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
-
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s
-
-# target to generate assembly for a file
-Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
-.PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1548,7 +1633,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/je
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1556,7 +1641,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/je
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -1564,7 +1649,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: Us
 
 # target to build an object file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1572,7 +1657,7 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: Us
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1580,15 +1665,39 @@ Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: Us
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.o: Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.o
+
+# target to build an object file
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.o
+
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.i: Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.i
+
+# target to preprocess a source file
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.i
+
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.s: Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.s
+
+# target to generate assembly for a file
+Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s
+.PHONY : Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.o: Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.o
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.i: Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i
@@ -1596,7 +1705,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.i: Users/jesse/So
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.s: Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s
@@ -1604,7 +1713,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.s: Users/jesse/So
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.o: Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o
@@ -1612,7 +1721,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.i: Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i
@@ -1620,7 +1729,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.s: Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s
@@ -1628,7 +1737,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/cdc/cdc_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.o: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o
@@ -1636,7 +1745,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.i: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i
@@ -1644,7 +1753,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.s: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s
@@ -1652,7 +1761,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.o: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -1660,7 +1769,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.o: Users/jesse/Sof
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.i: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -1668,7 +1777,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.i: Users/jesse/Sof
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.s: Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -1676,7 +1785,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.s: Users/jesse/Sof
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.o: Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o
@@ -1684,7 +1793,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.i: Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i
@@ -1692,7 +1801,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.s: Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s
@@ -1700,7 +1809,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/hid/hid_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.o: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o
@@ -1708,7 +1817,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.o: Users/jesse/Sof
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.i: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i
@@ -1716,7 +1825,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.i: Users/jesse/Sof
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.s: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s
@@ -1724,7 +1833,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.s: Users/jesse/Sof
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi2_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.o: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o
@@ -1732,7 +1841,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.o: Users/jesse/Soft
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.i: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i
@@ -1740,7 +1849,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.i: Users/jesse/Soft
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.s: Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s
@@ -1748,7 +1857,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.s: Users/jesse/Soft
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/midi/midi_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.o: Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o
@@ -1756,7 +1865,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.i: Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i
@@ -1764,7 +1873,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.s: Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s
@@ -1772,7 +1881,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/msc/msc_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.o: Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o
@@ -1780,7 +1889,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.i: Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i
@@ -1788,7 +1897,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.s: Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s
@@ -1796,7 +1905,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/mtp/mtp_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.o: Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -1804,7 +1913,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.o: Users/jesse/
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.i: Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -1812,7 +1921,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.i: Users/jesse/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.s: Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -1820,7 +1929,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.s: Users/jesse/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.o: Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o
@@ -1828,7 +1937,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.o: Users/jesse/Softwa
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.i: Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i
@@ -1836,7 +1945,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.i: Users/jesse/Softwa
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.s: Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s
@@ -1844,7 +1953,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.s: Users/jesse/Softwa
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/net/ncm_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.o: Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o
@@ -1852,7 +1961,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.o: Users/jess
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.i: Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i
@@ -1860,7 +1969,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.i: Users/jess
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.s: Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s
@@ -1868,7 +1977,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.s: Users/jess
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/printer/printer_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.o: Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -1876,7 +1985,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.o: Users/jesse/
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -1884,7 +1993,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.i: Users/jesse/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -1892,7 +2001,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.s: Users/jesse/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.o: Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o
@@ -1900,7 +2009,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.o: Users/jesse/
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.i: Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i
@@ -1908,7 +2017,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.i: Users/jesse/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.s: Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s
@@ -1916,7 +2025,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.s: Users/jesse/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/vendor/vendor_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.o: Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o
@@ -1924,7 +2033,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.o: Users/jesse/So
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.i: Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i
@@ -1932,7 +2041,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.i: Users/jesse/So
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.s: Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s
@@ -1940,7 +2049,7 @@ Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.s: Users/jesse/So
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/class/video/video_device.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.o: Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o
@@ -1948,7 +2057,7 @@ Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.o: Users/jesse/Software/P
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.i: Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i
@@ -1956,7 +2065,7 @@ Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.i: Users/jesse/Software/P
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.s: Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s
@@ -1964,7 +2073,7 @@ Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.s: Users/jesse/Software/P
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/common/tusb_fifo.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.o: Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o
@@ -1972,7 +2081,7 @@ Users/jesse/Software/Pico/tinyusb/src/device/usbd.o: Users/jesse/Software/Pico/t
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.i: Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i
@@ -1980,7 +2089,7 @@ Users/jesse/Software/Pico/tinyusb/src/device/usbd.i: Users/jesse/Software/Pico/t
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.s: Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s
@@ -1988,7 +2097,7 @@ Users/jesse/Software/Pico/tinyusb/src/device/usbd.s: Users/jesse/Software/Pico/t
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/device/usbd.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -1996,7 +2105,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -2004,7 +2113,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: 
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -2012,7 +2121,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: 
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -2020,7 +2129,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: 
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -2028,7 +2137,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: 
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -2036,7 +2145,7 @@ Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: 
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 Users/jesse/Software/Pico/tinyusb/src/tusb.o: Users/jesse/Software/Pico/tinyusb/src/tusb.c.o
@@ -2044,7 +2153,7 @@ Users/jesse/Software/Pico/tinyusb/src/tusb.o: Users/jesse/Software/Pico/tinyusb/
 
 # target to build an object file
 Users/jesse/Software/Pico/tinyusb/src/tusb.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.o
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/tusb.c.o
 
 Users/jesse/Software/Pico/tinyusb/src/tusb.i: Users/jesse/Software/Pico/tinyusb/src/tusb.c.i
@@ -2052,7 +2161,7 @@ Users/jesse/Software/Pico/tinyusb/src/tusb.i: Users/jesse/Software/Pico/tinyusb/
 
 # target to preprocess a source file
 Users/jesse/Software/Pico/tinyusb/src/tusb.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.i
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/tusb.c.i
 
 Users/jesse/Software/Pico/tinyusb/src/tusb.s: Users/jesse/Software/Pico/tinyusb/src/tusb.c.s
@@ -2060,7 +2169,7 @@ Users/jesse/Software/Pico/tinyusb/src/tusb.s: Users/jesse/Software/Pico/tinyusb/
 
 # target to generate assembly for a file
 Users/jesse/Software/Pico/tinyusb/src/tusb.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/Users/jesse/Software/Pico/tinyusb/src/tusb.c.s
 .PHONY : Users/jesse/Software/Pico/tinyusb/src/tusb.c.s
 
 dI2C.o: dI2C.cpp.o
@@ -2068,7 +2177,7 @@ dI2C.o: dI2C.cpp.o
 
 # target to build an object file
 dI2C.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dI2C.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2C.cpp.o
 .PHONY : dI2C.cpp.o
 
 dI2C.i: dI2C.cpp.i
@@ -2076,7 +2185,7 @@ dI2C.i: dI2C.cpp.i
 
 # target to preprocess a source file
 dI2C.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dI2C.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2C.cpp.i
 .PHONY : dI2C.cpp.i
 
 dI2C.s: dI2C.cpp.s
@@ -2084,15 +2193,63 @@ dI2C.s: dI2C.cpp.s
 
 # target to generate assembly for a file
 dI2C.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dI2C.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2C.cpp.s
 .PHONY : dI2C.cpp.s
+
+dI2Srx.o: dI2Srx.cpp.o
+.PHONY : dI2Srx.o
+
+# target to build an object file
+dI2Srx.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2Srx.cpp.o
+.PHONY : dI2Srx.cpp.o
+
+dI2Srx.i: dI2Srx.cpp.i
+.PHONY : dI2Srx.i
+
+# target to preprocess a source file
+dI2Srx.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2Srx.cpp.i
+.PHONY : dI2Srx.cpp.i
+
+dI2Srx.s: dI2Srx.cpp.s
+.PHONY : dI2Srx.s
+
+# target to generate assembly for a file
+dI2Srx.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dI2Srx.cpp.s
+.PHONY : dI2Srx.cpp.s
+
+dSSD1306.o: dSSD1306.cpp.o
+.PHONY : dSSD1306.o
+
+# target to build an object file
+dSSD1306.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSSD1306.cpp.o
+.PHONY : dSSD1306.cpp.o
+
+dSSD1306.i: dSSD1306.cpp.i
+.PHONY : dSSD1306.i
+
+# target to preprocess a source file
+dSSD1306.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSSD1306.cpp.i
+.PHONY : dSSD1306.cpp.i
+
+dSSD1306.s: dSSD1306.cpp.s
+.PHONY : dSSD1306.s
+
+# target to generate assembly for a file
+dSSD1306.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSSD1306.cpp.s
+.PHONY : dSSD1306.cpp.s
 
 dSi5351.o: dSi5351.cpp.o
 .PHONY : dSi5351.o
 
 # target to build an object file
 dSi5351.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dSi5351.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSi5351.cpp.o
 .PHONY : dSi5351.cpp.o
 
 dSi5351.i: dSi5351.cpp.i
@@ -2100,7 +2257,7 @@ dSi5351.i: dSi5351.cpp.i
 
 # target to preprocess a source file
 dSi5351.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dSi5351.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSi5351.cpp.i
 .PHONY : dSi5351.cpp.i
 
 dSi5351.s: dSi5351.cpp.s
@@ -2108,15 +2265,39 @@ dSi5351.s: dSi5351.cpp.s
 
 # target to generate assembly for a file
 dSi5351.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/dSi5351.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/dSi5351.cpp.s
 .PHONY : dSi5351.cpp.s
+
+interrupts.o: interrupts.cpp.o
+.PHONY : interrupts.o
+
+# target to build an object file
+interrupts.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/interrupts.cpp.o
+.PHONY : interrupts.cpp.o
+
+interrupts.i: interrupts.cpp.i
+.PHONY : interrupts.i
+
+# target to preprocess a source file
+interrupts.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/interrupts.cpp.i
+.PHONY : interrupts.cpp.i
+
+interrupts.s: interrupts.cpp.s
+.PHONY : interrupts.s
+
+# target to generate assembly for a file
+interrupts.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/interrupts.cpp.s
+.PHONY : interrupts.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -2124,7 +2305,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -2132,8 +2313,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_testing.dir/build.make CMakeFiles/rp2350_testing.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+usb_descriptors.o: usb_descriptors.c.o
+.PHONY : usb_descriptors.o
+
+# target to build an object file
+usb_descriptors.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/usb_descriptors.c.o
+.PHONY : usb_descriptors.c.o
+
+usb_descriptors.i: usb_descriptors.c.i
+.PHONY : usb_descriptors.i
+
+# target to preprocess a source file
+usb_descriptors.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/usb_descriptors.c.i
+.PHONY : usb_descriptors.c.i
+
+usb_descriptors.s: usb_descriptors.c.s
+.PHONY : usb_descriptors.s
+
+# target to generate assembly for a file
+usb_descriptors.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sdr.dir/build.make CMakeFiles/sdr.dir/usb_descriptors.c.s
+.PHONY : usb_descriptors.c.s
 
 # Help Target
 help:
@@ -2147,9 +2352,16 @@ help:
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... pico_status_led_ws2812_pio_h"
 	@echo "... pioasmBuild"
+	@echo "... sdr_i2s_receiver_pio_h"
 	@echo "... bs2_default"
 	@echo "... bs2_default_library"
-	@echo "... rp2350_testing"
+	@echo "... sdr"
+	@echo "... USB-audio_functions.o"
+	@echo "... USB-audio_functions.i"
+	@echo "... USB-audio_functions.s"
+	@echo "... USB-cdc_functions.o"
+	@echo "... USB-cdc_functions.i"
+	@echo "... USB-cdc_functions.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/common/hardware_claim/claim.s"
@@ -2192,6 +2404,9 @@ help:
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_divider/divider.s"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.o"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_dma/dma.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_flash/flash.s"
@@ -2205,9 +2420,15 @@ help:
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.o"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.o"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.i"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_spi/spi.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/hardware_sync/sync.s"
@@ -2277,6 +2498,9 @@ help:
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_malloc/malloc.s"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.o"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
+	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_platform_common/common.s"
@@ -2307,21 +2531,15 @@ help:
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i"
-	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i"
 	@echo "... Users/jesse/Software/Pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s"
+	@echo "... Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.o"
+	@echo "... Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.i"
+	@echo "... Users/jesse/Software/Pico/tinyusb/hw/bsp/rp2040/family.s"
 	@echo "... Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.o"
 	@echo "... Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.i"
 	@echo "... Users/jesse/Software/Pico/tinyusb/src/class/audio/audio_device.s"
@@ -2385,12 +2603,24 @@ help:
 	@echo "... dI2C.o"
 	@echo "... dI2C.i"
 	@echo "... dI2C.s"
+	@echo "... dI2Srx.o"
+	@echo "... dI2Srx.i"
+	@echo "... dI2Srx.s"
+	@echo "... dSSD1306.o"
+	@echo "... dSSD1306.i"
+	@echo "... dSSD1306.s"
 	@echo "... dSi5351.o"
 	@echo "... dSi5351.i"
 	@echo "... dSi5351.s"
+	@echo "... interrupts.o"
+	@echo "... interrupts.i"
+	@echo "... interrupts.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... usb_descriptors.o"
+	@echo "... usb_descriptors.i"
+	@echo "... usb_descriptors.s"
 .PHONY : help
 
 

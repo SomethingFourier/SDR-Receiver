@@ -1,4 +1,6 @@
 # Hashes of file build rules.
+a8cb4e19988710887d1437ddab7b1607 CMakeFiles/sdr_i2s_receiver_pio_h
+bde7f024cbd2ec8e6c7cb0af97927552 i2s_receiver.pio.h
 2f4841df92313be3de94fd9aa6b4c617 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_bin
 c27d20c9df46e5913b0df63b47aedc5f pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 f2a18cd6d89822fb5dbdbe5ab41a9218 pico-sdk/src/rp2350/boot_stage2/bs2_default_padded_checksummed.S

@@ -2296,7 +2296,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "picotool::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-picotool-Debug-293020282eca16024e90.json",
+					"jsonFile" : "target-picotool-Debug-c481c660a49e23272ee4.json",
 					"name" : "picotool",
 					"projectIndex" : 0
 				},
@@ -2435,7 +2435,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -4342,10 +4343,11 @@
 					[
 						0
 					],
-					"name" : "rp2350_testing",
+					"name" : "sdr",
 					"targetIndexes" : 
 					[
-						6
+						6,
+						7
 					]
 				},
 				{
@@ -4858,9 +4860,16 @@
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "rp2350_testing::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-rp2350_testing-Debug-f05e488fe7a51b608be9.json",
-					"name" : "rp2350_testing",
+					"id" : "sdr::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdr-Debug-db05dca1b70711729abc.json",
+					"name" : "sdr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sdr_i2s_receiver_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sdr_i2s_receiver_pio_h-Debug-9df7b49f538b1d2ab047.json",
+					"name" : "sdr_i2s_receiver_pio_h",
 					"projectIndex" : 0
 				}
 			]
