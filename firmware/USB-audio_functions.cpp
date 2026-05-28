@@ -105,9 +105,6 @@ void audio_task(void)
 
     if (g_I2Srx.A_buffer_ready)
     {
-        // Fix up raw I2S data if your dAudio driver requires it (e.g. byte packing/shifting)
-        g_I2Srx.Fix_A_Samples(); 
-        
         // Write the completely filled DMA buffer to TinyUSB.
         // tud_audio_write expects the size in bytes. 
         // 96 32-bit words * 4 bytes/word = 384 bytes
@@ -122,8 +119,6 @@ void audio_task(void)
 
     if (g_I2Srx.B_buffer_ready)
     {
-        g_I2Srx.Fix_B_Samples();
-
         uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
         
         if (written > 0) 

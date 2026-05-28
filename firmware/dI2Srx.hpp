@@ -9,13 +9,13 @@
 class dI2Srx
 {
 public:
-	dI2Srx(PIO i2s_pio_instance = pio0);
+	dI2Srx();
 
 	// Public API
+    void Init(PIO i2s_pio_instance = pio0);
+    void Start();
     int * Get_A_Buffer();
     int * Get_B_Buffer();
-    void Fix_A_Samples();
-    void Fix_B_Samples();
     
     // DMA Buffer A/B Data Ready Flags
     volatile bool A_buffer_ready = false;

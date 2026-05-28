@@ -9,6 +9,8 @@
 #include <hardware/irq.h>
 
 #include "dSSD1306.hpp"
+#include "dGPIO.hpp"
+#include "SDR_State_Machine.hpp"
 
 #include "interrupts.hpp"
 #include "i2s_receiver.pio.h"
@@ -19,8 +21,21 @@
 #define I2S_BCLK        19
 #define I2S_WS          20
 
-dI2Srx::dI2Srx(PIO i2s_pio_instance)
+dI2Srx::dI2Srx() {}
+
+void dI2Srx::Init(PIO i2s_pio_instance)
 {
+    // ADC configuration pins
+    gpio_init(ADC_MD0);
+    gpio_init(ADC_MD1);
+    gpio_init(ADC_RST);
+    gpio_set_dir(ADC_MD0, GPIO_OUT);
+    gpio_set_dir(ADC_MD1, GPIO_OUT);
+    gpio_set_dir(ADC_RST, GPIO_OUT);
+    gpio_put(ADC_MD0, 0);
+    gpio_put(ADC_MD1, 1); // Master mode 128*f_s
+    gpio_put(ADC_RST, 0);
+
     // DMA configuration
     audio_A_dma_channel = dma_claim_unused_channel(true);
     audio_B_dma_channel = dma_claim_unused_channel(true);
@@ -92,6 +107,12 @@ dI2Srx::dI2Srx(PIO i2s_pio_instance)
     }
 }
 
+void dI2Srx::Start()
+{
+    gpio_put(ADC_RST, 1);
+}
+    
+
 int * dI2Srx::Get_A_Buffer()
 {
     return audio_A_buffer;
@@ -101,23 +122,6 @@ int * dI2Srx::Get_B_Buffer()
 {
     return audio_B_buffer;
 } // Get_B_Buffer
-
-void dI2Srx::Fix_A_Samples()
-{
-    for (int i = 0; i < 96; i++)
-    {
-        // Shift left by 1 to move the sign bit from bit 30 to bit 31
-        audio_A_buffer[i] <<= 1; 
-    }
-} // Fix_A_Samples
-
-void dI2Srx::Fix_B_Samples()
-{
-    for (int i = 0; i < 96; i++)
-    {
-        audio_B_buffer[i] <<= 1;
-    }
-} // Fix_B_Samples
 
 void dI2Srx::core1_entry()
 {
@@ -136,5 +140,5 @@ void dI2Srx::core1_entry()
     dma_channel_start(g_I2Srx.audio_A_dma_channel);
 
     // Remain on Core 1; DMA IRQ will do the work
-    for (;;) tight_loop_contents();
+    sdr_state_machine();
 }
