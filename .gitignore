@@ -3,4 +3,3 @@ discrete-receiver/diode_tayloe_sdr-backups/*
 build/*
 firmware/build/*
 .vscode/
-.history/

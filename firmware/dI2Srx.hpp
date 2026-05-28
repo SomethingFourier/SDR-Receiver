@@ -35,8 +35,8 @@ private:
     int audio_B_buffer[WORDS_PER_HALF];
 
     // DMA channel indices used for ping-pong buffering
-    int dma_channel_0;
-    int dma_channel_1;
+    int audio_A_dma_channel;
+    int audio_B_dma_channel;
 
     // Core 1 entry point runs on the second core and must be callable by
     // `multicore_launch_core1`. Make it static so it can be passed as a
