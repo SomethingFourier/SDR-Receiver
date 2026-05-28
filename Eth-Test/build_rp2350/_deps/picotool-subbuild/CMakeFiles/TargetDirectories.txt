@@ -1,3 +1,0 @@
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/build_rp2350/_deps/picotool-subbuild/CMakeFiles/picotool-populate.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/build_rp2350/_deps/picotool-subbuild/CMakeFiles/edit_cache.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/build_rp2350/_deps/picotool-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/pico-sdk/src/rp2350/boot_stage2/bs2_default_padded_checksummed.S
+

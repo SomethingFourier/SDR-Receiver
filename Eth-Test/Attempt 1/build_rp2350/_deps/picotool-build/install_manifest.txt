@@ -1,0 +1,7 @@
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/picotool
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/picotoolTargets.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/picotoolTargets-release.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/picotoolConfig.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/picotoolConfigVersion.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/enc_bootloader.elf
+/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 1/build_rp2350/_deps/picotool/enc_bootloader_mbedtls.elf
