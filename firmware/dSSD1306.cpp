@@ -1,0 +1,299 @@
+#include "dSSD1306.hpp"
+
+#include <string.h>
+#include <pico/types.h>
+#include <hardware/i2c.h>
+
+#include "dI2C.hpp"
+
+dSSD1306::dSSD1306()
+{
+    memset(display_buffer, 0, sizeof(display_buffer)); // Initialize buffer to zeros
+    display_buffer[0] = 0x40; // The SSD1306 'Data Stream' control byte
+} // Constructor
+
+void dSSD1306::Init()
+{
+    // Standard SSD1306 Initialization Sequence for 128x64 screens
+    const uint8_t initialization_commands[] = 
+    {
+        0xAE,       // Display OFF
+        0x20, 0x00, // Set Memory Addressing Mode to Horizontal
+        0x40,       // Set Display start line to 0
+        0xB0,       // Set Page Start Address for Page Addressing Mode
+        0xC8,       // Set COM Output Scan Direction
+        0x00,       // Set low column address
+        0x10,       // Set high column address
+        0x40,       // Set start line address
+        0x81, 0xFF, // Set contrast control register (Max contrast)
+        0xA1,       // Set segment re-map (columns 127 mapped to SEG0)
+        0xA6,       // Set normal display (not inverted)
+        0xA8, 0x3F, // Set multiplex ratio (1 to 64)
+        0xA4,       // Output RAM to Display
+        0xD3, 0x00, // Set display offset
+        0xD5, 0xF0, // Set display clock divide ratio/oscillator frequency
+        0xD9, 0x22, // Set pre-charge period
+        0xDA, 0x12, // Set COM pins hardware configuration
+        0xDB, 0x20, // Set VCOMH deselect level
+        0x8D, 0x14, // Enable charge pump regulator
+        0xAF        // Display ON
+    };
+
+    Send_Command(initialization_commands, sizeof(initialization_commands));
+    
+    Clear();
+    Update(); // Push blank buffer to ensure display isn't full of static
+} // Init
+
+void dSSD1306::Clear()
+{
+    memset(&display_buffer[1], 0, sizeof(display_buffer) - 1);
+} // Clear
+
+void dSSD1306::Update()
+{
+    // Configure display to receive full buffer
+    const uint8_t column_commands[3] = {0x21, 0, 127};
+    // 0x21 Send_Command(0x21); // Set column address
+    // 0    Start column
+    // 127  End column
+    Send_Command(column_commands, 3);
+
+    const uint8_t page_commands[3] = {0x22, 0, 7};
+    // 0x22 Set page address
+    // 0    Start page
+    // 7    End page
+    Send_Command(page_commands, 3);
+
+    i2c_write_blocking(g_I2C.master_i2c_instance, I2C_ADDRESS, display_buffer, 1025, false);
+} // Update
+
+void dSSD1306::Draw_Pixel(int16_t x, int16_t y, bool is_on)
+{
+    // Bounds check
+    if (x < 0 || x >= WIDTH || y < 0 || y >= HEIGHT)
+    {
+        return;
+    }
+
+    // Map x, y to the correct byte in the 1D buffer
+    if (is_on) 
+    {
+        display_buffer[1 + x + (y / 8) * WIDTH] |= (1 << (y % 8));
+    } 
+    else 
+    {
+        display_buffer[1 + x + (y / 8) * WIDTH] &= ~(1 << (y % 8));
+    }
+} // Draw_Pixel
+
+void dSSD1306::Draw_Character(char character, uint8_t starting_x, uint8_t row)
+{
+    if (character < ' ' || character > '~')
+    {
+        // requested character doesn't exist; default to space
+        character = ' ';
+    }
+    // characters in character_fonts are stored in sequental ASCII order, so we can just find our zero (space), and start there
+    uint16_t character_font_address = 5*(character - ' '); // multiply by 5 because each character is made up of 5 bytes
+
+    // find the starting byte in the 1D buffer
+    uint16_t display_buffer_index = (row * 128) + starting_x + 1; // each row is 128 bytes wide, +1 because index 0 holds the control byte
+
+    // put each column of the font in the buffer
+    for (uint8_t pixel_column_index = 0; pixel_column_index < 5; pixel_column_index++)
+    {
+        display_buffer[display_buffer_index + pixel_column_index] = character_fonts[character_font_address];
+        character_font_address++; // proceed to the next pixel column from font list
+    }
+    display_buffer[display_buffer_index + 5] = 0x00; // add a space
+} // Draw_Character
+
+void dSSD1306::Draw_Text(uint8_t row, const char message[21])
+{
+    if (row < 8)
+    {
+        // set x and y for this row
+        uint8_t current_x = 0;
+        bool end_of_message_reached = false;
+        for (uint8_t i = 0; i<21; i++)
+        {
+            if (message[i] == '\0' || end_of_message_reached)
+            {
+                end_of_message_reached = true;
+                Draw_Character(' ', current_x, row);
+                current_x += 6; // shift to next character slot (1 pixel spacing between characters of width 5)
+            }
+            else
+            {
+                Draw_Character(message[i], current_x, row);
+                current_x += 6; // shift to next character slot (1 pixel spacing between characters of width 5)
+            }
+        }
+    }
+} // Draw_Text
+
+void dSSD1306::Clear_Row(uint8_t row)
+{
+    Draw_Text(row, "                     "); // fill the row with spaces
+} // Clear_Row
+
+const char * dSSD1306::Number_to_String(uint32_t number)
+{
+    static char result[11]; // 10 digits max for uint32_t, plus null terminator
+    char temp[11];
+    uint8_t index = 0;
+
+    if (number == 0)
+    {
+        result[0] = '0';
+        result[1] = '\0';
+        return result;
+    }
+
+    while (number > 0 && index < 10)
+    {
+        temp[index++] = char('0' + (number % 10));
+        number /= 10;
+    }
+
+    uint8_t out = 0;
+    while (index > 0)
+    {
+        result[out++] = temp[--index];
+    }
+    result[out] = '\0';
+
+    return result;
+} // Number_to_String
+
+void dSSD1306::Set_Contrast(uint8_t contrast)
+{
+    Send_Command(0x81);     // Contrast command
+    Send_Command(contrast); // 0-255
+} // Set_Contrast
+
+void dSSD1306::Invert_Display(bool invert)
+{
+    Send_Command(invert ? 0xA7 : 0xA6); // 0xA7 = Invert, 0xA6 = Normal
+} // Invert_Display
+
+// --- Internal I2C Helpers ---
+
+void dSSD1306::Send_Command(const uint8_t *commands, size_t number_of_commands)
+{
+    // temp buffer to hold control byte + commands
+    uint8_t commands_buffer[number_of_commands + 1];
+    commands_buffer[0] = control_byte;
+
+    memcpy(&commands_buffer[1], commands, number_of_commands);
+
+    i2c_write_blocking(g_I2C.master_i2c_instance, I2C_ADDRESS, commands_buffer, number_of_commands + 1, false);
+} // Send_Command
+
+// Single-Command Wrapper for Send_Command
+void dSSD1306::Send_Command(uint8_t command)
+{
+    Send_Command(&command, 1);
+} // Send_Command
+
+const uint8_t dSSD1306::control_byte;
+
+const uint8_t dSSD1306::character_fonts[475] = 
+{
+  0x00, 0x00, 0x00, 0x00, 0x00, // SPACE
+  0x00, 0x00, 0x17, 0x00, 0x00, // !
+  0x00, 0x03, 0x00, 0x03, 0x00, // "
+  0x0A, 0x1F, 0x0A, 0x1F, 0x0A, // #
+  0x08, 0x0E, 0x1F, 0x0E, 0x02, // $
+  0x11, 0x08, 0x04, 0x02, 0x11, // %
+  0x0A, 0x15, 0x16, 0x08, 0x14, // &
+  0x00, 0x00, 0x03, 0x00, 0x00, // '
+  0x00, 0x0E, 0x11, 0x00, 0x00, // (
+  0x00, 0x00, 0x11, 0x0E, 0x00, // )
+  0x00, 0x05, 0x02, 0x05, 0x00, // *
+  0x00, 0x04, 0x0E, 0x04, 0x00, // +
+  0x00, 0x00, 0x10, 0x08, 0x00, // ,
+  0x00, 0x04, 0x04, 0x04, 0x00, // -
+  0x00, 0x00, 0x10, 0x00, 0x00, // .
+  0x10, 0x08, 0x04, 0x02, 0x01, // /
+  0x0E, 0x19, 0x15, 0x13, 0x0E, // 0
+  0x10, 0x12, 0x1F, 0x10, 0x10, // 1
+  0x1D, 0x15, 0x15, 0x15, 0x16, // 2
+  0x11, 0x11, 0x15, 0x15, 0x0E, // 3
+  0x03, 0x04, 0x04, 0x04, 0x1F, // 4
+  0x13, 0x15, 0x15, 0x15, 0x1D, // 5
+  0x0E, 0x15, 0x15, 0x15, 0x08, // 6
+  0x01, 0x01, 0x19, 0x05, 0x03, // 7
+  0x0A, 0x15, 0x15, 0x15, 0x0A, // 8
+  0x02, 0x05, 0x15, 0x0D, 0x06, // 9
+  0x00, 0x00, 0x0A, 0x00, 0x00, // :
+  0x00, 0x10, 0x0A, 0x00, 0x00, // ;
+  0x00, 0x04, 0x0A, 0x11, 0x00, // <
+  0x00, 0x0A, 0x0A, 0x0A, 0x00, // =
+  0x00, 0x11, 0x0A, 0x04, 0x00, // >
+  0x00, 0x01, 0x15, 0x03, 0x00, // ?
+  0x0E, 0x11, 0x15, 0x17, 0x12, // @
+  0x1E, 0x05, 0x05, 0x05, 0x1E, // A
+  0x1F, 0x15, 0x15, 0x15, 0x0A, // B
+  0x0E, 0x11, 0x11, 0x11, 0x0A, // C
+  0x1F, 0x11, 0x11, 0x11, 0x0E, // D
+  0x1F, 0x15, 0x15, 0x11, 0x11, // E
+  0x1F, 0x05, 0x05, 0x01, 0x01, // F
+  0x0E, 0x11, 0x11, 0x15, 0x1D, // G
+  0x1F, 0x04, 0x04, 0x04, 0x1F, // H
+  0x11, 0x11, 0x1F, 0x11, 0x11, // I
+  0x09, 0x11, 0x11, 0x0F, 0x01, // J
+  0x1F, 0x04, 0x04, 0x0A, 0x11, // K
+  0x1F, 0x10, 0x10, 0x10, 0x10, // L
+  0x1F, 0x02, 0x04, 0x02, 0x1F, // M
+  0x1F, 0x02, 0x04, 0x08, 0x1F, // N
+  0x0E, 0x11, 0x11, 0x11, 0x0E, // O
+  0x1F, 0x09, 0x09, 0x09, 0x06, // P
+  0x0E, 0x11, 0x15, 0x09, 0x16, // Q
+  0x1F, 0x05, 0x05, 0x0D, 0x12, // R
+  0x12, 0x15, 0x15, 0x15, 0x09, // S
+  0x01, 0x01, 0x1F, 0x01, 0x01, // T
+  0x0F, 0x10, 0x10, 0x10, 0x0F, // U
+  0x07, 0x08, 0x10, 0x08, 0x07, // V
+  0x0F, 0x10, 0x0C, 0x10, 0x0F, // W
+  0x11, 0x0A, 0x04, 0x0A, 0x11, // X
+  0x01, 0x02, 0x1C, 0x02, 0x01, // Y
+  0x11, 0x19, 0x15, 0x13, 0x11, // Z
+  0x00, 0x00, 0x1F, 0x11, 0x00, // [
+  0x01, 0x02, 0x04, 0x08, 0x10, // slash –> the actual character being here causes the next line to be a comment as well, and thus could cause issues if it was here
+  0x00, 0x11, 0x1F, 0x00, 0x00, // ]
+  0x00, 0x02, 0x01, 0x02, 0x00, // ^
+  0x00, 0x10, 0x10, 0x10, 0x00, // _
+  0x00, 0x01, 0x02, 0x04, 0x00, // `
+  0x0C, 0x12, 0x12, 0x0C, 0x10, // a
+  0x1F, 0x12, 0x12, 0x0C, 0x00, // b
+  0x0C, 0x12, 0x12, 0x12, 0x00, // c
+  0x0C, 0x12, 0x12, 0x12, 0x1F, // d
+  0x0C, 0x16, 0x16, 0x14, 0x00, // e
+  0x08, 0x1E, 0x09, 0x02, 0x00, // f
+  0x00, 0x12, 0x15, 0x15, 0x0E, // g
+  0x1F, 0x04, 0x04, 0x18, 0x00, // h
+  0x00, 0x00, 0x1D, 0x00, 0x00, // i
+  0x08, 0x10, 0x10, 0x0D, 0x00, // j
+  0x1F, 0x04, 0x0C, 0x12, 0x00, // k
+  0x00, 0x0F, 0x10, 0x10, 0x00, // l
+  0x1E, 0x02, 0x04, 0x02, 0x1C, // m
+  0x1E, 0x02, 0x02, 0x1C, 0x00, // n
+  0x0C, 0x12, 0x12, 0x0C, 0x00, // o
+  0x1E, 0x0A, 0x0A, 0x04, 0x00, // p
+  0x04, 0x0A, 0x0A, 0x1E, 0x10, // q
+  0x02, 0x1C, 0x02, 0x02, 0x00, // r
+  0x14, 0x16, 0x1A, 0x0A, 0x00, // s
+  0x00, 0x02, 0x0F, 0x12, 0x00, // t
+  0x0E, 0x10, 0x10, 0x0E, 0x00, // u
+  0x06, 0x08, 0x10, 0x0E, 0x00, // v
+  0x0E, 0x10, 0x08, 0x10, 0x0E, // w
+  0x12, 0x0C, 0x0C, 0x12, 0x00, // x
+  0x12, 0x14, 0x08, 0x06, 0x00, // y
+  0x12, 0x1A, 0x16, 0x12, 0x00, // z
+  0x00, 0x04, 0x1B, 0x11, 0x00, // {
+  0x00, 0x00, 0x1B, 0x00, 0x00, // |
+  0x00, 0x11, 0x1B, 0x04, 0x00, // }
+  0x04, 0x02, 0x04, 0x08, 0x04, // ~
+}; // font_characters[]
