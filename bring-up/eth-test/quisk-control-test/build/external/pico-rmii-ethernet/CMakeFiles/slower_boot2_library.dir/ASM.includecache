@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/external/pico-rmii-ethernet/slower_boot2_padded_checksummed.S
+

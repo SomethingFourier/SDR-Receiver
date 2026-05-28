@@ -1,0 +1,7 @@
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/pioasm.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/edit_cache.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/list_install_components.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/install.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/install/local.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/quisk-control-test/build/pioasm/CMakeFiles/install/strip.dir
