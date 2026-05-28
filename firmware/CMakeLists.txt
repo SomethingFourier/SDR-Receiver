@@ -41,6 +41,8 @@ pico_generate_pio_header(sdr
     ${I2S_PIO}
 )
 
+target_include_directories(sdr PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+
 target_link_libraries(sdr
     pico_stdlib
     pico_stdio
@@ -55,4 +57,4 @@ target_link_libraries(sdr
 )
 
 # Generate map, bin, hex, and UF2 files
-pico_add_extra_outputs(rp2350_testing)
+pico_add_extra_outputs(sdr)

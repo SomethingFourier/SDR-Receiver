@@ -9,18 +9,17 @@
 class dI2Srx
 {
 public:
-	dI2Srx();
+	dI2Srx(PIO i2s_pio_instance = pio0);
 
 	// Public API
-	void Init(PIO i2s_pio_instance = pio0);
     int * Get_A_Buffer();
     int * Get_B_Buffer();
     void Fix_A_Samples();
     void Fix_B_Samples();
     
     // DMA Buffer A/B Data Ready Flags
-    volatile bool A_buffer_ready;
-    volatile bool B_buffer_ready;
+    volatile bool A_buffer_ready = false;
+    volatile bool B_buffer_ready = false;
 
 private:
     // PIO state machine index in use (0..3)
@@ -45,9 +44,6 @@ private:
     // so declare it as a friend.
     static void core1_entry();
     friend void dma_irq0_handler();
-
-    dAudio(const dI2Srx&);
-    void operator=(const dI2Srx&);
 };
 
 extern dI2Srx g_I2Srx;

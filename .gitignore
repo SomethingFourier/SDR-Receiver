@@ -1,3 +1,5 @@
 discrete-receiver/.history/
 discrete-receiver/diode_tayloe_sdr-backups/*
-build/
+build/*
+firmware/build/*
+.vscode/
