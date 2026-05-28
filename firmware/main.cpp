@@ -1,7 +1,3 @@
-// C Libraries
-#include <stdio.h>
-#include <stdlib.h>
-
 // Native Pico libraries
 #include <pico/stdlib.h>
 #include <pico/stdio.h>
@@ -13,6 +9,7 @@
 #include "dSSD1306.hpp"
 #include "dI2C.hpp"
 #include "dI2Srx.hpp"
+#include "dGPIO.hpp"
 
 // TinyUSB
 #include "USB-cdc_functions.hpp"
@@ -20,11 +17,6 @@
 #include "tusb_config.h"
 #include "bsp/board_api.h"
 #include "tusb.h"
-
-#define LED_RED     4
-#define LED_GREEN   5
-#define LED_WHITE   26
-#define LED_YELLOW  29
 
 // driver globals
 dI2C g_I2C;
@@ -34,13 +26,19 @@ dI2Srx g_I2Srx;
 
 int main (void)
 {
-    // DAC configuration pins
-    gpio_init(DAC_MD1);
-    gpio_init(DAC_FMT);
-    gpio_set_dir(DAC_MD1, GPIO_OUT);
-    gpio_set_dir(DAC_FMT, GPIO_OUT);
-    gpio_put(DAC_MD1, 0); // Master mode 512*f_s
-    gpio_put(DAC_FMT, 0); // FMT = 0 for I2S
+    // LED config
+    gpio_init(LED_RED);
+    gpio_init(LED_GREEN);
+    gpio_init(LED_WHITE);
+    gpio_init(LED_YELLOW);
+    gpio_set_dir(LED_RED, GPIO_OUT);
+    gpio_set_dir(LED_GREEN, GPIO_OUT);
+    gpio_set_dir(LED_WHITE, GPIO_OUT);
+    gpio_set_dir(LED_YELLOW, GPIO_OUT);
+    gpio_put(LED_RED, 0);
+    gpio_put(LED_GREEN, 0);
+    gpio_put(LED_WHITE, 0);
+    gpio_put(LED_YELLOW, 0);
     
     // pico-sdk initializations
     stdio_init_all();
@@ -49,8 +47,11 @@ int main (void)
     // driver initializations
     g_I2C.Init();
     g_SSD1306.Init();
+    g_I2Srx.Init();
     g_Si5351.Init();
     tusb_init();
+
+    g_I2Srx.Start();
 
     while (true)
     {
