@@ -19,6 +19,29 @@
 #include "lwip/tcp.h"
 #include <string.h>
 #include "rmii_ethernet_phy_rx.pio.h"
+#include "hardware/clocks.h"
+
+#include "hardware/clocks.h"
+
+// Setup 50MHz clock output on GPIO23 for LAN8720 reference clock
+static void setup_50mhz_clock(uint gpio_pin) {
+  // Select which clock output to use (GPIO23 uses GPOUT2)
+  // System clock is 300MHz by default after arch_pico_init()
+  // To get 50MHz: 300MHz / 6 = 50MHz
+  
+  // Configure GPIO23 to output GPOUT2 clock
+  gpio_init(gpio_pin);
+  
+  // Set GPIO23 to output GPOUT2 
+  gpio_set_function(gpio_pin, GPIO_FUNC_GPCK);
+  
+  // Configure GPOUT2 to output sys clock divided by 6
+  // GPOUT typically outputs clk_sys/divisor
+  // We need 300MHz / 6 = 50MHz
+  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 6);
+  
+  printf("50MHz clock configured on GPIO %d\n", gpio_pin);
+}
 
 // Simple MDIO bit-bang test to diagnose PHY wiring before driver init
 static void mdio_send_bit(bool bit, uint gpio_mdc, uint gpio_mdio) {
@@ -212,6 +235,9 @@ int main() {
 
   // Do board specific init
   arch_pico_init();
+
+  // Setup 50MHz reference clock for LAN8720 on GPIO23
+  setup_50mhz_clock(23);
 
   printf("pico rmii ethernet - httpd\n");
 
