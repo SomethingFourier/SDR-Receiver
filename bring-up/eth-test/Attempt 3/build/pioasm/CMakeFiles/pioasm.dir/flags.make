@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pkcubed/pico-sdk/tools/pioasm -I/home/pkcubed/pico-sdk/tools/pioasm/gen -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm"
+CXX_INCLUDES = -I/home/pkcubed/pico-sdk/tools/pioasm -I/home/pkcubed/pico-sdk/tools/pioasm/gen -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm"
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++11
 

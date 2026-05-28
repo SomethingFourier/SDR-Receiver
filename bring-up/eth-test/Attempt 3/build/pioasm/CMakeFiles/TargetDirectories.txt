@@ -1,7 +1,7 @@
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/pioasm.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/edit_cache.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/list_install_components.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/install.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/install/local.dir
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/install/strip.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/pioasm.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/edit_cache.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/rebuild_cache.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/list_install_components.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/install.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/install/local.dir
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/install/strip.dir

@@ -1,4 +1,4 @@
-# Install script for directory: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/enc_bootloader
+# Install script for directory: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/enc_bootloader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/enc_bootloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/enc_bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

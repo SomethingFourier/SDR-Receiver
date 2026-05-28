@@ -1,0 +1,3 @@
+[submodule "bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet"]
+	path = bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet
+	url = https://github.com/rscott2049/pico-rmii-ethernet_nce

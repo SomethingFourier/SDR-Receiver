@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 # Utility rule file for slower_boot2_bin.
 
@@ -69,8 +69,8 @@ include external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/progress.mak
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin: external/pico-rmii-ethernet/slower_boot2.bin
 
 external/pico-rmii-ethernet/slower_boot2.bin: external/pico-rmii-ethernet/slower_boot2.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating slower_boot2.bin"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objcopy -Obinary "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating slower_boot2.bin"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objcopy -Obinary "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.bin"
 
 slower_boot2_bin: external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin
 slower_boot2_bin: external/pico-rmii-ethernet/slower_boot2.bin
@@ -82,10 +82,10 @@ external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build: slower_boot2_
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/slower_boot2_bin.dir/cmake_clean.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/slower_boot2_bin.dir/cmake_clean.cmake
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/clean
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/depend
 

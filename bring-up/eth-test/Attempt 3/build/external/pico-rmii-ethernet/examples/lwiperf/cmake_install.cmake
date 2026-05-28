@@ -1,4 +1,4 @@
-# Install script for directory: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/examples/lwiperf
+# Install script for directory: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/examples/lwiperf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

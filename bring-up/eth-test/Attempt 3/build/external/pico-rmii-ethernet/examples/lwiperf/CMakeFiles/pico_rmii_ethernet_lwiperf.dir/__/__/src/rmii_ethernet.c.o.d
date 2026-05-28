@@ -1,5 +1,5 @@
 external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.o: \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/rmii_ethernet.c \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/rmii_ethernet.c \
  /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -11,7 +11,7 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/_locale.h \
  /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/include/lan8720a.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/include/lan8720a.h \
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
@@ -19,9 +19,9 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
  /usr/include/newlib/assert.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/generated/pico_base/pico/version.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/generated/pico_base/pico/version.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/generated/pico_base/pico/config_autogen.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/generated/pico_base/pico/config_autogen.h \
  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
@@ -85,10 +85,10 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/etharp.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/opt.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/arch.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
  /usr/include/newlib/stdio.h /usr/include/newlib/sys/stdio.h \
  /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
  /usr/include/newlib/alloca.h /usr/include/newlib/inttypes.h \
@@ -115,10 +115,10 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/timeouts.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_rx.pio.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_rx.pio.h \
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/pio.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pio.h \
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h

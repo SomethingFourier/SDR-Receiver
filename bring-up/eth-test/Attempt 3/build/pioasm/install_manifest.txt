@@ -1,5 +1,5 @@
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm-install/pioasm/pioasm
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm-install/pioasm/pioasmTargets.cmake
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm-install/pioasm/pioasmConfig.cmake
-/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install/pioasm/pioasm
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install/pioasm/pioasmTargets.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install/pioasm/pioasmTargets-release.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install/pioasm/pioasmConfig.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
