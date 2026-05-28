@@ -29,21 +29,18 @@ static void setup_50mhz_clock(uint gpio_pin) {
   // System clock is 300MHz by default after arch_pico_init()
   // To get 50MHz: 300MHz / 6 = 50MHz
   
-  // Configure GPIO23 to output GPOUT2 clock
+  // Configure GPIO to output GPOUT2 clock
   gpio_init(gpio_pin);
   
-  // Set GPIO23 to output GPOUT2 
+  // Set GPIO to output GPOUT2 
   gpio_set_function(gpio_pin, GPIO_FUNC_GPCK);
   
   // Configure GPOUT2 to output sys clock divided by 6
   // GPOUT typically outputs clk_sys/divisor
   // We need 300MHz / 6 = 50MHz
-  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 3);
+  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 6);
   
-  uint32_t sys_clk = clock_get_hz(clk_sys);
-  printf("System clock: %lu Hz (%.1f MHz)\n", sys_clk, (float)sys_clk / 1e6);
-  printf("50MHz clock configured on GPIO %d (divisor: 3)\n", gpio_pin);
-  printf("Expected output: %.1f MHz\n", (float)sys_clk / 1e6 / 6);
+  printf("50MHz clock configured on GPIO %d\n", gpio_pin);
 }
 
 // Simple MDIO bit-bang test to diagnose PHY wiring before driver init
@@ -51,11 +48,11 @@ static void mdio_send_bit(bool bit, uint gpio_mdc, uint gpio_mdio) {
   // Data is sampled on rising edge of MDC in PHYs typically, so
   // set data then toggle clock high then low
   gpio_put(gpio_mdio, bit);
-  sleep_us(1);
+  sleep_us(5);
   gpio_put(gpio_mdc, 1);
-  sleep_us(1);
+  sleep_us(5);
   gpio_put(gpio_mdc, 0);
-  sleep_us(1);
+  sleep_us(5);
 }
 
 static int mdio_read_register_bitbang(int phy_addr, int reg_addr) {
@@ -63,10 +60,13 @@ static int mdio_read_register_bitbang(int phy_addr, int reg_addr) {
   const uint gpio_mdc = PICO_RMII_ETHERNET_MDC_PIN;
   // Ensure pins are GPIO and start idle low
   gpio_init(gpio_mdc);
+  gpio_pull_up(gpio_mdc);
   gpio_set_dir(gpio_mdc, GPIO_OUT);
   gpio_put(gpio_mdc, 0);
 
   gpio_init(gpio_mdio);
+  // Enable pull-ups on MDIO (open-drain interface)
+  gpio_pull_up(gpio_mdio);
   // Drive MDIO for preamble
   gpio_set_dir(gpio_mdio, GPIO_OUT);
 
@@ -91,25 +91,49 @@ static int mdio_read_register_bitbang(int phy_addr, int reg_addr) {
   gpio_set_dir(gpio_mdio, GPIO_IN);
   // Toggle two clocks while MDIO is high-impedance
   for (int i = 0; i < 2; i++) {
-    sleep_us(1);
+    sleep_us(5);
     gpio_put(gpio_mdc, 1);
-    sleep_us(1);
+    sleep_us(5);
     gpio_put(gpio_mdc, 0);
   }
 
   // Read 16 bits
   uint16_t val = 0;
   for (int i = 15; i >= 0; i--) {
-    sleep_us(1);
+    sleep_us(5);
     gpio_put(gpio_mdc, 1);
-    sleep_us(1);
+    sleep_us(5);
     int b = gpio_get(gpio_mdio);
     val |= (b & 1) << i;
     gpio_put(gpio_mdc, 0);
-    sleep_us(1);
+    sleep_us(5);
   }
 
   return val;
+}
+
+// Run a small MDIO register read test and print common registers
+static void run_mdio_test(int phy_addr) {
+  printf("\n=== MDIO TEST: PHY %d ===\n", phy_addr);
+  fflush(stdout);
+  
+  for (int r = 0; r <= 4; r++) {
+    printf("  Reading REG %02d...", r);
+    fflush(stdout);
+    int v = mdio_read_register_bitbang(phy_addr, r);
+    printf(" Got 0x%04x\n", v & 0xffff);
+    fflush(stdout);
+  }
+  
+  printf("  Reading PHY ID registers...");
+  fflush(stdout);
+  int id1 = mdio_read_register_bitbang(phy_addr, 2);
+  int id2 = mdio_read_register_bitbang(phy_addr, 3);
+  uint32_t phy_id = ((uint32_t)(id1 & 0xffff) << 16) | (uint32_t)(id2 & 0xffff);
+  printf(" ID: 0x%08x\n", phy_id);
+  fflush(stdout);
+  printf("=== MDIO TEST END ===\n\n");
+  fflush(stdout);
 }
 
 
@@ -126,6 +150,13 @@ static bool led_blink_cb(repeating_timer_t *rt) {
   static bool on = false;
   on = !on;
   gpio_put(4, on);
+  return true;
+}
+
+// Heartbeat to verify USB serial works
+static bool heartbeat_cb(repeating_timer_t *rt) {
+  (void)rt;
+  printf("HEARTBEAT: system clk %4.2f MHz\n", (float)clock_get_hz(clk_sys)/1e6);
   return true;
 }
 
@@ -250,8 +281,7 @@ int main() {
   // Initialize the PIO-based RMII Ethernet network interface
   // Run a quick MDIO bit-bang diagnostic before initializing the driver
   printf("Running MDIO bit-bang diagnostic...\n");
-  int mdio_val = mdio_read_register_bitbang(0, 0);
-  printf("MDIO read (phy 0 reg 0): 0x%04x\n", mdio_val & 0xffff);
+  run_mdio_test(0);
 
   if (netif_rmii_ethernet_init(&netif) != ERR_OK) {
     printf("Failed to open ethernet interface\n");
@@ -285,6 +315,10 @@ int main() {
   gpio_set_dir(4, GPIO_OUT);
   static repeating_timer_t led_timer;
   add_repeating_timer_ms(500, led_blink_cb, NULL, &led_timer);
+
+  // Periodic serial heartbeat to verify USB serial is alive
+  static repeating_timer_t heartbeat_timer;
+  add_repeating_timer_ms(1000, heartbeat_cb, NULL, &heartbeat_timer);
 
   // Setup core 1 to monitor the RMII ethernet interface
   // This allows core 0 do other things :)

@@ -14,7 +14,8 @@ pico_sdk_init()
 
 # Define custom Ethernet GPIO Pin Configuration before adding subdirectories
 # These definitions will be used by pico-rmii-ethernet library
-set(ETHEREUM_PIN_DEFS
+# Pins from ETHERNET_CONFIG.md (board-specific layout)
+set(ETHERNET_PIN_DEFS
   "-DPICO_RMII_ETHERNET_TX_EN_PIN=10"      # TX Enable
   "-DPICO_RMII_ETHERNET_TXD0_PIN=11"       # TXD0
   "-DPICO_RMII_ETHERNET_TXD1_PIN=12"       # TXD1
@@ -53,6 +54,7 @@ pico_enable_stdio_uart(rp2350_app 1)
 
 # Custom Ethernet GPIO Pin Configuration
 # These definitions override the default pin assignments
+# Pins from ETHERNET_CONFIG.md (board-specific layout)
 target_compile_definitions(rp2350_app PRIVATE
   # Ethernet Data Pins
   PICO_RMII_ETHERNET_TX_EN_PIN=10       # TX Enable
@@ -68,12 +70,10 @@ target_compile_definitions(rp2350_app PRIVATE
   PICO_RMII_ETHERNET_RST_PIN=18         # Reset
   
   # 50MHz Reference Clock Output for LAN8720
-  PICO_RMII_ETHERNET_RETCLK_PIN=23      # RMII Reference Clock (50MHz)
+  PICO_RMII_ETHERNET_RETCLK_PIN=23      # RMII Reference Clock
   
-  # Serial Port Configuration
+  # Serial Port Configuration (use USB CDC, not GPIO UART)
   PICO_DEFAULT_UART=0
-  PICO_DEFAULT_UART_TX_PIN=16
-  PICO_DEFAULT_UART_RX_PIN=17
 )
 
 # Create map/bin/hex file etc.
