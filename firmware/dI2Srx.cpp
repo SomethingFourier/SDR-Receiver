@@ -20,20 +20,20 @@
 dI2Srx::dI2Srx(PIO i2s_pio_instance)
 {
     // DMA configuration
-    audio_A_dma_channel = dma_claim_unused_channel(true);
-    audio_B_dma_channel = dma_claim_unused_channel(true);
+    dma_channel_0 = dma_claim_unused_channel(true);
+    dma_channel_1 = dma_claim_unused_channel(true);
     
-    dma_channel_config_t audio_A_dma_channel_config = dma_channel_get_default_config(audio_A_dma_channel);
-    dma_channel_config_t audio_B_dma_channel_config = dma_channel_get_default_config(audio_B_dma_channel);
+    dma_channel_config_t dma_channel_0_config = dma_channel_get_default_config(dma_channel_0);
+    dma_channel_config_t dma_channel_1_config = dma_channel_get_default_config(dma_channel_1);
 
-    channel_config_set_transfer_data_size(&audio_A_dma_channel_config, DMA_SIZE_32);
-    channel_config_set_transfer_data_size(&audio_B_dma_channel_config, DMA_SIZE_32);
+    channel_config_set_transfer_data_size(&dma_channel_0_config, DMA_SIZE_32);
+    channel_config_set_transfer_data_size(&dma_channel_1_config, DMA_SIZE_32);
 
-    channel_config_set_read_increment(&audio_A_dma_channel_config, false);  // Don't increment read address because  
-    channel_config_set_read_increment(&audio_B_dma_channel_config, false);  // the PIO RX FIFO never changes location.
+    channel_config_set_read_increment(&dma_channel_0_config, false);  // Don't increment read address because  
+    channel_config_set_read_increment(&dma_channel_1_config, false);  // the PIO RX FIFO never changes location.
 
-    channel_config_set_write_increment(&audio_A_dma_channel_config, true);  // the buffer array address (index) needs to increment
-    channel_config_set_write_increment(&audio_B_dma_channel_config, true);  // the buffer array address (index) needs to increment
+    channel_config_set_write_increment(&dma_channel_0_config, true);  // the buffer array address (index) needs to increment
+    channel_config_set_write_increment(&dma_channel_1_config, true);  // the buffer array address (index) needs to increment
 
     // PIO I2S receiver setup
     uint sm;
@@ -56,18 +56,18 @@ dI2Srx::dI2Srx(PIO i2s_pio_instance)
     {
         // DREQ must match the PIO RX FIFO for the chosen SM
         uint dreq = pio_get_dreq(i2s_pio_instance, sm, false);
-        channel_config_set_dreq(&audio_A_dma_channel_config, dreq);
-        channel_config_set_dreq(&audio_B_dma_channel_config, dreq);
+        channel_config_set_dreq(&dma_channel_0_config, dreq);
+        channel_config_set_dreq(&dma_channel_1_config, dreq);
 
         // Chain A -> B, B -> A
-        channel_config_set_chain_to(&audio_A_dma_channel_config, audio_B_dma_channel);
-        channel_config_set_chain_to(&audio_B_dma_channel_config, audio_A_dma_channel);
+        channel_config_set_chain_to(&dma_channel_0_config, dma_channel_1);
+        channel_config_set_chain_to(&dma_channel_1_config, dma_channel_0);
 
         // Configure DMA channel A
         dma_channel_configure
         (
-            audio_A_dma_channel,
-            &audio_A_dma_channel_config,
+            dma_channel_0,
+            &dma_channel_0_config,
             audio_A_buffer,                 // write address (RAM)
             &i2s_pio_instance->rxf[sm],     // read address (PIO RX FIFO)
             WORDS_PER_HALF,                 // transfer count (32-bit words)
@@ -77,8 +77,8 @@ dI2Srx::dI2Srx(PIO i2s_pio_instance)
         // Configure DMA channel B
         dma_channel_configure
         (
-            audio_B_dma_channel,
-            &audio_B_dma_channel_config,
+            dma_channel_1,
+            &dma_channel_1_config,
             audio_B_buffer,
             &i2s_pio_instance->rxf[sm],
             WORDS_PER_HALF,
@@ -124,7 +124,7 @@ void dI2Srx::core1_entry()
     multicore_fifo_drain();
 
     // Enable IRQ signalling for both channels (they will assert DMA_IRQ_0)
-    dma_channel_set_irq0_enabled(g_Audio.audio_A_dma_channel, true);
+    dma_channel_set_irq0_enabled(g_Audio.dma_channel_0, true);
     dma_channel_set_irq0_enabled(g_Audio.audio_B_dma_channel, true);
 
     // Register IRQ handler on Core 1 and enable the interrupt
@@ -132,7 +132,7 @@ void dI2Srx::core1_entry()
     irq_set_enabled(DMA_IRQ_0, true);
 
     // Start the first channel; chaining will trigger the partner automatically
-    dma_channel_start(g_Audio.audio_A_dma_channel);
+    dma_channel_start(g_Audio.dma_channel_0);
 
     // Remain on Core 1; DMA IRQ will do the work
     for (;;) tight_loop_contents();

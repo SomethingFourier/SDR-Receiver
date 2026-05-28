@@ -1,15 +1,11 @@
 {
     "configurations": [
         {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/clang",
-            "cStandard": "c17",
+            "name": "RP2350",
+            "compilerPath": "/usr/bin/arm-none-eabi-g++",
+            "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-clang-x64",
+            "intelliSenseMode": "gcc-arm",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json"
         }
     ],
