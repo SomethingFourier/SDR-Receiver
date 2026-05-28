@@ -19,7 +19,7 @@
 #define rmii_ethernet_phy_tx_data_offset_tx_start 18u
 
 static const uint16_t rmii_ethernet_phy_tx_data_program_instructions[] = {
-    0xe005, //  0: set    pins, 5         side 0
+    0xe003, //  0: set    pins, 3         side 0
     0x7028, //  1: out    x, 8            side 1
     0x4028, //  2: in     x, 8            side 0
     0x7028, //  3: out    x, 8            side 1
@@ -72,7 +72,7 @@ static inline void rmii_ethernet_phy_tx_init(PIO pio, uint sm, uint offset,
     // Init config with default values
     pio_sm_config c = rmii_ethernet_phy_tx_data_program_get_default_config(offset);
     // Only use Tx<1:0> in output pin set
-    sm_config_set_out_pins(&c, base_pin, 2);
+    sm_config_set_out_pins(&c, base_pin + 1, 2);
     // Include Tx<1:0>, EN in set pin set
     sm_config_set_set_pins(&c, base_pin, 3);
     // Side set RMII clock 
