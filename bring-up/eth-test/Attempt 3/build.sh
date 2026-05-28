@@ -80,6 +80,9 @@ clean_build() {
 create_build_dir() {
     print_header "Creating Build Directory"
     
+    if [ -d "$BUILD_DIR" ]; then
+        rm -rf "$BUILD_DIR"
+    fi
     mkdir -p "$BUILD_DIR"
     printf "✓ Build directory created: %s\n" "$BUILD_DIR"
 }

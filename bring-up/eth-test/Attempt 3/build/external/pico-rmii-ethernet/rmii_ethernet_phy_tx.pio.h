@@ -63,17 +63,17 @@ static inline pio_sm_config rmii_ethernet_phy_tx_data_program_get_default_config
 
 static inline void rmii_ethernet_phy_tx_init(PIO pio, uint sm, uint offset,
        uint pio_start, uint base_pin, uint retclk_pin, float div) {
-    // Use TXEN on base_pin, with TXD0/TXD1 on base_pin+1/base_pin+2
+    // Use TX_[0,1,EN] in PIO mode
     pio_gpio_init(pio, base_pin);
     pio_gpio_init(pio, base_pin + 1);
     pio_gpio_init(pio, base_pin + 2);
-    // Set TXEN, TXD0, TXD1 as output
+    // Set TX_[0,1,EN] as output
     pio_sm_set_consecutive_pindirs(pio, sm, base_pin, 3, true);
     // Init config with default values
     pio_sm_config c = rmii_ethernet_phy_tx_data_program_get_default_config(offset);
-    // Only use TxD0/TxD1 in output pin set
+    // Only use Tx<1:0> in output pin set
     sm_config_set_out_pins(&c, base_pin + 1, 2);
-    // Include TXEN, TxD0/TxD1 in set pin set
+    // Include Tx<1:0>, EN in set pin set
     sm_config_set_set_pins(&c, base_pin, 3);
     // Side set RMII clock 
     pio_gpio_init(pio, retclk_pin);

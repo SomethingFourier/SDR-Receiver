@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/examples/lwiperf//CMakeFiles/progress.marks"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" 0
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/examples/lwiperf//CMakeFiles/progress.marks"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/clean
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/preinstall
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/preinstall
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/rule
 .PHONY : external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ pico_rmii_ethernet_lwiperf: external/pico-rmii-ethernet/examples/lwiperf/CMakeFi
 
 # fast build rule for target.
 pico_rmii_ethernet_lwiperf/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build
 .PHONY : pico_rmii_ethernet_lwiperf/fast
 
 __/__/src/lwip/sys_arch.o: __/__/src/lwip/sys_arch.c.o
@@ -135,7 +135,7 @@ __/__/src/lwip/sys_arch.o: __/__/src/lwip/sys_arch.c.o
 
 # target to build an object file
 __/__/src/lwip/sys_arch.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.o
 .PHONY : __/__/src/lwip/sys_arch.c.o
 
 __/__/src/lwip/sys_arch.i: __/__/src/lwip/sys_arch.c.i
@@ -143,7 +143,7 @@ __/__/src/lwip/sys_arch.i: __/__/src/lwip/sys_arch.c.i
 
 # target to preprocess a source file
 __/__/src/lwip/sys_arch.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.i
 .PHONY : __/__/src/lwip/sys_arch.c.i
 
 __/__/src/lwip/sys_arch.s: __/__/src/lwip/sys_arch.c.s
@@ -151,7 +151,7 @@ __/__/src/lwip/sys_arch.s: __/__/src/lwip/sys_arch.c.s
 
 # target to generate assembly for a file
 __/__/src/lwip/sys_arch.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.s
 .PHONY : __/__/src/lwip/sys_arch.c.s
 
 __/__/src/rmii_ethernet.o: __/__/src/rmii_ethernet.c.o
@@ -159,7 +159,7 @@ __/__/src/rmii_ethernet.o: __/__/src/rmii_ethernet.c.o
 
 # target to build an object file
 __/__/src/rmii_ethernet.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.o
 .PHONY : __/__/src/rmii_ethernet.c.o
 
 __/__/src/rmii_ethernet.i: __/__/src/rmii_ethernet.c.i
@@ -167,7 +167,7 @@ __/__/src/rmii_ethernet.i: __/__/src/rmii_ethernet.c.i
 
 # target to preprocess a source file
 __/__/src/rmii_ethernet.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.i
 .PHONY : __/__/src/rmii_ethernet.c.i
 
 __/__/src/rmii_ethernet.s: __/__/src/rmii_ethernet.c.s
@@ -175,7 +175,7 @@ __/__/src/rmii_ethernet.s: __/__/src/rmii_ethernet.c.s
 
 # target to generate assembly for a file
 __/__/src/rmii_ethernet.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/rmii_ethernet.c.s
 .PHONY : __/__/src/rmii_ethernet.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.o: home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o
@@ -183,7 +183,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.o: home/pkcubed/pico-sdk/lib/lwip
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.i: home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i
@@ -191,7 +191,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.i: home/pkcubed/pico-sdk/lib/lwip
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.s: home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s
@@ -199,7 +199,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.s: home/pkcubed/pico-sdk/lib/lwip
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.o: home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o
@@ -207,7 +207,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.o: home/pkcubed/pico-sdk/lib/lwip
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.i: home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i
@@ -215,7 +215,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.i: home/pkcubed/pico-sdk/lib/lwip
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.s: home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s
@@ -223,7 +223,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.s: home/pkcubed/pico-sdk/lib/lwip
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.o: home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o
@@ -231,7 +231,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/err.o: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.i: home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i
@@ -239,7 +239,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/err.i: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.s: home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s
@@ -247,7 +247,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/err.s: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.o: home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o
@@ -255,7 +255,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.o: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.i: home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i
@@ -263,7 +263,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.i: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.s: home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s
@@ -271,7 +271,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.s: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.o: home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o
@@ -279,7 +279,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.o: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.i: home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i
@@ -287,7 +287,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.i: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.s: home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s
@@ -295,7 +295,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.s: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.o: home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o
@@ -303,7 +303,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.o: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.i: home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i
@@ -311,7 +311,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.i: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.s: home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s
@@ -319,7 +319,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.s: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.o: home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o
@@ -327,7 +327,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.o: home/pkcubed/pico-sdk/lib/lwi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.i: home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i
@@ -335,7 +335,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.i: home/pkcubed/pico-sdk/lib/lwi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.s: home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s
@@ -343,7 +343,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.s: home/pkcubed/pico-sdk/lib/lwi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.o: home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o
@@ -351,7 +351,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.o: home/pkcubed/pico-sdk/lib/lwip
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.i: home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i
@@ -359,7 +359,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.i: home/pkcubed/pico-sdk/lib/lwip
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.s: home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s
@@ -367,7 +367,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.s: home/pkcubed/pico-sdk/lib/lwip
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.o: home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o
@@ -375,7 +375,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.o: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.i: home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i
@@ -383,7 +383,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.i: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.s: home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s
@@ -391,7 +391,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.s: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.o: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o
@@ -399,7 +399,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.o: home/pkcubed/pico-sdk/lib/lwi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.i: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i
@@ -407,7 +407,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.i: home/pkcubed/pico-sdk/lib/lwi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.s: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s
@@ -415,7 +415,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.s: home/pkcubed/pico-sdk/lib/lwi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.o: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o
@@ -423,7 +423,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.i: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
@@ -431,7 +431,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.s: home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
@@ -439,7 +439,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o
@@ -447,7 +447,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.o: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i
@@ -455,7 +455,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.i: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s
@@ -463,7 +463,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.s: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.o: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
@@ -471,7 +471,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.i: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
@@ -479,7 +479,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.s: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
@@ -487,7 +487,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
@@ -495,7 +495,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
@@ -503,7 +503,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
@@ -511,7 +511,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.o: home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o
@@ -519,7 +519,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/def.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.i: home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i
@@ -527,7 +527,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/def.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.s: home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s
@@ -535,7 +535,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/def.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.o: home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o
@@ -543,7 +543,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/dns.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.i: home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i
@@ -551,7 +551,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/dns.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.s: home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s
@@ -559,7 +559,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/dns.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.o: home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
@@ -567,7 +567,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.i: home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
@@ -575,7 +575,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.s: home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
@@ -583,7 +583,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.o: home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o
@@ -591,7 +591,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/init.o: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.i: home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i
@@ -599,7 +599,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/init.i: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.s: home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s
@@ -607,7 +607,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/init.s: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o
@@ -615,7 +615,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ip.o: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i
@@ -623,7 +623,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ip.i: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s
@@ -631,7 +631,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ip.s: home/pkcubed/pico-sdk/lib/lwip/src
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
@@ -639,7 +639,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
@@ -647,7 +647,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
@@ -655,7 +655,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
@@ -663,7 +663,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
@@ -671,7 +671,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
@@ -679,7 +679,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
@@ -687,7 +687,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
@@ -695,7 +695,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
@@ -703,7 +703,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
@@ -711,7 +711,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
@@ -719,7 +719,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
@@ -727,7 +727,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
@@ -735,7 +735,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
@@ -743,7 +743,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
@@ -751,7 +751,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
@@ -759,7 +759,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
@@ -767,7 +767,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
@@ -775,7 +775,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
@@ -783,7 +783,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
@@ -791,7 +791,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
@@ -799,7 +799,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
@@ -807,7 +807,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
@@ -815,7 +815,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
@@ -823,7 +823,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
@@ -831,7 +831,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
@@ -839,7 +839,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
@@ -847,7 +847,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
@@ -855,7 +855,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
@@ -863,7 +863,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
@@ -871,7 +871,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
@@ -879,7 +879,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
@@ -887,7 +887,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
@@ -895,7 +895,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
@@ -903,7 +903,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
@@ -911,7 +911,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
@@ -919,7 +919,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
@@ -927,7 +927,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
@@ -935,7 +935,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
@@ -943,7 +943,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
@@ -951,7 +951,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
@@ -959,7 +959,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
@@ -967,7 +967,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
@@ -975,7 +975,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
@@ -983,7 +983,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
@@ -991,7 +991,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
@@ -999,7 +999,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
@@ -1007,7 +1007,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
@@ -1015,7 +1015,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
@@ -1023,7 +1023,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
@@ -1031,7 +1031,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
@@ -1039,7 +1039,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.o: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
@@ -1047,7 +1047,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.i: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
@@ -1055,7 +1055,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.s: home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
@@ -1063,7 +1063,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.o: home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o
@@ -1071,7 +1071,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/mem.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.i: home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i
@@ -1079,7 +1079,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/mem.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.s: home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s
@@ -1087,7 +1087,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/mem.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o
@@ -1095,7 +1095,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/memp.o: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i
@@ -1103,7 +1103,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/memp.i: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s
@@ -1111,7 +1111,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/memp.s: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.o: home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o
@@ -1119,7 +1119,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/netif.o: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.i: home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i
@@ -1127,7 +1127,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/netif.i: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.s: home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s
@@ -1135,7 +1135,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/netif.s: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.o: home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o
@@ -1143,7 +1143,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.o: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.i: home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i
@@ -1151,7 +1151,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.i: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.s: home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s
@@ -1159,7 +1159,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.s: home/pkcubed/pico-sdk/lib/lwip/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.o: home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o
@@ -1167,7 +1167,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/raw.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.i: home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i
@@ -1175,7 +1175,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/raw.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.s: home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s
@@ -1183,7 +1183,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/raw.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.o: home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o
@@ -1191,7 +1191,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/stats.o: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.i: home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i
@@ -1199,7 +1199,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/stats.i: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.s: home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s
@@ -1207,7 +1207,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/stats.s: home/pkcubed/pico-sdk/lib/lwip/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.o: home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o
@@ -1215,7 +1215,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/sys.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.i: home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i
@@ -1223,7 +1223,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/sys.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.s: home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s
@@ -1231,7 +1231,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/sys.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o
@@ -1239,7 +1239,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i
@@ -1247,7 +1247,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s
@@ -1255,7 +1255,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.o: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o
@@ -1263,7 +1263,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.o: home/pkcubed/pico-sdk/lib/lwip
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.i: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i
@@ -1271,7 +1271,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.i: home/pkcubed/pico-sdk/lib/lwip
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.s: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s
@@ -1279,7 +1279,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.s: home/pkcubed/pico-sdk/lib/lwip
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.o: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o
@@ -1287,7 +1287,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.o: home/pkcubed/pico-sdk/lib/lwi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.i: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i
@@ -1295,7 +1295,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.i: home/pkcubed/pico-sdk/lib/lwi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.s: home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s
@@ -1303,7 +1303,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.s: home/pkcubed/pico-sdk/lib/lwi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.o: home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o
@@ -1311,7 +1311,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.i: home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i
@@ -1319,7 +1319,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.s: home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s
@@ -1327,7 +1327,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.o: home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o
@@ -1335,7 +1335,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/udp.o: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.i: home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i
@@ -1343,7 +1343,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/udp.i: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.s: home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s
@@ -1351,7 +1351,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/core/udp.s: home/pkcubed/pico-sdk/lib/lwip/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
@@ -1359,7 +1359,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
@@ -1367,7 +1367,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
@@ -1375,7 +1375,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
@@ -1383,7 +1383,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
@@ -1391,7 +1391,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
@@ -1399,7 +1399,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o
@@ -1407,7 +1407,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i
@@ -1415,7 +1415,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s
@@ -1423,7 +1423,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
@@ -1431,7 +1431,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
@@ -1439,7 +1439,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
@@ -1447,7 +1447,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
@@ -1455,7 +1455,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.o: home/pkcubed/pico-sdk/li
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
@@ -1463,7 +1463,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: home/pkcubed/pico-sdk/li
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
@@ -1471,7 +1471,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.s: home/pkcubed/pico-sdk/li
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
@@ -1479,7 +1479,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
@@ -1487,7 +1487,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
@@ -1495,7 +1495,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
@@ -1503,7 +1503,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
@@ -1511,7 +1511,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
@@ -1519,7 +1519,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
@@ -1527,7 +1527,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
@@ -1535,7 +1535,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
@@ -1543,7 +1543,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
@@ -1551,7 +1551,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
@@ -1559,7 +1559,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
@@ -1567,7 +1567,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
@@ -1575,7 +1575,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
@@ -1583,7 +1583,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
@@ -1591,7 +1591,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
@@ -1599,7 +1599,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.o: home/pkcubed/pico-sdk/li
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
@@ -1607,7 +1607,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: home/pkcubed/pico-sdk/li
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
@@ -1615,7 +1615,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s: home/pkcubed/pico-sdk/li
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
@@ -1623,7 +1623,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
@@ -1631,7 +1631,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
@@ -1639,7 +1639,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
@@ -1647,7 +1647,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
@@ -1655,7 +1655,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
@@ -1663,7 +1663,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
@@ -1671,7 +1671,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
@@ -1679,7 +1679,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
@@ -1687,7 +1687,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
@@ -1695,7 +1695,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
@@ -1703,7 +1703,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
@@ -1711,7 +1711,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
@@ -1719,7 +1719,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
@@ -1727,7 +1727,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
@@ -1735,7 +1735,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
@@ -1743,7 +1743,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
@@ -1751,7 +1751,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
@@ -1759,7 +1759,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
@@ -1767,7 +1767,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
@@ -1775,7 +1775,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
@@ -1783,7 +1783,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
@@ -1791,7 +1791,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
@@ -1799,7 +1799,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
@@ -1807,7 +1807,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
@@ -1815,7 +1815,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
@@ -1823,7 +1823,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
@@ -1831,7 +1831,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
@@ -1839,7 +1839,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
@@ -1847,7 +1847,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
@@ -1855,7 +1855,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
@@ -1863,7 +1863,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.o: home/pkcubed/pico-sdk/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
@@ -1871,7 +1871,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.i: home/pkcubed/pico-sdk/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
@@ -1879,7 +1879,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.s: home/pkcubed/pico-sdk/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
@@ -1887,7 +1887,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
@@ -1895,7 +1895,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
@@ -1903,7 +1903,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
@@ -1911,7 +1911,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
@@ -1919,7 +1919,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
@@ -1927,7 +1927,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
@@ -1935,7 +1935,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
@@ -1943,7 +1943,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
@@ -1951,7 +1951,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
@@ -1959,7 +1959,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
@@ -1967,7 +1967,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
@@ -1975,7 +1975,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
@@ -1983,7 +1983,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
@@ -1991,7 +1991,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
@@ -1999,7 +1999,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
@@ -2007,7 +2007,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.o: home/pkcubed/pico-sdk/lib/lw
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
@@ -2015,7 +2015,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.i: home/pkcubed/pico-sdk/lib/lw
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
@@ -2023,7 +2023,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.s: home/pkcubed/pico-sdk/lib/lw
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
@@ -2031,7 +2031,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.o: home/pkcubed/pico-sdk/lib
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
@@ -2039,7 +2039,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: home/pkcubed/pico-sdk/lib
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
@@ -2047,7 +2047,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.s: home/pkcubed/pico-sdk/lib
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
@@ -2055,7 +2055,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
@@ -2063,7 +2063,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
@@ -2071,7 +2071,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
@@ -2079,7 +2079,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
@@ -2087,7 +2087,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
@@ -2095,7 +2095,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
@@ -2103,7 +2103,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.o: home/pkcubed/pico-sdk/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
@@ -2111,7 +2111,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: home/pkcubed/pico-sdk/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
@@ -2119,7 +2119,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s: home/pkcubed/pico-sdk/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
@@ -2127,7 +2127,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
@@ -2135,7 +2135,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
@@ -2143,7 +2143,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
@@ -2151,7 +2151,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.o: home/pkcubed/pico-sdk/lib/l
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
@@ -2159,7 +2159,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.i: home/pkcubed/pico-sdk/lib/l
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
@@ -2167,7 +2167,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.s: home/pkcubed/pico-sdk/lib/l
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
@@ -2175,7 +2175,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.o: home/pkcubed/pico-sdk/lib/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
@@ -2183,7 +2183,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.i: home/pkcubed/pico-sdk/lib/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
@@ -2191,7 +2191,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.s: home/pkcubed/pico-sdk/lib/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
@@ -2199,7 +2199,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.o: home/pkcubed/pico-sdk/lib/lwi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
@@ -2207,7 +2207,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.i: home/pkcubed/pico-sdk/lib/lwi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
@@ -2215,7 +2215,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.s: home/pkcubed/pico-sdk/lib/lwi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o
@@ -2223,7 +2223,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.o: home/pkcubed/pico-sdk/lib/lwi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i
@@ -2231,7 +2231,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.i: home/pkcubed/pico-sdk/lib/lwi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s
@@ -2239,7 +2239,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.s: home/pkcubed/pico-sdk/lib/lwi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.o: home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o
@@ -2247,7 +2247,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.o: home/pkcubed/pico-sdk/lib/lwip
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.i: home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i
@@ -2255,7 +2255,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.i: home/pkcubed/pico-sdk/lib/lwip
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i
 
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.s: home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s
@@ -2263,7 +2263,7 @@ home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.s: home/pkcubed/pico-sdk/lib/lwip
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
@@ -2271,7 +2271,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.o: home/pkcubed/p
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -2279,7 +2279,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: home/pkcubed/p
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -2287,7 +2287,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: home/pkcubed/p
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
@@ -2295,7 +2295,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -2303,7 +2303,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -2311,7 +2311,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
@@ -2319,7 +2319,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -2327,7 +2327,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -2335,7 +2335,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
@@ -2343,7 +2343,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.o: home/pkcubed/pi
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -2351,7 +2351,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: home/pkcubed/pi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -2359,7 +2359,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: home/pkcubed/pi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
@@ -2367,7 +2367,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -2375,7 +2375,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -2383,7 +2383,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
@@ -2391,7 +2391,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/pkcubed/pic
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -2399,7 +2399,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: home/pkcubed/pic
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -2407,7 +2407,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: home/pkcubed/pic
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
@@ -2415,7 +2415,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -2423,7 +2423,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -2431,7 +2431,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
@@ -2439,7 +2439,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -2447,7 +2447,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: home/pkcubed
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -2455,7 +2455,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: home/pkcubed
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
@@ -2463,7 +2463,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -2471,7 +2471,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -2479,7 +2479,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
@@ -2487,7 +2487,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -2495,7 +2495,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: home/pkcubed
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -2503,7 +2503,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: home/pkcubed
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
@@ -2511,7 +2511,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -2519,7 +2519,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: home/pkcubed
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -2527,7 +2527,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: home/pkcubed
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -2535,7 +2535,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.o: home/pkcubed/p
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -2543,7 +2543,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.i: home/pkcubed/p
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -2551,7 +2551,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.s: home/pkcubed/p
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
@@ -2559,7 +2559,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.o: home/pkcubed/pico-sdk/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -2567,7 +2567,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: home/pkcubed/pico-sdk/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -2575,7 +2575,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: home/pkcubed/pico-sdk/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.o: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o
@@ -2583,7 +2583,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.o: home/pkcubed/pico-sdk/lib/t
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.i: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -2591,7 +2591,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.i: home/pkcubed/pico-sdk/lib/t
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -2599,7 +2599,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pkcubed/pico-sdk/lib/t
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
@@ -2607,7 +2607,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -2615,7 +2615,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -2623,7 +2623,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
@@ -2631,7 +2631,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: 
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -2639,7 +2639,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: 
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -2647,7 +2647,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: 
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
@@ -2655,7 +2655,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.o: 
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -2663,7 +2663,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: 
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -2671,7 +2671,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: 
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.o: home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o
@@ -2679,7 +2679,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.o: home/pkcubed/pico-sdk/lib/tinyusb/
 
 # target to build an object file
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.i: home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -2687,7 +2687,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.i: home/pkcubed/pico-sdk/lib/tinyusb/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.s: home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -2695,7 +2695,7 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.s: home/pkcubed/pico-sdk/lib/tinyusb/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s
 
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.o: home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.o
@@ -2703,7 +2703,7 @@ home/pkcubed/pico-sdk/src/common/hardware_claim/claim.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.o
 
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.i: home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.i
@@ -2711,7 +2711,7 @@ home/pkcubed/pico-sdk/src/common/hardware_claim/claim.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.i
 
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.s: home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.s
@@ -2719,7 +2719,7 @@ home/pkcubed/pico-sdk/src/common/hardware_claim/claim.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/hardware_claim/claim.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.o: home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.o
@@ -2727,7 +2727,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.o: home/pkcubed/pico
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.i: home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -2735,7 +2735,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.i: home/pkcubed/pico
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.s: home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -2743,7 +2743,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.s: home/pkcubed/pico
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.o: home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.o
@@ -2751,7 +2751,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.o: home/pkcubed/pico-sdk/sr
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.i: home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -2759,7 +2759,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.i: home/pkcubed/pico-sdk/sr
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.s: home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -2767,7 +2767,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.s: home/pkcubed/pico-sdk/sr
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.o: home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.o
@@ -2775,7 +2775,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/mutex.o: home/pkcubed/pico-sdk/src/co
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.i: home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -2783,7 +2783,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/mutex.i: home/pkcubed/pico-sdk/src/co
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.s: home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -2791,7 +2791,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/mutex.s: home/pkcubed/pico-sdk/src/co
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/mutex.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.o: home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.o
@@ -2799,7 +2799,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/sem.o: home/pkcubed/pico-sdk/src/comm
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.i: home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.i
@@ -2807,7 +2807,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/sem.i: home/pkcubed/pico-sdk/src/comm
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.s: home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.s
@@ -2815,7 +2815,7 @@ home/pkcubed/pico-sdk/src/common/pico_sync/sem.s: home/pkcubed/pico-sdk/src/comm
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_sync/sem.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_time/time.o: home/pkcubed/pico-sdk/src/common/pico_time/time.c.o
@@ -2823,7 +2823,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/time.o: home/pkcubed/pico-sdk/src/com
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_time/time.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/time.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_time/time.i: home/pkcubed/pico-sdk/src/common/pico_time/time.c.i
@@ -2831,7 +2831,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/time.i: home/pkcubed/pico-sdk/src/com
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_time/time.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/time.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_time/time.s: home/pkcubed/pico-sdk/src/common/pico_time/time.c.s
@@ -2839,7 +2839,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/time.s: home/pkcubed/pico-sdk/src/com
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_time/time.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/time.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.o: home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.o
@@ -2847,7 +2847,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.i: home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -2855,7 +2855,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.s: home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -2863,7 +2863,7 @@ home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.o: home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.o
@@ -2871,7 +2871,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/datetime.o: home/pkcubed/pico-sdk/src
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.i: home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.i
@@ -2879,7 +2879,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/datetime.i: home/pkcubed/pico-sdk/src
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.s: home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.s
@@ -2887,7 +2887,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/datetime.s: home/pkcubed/pico-sdk/src
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/datetime.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.o: home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.o
@@ -2895,7 +2895,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/pheap.o: home/pkcubed/pico-sdk/src/co
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.i: home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.i
@@ -2903,7 +2903,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/pheap.i: home/pkcubed/pico-sdk/src/co
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.s: home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.s
@@ -2911,7 +2911,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/pheap.s: home/pkcubed/pico-sdk/src/co
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/pheap.c.s
 
 home/pkcubed/pico-sdk/src/common/pico_util/queue.o: home/pkcubed/pico-sdk/src/common/pico_util/queue.c.o
@@ -2919,7 +2919,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/queue.o: home/pkcubed/pico-sdk/src/co
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/common/pico_util/queue.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.o
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/queue.c.o
 
 home/pkcubed/pico-sdk/src/common/pico_util/queue.i: home/pkcubed/pico-sdk/src/common/pico_util/queue.c.i
@@ -2927,7 +2927,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/queue.i: home/pkcubed/pico-sdk/src/co
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/common/pico_util/queue.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/queue.c.i
 
 home/pkcubed/pico-sdk/src/common/pico_util/queue.s: home/pkcubed/pico-sdk/src/common/pico_util/queue.c.s
@@ -2935,7 +2935,7 @@ home/pkcubed/pico-sdk/src/common/pico_util/queue.s: home/pkcubed/pico-sdk/src/co
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/common/pico_util/queue.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : home/pkcubed/pico-sdk/src/common/pico_util/queue.c.s
 
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.o: home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.o
@@ -2943,7 +2943,7 @@ home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.o
 
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.i: home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.i
@@ -2951,7 +2951,7 @@ home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.i
 
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.s: home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.s
@@ -2959,7 +2959,7 @@ home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2350/pico_platform/platform.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
@@ -2967,7 +2967,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.o: home/pkcube
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
@@ -2975,7 +2975,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.i: home/pkcube
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
@@ -2983,7 +2983,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.s: home/pkcube
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
@@ -2991,7 +2991,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.o: home/pkcubed/pico
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -2999,7 +2999,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: home/pkcubed/pico
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -3007,7 +3007,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: home/pkcubed/pico
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
@@ -3015,7 +3015,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.o: home/pkcubed/pi
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
@@ -3023,7 +3023,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.i: home/pkcubed/pi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
@@ -3031,7 +3031,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.s: home/pkcubed/pi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_divider/divider.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
@@ -3039,7 +3039,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
@@ -3047,7 +3047,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
@@ -3055,7 +3055,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
@@ -3063,7 +3063,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -3071,7 +3071,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -3079,7 +3079,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
@@ -3087,7 +3087,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -3095,7 +3095,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -3103,7 +3103,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
@@ -3111,7 +3111,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -3119,7 +3119,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -3127,7 +3127,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
@@ -3135,7 +3135,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.o: home/pkcu
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
@@ -3143,7 +3143,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
@@ -3151,7 +3151,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
@@ -3159,7 +3159,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
@@ -3167,7 +3167,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -3175,7 +3175,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -3183,7 +3183,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
@@ -3191,7 +3191,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -3199,7 +3199,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -3207,7 +3207,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
@@ -3215,7 +3215,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.o: h
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
@@ -3223,7 +3223,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.i: h
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
@@ -3231,7 +3231,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.s: h
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
@@ -3239,7 +3239,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
@@ -3247,7 +3247,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
@@ -3255,7 +3255,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
@@ -3263,7 +3263,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -3271,7 +3271,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -3279,7 +3279,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
@@ -3287,7 +3287,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -3295,7 +3295,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -3303,7 +3303,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
@@ -3311,7 +3311,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -3319,7 +3319,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -3327,7 +3327,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
@@ -3335,7 +3335,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.o: home/pkcubed/
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -3343,7 +3343,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: home/pkcubed/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -3351,7 +3351,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: home/pkcubed/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
@@ -3359,7 +3359,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.o: home/pkcube
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
@@ -3367,7 +3367,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.i: home/pkcube
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
@@ -3375,7 +3375,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.s: home/pkcube
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
@@ -3383,7 +3383,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -3391,7 +3391,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -3399,7 +3399,7 @@ home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
@@ -3407,7 +3407,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
@@ -3415,7 +3415,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
@@ -3423,7 +3423,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/atomic.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
@@ -3431,7 +3431,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.o: home/pkcubed/
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
@@ -3439,7 +3439,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -3447,7 +3447,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -3455,7 +3455,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
@@ -3463,7 +3463,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.o: home/pkcubed/p
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
@@ -3471,7 +3471,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.i: home/pkcubed/p
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
@@ -3479,7 +3479,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.s: home/pkcubed/p
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
@@ -3487,7 +3487,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.o: hom
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
@@ -3495,7 +3495,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.i: hom
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
@@ -3503,7 +3503,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.s: hom
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -3511,7 +3511,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.o: home/pkcubed/pico-sdk/src
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
@@ -3519,7 +3519,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
@@ -3527,7 +3527,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.i: home/pkcubed
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
@@ -3535,7 +3535,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.s: home/pkcubed
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
@@ -3543,7 +3543,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.o: home/pkcub
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
@@ -3551,7 +3551,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.i: home/pkcub
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
@@ -3559,7 +3559,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.s: home/pkcub
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_divider/divider_compiler.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
@@ -3567,7 +3567,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.o: home/pkcube
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
@@ -3575,7 +3575,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
@@ -3583,7 +3583,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.o: home/pkcubed/
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.o: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.o
@@ -3591,7 +3591,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.o: home/pkcubed/pic
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.i: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -3599,7 +3599,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.i: home/pkcubed/pic
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.s: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -3607,7 +3607,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.s: home/pkcubed/pic
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
@@ -3615,7 +3615,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.o: home/pkcubed/
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.o: home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
@@ -3623,7 +3623,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp20
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -3631,7 +3631,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp20
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -3639,7 +3639,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp20
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.o: home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.o
@@ -3647,7 +3647,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.i: home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.i
@@ -3655,7 +3655,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.s: home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.s
@@ -3663,7 +3663,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_flash/flash.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.o: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
@@ -3671,7 +3671,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
@@ -3679,7 +3679,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.o: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.o
@@ -3687,7 +3687,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.o: home/pkcubed/pico-
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.i: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -3695,7 +3695,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.i: home/pkcubed/pico-
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.s: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -3703,7 +3703,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.s: home/pkcubed/pico-
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
@@ -3711,7 +3711,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.o: home/pkcube
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
@@ -3719,7 +3719,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
@@ -3727,7 +3727,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
@@ -3735,7 +3735,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_malloc/malloc.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.o: home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
@@ -3743,7 +3743,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.o: home/pkcubed/pi
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
@@ -3751,7 +3751,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.i: home/pkcubed/pi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
@@ -3759,7 +3759,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.s: home/pkcubed/pi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
@@ -3767,7 +3767,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
@@ -3775,7 +3775,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.i: home/pkcubed
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
@@ -3783,7 +3783,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.s: home/pkcubed
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/common.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
@@ -3791,7 +3791,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.o: home/pkcubed/p
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
@@ -3799,7 +3799,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.i: home/pkcubed/p
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
@@ -3807,7 +3807,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.s: home/pkcubed/p
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.o: home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.o
@@ -3815,7 +3815,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.i: home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -3823,7 +3823,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.s: home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -3831,7 +3831,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
@@ -3839,7 +3839,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.o: home/pkcubed/pico-s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -3847,7 +3847,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.i: home/pkcubed/pico-s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -3855,7 +3855,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.s: home/pkcubed/pico-s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
@@ -3863,7 +3863,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.o: home/pkcu
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
@@ -3871,7 +3871,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.i: home/pkcu
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
@@ -3879,7 +3879,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.s: home/pkcu
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
@@ -3887,7 +3887,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.o: ho
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
@@ -3895,7 +3895,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.i: ho
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
@@ -3903,7 +3903,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.s: ho
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.o: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
@@ -3911,7 +3911,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.i: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
@@ -3919,7 +3919,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.s: home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
@@ -3927,7 +3927,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.o: home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
@@ -3935,7 +3935,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_i
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.i: home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
@@ -3943,7 +3943,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_i
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.s: home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
@@ -3951,7 +3951,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_i
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
@@ -3959,7 +3959,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.o: home/pkcubed/pico-sdk/s
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -3967,7 +3967,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.i: home/pkcubed/pico-sdk/s
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -3975,7 +3975,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.s: home/pkcubed/pico-sdk/s
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
@@ -3983,7 +3983,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.o: home/pkcubed/
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -3991,7 +3991,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: home/pkcubed/
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -3999,7 +3999,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: home/pkcubed/
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
@@ -4007,7 +4007,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.o: home/pkcu
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -4015,7 +4015,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: home/pkcu
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -4023,7 +4023,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: home/pkcu
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
@@ -4031,7 +4031,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.o: home/pkcubed/pi
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -4039,7 +4039,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: home/pkcubed/pi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -4047,7 +4047,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: home/pkcubed/pi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
@@ -4055,7 +4055,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.o: hom
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -4063,7 +4063,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: hom
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -4071,7 +4071,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: hom
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
@@ -4079,7 +4079,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.o: home/pkcubed/pico-sdk
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -4087,7 +4087,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: home/pkcubed/pico-sdk
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -4095,7 +4095,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: home/pkcubed/pico-sdk
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
@@ -4103,7 +4103,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.o: home/pkcubed/pi
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -4111,7 +4111,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: home/pkcubed/pi
 
 # target to preprocess a source file
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -4119,7 +4119,7 @@ home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: home/pkcubed/pi
 
 # target to generate assembly for a file
 home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 iperf.o: iperf.c.o
@@ -4127,7 +4127,7 @@ iperf.o: iperf.c.o
 
 # target to build an object file
 iperf.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.o
 .PHONY : iperf.c.o
 
 iperf.i: iperf.c.i
@@ -4135,7 +4135,7 @@ iperf.i: iperf.c.i
 
 # target to preprocess a source file
 iperf.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.i
 .PHONY : iperf.c.i
 
 iperf.s: iperf.c.s
@@ -4143,7 +4143,7 @@ iperf.s: iperf.c.s
 
 # target to generate assembly for a file
 iperf.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/iperf.c.s
 .PHONY : iperf.c.s
 
 main.o: main.c.o
@@ -4151,7 +4151,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -4159,7 +4159,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -4167,7 +4167,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/build.make external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -4695,6 +4695,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

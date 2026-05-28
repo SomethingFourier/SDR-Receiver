@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
+// Padded and checksummed version of: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2/bs2_default.bin
 
 .cpu cortex-m0plus
 .thumb

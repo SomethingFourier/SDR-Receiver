@@ -8,16 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o"
-  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_aeabi_dcp.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_conv_m33.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_fma_dcp.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_sci_m33.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_common_m33.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_conv32_vfp.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_float/float_sci_m33_vfp.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
@@ -79,11 +79,19 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "PICO_COPY_TO_RAM=0"
   "PICO_CXX_ENABLE_EXCEPTIONS=0"
   "PICO_DEFAULT_UART=0"
-  "PICO_DEFAULT_UART_RX_PIN=17"
-  "PICO_DEFAULT_UART_TX_PIN=16"
   "PICO_NO_FLASH=0"
   "PICO_NO_HARDWARE=0"
   "PICO_ON_DEVICE=1"
+  "PICO_RMII_ETHERNET_CRS_DV_PIN=13"
+  "PICO_RMII_ETHERNET_MDC_PIN=17"
+  "PICO_RMII_ETHERNET_MDIO_PIN=16"
+  "PICO_RMII_ETHERNET_RETCLK_PIN=23"
+  "PICO_RMII_ETHERNET_RST_PIN=18"
+  "PICO_RMII_ETHERNET_RXD0_PIN=14"
+  "PICO_RMII_ETHERNET_RXD1_PIN=15"
+  "PICO_RMII_ETHERNET_TXD0_PIN=11"
+  "PICO_RMII_ETHERNET_TXD1_PIN=12"
+  "PICO_RMII_ETHERNET_TX_EN_PIN=10"
   "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
   "PICO_RP2350=1"
   "PICO_TARGET_NAME=\"rp2350_app\""
@@ -94,9 +102,9 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/pkcubed/pico-sdk/src/rp2_common/pico_atomic/include"
   "/home/pkcubed/pico-sdk/lib/tinyusb/src"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/src/include"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/include"
   "external/pico-rmii-ethernet"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/src/lwip"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/lwip"
   "/home/pkcubed/pico-sdk/src/common/pico_stdlib_headers/include"
   "/home/pkcubed/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/home/pkcubed/pico-sdk/src/common/pico_base_headers/include"
@@ -163,8 +171,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o" "gcc" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o.d"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/src/rmii_ethernet.c" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o" "gcc" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o.d"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o" "gcc" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o.d"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/rmii_ethernet.c" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o" "gcc" "CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o.d"
   "/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o.d"
   "/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o.d"
   "/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o.d"
@@ -325,7 +333,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.o.d"
   "/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.o.d"
   "/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.o.d"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/src/main.c" "CMakeFiles/rp2350_app.dir/src/main.c.o" "gcc" "CMakeFiles/rp2350_app.dir/src/main.c.o.d"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/src/main.c" "CMakeFiles/rp2350_app.dir/src/main.c.o" "gcc" "CMakeFiles/rp2350_app.dir/src/main.c.o.d"
   "/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o" "gcc" "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d"
   )
 

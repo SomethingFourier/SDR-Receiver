@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet//CMakeFiles/progress.marks"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" 0
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet//CMakeFiles/progress.marks"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/clean
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/preinstall
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/preinstall
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/rule
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h: external/pico-rmii-ethernet/CMake
 
 # fast build rule for target.
 pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/build.make external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/build.make external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h.dir/build
 .PHONY : pico_rmii_ethernet_rmii_ethernet_phy_rx_pio_h/fast
 
 # Convenience name for target.
 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/rule
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h: external/pico-rmii-ethernet/CMake
 
 # fast build rule for target.
 pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/build.make external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/build.make external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/build
 .PHONY : pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h/fast
 
 # Convenience name for target.
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/rule
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ slower_boot2: external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/rule
 
 # fast build rule for target.
 slower_boot2/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build
 .PHONY : slower_boot2/fast
 
 # Convenience name for target.
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/rule
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/rule
 
 # Convenience name for target.
@@ -169,12 +169,12 @@ slower_boot2_bin: external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/ru
 
 # fast build rule for target.
 slower_boot2_bin/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_bin.dir/build
 .PHONY : slower_boot2_bin/fast
 
 # Convenience name for target.
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/rule:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/rule
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/rule
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ slower_boot2_library: external/pico-rmii-ethernet/CMakeFiles/slower_boot2_librar
 
 # fast build rule for target.
 slower_boot2_library/fast:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build
 .PHONY : slower_boot2_library/fast
 
 home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.o: home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
@@ -191,7 +191,7 @@ home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.o: home/pkcubed
 
 # target to build an object file
 home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
 .PHONY : home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
 
 slower_boot2_padded_checksummed.o: slower_boot2_padded_checksummed.S.o
@@ -199,7 +199,7 @@ slower_boot2_padded_checksummed.o: slower_boot2_padded_checksummed.S.o
 
 # target to build an object file
 slower_boot2_padded_checksummed.S.o:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/slower_boot2_padded_checksummed.S.o
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(MAKE) $(MAKESILENT) -f external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/build.make external/pico-rmii-ethernet/CMakeFiles/slower_boot2_library.dir/slower_boot2_padded_checksummed.S.o
 .PHONY : slower_boot2_padded_checksummed.S.o
 
 # Help Target
@@ -228,6 +228,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

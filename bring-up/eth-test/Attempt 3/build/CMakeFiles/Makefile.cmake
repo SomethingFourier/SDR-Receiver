@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/CMakeLists.txt"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeASMCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
@@ -20,10 +20,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "pioasm-install/pioasm/pioasmConfigVersion.cmake"
   "pioasm-install/pioasm/pioasmTargets-release.cmake"
   "pioasm-install/pioasm/pioasmTargets.cmake"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/CMakeLists.txt"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/examples/httpd/CMakeLists.txt"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/examples/lwiperf/CMakeLists.txt"
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/pico_sdk_import.cmake"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/CMakeLists.txt"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/examples/httpd/CMakeLists.txt"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/examples/lwiperf/CMakeLists.txt"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/pico_sdk_import.cmake"
   "/home/pkcubed/pico-sdk/CMakeLists.txt"
   "/home/pkcubed/pico-sdk/cmake/Platform/PICO.cmake"
   "/home/pkcubed/pico-sdk/cmake/generic_board.cmake"

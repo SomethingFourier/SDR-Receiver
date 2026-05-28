@@ -10,8 +10,7 @@
 
 #define PICO_RMII_ETHERNET_SM_RX 1
 #define PICO_RMII_ETHERNET_SM_TX 0
-#define PICO_RMII_ETHERNET_RX_PIN 14
-#define PICO_RMII_ETHERNET_CRS_PIN 13
+#define PICO_RMII_ETHERNET_RX_PIN 13
 #define PICO_RMII_ETHERNET_TX_PIN 10
 #define PICO_RMII_ETHERNET_MDIO_PIN 16
 #define PICO_RMII_ETHERNET_MDC_PIN 17
@@ -30,7 +29,7 @@
 
 static const uint16_t rmii_ethernet_phy_rx_data_program_instructions[] = {
             //     .wrap_target
-    0x20a2, //  0: wait   1 pin, 2
+    0x208d, //  0: wait   1 gpio, 13
     0x22a1, //  1: wait   1 pin, 1               [2]
     0x4002, //  2: in     pins, 2
     0x00c2, //  3: jmp    pin, 2
@@ -45,7 +44,7 @@ static const struct pio_program rmii_ethernet_phy_rx_data_program = {
     .origin = -1,
     .pio_version = rmii_ethernet_phy_rx_data_pio_version,
 #if PICO_PIO_VERSION > 0
-    .used_gpio_ranges = 0x0
+    .used_gpio_ranges = 0x1
 #endif
 };
 
@@ -55,19 +54,17 @@ static inline pio_sm_config rmii_ethernet_phy_rx_data_program_get_default_config
     return c;
 }
 
-static inline void rmii_ethernet_phy_rx_init(PIO pio, uint sm, uint offset, uint pin, uint crs_pin, float div) {
-    // Make RX[1:0] inputs (consecutive), and CRS_DV input (may be non-consecutive)
-    pio_sm_set_consecutive_pindirs(pio, sm, pin, 2, false); // RX0, RX1
-    pio_sm_set_consecutive_pindirs(pio, sm, crs_pin, 1, false); // CRS_DV
+static inline void rmii_ethernet_phy_rx_init(PIO pio, uint sm, uint offset, uint pin, float div) {
+    // Make RX[1:0], CRS_DV inputs
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 3, false);
     pio_sm_config c = rmii_ethernet_phy_rx_data_program_get_default_config(offset);
-    // Set base input pins for RX (RX0)
-    sm_config_set_in_pins(&c, pin);
-    // Set jump pin to CRS/DV (may be non-consecutive)
-    sm_config_set_jmp_pin(&c, crs_pin);
+    sm_config_set_in_pins(&c, pin + 1);
+    // Set jump pin to CR_DV
+    sm_config_set_jmp_pin(&c, pin);
     // Set up pins
     pio_gpio_init(pio, pin);      // RX0
     pio_gpio_init(pio, pin + 1);  // RX1
-    pio_gpio_init(pio, crs_pin);  // CRS (data valid)
+    pio_gpio_init(pio, pin + 2);  // CRS (data valid)
     sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
     sm_config_set_in_shift(&c, true, true, 8);
     // Run at given RMII clock multiplier

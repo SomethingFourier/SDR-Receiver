@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src
+source_dir=/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src
 work_dir=
 

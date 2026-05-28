@@ -1,5 +1,5 @@
 external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwiperf.dir/__/__/src/lwip/sys_arch.c.o: \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c \
  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
@@ -12,9 +12,9 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /usr/include/newlib/sys/features.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/generated/pico_base/pico/version.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/generated/pico_base/pico/version.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/generated/pico_base/pico/config_autogen.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/generated/pico_base/pico/config_autogen.h \
  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
@@ -67,10 +67,10 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/init.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/opt.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/arch.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
  /usr/include/newlib/stdio.h /usr/include/newlib/sys/reent.h \
  /usr/include/newlib/_ansi.h /usr/include/newlib/sys/_types.h \
  /usr/include/newlib/machine/_types.h /usr/include/newlib/sys/lock.h \
