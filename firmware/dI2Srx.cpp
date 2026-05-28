@@ -11,11 +11,13 @@
 #include "dSSD1306.hpp"
 
 #include "interrupts.hpp"
-#include "i2s_receiver.pio"
+#include "i2s_receiver.pio.h"
 
-#define I2S_SD      14
-#define I2S_BCLK    15
-#define I2S_WS      16
+#define MIN_I2S_PIN     14
+#define I2S_PIN_COUNT   3
+#define I2S_SD          14
+#define I2S_BCLK        15
+#define I2S_WS          16
 
 dI2Srx::dI2Srx(PIO i2s_pio_instance)
 {
@@ -38,7 +40,7 @@ dI2Srx::dI2Srx(PIO i2s_pio_instance)
     // PIO I2S receiver setup
     uint sm;
     uint offset;
-    bool success = pio_claim_free_sm_and_add_program(&i2s_receiver_program, &i2s_pio_instance, &sm, &offset);
+    bool success = pio_claim_free_sm_and_add_program_for_gpio_range(&i2s_receiver_program, &i2s_pio_instance, &sm, &offset, MIN_I2S_PIN, I2S_PIN_COUNT, true);
     if (success)
     {
         i2s_receiver_program_init(i2s_pio_instance, sm, offset, I2S_SD, I2S_BCLK, I2S_WS);
@@ -89,7 +91,6 @@ dI2Srx::dI2Srx(PIO i2s_pio_instance)
         multicore_launch_core1(dI2Srx::core1_entry);
     }
 }
-}
 
 int * dI2Srx::Get_A_Buffer()
 {
@@ -124,15 +125,15 @@ void dI2Srx::core1_entry()
     multicore_fifo_drain();
 
     // Enable IRQ signalling for both channels (they will assert DMA_IRQ_0)
-    dma_channel_set_irq0_enabled(g_Audio.dma_channel_0, true);
-    dma_channel_set_irq0_enabled(g_Audio.audio_B_dma_channel, true);
+    dma_channel_set_irq0_enabled(g_I2Srx.dma_channel_0, true);
+    dma_channel_set_irq0_enabled(g_I2Srx.dma_channel_1, true);
 
     // Register IRQ handler on Core 1 and enable the interrupt
     irq_set_exclusive_handler(DMA_IRQ_0, dma_irq0_handler);
     irq_set_enabled(DMA_IRQ_0, true);
 
     // Start the first channel; chaining will trigger the partner automatically
-    dma_channel_start(g_Audio.dma_channel_0);
+    dma_channel_start(g_I2Srx.dma_channel_0);
 
     // Remain on Core 1; DMA IRQ will do the work
     for (;;) tight_loop_contents();

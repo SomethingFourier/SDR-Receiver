@@ -49,7 +49,6 @@ int main (void)
     g_I2C.Init();
     g_SSD1306.Init();
     g_Si5351.Init();
-    g_I2Srx.Init();
     tusb_init();
 
     while (true)
