@@ -1,5 +1,5 @@
 errors/CMakeFiles/errors.dir/errors.cpp.o: \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/errors/errors.cpp \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/errors/errors.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/cstdarg \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -12,7 +12,7 @@ errors/CMakeFiles/errors.dir/errors.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/errors/errors.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/errors/errors.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \

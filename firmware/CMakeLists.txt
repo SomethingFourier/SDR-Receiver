@@ -30,6 +30,7 @@ add_executable(sdr
     dI2C.cpp
     dSSD1306.cpp
     dI2Srx.cpp
+    dMUX.cpp
     interrupts.cpp
     SDR_State_Machine.cpp
     i2s_receiver.pio
@@ -49,7 +50,6 @@ target_link_libraries(sdr
     pico_stdio
     pico_multicore
     hardware_i2c
-    hardware_spi
     hardware_dma
     hardware_pio
     hardware_irq

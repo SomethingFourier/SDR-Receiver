@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 # Utility rule file for picotoolForceReconfigure.
 
@@ -67,7 +67,7 @@ include pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/
 include pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/progress.make
 
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" && /usr/bin/cmake -E touch_nocreate "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/CMakeLists.txt"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" && /usr/bin/cmake -E touch_nocreate "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/CMakeLists.txt"
 
 picotoolForceReconfigure: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure
 picotoolForceReconfigure: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/build.make
@@ -78,10 +78,10 @@ pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/build: p
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/build
 
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" && $(CMAKE_COMMAND) -P CMakeFiles/picotoolForceReconfigure.dir/cmake_clean.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" && $(CMAKE_COMMAND) -P CMakeFiles/picotoolForceReconfigure.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/clean
 
 pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3" /home/pkcubed/pico-sdk/src/rp2350/boot_stage2 "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3" /home/pkcubed/pico-sdk/src/rp2350/boot_stage2 "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2350/boot_stage2/CMakeFiles/picotoolForceReconfigure.dir/depend
 

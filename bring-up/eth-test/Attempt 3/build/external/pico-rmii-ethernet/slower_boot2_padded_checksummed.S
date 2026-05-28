@@ -1,4 +1,4 @@
-// Padded and checksummed version of: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.bin
+// Padded and checksummed version of: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.bin
 
 .cpu cortex-m0plus
 .thumb

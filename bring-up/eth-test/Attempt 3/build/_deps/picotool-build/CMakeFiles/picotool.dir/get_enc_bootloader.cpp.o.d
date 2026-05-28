@@ -1,5 +1,5 @@
 CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o: \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/get_enc_bootloader.cpp \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/get_enc_bootloader.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -180,11 +180,11 @@ CMakeFiles/picotool.dir/get_enc_bootloader.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/get_enc_bootloader.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-build/enc_bootloader_elf.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-build/enc_bootloader_mbedtls_elf.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/data_locs.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/get_enc_bootloader.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-build/enc_bootloader_elf.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-build/enc_bootloader_mbedtls_elf.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/data_locs.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami++.h
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami++.h

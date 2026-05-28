@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
-  "/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o"
+  "/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 

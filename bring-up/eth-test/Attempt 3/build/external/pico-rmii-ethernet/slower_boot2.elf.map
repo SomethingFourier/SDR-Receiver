@@ -69,9 +69,9 @@ LOAD linker stubs
  .debug_line    0x00000000       0xb4 CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
 
 .debug_line_str
-                0x00000000      0x11b
+                0x00000000      0x124
  .debug_line_str
-                0x00000000      0x11b CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
+                0x00000000      0x124 CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
 
 .debug_info     0x00000000       0x25
  .debug_info    0x00000000       0x25 CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
@@ -83,5 +83,5 @@ LOAD linker stubs
  .debug_aranges
                 0x00000000       0x20 CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
 
-.debug_str      0x00000000       0xab
- .debug_str     0x00000000       0xab CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o
+.debug_str      0x00000000       0xb4
+ .debug_str     0x00000000       0xb4 CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o

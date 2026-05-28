@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf2uf2" -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf" -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/errors" -isystem /home/pkcubed/pico-sdk/src/common/boot_uf2_headers/include
+CXX_INCLUDES = -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf2uf2" -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf" -I"/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/errors" -isystem /home/pkcubed/pico-sdk/src/common/boot_uf2_headers/include
 
 CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14
 

@@ -2,10 +2,10 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/netif/ppp/ppp_opts.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/opt.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/arch.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \

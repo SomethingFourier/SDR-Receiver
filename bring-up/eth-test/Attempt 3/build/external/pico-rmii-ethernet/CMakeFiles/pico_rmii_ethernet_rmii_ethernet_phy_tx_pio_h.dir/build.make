@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 # Utility rule file for pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.
 
@@ -68,9 +68,9 @@ include external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_
 
 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h: external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h
 
-external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/external/pico-rmii-ethernet/src/rmii_ethernet_phy_tx.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating rmii_ethernet_phy_tx.pio.h"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && ../../pioasm-install/pioasm/pioasm -o c-sdk -v 1 "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet/src/rmii_ethernet_phy_tx.pio" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h"
+external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/rmii_ethernet_phy_tx.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating rmii_ethernet_phy_tx.pio.h"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && ../../pioasm-install/pioasm/pioasm -o c-sdk -v 1 "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/rmii_ethernet_phy_tx.pio" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h"
 
 pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h: external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h
 pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h: external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h
@@ -82,10 +82,10 @@ external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_p
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/build
 
 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/cmake_clean.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/cmake_clean.cmake
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/clean
 
 external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/pico_rmii_ethernet_rmii_ethernet_phy_tx_pio_h.dir/depend
 

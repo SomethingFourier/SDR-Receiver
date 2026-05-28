@@ -1,7 +1,3 @@
-// C Libraries
-#include <stdio.h>
-#include <stdlib.h>
-
 // Native Pico libraries
 #include <pico/stdlib.h>
 #include <pico/stdio.h>
@@ -30,6 +26,20 @@ dI2Srx g_I2Srx;
 
 int main (void)
 {
+    // LED config
+    gpio_init(LED_RED);
+    gpio_init(LED_GREEN);
+    gpio_init(LED_WHITE);
+    gpio_init(LED_YELLOW);
+    gpio_set_dir(LED_RED, GPIO_OUT);
+    gpio_set_dir(LED_GREEN, GPIO_OUT);
+    gpio_set_dir(LED_WHITE, GPIO_OUT);
+    gpio_set_dir(LED_YELLOW, GPIO_OUT);
+    gpio_put(LED_RED, 0);
+    gpio_put(LED_GREEN, 0);
+    gpio_put(LED_WHITE, 0);
+    gpio_put(LED_YELLOW, 0);
+    
     // pico-sdk initializations
     stdio_init_all();
     board_init();

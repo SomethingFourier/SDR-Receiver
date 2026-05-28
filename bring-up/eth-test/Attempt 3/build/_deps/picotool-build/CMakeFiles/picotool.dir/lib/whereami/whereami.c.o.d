@@ -1,7 +1,7 @@
 CMakeFiles/picotool.dir/lib/whereami/whereami.c.o: \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami.c \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami.c \
  /usr/include/stdc-predef.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/lib/whereami/whereami.h \
  /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

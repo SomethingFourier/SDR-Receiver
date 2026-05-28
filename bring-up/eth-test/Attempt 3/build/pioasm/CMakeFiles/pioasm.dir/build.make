@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/pkcubed/pico-sdk/tools/pioasm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pioasm.dir/depend.make
@@ -250,6 +250,6 @@ CMakeFiles/pioasm.dir/clean:
 .PHONY : CMakeFiles/pioasm.dir/clean
 
 CMakeFiles/pioasm.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pkcubed/pico-sdk/tools/pioasm /home/pkcubed/pico-sdk/tools/pioasm "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pkcubed/pico-sdk/tools/pioasm /home/pkcubed/pico-sdk/tools/pioasm "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm/CMakeFiles/pioasm.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/pioasm.dir/depend
 

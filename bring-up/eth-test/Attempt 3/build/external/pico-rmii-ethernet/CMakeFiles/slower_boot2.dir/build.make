@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build"
 
 # Include any dependencies generated for this target.
 include external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/depend.make
@@ -71,16 +71,16 @@ include external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/flags.make
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o: external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/flags.make
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o: /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o   -c /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.o   -c /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.i"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S > CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S > CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.i
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.s"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S -o CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S -o CMakeFiles/slower_boot2.dir/home/pkcubed/pico-sdk/src/rp2350/boot_stage2/compile_time_choice.S.s
 
 # Object files for target slower_boot2
 slower_boot2_OBJECTS = \
@@ -93,21 +93,21 @@ external/pico-rmii-ethernet/slower_boot2.elf: external/pico-rmii-ethernet/CMakeF
 external/pico-rmii-ethernet/slower_boot2.elf: external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build.make
 external/pico-rmii-ethernet/slower_boot2.elf: /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/boot_stage2.ld
 external/pico-rmii-ethernet/slower_boot2.elf: external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking ASM executable slower_boot2.elf"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slower_boot2.dir/link.txt --verbose=$(VERBOSE)
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objdump -h "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" > slower_boot2.dis
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objdump -d "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" >> slower_boot2.dis
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && ../../_deps/picotool/picotool coprodis --quiet slower_boot2.dis slower_boot2.dis
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking ASM executable slower_boot2.elf"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/slower_boot2.dir/link.txt --verbose=$(VERBOSE)
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objdump -h "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" > slower_boot2.dis
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && /usr/bin/arm-none-eabi-objdump -d "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/slower_boot2.elf" >> slower_boot2.dis
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && ../../_deps/picotool/picotool coprodis --quiet slower_boot2.dis slower_boot2.dis
 
 # Rule to build all files generated by this target.
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build: external/pico-rmii-ethernet/slower_boot2.elf
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/build
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/slower_boot2.dir/cmake_clean.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" && $(CMAKE_COMMAND) -P CMakeFiles/slower_boot2.dir/cmake_clean.cmake
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/clean
 
 external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : external/pico-rmii-ethernet/CMakeFiles/slower_boot2.dir/depend
 

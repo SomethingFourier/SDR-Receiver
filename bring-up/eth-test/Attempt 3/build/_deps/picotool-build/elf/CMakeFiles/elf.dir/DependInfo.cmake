@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf/elf_file.cpp" "elf/CMakeFiles/elf.dir/elf_file.cpp.o" "gcc" "elf/CMakeFiles/elf.dir/elf_file.cpp.o.d"
+  "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf/elf_file.cpp" "elf/CMakeFiles/elf.dir/elf_file.cpp.o" "gcc" "elf/CMakeFiles/elf.dir/elf_file.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

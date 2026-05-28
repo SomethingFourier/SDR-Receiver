@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src"
+CMAKE_SOURCE_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build"
+CMAKE_BINARY_DIR = "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build"
 
 # Include any dependencies generated for this target.
 include elf2uf2/CMakeFiles/elf2uf2.dir/depend.make
@@ -67,17 +67,17 @@ include elf2uf2/CMakeFiles/elf2uf2.dir/compiler_depend.make
 include elf2uf2/CMakeFiles/elf2uf2.dir/flags.make
 
 elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: elf2uf2/CMakeFiles/elf2uf2.dir/flags.make
-elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: /home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt\ 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp
+elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp
 elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o: elf2uf2/CMakeFiles/elf2uf2.dir/compiler_depend.ts
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o -MF CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o.d -o CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o -c "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o -MF CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o.d -o CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o -c "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp"
 
 elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/elf2uf2.dir/elf2uf2.cpp.i"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp" > CMakeFiles/elf2uf2.dir/elf2uf2.cpp.i
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp" > CMakeFiles/elf2uf2.dir/elf2uf2.cpp.i
 
 elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/elf2uf2.dir/elf2uf2.cpp.s"
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp" -o CMakeFiles/elf2uf2.dir/elf2uf2.cpp.s
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf2uf2/elf2uf2.cpp" -o CMakeFiles/elf2uf2.dir/elf2uf2.cpp.s
 
 # Object files for target elf2uf2
 elf2uf2_OBJECTS = \
@@ -89,18 +89,18 @@ elf2uf2_EXTERNAL_OBJECTS =
 elf2uf2/libelf2uf2.a: elf2uf2/CMakeFiles/elf2uf2.dir/elf2uf2.cpp.o
 elf2uf2/libelf2uf2.a: elf2uf2/CMakeFiles/elf2uf2.dir/build.make
 elf2uf2/libelf2uf2.a: elf2uf2/CMakeFiles/elf2uf2.dir/link.txt
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -P CMakeFiles/elf2uf2.dir/cmake_clean_target.cmake
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elf2uf2.dir/link.txt --verbose=$(VERBOSE)
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -P CMakeFiles/elf2uf2.dir/cmake_clean_target.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elf2uf2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 elf2uf2/CMakeFiles/elf2uf2.dir/build: elf2uf2/libelf2uf2.a
 .PHONY : elf2uf2/CMakeFiles/elf2uf2.dir/build
 
 elf2uf2/CMakeFiles/elf2uf2.dir/clean:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -P CMakeFiles/elf2uf2.dir/cmake_clean.cmake
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" && $(CMAKE_COMMAND) -P CMakeFiles/elf2uf2.dir/cmake_clean.cmake
 .PHONY : elf2uf2/CMakeFiles/elf2uf2.dir/clean
 
 elf2uf2/CMakeFiles/elf2uf2.dir/depend:
-	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-src/elf2uf2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/Eth-Test/Attempt 3/build/_deps/picotool-build/elf2uf2/CMakeFiles/elf2uf2.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-src/elf2uf2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2" "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/_deps/picotool-build/elf2uf2/CMakeFiles/elf2uf2.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : elf2uf2/CMakeFiles/elf2uf2.dir/depend
 
