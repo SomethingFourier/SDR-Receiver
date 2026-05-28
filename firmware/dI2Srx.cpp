@@ -32,8 +32,16 @@ void dI2Srx::Init(PIO i2s_pio_instance)
     gpio_set_dir(ADC_MD0, GPIO_OUT);
     gpio_set_dir(ADC_MD1, GPIO_OUT);
     gpio_set_dir(ADC_RST, GPIO_OUT);
+    // Ethernet
+    /*
     gpio_put(ADC_MD0, 0);
     gpio_put(ADC_MD1, 1); // Master mode 128*f_s
+    */
+    // USB
+    ///*
+    gpio_put(ADC_MD0, 0);
+    gpio_put(ADC_MD1, 0); // Master mode 128*f_s
+    //*/
     gpio_put(ADC_RST, 0);
 
     // DMA configuration
