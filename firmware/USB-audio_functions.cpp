@@ -96,47 +96,32 @@ bool tud_audio_tx_done_pre_load_cb(uint8_t rhport, uint8_t itf, uint8_t ep_in, u
 
 void audio_task(void)
 {
-    // Ensure we are configured and the host is ready for audio
-    if (!tud_ready() || !tud_audio_mounted())
-    {
-        // Option to flush ready flags here if not connected to avoid stale data
-        return;
-    }
-
     if (g_I2Srx.A_buffer_ready)
     {
-        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4; // 384 bytes
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4;
         
-        // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
-        // Note: The exact function name depends on your TinyUSB version.
-        if (tud_audio_available() < 384) {
+        // Grab the IN endpoint FIFO and check how many bytes are backed up.
+        // If there's more than 1ms of audio (384 bytes) waiting, drop 1 frame (8 bytes).
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 384) {
             bytes_to_write -= 8; 
         }
-        
-        // Write the completely filled DMA buffer to TinyUSB.
-        // tud_audio_write expects the size in bytes. 
-        // 96 32-bit words * 4 bytes/word = 384 bytes
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_A_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
-        
+
+        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_A_Buffer(), bytes_to_write);
         if (written > 0)
         {
-            // Un-flag the buffer so DMA can overwrite it again
             g_I2Srx.A_buffer_ready = false; 
         }
     }
 
     if (g_I2Srx.B_buffer_ready)
     {
-        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4; // 384 bytes
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4;
         
-        // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
-        // Note: The exact function name depends on your TinyUSB version.
-        if (tud_audio_available() < 384) {
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 384) {
             bytes_to_write -= 8; 
         }
 
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
-        
+        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), bytes_to_write);
         if (written > 0) 
         {
             g_I2Srx.B_buffer_ready = false;
