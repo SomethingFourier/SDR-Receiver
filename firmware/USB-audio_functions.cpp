@@ -105,6 +105,14 @@ void audio_task(void)
 
     if (g_I2Srx.A_buffer_ready)
     {
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4; // 384 bytes
+        
+        // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
+        // Note: The exact function name depends on your TinyUSB version.
+        if (tud_audio_write_available() < 384) {
+            bytes_to_write -= 8; 
+        }
+        
         // Write the completely filled DMA buffer to TinyUSB.
         // tud_audio_write expects the size in bytes. 
         // 96 32-bit words * 4 bytes/word = 384 bytes
@@ -119,6 +127,14 @@ void audio_task(void)
 
     if (g_I2Srx.B_buffer_ready)
     {
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4; // 384 bytes
+        
+        // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
+        // Note: The exact function name depends on your TinyUSB version.
+        if (tud_audio_write_available() < 384) {
+            bytes_to_write -= 8; 
+        }
+
         uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
         
         if (written > 0) 
