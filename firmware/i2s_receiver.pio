@@ -19,8 +19,8 @@ NOTE: The very first word read is potentially corrupt, since there is a
 .program i2s_receiver
 
 .define DATA_PIN 0
-.define BCK_PIN 1
-.define LRCK_PIN 2
+.define BCK_PIN 30   // Maps to (21 + 30) % 32 = 19 
+.define LRCK_PIN 31  // Maps to (21 + 31) % 32 = 20
 
 start_sample_l:
     wait 1 pin BCK_PIN      // DATA should be sampled on rising transition of BCK

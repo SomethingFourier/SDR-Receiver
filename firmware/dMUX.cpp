@@ -24,7 +24,7 @@ int dMUX::Get_Receiver_Configuration_State()
 
 bool dMUX::Set_Receiver_Configuration_State(enum receiver_configuration configuration_number)
 {
-    state = receiver_number;
+    state = configuration_number;
 } // Set_Receiver_Configuration_State
 
 void dMUX::Configure_For_VHF_Charles()

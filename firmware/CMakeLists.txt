@@ -33,6 +33,7 @@ add_executable(sdr
     dMUX.cpp
     interrupts.cpp
     i2s_receiver.pio
+    SDR_State_Machine.cpp
     USB-cdc_functions.cpp
     USB-audio_functions.cpp
     usb_descriptors.c
