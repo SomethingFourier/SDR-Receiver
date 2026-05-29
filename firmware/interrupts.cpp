@@ -14,9 +14,10 @@ void dma_irq0_handler()
     if (interrupt_status & (1u << g_I2Srx.audio_A_dma_channel))
     {
         // Clear the interrupt flag
-        dma_hw->ints0 = (1u << g_I2Srx.audio_A_dma_channel);
+        dma_channel_acknowledge_irq0(g_I2Srx.audio_A_dma_channel);
         // Restore write address and transfer count so chaining will work next time
         dma_channel_set_write_addr(g_I2Srx.audio_A_dma_channel, g_I2Srx.audio_A_buffer, false);
+        // Set ready flags
         g_I2Srx.B_buffer_ready = false;
         g_I2Srx.A_buffer_ready = true;
     }
@@ -24,8 +25,7 @@ void dma_irq0_handler()
     // Channel right finished
     if (interrupt_status & (1u << g_I2Srx.audio_B_dma_channel))
     {
-        // Clear the interrupt flag
-        dma_hw->ints0 = (1u << g_I2Srx.audio_B_dma_channel);
+        dma_channel_acknowledge_irq0(g_I2Srx.audio_B_dma_channel);
         dma_channel_set_write_addr(g_I2Srx.audio_B_dma_channel, g_I2Srx.audio_B_buffer, false);
         g_I2Srx.A_buffer_ready = false;
         g_I2Srx.B_buffer_ready = true;
