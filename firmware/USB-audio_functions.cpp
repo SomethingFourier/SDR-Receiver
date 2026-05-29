@@ -109,7 +109,7 @@ void audio_task(void)
         
         // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
         // Note: The exact function name depends on your TinyUSB version.
-        if (tud_audio_write_available() < 384) {
+        if (tud_audio_available() < 384) {
             bytes_to_write -= 8; 
         }
         
@@ -131,7 +131,7 @@ void audio_task(void)
         
         // If free space is getting low, drop 1 frame (8 bytes) to let the Host catch up
         // Note: The exact function name depends on your TinyUSB version.
-        if (tud_audio_write_available() < 384) {
+        if (tud_audio_available() < 384) {
             bytes_to_write -= 8; 
         }
 
