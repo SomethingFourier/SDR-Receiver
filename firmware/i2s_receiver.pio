@@ -22,23 +22,30 @@ NOTE: The very first word read is potentially corrupt, since there is a
 .define BCK_PIN 30   // Maps to (21 + 30) % 32 = 19 
 .define LRCK_PIN 31  // Maps to (21 + 31) % 32 = 20
 
+start_sample_l:
+    wait 1 pin BCK_PIN      // DATA should be sampled on rising transition of BCK
+    in pins, 1              // first "bit" of new frame is actually LSB of last frame, per I2S
+    push noblock            // push however many bits we read into the FIFO
+    wait 0 pin BCK_PIN      // ignore first BCK transition after edge
 public_entry_point:
     wait 0 pin LRCK_PIN     // wait for L frame to come around before we start
 sample_l:
     wait 1 pin BCK_PIN      // DATA should be sampled on rising transition of BCK
     in pins, 1              // read DATA
     wait 0 pin BCK_PIN      // don't sample more than once per rising edge, wait for next clock
-    jmp pin start_sample_r  // if LRCK has gone high, we're "done" with this word
-    jmp sample_l            // otherwise, continue reading Left channel
+    jmp pin start_sample_r  // if LRCK has gone high, we're "done" with this word (1 bit left to read)
+    jmp sample_l
 start_sample_r:
-    push noblock            // push the completed Left channel word to the FIFO
+    wait 1 pin BCK_PIN      // wait for the last bit of the previous frame
+    in pins, 1              // first "bit" of new frame is actually LSB of last frame, per I2S
+    push noblock            // push the completed word to the FIFO
+    wait 0 pin BCK_PIN      // wait for next clock cycle
 sample_r:
-    wait 1 pin BCK_PIN      // wait for BCK to rise
-    in pins, 1              // read DATA
-    wait 0 pin BCK_PIN      // wait for BCK to fall
-    jmp pin sample_r        // if LRCK is still high, we're still sampling Right channel
-    push noblock            // If LRCK has gone low, push the completed Right channel word
-    jmp sample_l            // start the loop over for the next Left channel
+    wait 1 pin BCK_PIN
+    in pins, 1
+    wait 0 pin BCK_PIN
+    jmp pin sample_r        // if LRCK is still high, we're still sampling this word
+                            // implicit jmp to start_sample_l: otherwise, start the loop over
 
 % c-sdk {
 /*

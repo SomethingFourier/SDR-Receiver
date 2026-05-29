@@ -27,9 +27,6 @@ extern "C" {
 // One Audio Streaming interface (Interface 3)
 #define CFG_TUD_AUDIO_FUNC_1_N_AS_INT          1
 
-// Required by TinyUSB: total length of audio descriptors (IAD + AC + AS + EPs)
-#define CFG_TUD_AUDIO_FUNC_1_DESC_LEN          112
-
 // Control request buffer (mute, sampling-freq queries from host)
 #define CFG_TUD_AUDIO_FUNC_1_CTRL_BUF_SZ      64
 
