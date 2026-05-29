@@ -73,25 +73,21 @@ uint8_t const *tud_descriptor_device_cb(void) {
 #define EPNUM_AUDIO_IN    0x81
 
 /* Audio descriptor sizes — computed by TinyUSB master macros */
-#define AUDIO_IAD_LEN        8u   /* hand-coded 8-byte array (no macro exists) */
-#define AUDIO_STD_AC_LEN     TUD_AUDIO10_DESC_STD_AC_LEN           /*  9 */
-#define AUDIO_CS_AC_LEN      TUD_AUDIO10_DESC_CS_AC_LEN(1)         /*  9 */
-#define AUDIO_IT_LEN         TUD_AUDIO10_DESC_INPUT_TERM_LEN       /* 12 */
-#define AUDIO_FU_LEN         TUD_AUDIO10_DESC_FEATURE_UNIT_LEN(2)  /* 13 */
-#define AUDIO_OT_LEN         TUD_AUDIO10_DESC_OUTPUT_TERM_LEN      /*  9 */
-#define AUDIO_AS_ALT0_LEN    TUD_AUDIO10_DESC_STD_AS_LEN           /*  9 */
-#define AUDIO_AS_ALT1_LEN    TUD_AUDIO10_DESC_STD_AS_LEN           /*  9 */
-#define AUDIO_CS_AS_LEN      TUD_AUDIO10_DESC_CS_AS_INT_LEN        /*  7 */
-#define AUDIO_FORMAT_LEN     TUD_AUDIO10_DESC_TYPE_I_FORMAT_LEN(1) /* 11 */
-#define AUDIO_ISO_EP_LEN     TUD_AUDIO10_DESC_STD_AS_ISO_EP_LEN    /*  9 */
-#define AUDIO_CS_ISO_EP_LEN  TUD_AUDIO10_DESC_CS_AS_ISO_EP_LEN     /*  7 */
+#define AUDIO_IAD_LEN        8u
+#define AUDIO_STD_AC_LEN     9u
+#define AUDIO_CS_AC_LEN      9u
+#define AUDIO_IT_LEN         12u
+#define AUDIO_FU_LEN         13u
+#define AUDIO_OT_LEN         9u
+#define AUDIO_AS_ALT0_LEN    9u
+#define AUDIO_AS_ALT1_LEN    9u
+#define AUDIO_CS_AS_LEN      7u
+#define AUDIO_FORMAT_LEN     11u
+#define AUDIO_ISO_EP_LEN     9u
+#define AUDIO_CS_ISO_EP_LEN  7u
 
-/* Sum of IT + FU + OT (passed as _totallen to TUD_AUDIO10_DESC_CS_AC).
- * The macro adds the CS AC header (9 bytes) internally, giving a wire
- * wTotalLength of 9 + 34 = 43 bytes.                                        */
 #define AUDIO_CS_ENTITY_LEN  (AUDIO_IT_LEN + AUDIO_FU_LEN + AUDIO_OT_LEN) /* 34 */
 
-/* Total audio block size = IAD + all audio descriptors */
 #define AUDIO_BLOCK_LEN  (AUDIO_IAD_LEN + AUDIO_STD_AC_LEN + AUDIO_CS_AC_LEN \
                         + AUDIO_IT_LEN + AUDIO_FU_LEN + AUDIO_OT_LEN         \
                         + AUDIO_AS_ALT0_LEN + AUDIO_AS_ALT1_LEN               \
@@ -114,52 +110,39 @@ static uint8_t const desc_configuration[] = {
 
     /* --- Audio function (interfaces 2 + 3) ------------------------------- */
 
-    /* 3a: Manual Audio IAD — no TUD_AUDIO10_DESC_IAD macro exists */
-    0x08,       /* bLength = 8                 */
-    0x0B,       /* bDescriptorType = IAD       */
-    0x02,       /* bFirstInterface = 2         */
-    0x02,       /* bInterfaceCount = 2 (AC+AS) */
-    0x01,       /* bFunctionClass = Audio      */
-    0x01,       /* bFunctionSubClass = Control */
-    0x00,       /* bFunctionProtocol = 0 (UAC1)*/
-    0x00,       /* iFunction = 0               */
+    /* 3a: Manual Audio IAD */
+    0x08, TUSB_DESC_INTERFACE_ASSOCIATION, 2, 2, TUSB_CLASS_AUDIO, AUDIO_SUBCLASS_CONTROL, AUDIO_FUNC_PROTOCOL_CODE_UNDEF, 0,
 
     /* 3b: Audio Control standard + class-specific interface headers */
-    TUD_AUDIO10_DESC_STD_AC(2, 0, STRID_AUDIO),
-    TUD_AUDIO10_DESC_CS_AC(0x0100, AUDIO_CS_ENTITY_LEN, 3),
-    /*                     ^bcdADC ^sum of entities (34)  ^AS itf # */
+    9, TUSB_DESC_INTERFACE, 2, 0, 0, TUSB_CLASS_AUDIO, AUDIO_SUBCLASS_CONTROL, AUDIO_FUNC_PROTOCOL_CODE_UNDEF, STRID_AUDIO,
+    9, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AC_INTERFACE_HEADER, U16_TO_U8S_LE(0x0100), U16_TO_U8S_LE(43), 1, 3,
 
     /* 3c: Input Terminal — ID=1, Line-In (0x0603), assoc OT ID=3, 2ch */
-    TUD_AUDIO10_DESC_INPUT_TERM(1, 0x0603, 3, 2, 0x0003, 0, 0),
+    12, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AC_INTERFACE_INPUT_TERMINAL, 1, U16_TO_U8S_LE(0x0603), 3, 2, U16_TO_U8S_LE(0x0003), 0, 0,
 
     /* 3d: Feature Unit — ID=2, source IT ID=1, mute on master+ch1+ch2 */
-    TUD_AUDIO10_DESC_FEATURE_UNIT(2, 1, 0,
-        0x0001,   /* bmaControls[0] = master, mute bit */
-        0x0001,   /* bmaControls[1] = ch1, mute bit    */
-        0x0001),  /* bmaControls[2] = ch2, mute bit    */
+    13, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AC_INTERFACE_FEATURE_UNIT, 2, 1, 2, U16_TO_U8S_LE(0x0001), U16_TO_U8S_LE(0x0001), U16_TO_U8S_LE(0x0001), 0,
 
     /* 3e: Output Terminal — ID=3, USB Streaming (0x0101), assoc IT ID=1 */
-    TUD_AUDIO10_DESC_OUTPUT_TERM(3, 0x0101, 1, 2, 0),
+    9, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AC_INTERFACE_OUTPUT_TERMINAL, 3, U16_TO_U8S_LE(0x0101), 1, 2, 0,
 
     /* 3f: Audio Streaming alt 0 (zero-bandwidth, no endpoints) */
-    TUD_AUDIO10_DESC_STD_AS_INT(3, 0, 0, 0),
+    9, TUSB_DESC_INTERFACE, 3, 0, 0, TUSB_CLASS_AUDIO, AUDIO_SUBCLASS_STREAMING, AUDIO_FUNC_PROTOCOL_CODE_UNDEF, 0,
 
     /* 3g: Audio Streaming alt 1 (active, one IN endpoint) */
-    TUD_AUDIO10_DESC_STD_AS_INT(3, 1, 1, 0),
+    9, TUSB_DESC_INTERFACE, 3, 1, 1, TUSB_CLASS_AUDIO, AUDIO_SUBCLASS_STREAMING, AUDIO_FUNC_PROTOCOL_CODE_UNDEF, 0,
 
     /* CS AS general: bTerminalLink=3 (OT ID), bDelay=1, wFormatTag=PCM */
-    TUD_AUDIO10_DESC_CS_AS_INT(3, 1, AUDIO10_DATA_FORMAT_TYPE_I_PCM),
+    7, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AS_INTERFACE_AS_GENERAL, 3, 1, U16_TO_U8S_LE(AUDIO_DATA_FORMAT_TYPE_I_PCM),
 
     /* Type I format: 2ch, 4-byte subframe, 24-bit, 48 kHz */
-    TUD_AUDIO10_DESC_TYPE_I_FORMAT(2, 4, 24, 48000U),
+    11, TUSB_DESC_CS_INTERFACE, AUDIO_CS_AS_INTERFACE_FORMAT_TYPE, AUDIO_FORMAT_TYPE_I, 2, 4, 24, 1, 0x80, 0xBB, 0x00,
 
     /* Standard isochronous IN endpoint: EP1, async, 392 B max, interval 1 */
-    TUD_AUDIO10_DESC_STD_AS_ISO_EP(EPNUM_AUDIO_IN, 0x05, 392, 1, 0x00),
+    9, TUSB_DESC_ENDPOINT, EPNUM_AUDIO_IN, 0x05, U16_TO_U8S_LE(392), 1, 0, 0,
 
     /* CS isochronous endpoint: sampling-frequency control, ms lock delay */
-    TUD_AUDIO10_DESC_CS_AS_ISO_EP(
-        AUDIO10_CS_AS_ISO_DATA_EP_ATT_SAMPLING_FRQ,
-        AUDIO10_CS_AS_ISO_DATA_EP_LOCK_DELAY_UNIT_MILLISEC, 1),
+    7, TUSB_DESC_CS_ENDPOINT, AUDIO_CS_EP_SUBTYPE_GENERAL, 0x01, 1, U16_TO_U8S_LE(1)
 };
 
 /* Compile-time check that the descriptor has the expected size. */

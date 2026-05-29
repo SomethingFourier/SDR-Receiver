@@ -56,7 +56,7 @@ bool tud_audio_set_req_ep_cb(uint8_t rhport, const tusb_control_request_t *p_req
     {
         return false;
     }
-    if (p_request->bRequest != AUDIO10_CS_REQ_GET_CUR || TU_U16_HIGH(p_request->wValue) != AUDIO10_EP_CTRL_SAMPLING_FREQ)
+    if (p_request->bRequest != AUDIO_CS_REQ_CUR || TU_U16_HIGH(p_request->wValue) != AUDIO_CS_CTRL_SAM_FREQ)
     {
         return false;
     }
@@ -74,7 +74,7 @@ bool tud_audio_set_req_entity_cb(uint8_t rhport, const tusb_control_request_t *p
     uint8_t entity_id = TU_U16_HIGH(p_request->wIndex);
     uint8_t control_selector = TU_U16_HIGH(p_request->wValue);
 
-    if (entity_id == 2 && control_selector == AUDIO10_FU_CTRL_MUTE && p_request->bRequest == AUDIO10_CS_REQ_GET_CUR)
+    if (entity_id == 2 && control_selector == AUDIO_FU_CTRL_MUTE && p_request->bRequest == AUDIO_CS_REQ_CUR)
     {
         uint8_t channel = TU_U16_LOW(p_request->wValue);
         if (channel > 2u) return false;
@@ -105,24 +105,28 @@ void audio_task(void)
 
     if (g_I2Srx.A_buffer_ready)
     {
-        // Write the completely filled DMA buffer to TinyUSB.
-        // tud_audio_write expects the size in bytes. 
-        // 96 32-bit words * 4 bytes/word = 384 bytes
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_A_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
+        static uint16_t a_offset = 0;
+        uint16_t bytes_to_write = (AUDIO_SAMPLES_PER_BUFFER * 4) - a_offset;
+        uint16_t written = tud_audio_write(((uint8_t *)g_I2Srx.Get_A_Buffer()) + a_offset, bytes_to_write);
+        a_offset += written;
         
-        if (written > 0)
+        if (a_offset >= AUDIO_SAMPLES_PER_BUFFER * 4)
         {
-            // Un-flag the buffer so DMA can overwrite it again
+            a_offset = 0;
             g_I2Srx.A_buffer_ready = false; 
         }
     }
 
     if (g_I2Srx.B_buffer_ready)
     {
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), AUDIO_SAMPLES_PER_BUFFER * 4);
+        static uint16_t b_offset = 0;
+        uint16_t bytes_to_write = (AUDIO_SAMPLES_PER_BUFFER * 4) - b_offset;
+        uint16_t written = tud_audio_write(((uint8_t *)g_I2Srx.Get_B_Buffer()) + b_offset, bytes_to_write);
+        b_offset += written;
         
-        if (written > 0) 
+        if (b_offset >= AUDIO_SAMPLES_PER_BUFFER * 4)
         {
+            b_offset = 0;
             g_I2Srx.B_buffer_ready = false;
         }
     }
