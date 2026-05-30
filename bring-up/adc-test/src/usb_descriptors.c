@@ -150,11 +150,11 @@ static uint8_t const desc_configuration[] = {
     /* CS AS general: bTerminalLink=3 (OT ID), bDelay=1, wFormatTag=PCM */
     TUD_AUDIO10_DESC_CS_AS_INT(3, 1, AUDIO10_DATA_FORMAT_TYPE_I_PCM),
 
-    /* Type I format: 2ch, 2-byte subframe, 16-bit, 48 kHz */
-    TUD_AUDIO10_DESC_TYPE_I_FORMAT(2, 2, 16, 48000U),
+    /* Type I format: 2ch, 4-byte subframe, 32-bit, 48 kHz */
+    TUD_AUDIO10_DESC_TYPE_I_FORMAT(2, 4, 32, 48000U),
 
-    /* Standard isochronous IN endpoint: EP1, async, 192 B max + margin = 200, interval 1 */
-    TUD_AUDIO10_DESC_STD_AS_ISO_EP(EPNUM_AUDIO_IN, 0x05, 200, 1, 0x00),
+    /* Standard isochronous IN endpoint: EP1, async, 392 B max, interval 1 */
+    TUD_AUDIO10_DESC_STD_AS_ISO_EP(EPNUM_AUDIO_IN, 0x05, 392, 1, 0x00),
 
     /* CS isochronous endpoint: sampling-frequency control, ms lock delay */
     TUD_AUDIO10_DESC_CS_AS_ISO_EP(

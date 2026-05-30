@@ -37,7 +37,7 @@ int main() {
             
             // Check space in USB FIFO (in bytes)
             uint32_t max_bytes = tu_fifo_remaining(tud_audio_get_ep_in_ff());
-            uint32_t max_frames = max_bytes / 4; // 16-bit stereo = 4 bytes per frame
+            uint32_t max_frames = max_bytes / 8; // 32-bit stereo in 4-byte subframes = 8 bytes per frame
 
             uint32_t frames_to_write = available;
             if (frames_to_write > max_frames) {
@@ -51,13 +51,13 @@ int main() {
                     chunk1 = AUDIO_RING_FRAMES - read_idx;
                 }
 
-                uint16_t written1 = tud_audio_write((uint8_t*)&audio_ring_buffer[read_idx], chunk1 * 4);
-                read_idx = (read_idx + (written1 / 4)) & (AUDIO_RING_FRAMES - 1);
+                uint16_t written1 = tud_audio_write((uint8_t*)&audio_ring_buffer[read_idx * 2], chunk1 * 8);
+                read_idx = (read_idx + (written1 / 8)) & (AUDIO_RING_FRAMES - 1);
 
-                if (written1 == chunk1 * 4 && frames_to_write > chunk1) {
+                if (written1 == chunk1 * 8 && frames_to_write > chunk1) {
                     uint32_t chunk2 = frames_to_write - chunk1;
-                    uint16_t written2 = tud_audio_write((uint8_t*)&audio_ring_buffer[read_idx], chunk2 * 4);
-                    read_idx = (read_idx + (written2 / 4)) & (AUDIO_RING_FRAMES - 1);
+                    uint16_t written2 = tud_audio_write((uint8_t*)&audio_ring_buffer[read_idx * 2], chunk2 * 8);
+                    read_idx = (read_idx + (written2 / 8)) & (AUDIO_RING_FRAMES - 1);
                 }
             }
             gpio_put(LED_PIN, 0);

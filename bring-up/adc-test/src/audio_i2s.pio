@@ -1,55 +1,53 @@
 .program audio_i2s
 
-; I2S Slave Receiver for 16-bit audio packed into 32-bit words
-; ADC is Master.
-; IN_BASE is SD (GPIO 21)
+; I2S Slave Receiver for 24-bit audio in 32-bit words
 .define BCLK 19
 .define WS 20
 
 public entry_point:
-    ; Sync to the start of the Right channel (WS goes HIGH)
-    wait 0 gpio WS
     wait 1 gpio WS
-
-right_channel:
-    ; Ensure BCLK is LOW, then wait for the last rising edge of the Left frame
-    wait 0 gpio BCLK
-    wait 1 gpio BCLK
-    
-    ; Wait for the first falling edge of the Right frame (MSB is clocked out here)
-    wait 0 gpio BCLK
-
-    ; Read top 16 bits of Right channel
-    set x, 15
-right_loop:
-    wait 1 gpio BCLK  ; Sample on rising edge
-    in pins, 1
-    wait 0 gpio BCLK
-    jmp x-- right_loop
-
-    ; Wait for WS to go LOW (start of Left channel)
     wait 0 gpio WS
 
 left_channel:
-    ; Ensure BCLK is LOW, then wait for the last rising edge of the Right frame
-    wait 0 gpio BCLK
+    ; Skip 1 BCLK (LSB of Right channel)
     wait 1 gpio BCLK
-    
-    ; Wait for the first falling edge of the Left frame (MSB is clocked out here)
     wait 0 gpio BCLK
 
-    ; Read top 16 bits of Left channel
-    set x, 15
+    ; Read top 24 bits of Left channel
+    set x, 23
 left_loop:
-    wait 1 gpio BCLK  ; Sample on rising edge
+    wait 1 gpio BCLK
     in pins, 1
     wait 0 gpio BCLK
     jmp x-- left_loop
 
-    ; Push the 32-bit word (Right is in top 16 bits, Left is in bottom 16 bits)
+    ; Shift left by 8 to align MSB to bit 31 (creates a 32-bit signed integer)
+    in null, 8
+
+    ; Push Left channel (32-bit word)
     push noblock
-    
-    ; Loop back
+
+    ; Wait for Right channel
+    wait 1 gpio WS
+
+right_channel:
+    ; Skip 1 BCLK (LSB of Left channel)
+    wait 1 gpio BCLK
+    wait 0 gpio BCLK
+
+    ; Read top 24 bits of Right channel
+    set x, 23
+right_loop:
+    wait 1 gpio BCLK
+    in pins, 1
+    wait 0 gpio BCLK
+    jmp x-- right_loop
+
+    ; Shift left by 8 to align MSB to bit 31
+    in null, 8
+
+    ; Push Right channel (32-bit word)
+    push noblock
     jmp entry_point
 
 % c-sdk {
