@@ -1,0 +1,74 @@
+.program audio_i2s
+
+; I2S Slave Receiver for 16-bit audio packed into 32-bit words
+; ADC is Master.
+; IN_BASE is SD (GPIO 21)
+.define BCLK 19
+.define WS 20
+
+public entry_point:
+    ; Sync to the start of the Right channel (WS goes HIGH)
+    wait 0 gpio WS
+    wait 1 gpio WS
+
+right_channel:
+    ; Ensure BCLK is LOW, then wait for the last rising edge of the Left frame
+    wait 0 gpio BCLK
+    wait 1 gpio BCLK
+    
+    ; Wait for the first falling edge of the Right frame (MSB is clocked out here)
+    wait 0 gpio BCLK
+
+    ; Read top 16 bits of Right channel
+    set x, 15
+right_loop:
+    wait 1 gpio BCLK  ; Sample on rising edge
+    in pins, 1
+    wait 0 gpio BCLK
+    jmp x-- right_loop
+
+    ; Wait for WS to go LOW (start of Left channel)
+    wait 0 gpio WS
+
+left_channel:
+    ; Ensure BCLK is LOW, then wait for the last rising edge of the Right frame
+    wait 0 gpio BCLK
+    wait 1 gpio BCLK
+    
+    ; Wait for the first falling edge of the Left frame (MSB is clocked out here)
+    wait 0 gpio BCLK
+
+    ; Read top 16 bits of Left channel
+    set x, 15
+left_loop:
+    wait 1 gpio BCLK  ; Sample on rising edge
+    in pins, 1
+    wait 0 gpio BCLK
+    jmp x-- left_loop
+
+    ; Push the 32-bit word (Right is in top 16 bits, Left is in bottom 16 bits)
+    push noblock
+    
+    ; Loop back
+    jmp entry_point
+
+% c-sdk {
+static inline void audio_i2s_program_init(PIO pio, uint sm, uint offset, uint data_pin, uint bclk_pin, uint ws_pin) {
+    pio_gpio_init(pio, data_pin);
+    pio_gpio_init(pio, bclk_pin);
+    pio_gpio_init(pio, ws_pin);
+
+    gpio_disable_pulls(data_pin);
+    gpio_disable_pulls(bclk_pin);
+    gpio_disable_pulls(ws_pin);
+
+    pio_sm_config c = audio_i2s_program_get_default_config(offset);
+    sm_config_set_in_pins(&c, data_pin);
+    sm_config_set_in_shift(&c, false, false, 32);
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    pio_sm_init(pio, sm, offset, &c);
+    
+    uint32_t pin_mask = (1u << data_pin) | (1u << bclk_pin) | (1u << ws_pin);
+    pio_sm_set_pindirs_with_mask(pio, sm, 0, pin_mask);
+}
+%}
