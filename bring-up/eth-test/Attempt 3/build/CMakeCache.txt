@@ -330,6 +330,9 @@ PICO_STDIO_USB:BOOL=OFF
 //Directory where pioasm has been installed
 PIOASM_INSTALL_DIR:PATH=/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/pioasm-install
 
+//RTOS
+RTOS:STRING=noos
+
 //Value Computed by CMake
 pico_rmii_ethernet_BINARY_DIR:STATIC=/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/external/pico-rmii-ethernet
 

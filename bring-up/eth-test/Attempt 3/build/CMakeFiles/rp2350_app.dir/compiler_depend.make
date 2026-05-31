@@ -3891,7 +3891,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_de
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -3902,7 +3901,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_de
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4023,6 +4021,44 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_de
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
+  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
+  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
@@ -4099,6 +4135,44 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_de
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
+  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
+  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
@@ -4138,6 +4212,44 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rn
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c \
+  generated/pico_base/pico/config_autogen.h \
+  generated/pico_base/pico/version.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
+  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
+  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
+  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
+  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/assert.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
@@ -4270,7 +4382,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/ven
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -4281,7 +4392,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/ven
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4379,7 +4489,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -4390,7 +4499,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4458,7 +4566,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -4469,86 +4576,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o:
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
-  /usr/include/newlib/sys/string.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
-  /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
-
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c \
-  generated/pico_base/pico/config_autogen.h \
-  generated/pico_base/pico/version.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_private.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/device/dcd.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_pvt.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.h \
-  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
-  /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
-  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
-  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
-  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
-  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
-  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
-  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
-  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
-  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
-  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/sem.h \
-  /home/pkcubed/pico-sdk/src/common/pico_time/include/pico/time.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/accessctrl.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/intctrl.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/timer.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/accessctrl.h \
-  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/timer.h \
-  /home/pkcubed/pico-sdk/src/rp2350/pico_platform/include/pico/platform.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/cmsis/include/cmsis/rename_exceptions.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_panic/include/pico/platform/panic.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_sections/include/pico/platform/sections.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
-  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
-  /usr/include/newlib/_ansi.h \
-  /usr/include/newlib/_newlib_version.h \
-  /usr/include/newlib/assert.h \
-  /usr/include/newlib/inttypes.h \
-  /usr/include/newlib/machine/_default_types.h \
-  /usr/include/newlib/machine/_types.h \
-  /usr/include/newlib/machine/ieeefp.h \
-  /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
-  /usr/include/newlib/string.h \
-  /usr/include/newlib/strings.h \
-  /usr/include/newlib/sys/_intsup.h \
-  /usr/include/newlib/sys/_locale.h \
-  /usr/include/newlib/sys/_types.h \
-  /usr/include/newlib/sys/cdefs.h \
-  /usr/include/newlib/sys/config.h \
-  /usr/include/newlib/sys/features.h \
-  /usr/include/newlib/sys/lock.h \
-  /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4622,7 +4649,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -4633,7 +4659,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4646,9 +4671,14 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/device/dcd.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/host/hcd.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal.h \
+  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h \
   /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
   /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
@@ -4657,6 +4687,11 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/config.h \
   /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
   /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/types.h \
+  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
+  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/sem.h \
+  /home/pkcubed/pico-sdk/src/common/pico_time/include/pico/time.h \
   /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/platform_defs.h \
   /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/accessctrl.h \
   /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
@@ -4680,6 +4715,8 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /home/pkcubed/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
   /home/pkcubed/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h \
   /home/pkcubed/pico-sdk/src/rp2_common/hardware_resets/include/hardware/resets.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+  /home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
   /home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
   /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_common/include/pico/platform/common.h \
   /home/pkcubed/pico-sdk/src/rp2_common/pico_platform_compiler/include/pico/platform/compiler.h \
@@ -4698,7 +4735,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/machine/stdlib.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/stdlib.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
@@ -4710,7 +4746,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspber
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -4777,7 +4812,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -4788,7 +4822,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -7256,7 +7289,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/re
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -7267,7 +7299,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/re
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -7345,7 +7376,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -7356,7 +7386,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -7424,7 +7453,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
   /usr/include/newlib/machine/_types.h \
   /usr/include/newlib/machine/ieeefp.h \
   /usr/include/newlib/newlib.h \
-  /usr/include/newlib/stdio.h \
   /usr/include/newlib/string.h \
   /usr/include/newlib/strings.h \
   /usr/include/newlib/sys/_intsup.h \
@@ -7435,7 +7463,6 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
   /usr/include/newlib/sys/features.h \
   /usr/include/newlib/sys/lock.h \
   /usr/include/newlib/sys/reent.h \
-  /usr/include/newlib/sys/stdio.h \
   /usr/include/newlib/sys/string.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
   /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
@@ -7568,10 +7595,13 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
   /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h \
   /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
   /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/acd.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/arch.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/err.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/etharp.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/inet.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/init.h \
@@ -7589,13 +7619,19 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/acd.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/sockets.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/stats.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
   /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
+  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/udp.h \
   /home/pkcubed/pico-sdk/src/boards/include/boards/pico2.h \
   /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico.h \
   /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/assert.h \
@@ -7697,8 +7733,6 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 
 /home/pkcubed/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c:
 
-/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
-
 /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:
 
 /home/pkcubed/pico-sdk/src/rp2350/boot_stage2/include/boot_stage2/config.h:
@@ -7783,8 +7817,6 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 
 /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/qmi.h:
 
-/home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pads_qspi.h:
-
 /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/otp_data.h:
 
 /home/pkcubed/pico-sdk/src/rp2_common/hardware_flash/flash.c:
@@ -7855,6 +7887,10 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 
 /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c:
 
+/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c:
+
+/home/pkcubed/pico-sdk/lib/tinyusb/src/host/hcd.h:
+
 /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/usb_dpram.h:
 
 /home/pkcubed/pico-sdk/src/rp2_common/pico_double/double_math.c:
@@ -7862,8 +7898,6 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 /home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h:
 
 /home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c:
-
-/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c:
 
 /home/pkcubed/pico-sdk/lib/tinyusb/src/device/dcd.h:
 
@@ -7878,6 +7912,10 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/psm.h:
 
 /home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.h:
+
+/home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pads_qspi.h:
+
+/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c:
 
 /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c:
 
@@ -7956,6 +7994,8 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: /home/pkcubed/Documents/GitHub/SDR-Recei
 /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c:
 
 /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c:
+
+/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c:
 
 /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c:
 
@@ -8178,6 +8218,8 @@ external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h:
 /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/watchdog.h:
 
 /usr/include/newlib/sys/types.h:
+
+/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c:
 
 /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c:
 

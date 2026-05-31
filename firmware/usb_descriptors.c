@@ -86,17 +86,16 @@ uint8_t const *tud_descriptor_device_cb(void) {
 #define AUDIO_ISO_EP_LEN     TUD_AUDIO10_DESC_STD_AS_ISO_EP_LEN    /*  9 */
 #define AUDIO_CS_ISO_EP_LEN  TUD_AUDIO10_DESC_CS_AS_ISO_EP_LEN     /*  7 */
 
-/* Sum of IT + FU + OT (passed as _totallen to TUD_AUDIO10_DESC_CS_AC).
- * The macro adds the CS AC header (9 bytes) internally, giving a wire
- * wTotalLength of 9 + 34 = 43 bytes.                                        */
-#define AUDIO_CS_ENTITY_LEN  (AUDIO_IT_LEN + AUDIO_FU_LEN + AUDIO_OT_LEN) /* 34 */
+/* Sum of IT + OT (passed as _totallen to TUD_AUDIO10_DESC_CS_AC).
+ * The macro adds the CS AC header (9 bytes) internally. */
+#define AUDIO_CS_ENTITY_LEN  (AUDIO_IT_LEN + AUDIO_OT_LEN) /* 21 */
 
 /* Total audio block size = IAD + all audio descriptors */
 #define AUDIO_BLOCK_LEN  (AUDIO_IAD_LEN + AUDIO_STD_AC_LEN + AUDIO_CS_AC_LEN \
-                        + AUDIO_IT_LEN + AUDIO_FU_LEN + AUDIO_OT_LEN         \
+                        + AUDIO_IT_LEN + AUDIO_OT_LEN         \
                         + AUDIO_AS_ALT0_LEN + AUDIO_AS_ALT1_LEN               \
                         + AUDIO_CS_AS_LEN + AUDIO_FORMAT_LEN                  \
-                        + AUDIO_ISO_EP_LEN + AUDIO_CS_ISO_EP_LEN)             /* 112 */
+                        + AUDIO_ISO_EP_LEN + AUDIO_CS_ISO_EP_LEN)             /* 99 */
 
 /* CONFIG_TOTAL_LEN = config header(9) + CDC(66) + audio block(112) = 187 */
 #define CONFIG_TOTAL_LEN  (TUD_CONFIG_DESC_LEN + TUD_CDC_DESC_LEN + AUDIO_BLOCK_LEN)
@@ -129,17 +128,11 @@ static uint8_t const desc_configuration[] = {
     TUD_AUDIO10_DESC_CS_AC(0x0100, AUDIO_CS_ENTITY_LEN, 3),
     /*                     ^bcdADC ^sum of entities (34)  ^AS itf # */
 
-    /* 3c: Input Terminal — ID=1, Line-In (0x0603), assoc OT ID=3, 2ch */
-    TUD_AUDIO10_DESC_INPUT_TERM(1, 0x0603, 3, 2, 0x0003, 0, 0),
+    /* 3c: Input Terminal — ID=1, Microphone (0x0201), assoc OT ID=3, 2ch */
+    TUD_AUDIO10_DESC_INPUT_TERM(1, 0x0201, 3, 2, 0x0003, 0, 0),
 
-    /* 3d: Feature Unit — ID=2, source IT ID=1, mute on master+ch1+ch2 */
-    TUD_AUDIO10_DESC_FEATURE_UNIT(2, 1, 0,
-        0x0001,   /* bmaControls[0] = master, mute bit */
-        0x0001,   /* bmaControls[1] = ch1, mute bit    */
-        0x0001),  /* bmaControls[2] = ch2, mute bit    */
-
-    /* 3e: Output Terminal — ID=3, USB Streaming (0x0101), assoc IT ID=1 */
-    TUD_AUDIO10_DESC_OUTPUT_TERM(3, 0x0101, 1, 2, 0),
+    /* 3e: Output Terminal — ID=3, USB Streaming (0x0101), assoc IT ID=1, src ID=1 */
+    TUD_AUDIO10_DESC_OUTPUT_TERM(3, 0x0101, 1, 1, 0),
 
     /* 3f: Audio Streaming alt 0 (zero-bandwidth, no endpoints) */
     TUD_AUDIO10_DESC_STD_AS_INT(3, 0, 0, 0),
@@ -150,11 +143,11 @@ static uint8_t const desc_configuration[] = {
     /* CS AS general: bTerminalLink=3 (OT ID), bDelay=1, wFormatTag=PCM */
     TUD_AUDIO10_DESC_CS_AS_INT(3, 1, AUDIO10_DATA_FORMAT_TYPE_I_PCM),
 
-    /* Type I format: 2ch, 4-byte subframe, 24-bit, 48 kHz */
-    TUD_AUDIO10_DESC_TYPE_I_FORMAT(2, 4, 24, 48000U),
+    /* Type I format: 2ch, 2-byte subframe, 16-bit, 48 kHz */
+    TUD_AUDIO10_DESC_TYPE_I_FORMAT(2, 2, 16, 48000U),
 
-    /* Standard isochronous IN endpoint: EP1, async, 392 B max, interval 1 */
-    TUD_AUDIO10_DESC_STD_AS_ISO_EP(EPNUM_AUDIO_IN, 0x05, 392, 1, 0x00),
+    /* Standard isochronous IN endpoint: EP1, async, 196 B max, interval 1 */
+    TUD_AUDIO10_DESC_STD_AS_ISO_EP(EPNUM_AUDIO_IN, 0x05, 196, 1, 0x00),
 
     /* CS isochronous endpoint: sampling-frequency control, ms lock delay */
     TUD_AUDIO10_DESC_CS_AS_ISO_EP(

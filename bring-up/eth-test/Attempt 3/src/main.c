@@ -10,6 +10,7 @@
 #include "pico/stdlib.h"
 #include "pico/time.h"
 
+#include "lwip/dhcp.h"
 #include "lwip/init.h"
 #include "lwip/ip4_addr.h"
 
@@ -22,7 +23,11 @@
 #include "rmii_ethernet_phy_rx.pio.h"
 #include "hardware/clocks.h"
 
-#include "hardware/clocks.h"
+// Set to 1 to use DHCP, or 0 to use the static IPv4 settings below.
+#define USE_DHCP 1
+#define STATIC_IP_ADDR(ipaddr)      IP4_ADDR((ipaddr), 192, 168, 1, 100)
+#define STATIC_NETMASK_ADDR(ipaddr) IP4_ADDR((ipaddr), 255, 255, 255, 0)
+#define STATIC_GATEWAY_ADDR(ipaddr)  IP4_ADDR((ipaddr), 192, 168, 1, 1)
 
 // Setup 50MHz clock output on GPIO23 for LAN8720 reference clock
 static void setup_50mhz_clock(uint gpio_pin) {
@@ -166,17 +171,58 @@ void netif_status_callback(struct netif *netif) {
   printf("netif status changed %s\n", ip4addr_ntoa(netif_ip4_addr(netif)));
 }
 
+static struct netif *status_netif = NULL;
+
+static bool network_status_cb(repeating_timer_t *rt) {
+  (void)rt;
+
+  if (status_netif == NULL) {
+    return true;
+  }
+
+  char ip_buf[16];
+  char mask_buf[16];
+  char gw_buf[16];
+
+  ip4addr_ntoa_r(netif_ip4_addr(status_netif), ip_buf, sizeof(ip_buf));
+  ip4addr_ntoa_r(netif_ip4_netmask(status_netif), mask_buf, sizeof(mask_buf));
+  ip4addr_ntoa_r(netif_ip4_gw(status_netif), gw_buf, sizeof(gw_buf));
+
+  printf("NETWORK: link=%s up=%s dhcp=%s ip=%s mask=%s gw=%s\n",
+         netif_is_link_up(status_netif) ? "up" : "down",
+         netif_is_up(status_netif) ? "yes" : "no",
+         (USE_DHCP && dhcp_supplied_address(status_netif)) ? "lease" :
+             (USE_DHCP ? "waiting" : "static"),
+         ip_buf, mask_buf, gw_buf);
+
+  return true;
+}
+
+static void configure_networking(struct netif *netif) {
+  if (USE_DHCP) {
+    ip4_addr_t zero;
+    IP4_ADDR(&zero, 0, 0, 0, 0);
+    netif_set_addr(netif, &zero, &zero, &zero);
+
+    printf("Starting DHCP client...\n");
+    dhcp_start(netif);
+  } else {
+    ip4_addr_t ipaddr;
+    ip4_addr_t netmask;
+    ip4_addr_t gateway;
+    STATIC_IP_ADDR(&ipaddr);
+    STATIC_NETMASK_ADDR(&netmask);
+    STATIC_GATEWAY_ADDR(&gateway);
+    netif_set_addr(netif, &ipaddr, &netmask, &gateway);
+
+    printf("Static IP configured: %s\n", ip4addr_ntoa(netif_ip4_addr(netif)));
+  }
+}
+
 static bool led_blink_cb(repeating_timer_t *rt) {
   static bool on = false;
   on = !on;
   gpio_put(4, on);
-  return true;
-}
-
-// Heartbeat to verify USB serial works
-static bool heartbeat_cb(repeating_timer_t *rt) {
-  (void)rt;
-  printf("HEARTBEAT: system clk %4.2f MHz\n", (float)clock_get_hz(clk_sys)/1e6);
   return true;
 }
 
@@ -337,20 +383,13 @@ int main() {
   netif_set_link_callback(&netif, netif_link_callback);
   netif_set_status_callback(&netif, netif_status_callback);
 
-  // Configure a static IPv4 address
-  ip4_addr_t ipaddr;
-  ip4_addr_t netmask;
-  ip4_addr_t gateway;
-  IP4_ADDR(&ipaddr, 192, 168, 1, 100);
-  IP4_ADDR(&netmask, 255, 255, 255, 0);
-  IP4_ADDR(&gateway, 192, 168, 1, 1);
-  netif_set_addr(&netif, &ipaddr, &netmask, &gateway);
-
-  printf("Static IP configured: %s\n", ip4addr_ntoa(netif_ip4_addr(&netif)));
-
   // Set the default interface and bring it up
   netif_set_default(&netif);
   netif_set_up(&netif);
+
+  // Configure either DHCP or a static IPv4 address.
+  configure_networking(&netif);
+  status_netif = &netif;
 
   // Initialize LED on GPIO 4 and start 1 Hz blink timer
   gpio_init(4);
@@ -358,9 +397,9 @@ int main() {
   static repeating_timer_t led_timer;
   add_repeating_timer_ms(500, led_blink_cb, NULL, &led_timer);
 
-  // Periodic serial heartbeat to verify USB serial is alive
-  static repeating_timer_t heartbeat_timer;
-  add_repeating_timer_ms(1000, heartbeat_cb, NULL, &heartbeat_timer);
+  // Periodic network status report.
+  static repeating_timer_t network_status_timer;
+  add_repeating_timer_ms(5000, network_status_cb, NULL, &network_status_timer);
 
   // Simple raw-TCP HTTP server using lwIP raw API that serves a Hello World page
   // This runs via callbacks while core1 handles the RMII loop.

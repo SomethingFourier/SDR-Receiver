@@ -50,7 +50,7 @@ bool tud_audio_set_req_ep_cb(uint8_t rhport, const tusb_control_request_t *p_req
     return true;
 }
 
-bool tud_audio_set_req_ep_cb(uint8_t rhport, const tusb_control_request_t *p_request)
+bool tud_audio_get_req_ep_cb(uint8_t rhport, const tusb_control_request_t *p_request)
 {
     if (TU_U16_LOW(p_request->wIndex) != AUDIO_EP_IN)
     {
@@ -69,7 +69,7 @@ bool tud_audio_set_req_ep_cb(uint8_t rhport, const tusb_control_request_t *p_req
     return tud_audio_buffer_and_schedule_control_xfer(rhport, p_request, sample_rate, sizeof(sample_rate));
 }
 
-bool tud_audio_set_req_entity_cb(uint8_t rhport, const tusb_control_request_t *p_request)
+bool tud_audio_get_req_entity_cb(uint8_t rhport, const tusb_control_request_t *p_request)
 {
     uint8_t entity_id = TU_U16_HIGH(p_request->wIndex);
     uint8_t control_selector = TU_U16_HIGH(p_request->wValue);
@@ -81,6 +81,23 @@ bool tud_audio_set_req_entity_cb(uint8_t rhport, const tusb_control_request_t *p
 
         uint8_t control_value = current_mute[channel];
         return tud_audio_buffer_and_schedule_control_xfer(rhport, p_request, &control_value, sizeof(control_value));
+    }
+
+    return false;
+}
+
+bool tud_audio_set_req_entity_cb(uint8_t rhport, const tusb_control_request_t *p_request, uint8_t *pBuff)
+{
+    uint8_t entity_id = TU_U16_HIGH(p_request->wIndex);
+    uint8_t control_selector = TU_U16_HIGH(p_request->wValue);
+
+    if (entity_id == 2 && control_selector == AUDIO10_FU_CTRL_MUTE && p_request->bRequest == AUDIO10_CS_REQ_SET_CUR)
+    {
+        uint8_t channel = TU_U16_LOW(p_request->wValue);
+        if (channel > 2u) return false;
+
+        current_mute[channel] = pBuff[0];
+        return true;
     }
 
     return false;
@@ -98,15 +115,21 @@ void audio_task(void)
 {
     if (g_I2Srx.A_buffer_ready)
     {
-        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4;
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
         // Grab the IN endpoint FIFO and check how many bytes are backed up.
-        // If there's more than 1ms of audio (384 bytes) waiting, drop 1 frame (8 bytes).
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 384) {
-            bytes_to_write -= 8; 
+        // If there's more than 1ms of audio (192 bytes) waiting, drop 1 frame (4 bytes).
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 192) {
+            bytes_to_write -= 4; 
         }
 
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_A_Buffer(), bytes_to_write);
+        int16_t out_buf[AUDIO_SAMPLES_PER_BUFFER];
+        int32_t *in_buf = (int32_t *)g_I2Srx.Get_A_Buffer();
+        for (int i = 0; i < (bytes_to_write / 2); i++) {
+            out_buf[i] = (int16_t)(in_buf[i] >> 16);
+        }
+
+        uint16_t written = tud_audio_write((uint8_t *)out_buf, bytes_to_write);
         if (written > 0)
         {
             g_I2Srx.A_buffer_ready = false; 
@@ -115,13 +138,19 @@ void audio_task(void)
 
     if (g_I2Srx.B_buffer_ready)
     {
-        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 4;
+        int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 384) {
-            bytes_to_write -= 8; 
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 192) {
+            bytes_to_write -= 4; 
         }
 
-        uint16_t written = tud_audio_write((uint8_t *)g_I2Srx.Get_B_Buffer(), bytes_to_write);
+        int16_t out_buf[AUDIO_SAMPLES_PER_BUFFER];
+        int32_t *in_buf = (int32_t *)g_I2Srx.Get_B_Buffer();
+        for (int i = 0; i < (bytes_to_write / 2); i++) {
+            out_buf[i] = (int16_t)(in_buf[i] >> 16);
+        }
+
+        uint16_t written = tud_audio_write((uint8_t *)out_buf, bytes_to_write);
         if (written > 0) 
         {
             g_I2Srx.B_buffer_ready = false;

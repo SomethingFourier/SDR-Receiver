@@ -40,18 +40,6 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/accessctrl.h \
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_sync_spin_lock/include/hardware/sync/spin_lock.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
- /usr/include/newlib/inttypes.h /usr/include/newlib/sys/_intsup.h \
- /usr/include/newlib/sys/_locale.h /usr/include/newlib/string.h \
- /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
- /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
- /usr/include/newlib/sys/lock.h /usr/include/newlib/strings.h \
- /usr/include/newlib/sys/string.h /usr/include/newlib/stdio.h \
- /usr/include/newlib/sys/stdio.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/usb.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/usb.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/usb_dpram.h \
@@ -68,12 +56,22 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/timer.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/timer.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/device/dcd.h \
+ /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
+ /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
+ /home/pkcubed/pico-sdk/src/common/pico_time/include/pico/time.h \
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_common.h \
+ /usr/include/newlib/inttypes.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_locale.h /usr/include/newlib/string.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/strings.h \
+ /usr/include/newlib/sys/string.h \
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/osal/osal_pico.h \
- /home/pkcubed/pico-sdk/src/common/pico_time/include/pico/time.h \
  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/sem.h \
- /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/lock_core.h \
  /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/mutex.h \
- /home/pkcubed/pico-sdk/src/common/pico_sync/include/pico/critical_section.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.h \
+ /home/pkcubed/pico-sdk/lib/tinyusb/src/device/dcd.h

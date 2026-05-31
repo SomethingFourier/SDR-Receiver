@@ -40,14 +40,12 @@ external/pico-rmii-ethernet/examples/lwiperf/CMakeFiles/pico_rmii_ethernet_lwipe
  /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/strings.h \
- /usr/include/newlib/sys/string.h /usr/include/newlib/stdio.h \
- /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/sys/string.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \

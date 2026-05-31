@@ -69,7 +69,7 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/resets.h \
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/init.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/opt.h \
  /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
@@ -84,16 +84,11 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: \
  /usr/include/newlib/sys/_locale.h \
  /usr/lib/gcc/arm-none-eabi/13.2.1/include/limits.h \
  /usr/include/newlib/ctype.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h \
- /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
- /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/pio.h \
- /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pio.h \
- /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/netif.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/err.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
@@ -103,15 +98,29 @@ CMakeFiles/rp2350_app.dir/src/main.c.o: \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/sockets.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/inet.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
- /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/udp.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip4.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip6.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/acd.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/etharp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/acd.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/init.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h \
+ /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/pio.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pio.h \
+ /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/sockets.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/inet.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
  /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
  /usr/include/newlib/string.h /usr/include/newlib/strings.h \

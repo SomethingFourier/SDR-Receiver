@@ -983,24 +983,10 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/rp2350_app.dir/flags.make
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c
-
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c > CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -1014,7 +1000,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audi
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -1028,7 +1014,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_de
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -1042,7 +1028,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_de
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -1056,7 +1042,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -1070,7 +1056,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_de
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -1080,6 +1066,20 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c > CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
@@ -1095,10 +1095,24 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_de
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c > CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s
+
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -1112,7 +1126,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rn
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -1123,10 +1137,24 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_de
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c > CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i
+
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s
+
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -1140,7 +1168,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usb
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1154,7 +1182,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/ven
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1168,7 +1196,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/vide
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1182,7 +1210,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/tusb.c.s: cmake_
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.o -c /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1196,7 +1224,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_fifo
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: /home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1210,7 +1238,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_fix/rp2040_u
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: /home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o -c /home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1224,7 +1252,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_multicore/mu
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/rmii_ethernet.c
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o -MF CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o.d -o CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o -c "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/rmii_ethernet.c"
 
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.i: cmake_force
@@ -1238,7 +1266,7 @@ CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.o -c /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1252,7 +1280,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/pio.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: /home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.o -c /home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1266,7 +1294,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/hardware_dma/dma.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.i: cmake_force
@@ -1280,7 +1308,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i: cmake_force
@@ -1294,7 +1322,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_alloc.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i: cmake_force
@@ -1308,7 +1336,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/def.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/def.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.i: cmake_force
@@ -1322,7 +1350,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/def.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.i: cmake_force
@@ -1336,7 +1364,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/dns.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.i: cmake_force
@@ -1350,7 +1378,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/inet_chksum.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/init.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/init.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.i: cmake_force
@@ -1364,7 +1392,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/init.c.s: cmak
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.i: cmake_force
@@ -1378,7 +1406,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ip.c.s: cmake_
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.i: cmake_force
@@ -1392,7 +1420,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/mem.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.i: cmake_force
@@ -1406,7 +1434,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/memp.c.s: cmak
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.i: cmake_force
@@ -1420,7 +1448,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.i: cmake_force
@@ -1434,7 +1462,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/pbuf.c.s: cmak
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.i: cmake_force
@@ -1448,7 +1476,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/raw.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.i: cmake_force
@@ -1462,7 +1490,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/stats.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.i: cmake_force
@@ -1476,7 +1504,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/sys.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.i: cmake_force
@@ -1490,7 +1518,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.i: cmake_force
@@ -1504,7 +1532,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_in.c.s: cm
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.i: cmake_force
@@ -1518,7 +1546,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/tcp_out.c.s: c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.i: cmake_force
@@ -1532,7 +1560,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/timeouts.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.i: cmake_force
@@ -1546,7 +1574,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/udp.c.s: cmake
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i: cmake_force
@@ -1560,7 +1588,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i: cmake_force
@@ -1574,7 +1602,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i: cmake_force
@@ -1588,7 +1616,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i: cmake_force
@@ -1602,7 +1630,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i: cmake_force
@@ -1616,7 +1644,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i: cmake_force
@@ -1630,7 +1658,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i: cmake_force
@@ -1644,7 +1672,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i: cmake_force
@@ -1658,7 +1686,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.i: cmake_force
@@ -1672,7 +1700,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ethernet.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.i: cmake_force
@@ -1686,7 +1714,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/httpd.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.i: cmake_force
@@ -1700,7 +1728,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/apps/http/fs.c.s: c
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o: /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt\ 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o -MF CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o.d -o CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.o -c "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/external/pico-rmii-ethernet/src/lwip/sys_arch.c"
 
 CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.i: cmake_force
@@ -1714,7 +1742,7 @@ CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/lwip/sys_arch.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i: cmake_force
@@ -1728,7 +1756,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i: cmake_force
@@ -1742,7 +1770,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i: cmake_force
@@ -1756,7 +1784,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i: cmake_force
@@ -1770,7 +1798,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_123) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i: cmake_force
@@ -1784,7 +1812,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_124) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i: cmake_force
@@ -1798,7 +1826,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_125) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i: cmake_force
@@ -1812,7 +1840,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_126) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i: cmake_force
@@ -1826,7 +1854,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_127) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i: cmake_force
@@ -1840,7 +1868,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_128) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i: cmake_force
@@ -1854,7 +1882,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_129) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.i: cmake_force
@@ -1868,7 +1896,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_lib.c.s: cm
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_130) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.i: cmake_force
@@ -1882,7 +1910,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/api_msg.c.s: cm
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/err.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_131) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/err.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.i: cmake_force
@@ -1896,7 +1924,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/err.c.s: cmake_
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_132) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.i: cmake_force
@@ -1910,7 +1938,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/if_api.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_133) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.i: cmake_force
@@ -1924,7 +1952,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netbuf.c.s: cma
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.i: cmake_force
@@ -1938,7 +1966,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netdb.c.s: cmak
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_135) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.i: cmake_force
@@ -1952,7 +1980,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/netifapi.c.s: c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_136) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.i: cmake_force
@@ -1966,7 +1994,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/sockets.c.s: cm
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_137) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.i: cmake_force
@@ -1980,7 +2008,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/api/tcpip.c.s: cmak
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_138) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.i: cmake_force
@@ -1994,7 +2022,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_139) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i: cmake_force
@@ -2008,7 +2036,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.i: cmake_force
@@ -2022,7 +2050,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/slipif.c.s: c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i: cmake_force
@@ -2036,7 +2064,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_commo
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.i: cmake_force
@@ -2050,7 +2078,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i: cmake_force
@@ -2064,7 +2092,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.i: cmake_force
@@ -2078,7 +2106,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/zepif.c.s: cm
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i: cmake_force
@@ -2092,7 +2120,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_146) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i: cmake_force
@@ -2106,7 +2134,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_147) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i: cmake_force
@@ -2120,7 +2148,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_148) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i: cmake_force
@@ -2134,7 +2162,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_149) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i: cmake_force
@@ -2148,7 +2176,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/chap-new.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_150) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i: cmake_force
@@ -2162,7 +2190,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/demand.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_151) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i: cmake_force
@@ -2176,7 +2204,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_152) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i: cmake_force
@@ -2190,7 +2218,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_153) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i: cmake_force
@@ -2204,7 +2232,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_154) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i: cmake_force
@@ -2218,7 +2246,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_155) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i: cmake_force
@@ -2232,7 +2260,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_156) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i: cmake_force
@@ -2246,7 +2274,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_157) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i: cmake_force
@@ -2260,7 +2288,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_158) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i: cmake_force
@@ -2274,7 +2302,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_159) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i: cmake_force
@@ -2288,7 +2316,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_160) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i: cmake_force
@@ -2302,7 +2330,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/multilink
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_161) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i: cmake_force
@@ -2316,7 +2344,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s: 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_162) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i: cmake_force
@@ -2330,7 +2358,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_163) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i: cmake_force
@@ -2344,7 +2372,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_164) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i: cmake_force
@@ -2358,7 +2386,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_165) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i: cmake_force
@@ -2372,7 +2400,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_166) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i: cmake_force
@@ -2386,7 +2414,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_167) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i: cmake_force
@@ -2400,7 +2428,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_168) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i: cmake_force
@@ -2414,7 +2442,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_169) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i: cmake_force
@@ -2428,7 +2456,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s: c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_170) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_172) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i: cmake_force
@@ -2442,7 +2470,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_171) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_173) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i: cmake_force
@@ -2456,7 +2484,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_172) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_174) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i: cmake_force
@@ -2470,7 +2498,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_173) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_175) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i: cmake_force
@@ -2484,7 +2512,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o: CMakeFiles/rp2350_app.dir/flags.make
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o: /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o: CMakeFiles/rp2350_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_174) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_176) "Building C object CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o -MF CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o.d -o CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.o -c /home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c
 
 CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i: cmake_force
@@ -2563,16 +2591,18 @@ rp2350_app_OBJECTS = \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o" \
-"CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o" \
+"CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o" \
+"CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o" \
+"CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o" \
 "CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o" \
@@ -2741,16 +2771,18 @@ rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/h
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.o
-rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
+rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.o
+rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.o
+rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.o
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/video/video_device.c.o
@@ -2853,7 +2885,7 @@ rp2350_app.elf: CMakeFiles/rp2350_app.dir/build.make
 rp2350_app.elf: pico-sdk/src/rp2350/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
 rp2350_app.elf: /home/pkcubed/pico-sdk/src/rp2_common/pico_crt0/rp2350/memmap_default.ld
 rp2350_app.elf: CMakeFiles/rp2350_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_175) "Linking CXX executable rp2350_app.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_177) "Linking CXX executable rp2350_app.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rp2350_app.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/arm-none-eabi-objdump -h "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/rp2350_app.elf" > rp2350_app.dis
 	/usr/bin/arm-none-eabi-objdump -d "/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-test/Attempt 3/build/rp2350_app.elf" >> rp2350_app.dis

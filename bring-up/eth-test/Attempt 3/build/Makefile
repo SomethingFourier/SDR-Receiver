@@ -2541,6 +2541,30 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.o
+
+# target to build an object file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.o
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.i
+
+# target to preprocess a source file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.i
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.s
+
+# target to generate assembly for a file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.c.s
+
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o
 
@@ -2589,6 +2613,30 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.o
+
+# target to build an object file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.o
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.i
+
+# target to preprocess a source file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.i
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.s
+
+# target to generate assembly for a file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.c.s
+
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o
 
@@ -2636,6 +2684,30 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: home/pkcubed/pico-
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.o
+
+# target to build an object file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.o
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.i: home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.i
+
+# target to preprocess a source file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.i
+
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.s: home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.s
+
+# target to generate assembly for a file
+home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s
+.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o: home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o
@@ -2756,30 +2828,6 @@ home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.s: home/pkcubed/pico-sdk/lib/t
 home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.c.s
-
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.o: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.o
-
-# target to build an object file
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.o
-
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.i: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.i
-
-# target to preprocess a source file
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
-
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.s: home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.s
-
-# target to generate assembly for a file
-home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rp2350_app.dir/build.make CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
-.PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o: home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.o
 .PHONY : home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o
@@ -4604,18 +4652,27 @@ help:
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/hid/hid_device.s"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.o"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.i"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi2_device.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/midi/midi_device.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/msc/msc_device.s"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.o"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.i"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/mtp/mtp_device.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/net/ncm_device.s"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.o"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.i"
+	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/printer/printer_device.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s"
@@ -4631,9 +4688,6 @@ help:
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd.s"
-	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.o"
-	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.i"
-	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/device/usbd_control.s"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.o"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i"
 	@echo "... home/pkcubed/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s"

@@ -15,9 +15,7 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
  /usr/include/newlib/machine/_default_types.h \
  /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
  /usr/include/newlib/sys/lock.h /usr/include/newlib/strings.h \
- /usr/include/newlib/sys/string.h /usr/include/newlib/stdio.h \
- /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
- /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/sys/string.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/tusb_option.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/include/tusb_config.h \
@@ -42,8 +40,8 @@ CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/src/rp2_common/pico_stdio_usb/st
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/addressmap.h \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/sio.h \
  /home/pkcubed/pico-sdk/src/common/pico_base_headers/include/pico/error.h \
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_mcu.h \
- /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_compiler.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_verify.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_types.h \
  /home/pkcubed/pico-sdk/lib/tinyusb/src/common/tusb_debug.h \
