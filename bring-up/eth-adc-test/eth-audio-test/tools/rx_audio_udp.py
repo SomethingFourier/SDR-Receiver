@@ -23,8 +23,19 @@ import struct
 import sys
 import time
 import wave
+import threading
 from dataclasses import dataclass
 from pathlib import Path
+import queue
+import traceback
+try:
+    import pyaudio
+except ImportError:
+    pyaudio = None
+try:
+    import audioop
+except ImportError:
+    audioop = None
 
 HEADER_FMT = "<IBBBBIIIHH"
 HEADER_SIZE = struct.calcsize(HEADER_FMT)
@@ -131,6 +142,11 @@ def main() -> int:
         type=str,
         help="Optional IP address of the board. Sends a packet to tell the board to Unicast back to us (fixes Wi-Fi drops).",
     )
+    parser.add_argument(
+        "--play",
+        action="store_true",
+        help="Play audio live using PyAudio",
+    )
     args = parser.parse_args()
 
     out_fp = None
@@ -140,6 +156,32 @@ def main() -> int:
     wav_fp = None
     wav_path = args.wav_out
     wav_header_set = False
+    
+    pa = None
+    stream = None
+    audio_queue = None
+
+    if args.play:
+        if pyaudio is None:
+            print("Error: --play requires pyaudio. Please install it with 'pip install pyaudio'")
+            sys.exit(1)
+        pa = pyaudio.PyAudio()
+        audio_queue = queue.Queue(maxsize=100)
+
+        def audio_player_task():
+            while True:
+                item = audio_queue.get()
+                if item is None:
+                    break
+                try:
+                    if audioop is not None:
+                        item = audioop.lin2lin(item, 3, 2)
+                    # exception_on_underflow=False prevents stream crashes on Linux ALSA
+                    stream.write(item, exception_on_underflow=False)
+                except Exception as e:
+                    print(f"Playback error: {e}")
+
+        player_thread = threading.Thread(target=audio_player_task, daemon=True)
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -182,6 +224,20 @@ def main() -> int:
                     wav_fp.setframerate(hdr.sample_rate_hz)
                     wav_header_set = True
                 wav_fp.writeframes(payload)
+                
+            if args.play:
+                if stream is None:
+                    pa_format = pyaudio.paInt16 if audioop is not None else pyaudio.paInt24
+                    stream = pa.open(format=pa_format,
+                                     channels=hdr.channels,
+                                     rate=hdr.sample_rate_hz,
+                                     output=True,
+                                     frames_per_buffer=hdr.frame_count)
+                    player_thread.start()
+                try:
+                    audio_queue.put_nowait(payload)
+                except queue.Full:
+                    pass
 
             stats.note_packet(hdr, len(packet))
             if args.print_frames:
@@ -199,6 +255,13 @@ def main() -> int:
         if wav_fp is not None:
             wav_fp.close()
         sock.close()
+        if audio_queue is not None:
+            audio_queue.put(None)
+        if stream is not None:
+            stream.stop_stream()
+            stream.close()
+        if pa is not None:
+            pa.terminate()
 
     return 0
 
