@@ -6,8 +6,8 @@
 #include <hardware/pio.h>
 #include <hardware/dma.h>
 
-class dI2Srx
-{
+class dI2Srx {
+    
 public:
 	dI2Srx();
 

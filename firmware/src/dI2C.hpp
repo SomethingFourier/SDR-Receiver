@@ -5,6 +5,7 @@
 #include <hardware/i2c.h>
 
 class dI2C {
+	
 public:
 	dI2C();
 

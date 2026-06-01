@@ -31,7 +31,6 @@ add_executable(sdr
     src/dSSD1306.cpp
     src/dI2Srx.cpp
     src/dMUX.cpp
-    src/dEthernet.cpp
     src/interrupts.cpp
     src/i2s_receiver.pio
     src/SDR_State_Machine.cpp
@@ -44,7 +43,10 @@ pico_generate_pio_header(sdr
     ${I2S_PIO}
 )
 
-target_include_directories(sdr PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+target_include_directories(sdr PRIVATE 
+    ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}/src
+)
 
 target_link_libraries(sdr
     pico_stdlib
