@@ -1,23 +1,16 @@
 #include "USB-audio_functions.hpp"
 
-// C Libraries
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
-
 // Native Pico libraries
-#include <pico/stdlib.h>
-#include <pico/stdio.h>
 #include <pico/types.h>
 
+#include "dGPIO.hpp"
 #include "dI2Srx.hpp"
 
 // TinyUSB
 extern "C" {
-#include "tusb_config.h"
-#include "bsp/board_api.h"
-#include "tusb.h"
+// #include "tusb_config.h"
+// #include "bsp/board_api.h"
+// #include "tusb.h"
 }
 
 #define FIRMWARE_VERSION "1.0"
@@ -110,15 +103,15 @@ void audio_task(void) {
             bytes_to_write -= 4; 
         }
 
-        int16_t out_buf[AUDIO_SAMPLES_PER_BUFFER];
-        int32_t *in_buf = (int32_t *)g_I2Srx.Get_A_Buffer();
+        int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
+        int32_t *in_buffer = (int32_t *)g_I2Srx.Get_A_Buffer();
         for (int i = 0; i < (bytes_to_write / 2); i++) {
-            out_buf[i] = (int16_t)(in_buf[i] >> 16);
+            out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
         }
 
-        uint16_t written = tud_audio_write((uint8_t *)out_buf, bytes_to_write);
+        uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
         if (written > 0) {
-            g_I2Srx.A_buffer_ready = false; 
+            g_I2Srx.A_buffer_ready = false;
         }
     }
 
@@ -129,13 +122,13 @@ void audio_task(void) {
             bytes_to_write -= 4; 
         }
 
-        int16_t out_buf[AUDIO_SAMPLES_PER_BUFFER];
-        int32_t *in_buf = (int32_t *)g_I2Srx.Get_B_Buffer();
+        int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
+        int32_t *in_buffer = (int32_t *)g_I2Srx.Get_B_Buffer();
         for (int i = 0; i < (bytes_to_write / 2); i++) {
-            out_buf[i] = (int16_t)(in_buf[i] >> 16);
+            out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
         }
 
-        uint16_t written = tud_audio_write((uint8_t *)out_buf, bytes_to_write);
+        uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
         if (written > 0) {
             g_I2Srx.B_buffer_ready = false;
         }

@@ -12,22 +12,20 @@
 dI2C::dI2C() {} // constructor
 
 
-void dI2C::Init(i2c_inst_t *i2c_instance)
-{
+void dI2C::Init(i2c_inst_t *i2c_instance) {
+    
     master_i2c_instance = i2c_instance; // this is i2c0 by default
 	i2c_init(i2c_instance, 400 * 1000);
     gpio_set_function(SDA_PIN, GPIO_FUNC_I2C);
     gpio_set_function(SCL_PIN, GPIO_FUNC_I2C);
 } // Init()
 
-void dI2C::Scan()
-{
+void dI2C::Scan() {
     // This was copied from the example in the pico-sdk docs 
     printf("\nI2C Bus Scan\n");
     printf("   0  1  2  3  4  5  6  7  8  9  A  B  C  D  E  F\n");
  
-    for (uint8_t address = 0; address < (1 << 7); ++address)
-    {
+    for (uint8_t address = 0; address < (1 << 7); ++address) {
         if (address % 16 == 0) {
             printf("%02x ", address);
         }

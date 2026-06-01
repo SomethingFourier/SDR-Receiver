@@ -22,7 +22,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/i2s_receiver.pio)
+set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/drivers/i2s_receiver.pio)
 
 add_executable(sdr
     src/main.cpp
@@ -53,7 +53,6 @@ target_link_libraries(sdr
     pico_stdlib
     pico_stdio
     pico_multicore
-    pico_lwip
     hardware_clocks
     hardware_i2c
     hardware_dma

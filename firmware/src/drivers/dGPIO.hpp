@@ -6,8 +6,8 @@
 #define LED_WHITE   26
 #define LED_YELLOW  29
 
-#define ADC_MD0 6
-#define ADC_MD1 7
+#define ADC_M0 6
+#define ADC_M1 7
 #define ADC_RST 22
 
 #endif

@@ -18,32 +18,31 @@ NOTE: The very first word read is potentially corrupt, since there is a
 
 .program i2s_receiver
 
-.define BCK_PIN 0    // Maps to IN_BASE + 0 (19)
-.define LRCK_PIN 1   // Maps to IN_BASE + 1 (20)
-.define DATA_PIN 2   // Maps to IN_BASE + 2 (21)
+.define BCK_PIN 19
+.define LRCK_PIN 20
 
 start_sample_l:
-    wait 1 pin BCK_PIN      // DATA should be sampled on rising transition of BCK
+    wait 1 gpio BCK_PIN      // DATA should be sampled on rising transition of BCK
     in pins, 1              // first "bit" of new frame is actually LSB of last frame, per I2S
     push noblock            // push however many bits we read into the FIFO
-    wait 0 pin BCK_PIN      // ignore first BCK transition after edge
+    wait 0 gpio BCK_PIN      // ignore first BCK transition after edge
 public_entry_point:
-    wait 0 pin LRCK_PIN     // wait for L frame to come around before we start
+    wait 0 gpio LRCK_PIN     // wait for L frame to come around before we start
 sample_l:
-    wait 1 pin BCK_PIN      // DATA should be sampled on rising transition of BCK
+    wait 1 gpio BCK_PIN      // DATA should be sampled on rising transition of BCK
     in pins, 1              // read DATA
-    wait 0 pin BCK_PIN      // don't sample more than once per rising edge, wait for next clock
+    wait 0 gpio BCK_PIN      // don't sample more than once per rising edge, wait for next clock
     jmp pin start_sample_r  // if LRCK has gone high, we're "done" with this word (1 bit left to read)
     jmp sample_l
 start_sample_r:
-    wait 1 pin BCK_PIN      // wait for the last bit of the previous frame
+    wait 1 gpio BCK_PIN      // wait for the last bit of the previous frame
     in pins, 1              // first "bit" of new frame is actually LSB of last frame, per I2S
     push noblock            // push the completed word to the FIFO
-    wait 0 pin BCK_PIN      // wait for next clock cycle
+    wait 0 gpio BCK_PIN      // wait for next clock cycle
 sample_r:
-    wait 1 pin BCK_PIN
+    wait 1 gpio BCK_PIN
     in pins, 1
-    wait 0 pin BCK_PIN
+    wait 0 gpio BCK_PIN
     jmp pin sample_r        // if LRCK is still high, we're still sampling this word
                             // implicit jmp to start_sample_l: otherwise, start the loop over
 
@@ -58,8 +57,7 @@ sample_r:
  *  it, or 4x the BCK frequency (BCK is 64x fs, so 256x fs).
  */
 
-static inline void i2s_receiver_program_init(PIO pio, uint8_t sm, uint8_t offset, uint8_t sd_pin, uint8_t bck_pin, uint8_t ws_pin)
-{
+static inline void i2s_receiver_program_init(PIO pio, uint8_t sm, uint8_t offset, uint8_t sd_pin, uint8_t bck_pin, uint8_t ws_pin) {
 	pio_gpio_init(pio, sd_pin);
 	pio_gpio_init(pio, bck_pin);
 	pio_gpio_init(pio, ws_pin);
