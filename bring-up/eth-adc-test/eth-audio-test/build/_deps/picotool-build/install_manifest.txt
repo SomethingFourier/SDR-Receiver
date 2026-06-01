@@ -1,0 +1,7 @@
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/picotool
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/picotoolTargets.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/picotoolTargets-release.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/picotoolConfig.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/picotoolConfigVersion.cmake
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/enc_bootloader.elf
+/home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/_deps/picotool/enc_bootloader_mbedtls.elf

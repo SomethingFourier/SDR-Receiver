@@ -3,4 +3,5 @@ discrete-receiver/diode_tayloe_sdr-backups/*
 build/*
 firmware/build/*
 bring-up/eth-test/build/*
+bring-up/adc-test/build/*
 .vscode/

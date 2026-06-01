@@ -1,0 +1,55 @@
+--- tools/rx_audio_udp.py
++++ tools/rx_audio_udp.py
+@@ -23,6 +23,7 @@
+ import struct
+ import sys
+ import time
++import wave
+ from dataclasses import dataclass
+ from pathlib import Path
+ 
+@@ -118,12 +119,21 @@
+         "--print-frames",
+         action="store_true",
+         help="Print first frame of each packet for quick sanity checking",
+     )
++    parser.add_argument(
++        "--wav-out",
++        type=Path,
++        help="Optional output file for writing received audio to a WAV file",
++    )
+     args = parser.parse_args()
+ 
+     out_fp = None
+     if args.raw_out is not None:
+         out_fp = args.raw_out.open("wb")
++        
++    wav_fp = None
++    if args.wav_out is not None:
++        wav_fp = wave.open(str(args.wav_out), "wb")
+ 
+     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+@@ -148,6 +158,13 @@
+ 
+             if out_fp is not None:
+                 out_fp.write(payload)
++                
++            if wav_fp is not None:
++                if wav_fp.getnchannels() == 0:
++                    wav_fp.setnchannels(hdr.channels)
++                    wav_fp.setsampwidth(hdr.bytes_per_sample)
++                    wav_fp.setframerate(hdr.sample_rate_hz)
++                wav_fp.writeframes(payload)
+ 
+             stats.note_packet(hdr, len(packet))
+             if args.print_frames:
+@@ -161,6 +178,8 @@
+     finally:
+         if out_fp is not None:
+             out_fp.close()
++        if wav_fp is not None:
++            wav_fp.close()
+         sock.close()
+ 
+     return 0

@@ -1,0 +1,114 @@
+/*
+ * Copyright (c) Rob Scott, with portions copyrighted as below
+ *
+ * Copyright (c) 2021 Sandeep Mistry
+ *
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+
+// GPIO assignments for this board (from ETHERNET_CONFIG.md)
+.define public PICO_RMII_ETHERNET_SM_RX       1
+.define public PICO_RMII_ETHERNET_SM_TX       0
+.define public PICO_RMII_ETHERNET_RX_PIN      13 // rx pin start: CRS_DV, RXD0, RXD1 (GPIO 13,14,15)
+.define public PICO_RMII_ETHERNET_TX_PIN      10 // tx pin start: TX_EN, TXD0, TXD1 (GPIO 10,11,12)
+.define public PICO_RMII_ETHERNET_MDIO_PIN    16
+.define public PICO_RMII_ETHERNET_MDC_PIN     17
+.define public PICO_RMII_ETHERNET_RETCLK_PIN 23
+
+/*
+// GPIO assignments from the original RMII code
+.define public PICO_RMII_ETHERNET_SM_RX       1
+.define public PICO_RMII_ETHERNET_SM_TX       0
+.define public PICO_RMII_ETHERNET_RX_PIN      6 // rx pin start: RX0, RX1, CRS
+.define public PICO_RMII_ETHERNET_TX_PIN     10 // tx pin start: TX0, TX1, TX-EN
+.define public PICO_RMII_ETHERNET_MDIO_PIN   14
+.define public PICO_RMII_ETHERNET_MDC_PIN    15
+.define public PICO_RMII_ETHERNET_RETCLK_PIN 21
+*/
+
+// Comment out to disable generation of MDIO clock
+.define public GENERATE_MDIO_CLK 0
+
+// Uncomment to enable LAN8720a reset via GPIO
+// GPIO reset is strongly recommended when the RP2xxx is generating RMII clk.
+// The LAN8720a datasheet requires RMII clock running while in reset,
+// and the onboard RC network may not guarantee sufficient time for RP2xxx
+// to initialize clock output.
+.define public PICO_RMII_ETHERNET_RST_PIN     18
+
+// Uncomment to enable LAN8720a power via GPIO
+// This pin will stay at Vcc after reset
+//.define public PICO_RMII_ETHERNET_PWR_PIN     8
+
+// Uncomment one of the two following PIO programs:
+// The GENERATE_RMII_CLK define signals this selection to the rest of the code
+
+///*
+// PIO program 1: Use generated RMII clk from transmit PIO code
+// Assumes that we're running at 100 MHz, 2 times faster than RMII clk
+.define public GENERATE_RMII_CLK 1
+.program rmii_ethernet_phy_rx_data
+.wrap_target
+start:
+    wait 1 gpio PICO_RMII_ETHERNET_RX_PIN ; Wait for CR_DV assertion
+    wait 1 pin 1 [2]  ; Wait for Start of Frame Delimiter, align to sample clk
+sample:
+    in pins, 2        ; accumulate di-bits
+    jmp PIN, sample   ; as long as CRS_DV is asserted (on a byte boundary)
+    irq set 0         ; Signal end of active packet
+.wrap
+//*/
+
+/*
+// PIO program 2: Use module generated RMII clk
+// Assumes that we're running at 300 MHz, 6 times faster than RMII clk
+.program rmii_ethernet_phy_rx_data
+.wrap_target
+start:
+    wait 1 pin 2      ; Wait for CR_DV assertion
+    wait 1 pin 1 [4]  ; Wait for Start of Frame Delimiter, skip to next dibit
+sample:
+    ; Wait for rising edge of RMII: clock low, follwed by clock high
+    wait 0 gpio PICO_RMII_ETHERNET_RETCLK_PIN 
+    wait 1 gpio PICO_RMII_ETHERNET_RETCLK_PIN
+    in pins, 2        ; accumulate di-bits
+    jmp PIN, sample   ; as long as CRS_DV is asserted
+    irq set 0         ; Signal end of active packet
+.wrap
+*/
+
+% c-sdk {
+
+static inline void rmii_ethernet_phy_rx_init(PIO pio, uint sm, uint offset, uint pin, float div) {
+
+    // Make RX[1:0], CRS_DV inputs
+    pio_sm_set_consecutive_pindirs(pio, sm, pin, 3, false);
+
+    pio_sm_config c = rmii_ethernet_phy_rx_data_program_get_default_config(offset);
+
+    sm_config_set_in_pins(&c, pin + 1);
+
+    // Set jump pin to CR_DV
+    sm_config_set_jmp_pin(&c, pin);
+
+    // Set up pins
+    pio_gpio_init(pio, pin);      // RX0
+    pio_gpio_init(pio, pin + 1);  // RX1
+    pio_gpio_init(pio, pin + 2);  // CRS (data valid)
+    
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    sm_config_set_in_shift(&c, true, true, 8);
+
+    // Run at given RMII clock multiplier
+    sm_config_set_clkdiv(&c, div);
+    
+    pio_sm_init(pio, sm, offset, &c);
+
+    // Set synchronizer bypass bits - remove two sysclock delays...
+    //hw_set_bits(&pio->input_sync_bypass, 0x7u << pin);
+    //hw_set_bits(&pio->input_sync_bypass, 1 << PICO_RMII_ETHERNET_RETCLK_PIN);
+
+    pio_sm_set_enabled(pio, sm, true);
+}
+%}
