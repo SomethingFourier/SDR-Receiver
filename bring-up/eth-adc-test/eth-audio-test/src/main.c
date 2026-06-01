@@ -30,6 +30,9 @@
 #define STATIC_NETMASK_ADDR(ipaddr) IP4_ADDR((ipaddr), 255, 255, 255, 0)
 #define STATIC_GATEWAY_ADDR(ipaddr)  IP4_ADDR((ipaddr), 192, 168, 1, 1)
 
+// Set to 1 to completely disable UDP broadcast and require a unicast "HELLO" connect packet.
+#define AUDIO_REQUIRE_UNICAST_REQUEST 1
+
 #define AUDIO_UDP_PORT 4951
 #define AUDIO_SAMPLE_RATE_HZ 48000u
 #define AUDIO_CHANNEL_COUNT 2u
@@ -57,6 +60,19 @@ typedef struct __attribute__((packed)) {
 
 static struct udp_pcb *audio_udp_pcb = NULL;
 static ip_addr_t audio_udp_destination;
+static ip_addr_t audio_last_bcast_addr;
+static bool audio_use_unicast = false;
+
+static void audio_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port) {
+  if (p != NULL) {
+    ip_addr_copy(audio_udp_destination, *addr);
+    audio_use_unicast = true;
+    audio_last_bcast_addr = audio_udp_destination;
+    printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
+    pbuf_free(p);
+  }
+}
+
 static uint32_t audio_read_idx = 0;
 static uint32_t audio_sequence = 0;
 static uint16_t audio_frames_staged = 0;
@@ -409,6 +425,7 @@ static bool audio_udp_socket_init(void) {
   }
 
   ip_set_option(audio_udp_pcb, SOF_BROADCAST);
+  udp_recv(audio_udp_pcb, audio_udp_recv_cb, NULL);
 
   printf("AUDIO: UDP broadcaster ready on port %u\n", AUDIO_UDP_PORT);
   return true;
@@ -430,12 +447,22 @@ static bool audio_update_broadcast_destination(struct netif *netif) {
     return false;
   }
 
-  uint32_t bcast_host = (ip_host & mask_host) | (~mask_host);
-  ip4_addr_t bcast_addr;
-  ip4_addr_set_u32(&bcast_addr, lwip_htonl(bcast_host));
-  ip_addr_copy_from_ip4(audio_udp_destination, bcast_addr);
+  if (!audio_use_unicast) {
+#if AUDIO_REQUIRE_UNICAST_REQUEST
+    return false;
+#else
+    uint32_t bcast_host = (ip_host & mask_host) | (~mask_host);
+    ip4_addr_t bcast_addr;
+    ip4_addr_set_u32(&bcast_addr, lwip_htonl(bcast_host));
+    ip_addr_copy_from_ip4(audio_udp_destination, bcast_addr);
+#endif
+  }
   udp_bind_netif(audio_udp_pcb, netif);
 
+  if (audio_last_bcast_addr.addr != audio_udp_destination.addr) {
+    audio_last_bcast_addr = audio_udp_destination;
+    printf("AUDIO: UDP destination ready on port %u (%s)\n", AUDIO_UDP_PORT, ipaddr_ntoa(&audio_udp_destination));
+  }
   return true;
 }
 

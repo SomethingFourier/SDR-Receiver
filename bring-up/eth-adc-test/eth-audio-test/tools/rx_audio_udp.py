@@ -126,6 +126,11 @@ def main() -> int:
         type=Path,
         help="Optional output file for writing received audio to a WAV file",
     )
+    parser.add_argument(
+        "--target",
+        type=str,
+        help="Optional IP address of the board. Sends a packet to tell the board to Unicast back to us (fixes Wi-Fi drops).",
+    )
     args = parser.parse_args()
 
     out_fp = None
@@ -133,15 +138,22 @@ def main() -> int:
         out_fp = args.raw_out.open("wb")
         
     wav_fp = None
+    wav_path = args.wav_out
     wav_header_set = False
-    if args.wav_out is not None:
-        wav_fp = wave.open(str(args.wav_out), "wb")
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     sock.bind((args.bind, args.port))
 
     print(f"Listening on {args.bind}:{args.port}")
+    if args.target:
+        print(f"Sending connect packet to {args.target}:{args.port} to request UNICAST...")
+        try:
+            sock.sendto(b"HELLO", (args.target, args.port))
+        except Exception as e:
+            print(f"Warning: Failed to send connect packet to {args.target} - {e}")
+            print("Did you make sure to use the actual IP address printed in the serial terminal?")
+        
     stats = Stats()
 
     try:
@@ -161,7 +173,9 @@ def main() -> int:
             if out_fp is not None:
                 out_fp.write(payload)
                 
-            if wav_fp is not None:
+            if wav_path is not None:
+                if wav_fp is None:
+                    wav_fp = wave.open(str(wav_path), "wb")
                 if not wav_header_set:
                     wav_fp.setnchannels(hdr.channels)
                     wav_fp.setsampwidth(hdr.bytes_per_sample)
