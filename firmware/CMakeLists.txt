@@ -31,6 +31,7 @@ add_executable(sdr
     src/drivers/dSSD1306.cpp
     src/drivers/dI2Srx.cpp
     src/drivers/dMUX.cpp
+    src/drivers/dEthernet.cpp
     src/interrupts.cpp
     src/drivers/i2s_receiver.pio
     src/SDR_State_Machine.cpp
@@ -53,6 +54,7 @@ target_link_libraries(sdr
     pico_stdlib
     pico_stdio
     pico_multicore
+    pico_lwip
     hardware_clocks
     hardware_i2c
     hardware_dma
