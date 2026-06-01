@@ -26,13 +26,13 @@ set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/i2s_receiver.pio)
 
 add_executable(sdr
     src/main.cpp
-    src/dSi5351.cpp
-    src/dI2C.cpp
-    src/dSSD1306.cpp
-    src/dI2Srx.cpp
-    src/dMUX.cpp
+    src/drivers/dSi5351.cpp
+    src/drivers/dI2C.cpp
+    src/drivers/dSSD1306.cpp
+    src/drivers/dI2Srx.cpp
+    src/drivers/dMUX.cpp
     src/interrupts.cpp
-    src/i2s_receiver.pio
+    src/drivers/i2s_receiver.pio
     src/SDR_State_Machine.cpp
     src/USB-cdc_functions.cpp
     src/USB-audio_functions.cpp
@@ -46,6 +46,7 @@ pico_generate_pio_header(sdr
 target_include_directories(sdr PRIVATE 
     ${CMAKE_CURRENT_LIST_DIR}
     ${CMAKE_CURRENT_LIST_DIR}/src
+    ${CMAKE_CURRENT_LIST_DIR}/src/drivers
 )
 
 target_link_libraries(sdr
