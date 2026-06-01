@@ -62,11 +62,13 @@ static struct udp_pcb *audio_udp_pcb = NULL;
 static ip_addr_t audio_udp_destination;
 static ip_addr_t audio_last_bcast_addr;
 static bool audio_use_unicast = false;
+static uint32_t audio_last_hello_ms = 0;
 
 static void audio_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port) {
   if (p != NULL) {
     ip_addr_copy(audio_udp_destination, *addr);
     audio_use_unicast = true;
+    audio_last_hello_ms = to_ms_since_boot(get_absolute_time());
     audio_last_bcast_addr = audio_udp_destination;
     printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
     pbuf_free(p);
@@ -445,6 +447,13 @@ static bool audio_update_broadcast_destination(struct netif *netif) {
 
   if (ip_host == 0 || mask_host == 0) {
     return false;
+  }
+
+  if (audio_use_unicast) {
+    if (to_ms_since_boot(get_absolute_time()) - audio_last_hello_ms > 3000) {
+      printf("AUDIO: Client timeout. Stopping unicast stream.\n");
+      audio_use_unicast = false;
+    }
   }
 
   if (!audio_use_unicast) {

@@ -195,12 +195,26 @@ def main() -> int:
         except Exception as e:
             print(f"Warning: Failed to send connect packet to {args.target} - {e}")
             print("Did you make sure to use the actual IP address printed in the serial terminal?")
+            
+    sock.settimeout(0.5)
+    last_hello = time.time()
         
     stats = Stats()
 
     try:
         while True:
-            packet, addr = sock.recvfrom(4096)
+            if args.target and time.time() - last_hello > 1.0:
+                try:
+                    sock.sendto(b"HELLO", (args.target, args.port))
+                except Exception:
+                    pass
+                last_hello = time.time()
+                
+            try:
+                packet, addr = sock.recvfrom(4096)
+            except socket.timeout:
+                continue
+                
             hdr = parse_header(packet)
             if hdr is None:
                 stats.note_bad()
