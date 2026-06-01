@@ -24,8 +24,16 @@ dSi5351 g_Si5351;
 dSSD1306 g_SSD1306;
 dI2Srx g_I2Srx;
 
-int main (void)
-{
+int loop_timer = 0;
+int loop_duration = 0;
+int max_loop_duration = 0;
+
+
+void debug_task() {
+    printf("Loop duration: %d ms (max: %d ms)\n", loop_duration, max_loop_duration);
+}
+
+int main (void) {
     // LED config
     gpio_init(LED_RED);
     gpio_init(LED_GREEN);
@@ -53,10 +61,21 @@ int main (void)
 
     g_I2Srx.Start();
 
+    
+
     while (true)
     {
+        loop_timer = to_ms_since_boot(get_absolute_time()); // Start a stopwatch to measure loop duration
+
+        debug_task();
         audio_task();
         tud_task();
         cdc_task();
+
+        loop_duration = to_ms_since_boot(get_absolute_time()) - loop_timer; // Read stopwatch value to get loop duration
+        if (loop_duration > max_loop_duration)
+        {
+            max_loop_duration = loop_duration; // Update max loop duration if current loop is longer
+        }
     }
 }
