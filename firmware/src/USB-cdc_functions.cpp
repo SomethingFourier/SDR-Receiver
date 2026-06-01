@@ -24,59 +24,49 @@ extern "C" {
 #include "dI2C.hpp"
 
 // respond depending on command
-static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count)
-{
+static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
     // Null-terminate the buffer for string functions
     char string_buffer[65];
     uint32_t length = count < 64 ? count : 64;
     memcpy(string_buffer, cdc_buffer, length);
     string_buffer[length] = '\0';
 
-    if (length == 1 && string_buffer[0] == '\x04')
-    {
+    if (length == 1 && string_buffer[0] == '\x04') {
         const char *response = "SDR ready\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
-    else if (length == 1 && string_buffer[0] == '\x03')
-    {
+    else if (length == 1 && string_buffer[0] == '\x03') {
         // just eat the ctrl-c, do not respond
     }
-    else if (strncmp(string_buffer, "VER", 3) == 0)
-    {
+    else if (strncmp(string_buffer, "VER", 3) == 0) {
         // the VER command 
         const char* response = "VER,0.1\nOK\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
-    else if (strncmp(string_buffer, "XTAL", 4) == 0)
-    {
+    else if (strncmp(string_buffer, "XTAL", 4) == 0) {
         // the XTAL command 
         const char* response = "XTAL,24576000\nOK\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
-    else if (strncmp(string_buffer, "MODE", 4) == 0)
-    {
+    else if (strncmp(string_buffer, "MODE", 4) == 0) {
         // the MODE command 
         const char* response = "MODE,DIRECT\nOK\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
-    else if (strncmp(string_buffer, "RATE,", 5) == 0)
-    {
+    else if (strncmp(string_buffer, "RATE,", 5) == 0) {
         // the RATE command
         const char* response = "OK\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
-    else if (strncmp(string_buffer, "FREQ,", 5) == 0)
-    {
-        if (length < 12) // return current frequency; 12 was chosen for a reason, trust
-        {
+    else if (strncmp(string_buffer, "FREQ,", 5) == 0) {
+        if (length < 12) { // return current frequency; 12 was chosen for a reason, trust
             // the FREQ command
             char response[64];
             int chars_written = snprintf(response, sizeof(response), "%d\nOK,%c,0\n", g_Si5351.Get_Actual_Frequency(), g_Si5351.Get_PLLA_Mode());
 
             if (chars_written > 0) tud_cdc_n_write(0, response, strlen(response));
         }
-        else // program frequency
-        {
+        else { // program frequency
             // program the si5351a
             int requested_frequency;
             int clk_N;
@@ -89,8 +79,7 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count)
 
             int parameter_count = sscanf(string_buffer, "FREQ,%d,%d,%d,%d,%d,%d,%d,%d", &requested_frequency, &clk_N, &clk_a, &clk_b, &clk_c, &clk_P1, &clk_P2, &clk_P3);
 
-            if (parameter_count == 8)
-            {
+            if (parameter_count == 8) {
                 multicore_fifo_push_blocking((uint32_t)requested_frequency);
 
                 char pll_mode = g_Si5351.Get_PLLA_Mode();
@@ -102,18 +91,15 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count)
             }
         }
     }
-    else
-    {
+    else {
         const char* response = "ERR\r\n";
         tud_cdc_n_write(0, response, strlen(response));
     }
     tud_cdc_n_write_flush(0);
 } // respond_serial_port
 
-void cdc_task(void)
-{
-    if (tud_cdc_n_available(0))
-    {
+void cdc_task(void) {
+    if (tud_cdc_n_available(0)) {
         uint8_t message_buffer[64];
 
         uint32_t count = tud_cdc_n_read(0, message_buffer, sizeof(message_buffer));

@@ -28,8 +28,7 @@ void dI2C::Scan()
  
     for (uint8_t address = 0; address < (1 << 7); ++address)
     {
-        if (address % 16 == 0)
-        {
+        if (address % 16 == 0) {
             printf("%02x ", address);
         }
 
@@ -37,12 +36,10 @@ void dI2C::Scan()
         int ret;
         uint8_t rxdata;
 
-        if (Reserved_Address(address))
-        {
+        if (Reserved_Address(address)) {
             ret = PICO_ERROR_GENERIC;
         }
-        else
-        {
+        else {
             // use timeout version to prevent the bus from hanging indefinitely
             ret = i2c_read_timeout_us(master_i2c_instance, address, &rxdata, 1, false, 100000); // 100ms timeout
         }
@@ -54,7 +51,6 @@ void dI2C::Scan()
     printf("Done.\n");
 } // Scan()
 
-bool dI2C::Reserved_Address(uint8_t address)
-{
+bool dI2C::Reserved_Address(uint8_t address) {
     return (address & 0x78) == 0 || (address & 0x78) == 0x78;
 } // Reserved_Address()

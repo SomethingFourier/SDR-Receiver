@@ -4,8 +4,8 @@
 #include <string.h>
 #include <pico/types.h>
 
-class dSSD1306
-{
+class dSSD1306 {
+    
 public:
     // Standard SSD1306 configurations
     static constexpr uint8_t WIDTH = 128;

@@ -4,8 +4,8 @@
 #include <hardware/i2c.h>
 #include <pico/types.h>
 
-class dSi5351
-{
+class dSi5351 {
+	
 public:
 	dSi5351();
 

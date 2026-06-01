@@ -22,21 +22,22 @@ set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/i2s_receiver.pio)
+set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/i2s_receiver.pio)
 
 add_executable(sdr
-    main.cpp
-    dSi5351.cpp
-    dI2C.cpp
-    dSSD1306.cpp
-    dI2Srx.cpp
-    dMUX.cpp
-    interrupts.cpp
-    i2s_receiver.pio
-    SDR_State_Machine.cpp
-    USB-cdc_functions.cpp
-    USB-audio_functions.cpp
-    usb_descriptors.c
+    src/main.cpp
+    src/dSi5351.cpp
+    src/dI2C.cpp
+    src/dSSD1306.cpp
+    src/dI2Srx.cpp
+    src/dMUX.cpp
+    src/dEthernet.cpp
+    src/interrupts.cpp
+    src/i2s_receiver.pio
+    src/SDR_State_Machine.cpp
+    src/USB-cdc_functions.cpp
+    src/USB-audio_functions.cpp
+    src/usb_descriptors.c
 )
 
 pico_generate_pio_header(sdr
@@ -49,6 +50,8 @@ target_link_libraries(sdr
     pico_stdlib
     pico_stdio
     pico_multicore
+    pico_lwip
+    hardware_clocks
     hardware_i2c
     hardware_dma
     hardware_pio

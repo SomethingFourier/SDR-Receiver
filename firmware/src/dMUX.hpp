@@ -1,13 +1,11 @@
 #ifndef dMUX_H
 #define dMUX_H
 
-class dMUX
-{
+class dMUX {
 public:
 	dMUX();
 
-    enum receiver_configuration
-    {
+    enum receiver_configuration {
         HF,
         VHF_CHARLES,
         VHF_EXTERNAL

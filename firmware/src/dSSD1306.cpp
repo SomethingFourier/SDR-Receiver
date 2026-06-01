@@ -6,14 +6,12 @@
 
 #include "dI2C.hpp"
 
-dSSD1306::dSSD1306()
-{
+dSSD1306::dSSD1306() {
     memset(display_buffer, 0, sizeof(display_buffer)); // Initialize buffer to zeros
     display_buffer[0] = 0x40; // The SSD1306 'Data Stream' control byte
 } // Constructor
 
-void dSSD1306::Init()
-{
+void dSSD1306::Init() {
     // Standard SSD1306 Initialization Sequence for 128x64 screens
     const uint8_t initialization_commands[] = 
     {
@@ -45,13 +43,11 @@ void dSSD1306::Init()
     Update(); // Push blank buffer to ensure display isn't full of static
 } // Init
 
-void dSSD1306::Clear()
-{
+void dSSD1306::Clear() {
     memset(&display_buffer[1], 0, sizeof(display_buffer) - 1);
 } // Clear
 
-void dSSD1306::Update()
-{
+void dSSD1306::Update() {
     // Configure display to receive full buffer
     const uint8_t column_commands[3] = {0x21, 0, 127};
     // 0x21 Send_Command(0x21); // Set column address
@@ -68,29 +64,24 @@ void dSSD1306::Update()
     i2c_write_blocking(g_I2C.master_i2c_instance, I2C_ADDRESS, display_buffer, 1025, false);
 } // Update
 
-void dSSD1306::Draw_Pixel(int16_t x, int16_t y, bool is_on)
-{
+void dSSD1306::Draw_Pixel(int16_t x, int16_t y, bool is_on) {
     // Bounds check
-    if (x < 0 || x >= WIDTH || y < 0 || y >= HEIGHT)
-    {
+    if (x < 0 || x >= WIDTH || y < 0 || y >= HEIGHT) {
         return;
     }
 
     // Map x, y to the correct byte in the 1D buffer
-    if (is_on) 
-    {
+    if (is_on) {
         display_buffer[1 + x + (y / 8) * WIDTH] |= (1 << (y % 8));
     } 
-    else 
-    {
+    else {
         display_buffer[1 + x + (y / 8) * WIDTH] &= ~(1 << (y % 8));
     }
 } // Draw_Pixel
 
-void dSSD1306::Draw_Character(char character, uint8_t starting_x, uint8_t row)
-{
-    if (character < ' ' || character > '~')
-    {
+void dSSD1306::Draw_Character(char character, uint8_t starting_x, uint8_t row) {
+
+    if (character < ' ' || character > '~') {
         // requested character doesn't exist; default to space
         character = ' ';
     }
@@ -101,31 +92,25 @@ void dSSD1306::Draw_Character(char character, uint8_t starting_x, uint8_t row)
     uint16_t display_buffer_index = (row * 128) + starting_x + 1; // each row is 128 bytes wide, +1 because index 0 holds the control byte
 
     // put each column of the font in the buffer
-    for (uint8_t pixel_column_index = 0; pixel_column_index < 5; pixel_column_index++)
-    {
+    for (uint8_t pixel_column_index = 0; pixel_column_index < 5; pixel_column_index++) {
         display_buffer[display_buffer_index + pixel_column_index] = character_fonts[character_font_address];
         character_font_address++; // proceed to the next pixel column from font list
     }
     display_buffer[display_buffer_index + 5] = 0x00; // add a space
 } // Draw_Character
 
-void dSSD1306::Draw_Text(uint8_t row, const char message[21])
-{
-    if (row < 8)
-    {
+void dSSD1306::Draw_Text(uint8_t row, const char message[21]) {
+    if (row < 8) {
         // set x and y for this row
         uint8_t current_x = 0;
         bool end_of_message_reached = false;
-        for (uint8_t i = 0; i<21; i++)
-        {
-            if (message[i] == '\0' || end_of_message_reached)
-            {
+        for (uint8_t i = 0; i<21; i++) {
+            if (message[i] == '\0' || end_of_message_reached) {
                 end_of_message_reached = true;
                 Draw_Character(' ', current_x, row);
                 current_x += 6; // shift to next character slot (1 pixel spacing between characters of width 5)
             }
-            else
-            {
+            else {
                 Draw_Character(message[i], current_x, row);
                 current_x += 6; // shift to next character slot (1 pixel spacing between characters of width 5)
             }
@@ -133,33 +118,28 @@ void dSSD1306::Draw_Text(uint8_t row, const char message[21])
     }
 } // Draw_Text
 
-void dSSD1306::Clear_Row(uint8_t row)
-{
+void dSSD1306::Clear_Row(uint8_t row) {
     Draw_Text(row, "                     "); // fill the row with spaces
 } // Clear_Row
 
-const char * dSSD1306::Number_to_String(uint32_t number)
-{
+const char * dSSD1306::Number_to_String(uint32_t number) {
     static char result[11]; // 10 digits max for uint32_t, plus null terminator
     char temp[11];
     uint8_t index = 0;
 
-    if (number == 0)
-    {
+    if (number == 0) {
         result[0] = '0';
         result[1] = '\0';
         return result;
     }
 
-    while (number > 0 && index < 10)
-    {
+    while (number > 0 && index < 10) {
         temp[index++] = char('0' + (number % 10));
         number /= 10;
     }
 
     uint8_t out = 0;
-    while (index > 0)
-    {
+    while (index > 0) {
         result[out++] = temp[--index];
     }
     result[out] = '\0';
@@ -167,21 +147,18 @@ const char * dSSD1306::Number_to_String(uint32_t number)
     return result;
 } // Number_to_String
 
-void dSSD1306::Set_Contrast(uint8_t contrast)
-{
+void dSSD1306::Set_Contrast(uint8_t contrast) {
     Send_Command(0x81);     // Contrast command
     Send_Command(contrast); // 0-255
 } // Set_Contrast
 
-void dSSD1306::Invert_Display(bool invert)
-{
+void dSSD1306::Invert_Display(bool invert) {
     Send_Command(invert ? 0xA7 : 0xA6); // 0xA7 = Invert, 0xA6 = Normal
 } // Invert_Display
 
 // --- Internal I2C Helpers ---
 
-void dSSD1306::Send_Command(const uint8_t *commands, size_t number_of_commands)
-{
+void dSSD1306::Send_Command(const uint8_t *commands, size_t number_of_commands) {
     // temp buffer to hold control byte + commands
     uint8_t commands_buffer[number_of_commands + 1];
     commands_buffer[0] = control_byte;
@@ -192,15 +169,13 @@ void dSSD1306::Send_Command(const uint8_t *commands, size_t number_of_commands)
 } // Send_Command
 
 // Single-Command Wrapper for Send_Command
-void dSSD1306::Send_Command(uint8_t command)
-{
+void dSSD1306::Send_Command(uint8_t command) {
     Send_Command(&command, 1);
 } // Send_Command
 
 const uint8_t dSSD1306::control_byte;
 
-const uint8_t dSSD1306::character_fonts[475] = 
-{
+const uint8_t dSSD1306::character_fonts[475] =  {
   0x00, 0x00, 0x00, 0x00, 0x00, // SPACE
   0x00, 0x00, 0x17, 0x00, 0x00, // !
   0x00, 0x03, 0x00, 0x03, 0x00, // "

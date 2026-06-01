@@ -23,8 +23,7 @@
 
 dI2Srx::dI2Srx() {}
 
-void dI2Srx::Init(PIO i2s_pio_instance)
-{
+void dI2Srx::Init(PIO i2s_pio_instance) {
     // ADC configuration pins
     gpio_init(ADC_MD0);
     gpio_init(ADC_MD1);
@@ -64,21 +63,18 @@ void dI2Srx::Init(PIO i2s_pio_instance)
     uint sm;
     uint offset;
     bool success = pio_claim_free_sm_and_add_program_for_gpio_range(&i2s_receiver_program, &i2s_pio_instance, &sm, &offset, MIN_I2S_PIN, I2S_PIN_COUNT, true);
-    if (success)
-    {
+    if (success) {
         i2s_receiver_program_init(i2s_pio_instance, sm, offset, I2S_SD, I2S_BCLK, I2S_WS);
         pio_sm_set_enabled(i2s_pio_instance, sm, true);
         g_SSD1306.Draw_Text(0, "PIO SM Claim success!");
         g_SSD1306.Update();
     }
-    else
-    {
+    else {
         g_SSD1306.Draw_Text(0, "PIO SM Claim failed!");
         g_SSD1306.Update();
     }
 
-    if (success)
-    {
+    if (success) {
         // DREQ must match the PIO RX FIFO for the chosen SM
         uint dreq = pio_get_dreq(i2s_pio_instance, sm, false);
         channel_config_set_dreq(&dma_channel_0_config, dreq);
@@ -89,8 +85,7 @@ void dI2Srx::Init(PIO i2s_pio_instance)
         channel_config_set_chain_to(&dma_channel_1_config, audio_A_dma_channel);
 
         // Configure DMA channel A
-        dma_channel_configure
-        (
+        dma_channel_configure (
             audio_A_dma_channel,
             &dma_channel_0_config,
             audio_A_buffer,                 // write address (RAM)
@@ -100,8 +95,7 @@ void dI2Srx::Init(PIO i2s_pio_instance)
         );
 
         // Configure DMA channel B
-        dma_channel_configure
-        (
+        dma_channel_configure (
             audio_B_dma_channel,
             &dma_channel_1_config,
             audio_B_buffer,
@@ -115,24 +109,20 @@ void dI2Srx::Init(PIO i2s_pio_instance)
     }
 }
 
-void dI2Srx::Start()
-{
+void dI2Srx::Start() {
     gpio_put(ADC_RST, 1);
 }
     
 
-int * dI2Srx::Get_A_Buffer()
-{
+int * dI2Srx::Get_A_Buffer() {
     return audio_A_buffer;
 } // Get_A_Buffer
 
-int * dI2Srx::Get_B_Buffer()
-{
+int * dI2Srx::Get_B_Buffer() {
     return audio_B_buffer;
 } // Get_B_Buffer
 
-void dI2Srx::core1_entry()
-{
+void dI2Srx::core1_entry() {
     // Running on Core 1
     multicore_fifo_drain();
 

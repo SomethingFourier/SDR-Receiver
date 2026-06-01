@@ -4,8 +4,7 @@
 #include <pico/types.h>
 #include <hardware/i2c.h>
 
-class dI2C
-{
+class dI2C {
 public:
 	dI2C();
 

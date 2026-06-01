@@ -63,8 +63,7 @@ int main (void) {
 
     
 
-    while (true)
-    {
+    while (true) {
         loop_timer = to_ms_since_boot(get_absolute_time()); // Start a stopwatch to measure loop duration
 
         debug_task();
@@ -73,8 +72,7 @@ int main (void) {
         cdc_task();
 
         loop_duration = to_ms_since_boot(get_absolute_time()) - loop_timer; // Read stopwatch value to get loop duration
-        if (loop_duration > max_loop_duration)
-        {
+        if (loop_duration > max_loop_duration) {
             max_loop_duration = loop_duration; // Update max loop duration if current loop is longer
         }
     }
