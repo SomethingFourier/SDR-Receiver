@@ -42,7 +42,9 @@
 #include "rmii_ethernet/netif.h"
 
 // Uncomment to enable setting I/O thresholds to 1.8v
-#define EN_1V8
+// WARNING: Only enable this if your board's IOVDD is actually 1.8V!
+// On 3.3V boards (e.g. Pico 2), this causes CRC errors due to wrong input thresholds.
+//#define EN_1V8
 
 // Select PIO to use for Ethernet
 #define PICO_RMII_ETHERNET_PIO        pio0
@@ -83,6 +85,11 @@ static uint32_t rx_addr = 0;
 
 // Used by ethernet_poll()
 static uint32_t rx_prev_pkt_ptr = 0;
+
+// PIO RX recovery: restart SM after too many consecutive CRC errors
+// (indicates ISR bit-alignment corruption from a truncated packet)
+static uint32_t consecutive_crc_errors = 0;
+#define CRC_ERROR_RECOVERY_THRESHOLD 5
 
 // Max Ethernet frame size is:
 // mac src + mac dst + type + payload + crc
@@ -1387,8 +1394,31 @@ void netif_rmii_ethernet_poll() {
     if (rx_len == 0) {
       printf("*");
       pbuf_free(p);
+      consecutive_crc_errors++;
+
+      if (consecutive_crc_errors >= CRC_ERROR_RECOVERY_THRESHOLD) {
+        // PIO RX ISR is likely misaligned from a truncated packet.
+        // Restart the state machine to clear corrupted state.
+        pio_sm_set_enabled(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX, false);
+        pio_sm_clear_fifos(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX);
+        // Clear ISR and reset PC to program start while SM is stopped
+        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
+                    pio_encode_mov(pio_isr, pio_null));
+        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
+                    pio_encode_jmp(rx_sm_offset));
+        pio_sm_set_enabled(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX, true);
+
+        // Reset packet tracking to current DMA position
+        rx_addr = (uint32_t)dma_hw->ch[rx_dma_chan].write_addr
+                  - (uint32_t)&rx_ring[0];
+        rx_prev_pkt_ptr = rx_curr_pkt_ptr;
+        consecutive_crc_errors = 0;
+        printf("\nRX_RST\n");
+        break;
+      }
       continue;
     }
+    consecutive_crc_errors = 0;
 
     if (rmii_eth_netif->input(p, rmii_eth_netif) != ERR_OK) {
       pbuf_free(p);
