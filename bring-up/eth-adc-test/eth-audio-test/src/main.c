@@ -60,21 +60,43 @@ typedef struct __attribute__((packed)) {
 } audio_udp_header_t;
 
 static struct udp_pcb *audio_udp_pcb = NULL;
-static ip_addr_t audio_udp_destination;
+
+#define MAX_AUDIO_CLIENTS 4
+
+typedef struct {
+  ip_addr_t addr;
+  uint32_t last_hello_ms;
+  bool active;
+} audio_client_t;
+
+static audio_client_t audio_clients[MAX_AUDIO_CLIENTS];
+static bool audio_broadcast_active = false;
 static ip_addr_t audio_last_bcast_addr;
-static bool audio_use_unicast = false;
-static uint32_t audio_last_hello_ms = 0;
 
 static void audio_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port) {
   if (p != NULL) {
-    bool changed = !audio_use_unicast || (audio_udp_destination.addr != addr->addr);
-    ip_addr_copy(audio_udp_destination, *addr);
-    audio_use_unicast = true;
-    audio_last_hello_ms = to_ms_since_boot(get_absolute_time());
-    audio_last_bcast_addr = audio_udp_destination;
+    int empty_idx = -1;
+    bool found = false;
+    for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
+      if (audio_clients[i].active && audio_clients[i].addr.addr == addr->addr) {
+        audio_clients[i].last_hello_ms = to_ms_since_boot(get_absolute_time());
+        found = true;
+        break;
+      }
+      if (!audio_clients[i].active && empty_idx == -1) {
+        empty_idx = i;
+      }
+    }
     
-    if (changed) {
-      printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
+    if (!found) {
+      if (empty_idx != -1) {
+        ip_addr_copy(audio_clients[empty_idx].addr, *addr);
+        audio_clients[empty_idx].last_hello_ms = to_ms_since_boot(get_absolute_time());
+        audio_clients[empty_idx].active = true;
+        printf("AUDIO: Added UNICAST destination %s (slot %d)\n", ipaddr_ntoa(addr), empty_idx);
+      } else {
+        printf("AUDIO: Max clients reached, ignoring %s\n", ipaddr_ntoa(addr));
+      }
     }
     
     pbuf_free(p);
@@ -462,30 +484,36 @@ static bool audio_update_broadcast_destination(struct netif *netif) {
     return false;
   }
 
-  if (audio_use_unicast) {
-    if (to_ms_since_boot(get_absolute_time()) - audio_last_hello_ms > 3000) {
-      printf("AUDIO: Client timeout. Stopping unicast stream.\n");
-      audio_use_unicast = false;
+  uint32_t now = to_ms_since_boot(get_absolute_time());
+  bool any_active = false;
+
+  for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
+    if (audio_clients[i].active) {
+      if (now - audio_clients[i].last_hello_ms > 3000) {
+        printf("AUDIO: Client %s timeout. Stopping unicast stream.\n", ipaddr_ntoa(&audio_clients[i].addr));
+        audio_clients[i].active = false;
+      } else {
+        any_active = true;
+      }
     }
   }
 
-  if (!audio_use_unicast) {
-#if AUDIO_REQUIRE_UNICAST_REQUEST
-    return false;
-#else
+  audio_broadcast_active = false;
+#if !AUDIO_REQUIRE_UNICAST_REQUEST
+  if (!any_active) {
+    audio_broadcast_active = true;
     uint32_t bcast_host = (ip_host & mask_host) | (~mask_host);
     ip4_addr_t bcast_addr;
     ip4_addr_set_u32(&bcast_addr, lwip_htonl(bcast_host));
-    ip_addr_copy_from_ip4(audio_udp_destination, bcast_addr);
+    if (audio_last_bcast_addr.addr != bcast_addr.addr) {
+      audio_last_bcast_addr.addr = bcast_addr.addr;
+      printf("AUDIO: UDP broadcast destination ready on port %u (%s)\n", AUDIO_UDP_PORT, ipaddr_ntoa(&audio_last_bcast_addr));
+    }
+  }
 #endif
-  }
-  udp_bind_netif(audio_udp_pcb, netif);
 
-  if (audio_last_bcast_addr.addr != audio_udp_destination.addr) {
-    audio_last_bcast_addr = audio_udp_destination;
-    printf("AUDIO: UDP destination ready on port %u (%s)\n", AUDIO_UDP_PORT, ipaddr_ntoa(&audio_udp_destination));
-  }
-  return true;
+  udp_bind_netif(audio_udp_pcb, netif);
+  return any_active || audio_broadcast_active;
 }
 
 static void audio_udp_write_header(void) {
@@ -532,22 +560,53 @@ static void audio_udp_send_packet(struct netif *netif) {
     return;
   }
 
-  err_t send_err = udp_sendto_if_src(
-      audio_udp_pcb,
-      packet,
-      &audio_udp_destination,
-      AUDIO_UDP_PORT,
-      netif,
-      netif_ip4_addr(netif));
+  bool sent_any = false;
+  err_t send_err = ERR_OK;
+
+  for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
+    if (audio_clients[i].active) {
+      send_err = udp_sendto_if_src(
+          audio_udp_pcb,
+          packet,
+          &audio_clients[i].addr,
+          AUDIO_UDP_PORT,
+          netif,
+          netif_ip4_addr(netif));
+          
+      if (send_err == ERR_OK) {
+        sent_any = true;
+      } else {
+        audio_send_errors++;
+        audio_last_send_err = send_err;
+      }
+    }
+  }
+
+  if (audio_broadcast_active) {
+    send_err = udp_sendto_if_src(
+        audio_udp_pcb,
+        packet,
+        &audio_last_bcast_addr,
+        AUDIO_UDP_PORT,
+        netif,
+        netif_ip4_addr(netif));
+    if (send_err == ERR_OK) {
+        sent_any = true;
+    } else {
+        audio_send_errors++;
+        audio_last_send_err = send_err;
+    }
+  }
+
   pbuf_free(packet);
 
-  if (send_err == ERR_OK) {
+  if (sent_any) {
     audio_packets_sent++;
   } else {
     audio_packets_dropped++;
-    audio_send_errors++;
-    audio_last_send_err = send_err;
-    printf("AUDIO: udp_sendto_if_src failed err=%d\n", send_err);
+    if (send_err != ERR_OK) {
+        printf("AUDIO: udp_sendto_if_src failed err=%d\n", send_err);
+    }
   }
 
   audio_frames_staged = 0;
