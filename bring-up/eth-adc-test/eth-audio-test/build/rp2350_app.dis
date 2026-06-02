@@ -39,11 +39,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  17 .comment      00000026  00000000  00000000  00017a78  2**0
                   CONTENTS, READONLY
- 18 .debug_info   00076969  00000000  00000000  00017a9e  2**0
+ 18 .debug_info   0007696a  00000000  00000000  00017a9e  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_abbrev 000139d0  00000000  00000000  0008e407  2**0
+ 19 .debug_abbrev 000139d0  00000000  00000000  0008e408  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_loclists 00038b72  00000000  00000000  000a1dd7  2**0
+ 20 .debug_loclists 00038b72  00000000  00000000  000a1dd8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  21 .debug_aranges 000024d0  00000000  00000000  000da950  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -1249,9 +1249,9 @@ Disassembly of section .text:
 10000c22:	2004      	movs	r0, #4
 10000c24:	b095      	sub	sp, #84	@ 0x54
 10000c26:	f000 fba3 	bl	10001370 <gpio_init>
-10000c2a:	f04f 0401 	mov.w	r4, #1
-10000c2e:	2304      	movs	r3, #4
-10000c30:	ec44 3044 	gpioc_bit_oe_put r3, r4
+10000c2a:	2504      	movs	r5, #4
+10000c2c:	f04f 0401 	mov.w	r4, #1
+10000c30:	ec44 5044 	gpioc_bit_oe_put r5, r4
 10000c34:	2005      	movs	r0, #5
 10000c36:	f000 fb9b 	bl	10001370 <gpio_init>
 10000c3a:	2305      	movs	r3, #5
@@ -1266,8 +1266,8 @@ Disassembly of section .text:
 10000c54:	2109      	movs	r1, #9
 10000c56:	2017      	movs	r0, #23
 10000c58:	f000 fb02 	bl	10001260 <gpio_set_function>
-10000c5c:	2300      	movs	r3, #0
-10000c5e:	2206      	movs	r2, #6
+10000c5c:	462a      	mov	r2, r5
+10000c5e:	2300      	movs	r3, #0
 10000c60:	2108      	movs	r1, #8
 10000c62:	2017      	movs	r0, #23
 10000c64:	f001 fe1c 	bl	100028a0 <clock_gpio_init_int_frac16>
@@ -13632,7 +13632,7 @@ Disassembly of section .text:
 10008a6e:	4b14      	ldr	r3, [pc, #80]	@ (10008ac0 <arch_pico_init+0x6c>)
 10008a70:	4a14      	ldr	r2, [pc, #80]	@ (10008ac4 <arch_pico_init+0x70>)
 10008a72:	68db      	ldr	r3, [r3, #12]
-10008a74:	200c      	movs	r0, #12
+10008a74:	200b      	movs	r0, #11
 10008a76:	f083 0304 	eor.w	r3, r3, #4
 10008a7a:	b2db      	uxtb	r3, r3
 10008a7c:	60d3      	str	r3, [r2, #12]
@@ -13661,7 +13661,7 @@ Disassembly of section .text:
 10008abe:	bf00      	nop
 10008ac0:	400d0000 	.word	0x400d0000
 10008ac4:	400d1000 	.word	0x400d1000
-10008ac8:	000493e0 	.word	0x000493e0
+10008ac8:	00030d40 	.word	0x00030d40
 10008acc:	10013b1c 	.word	0x10013b1c
 10008ad0:	40038000 	.word	0x40038000
 10008ad4:	00000000 	.word	0x00000000

@@ -815,9 +815,9 @@ void arch_pico_init() {
 
 #ifdef GENERATE_RMII_CLK
   /* When generating the RMII clock internally we still want the
-     system clock at 300 MHz so GPOUT divider produces the expected
-     reference. Set clk_sys to 300 MHz but use 1.15V for RP2350 to prevent overheat. */
-  uint32_t target_clk = 300000000;
+     system clock at 200 MHz so GPOUT divider produces the expected
+     reference. Set clk_sys to 200 MHz but use 1.10V for RP2350 to prevent overheat. */
+  uint32_t target_clk = 200000000;
   
 #if defined(PICO_RP2350)
   #include "hardware/structs/qmi.h"
@@ -827,12 +827,12 @@ void arch_pico_init() {
   hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
 #endif
 
-  vreg_set_voltage(VREG_VOLTAGE_1_15);
+  vreg_set_voltage(VREG_VOLTAGE_1_10);
   set_sys_clock_khz(target_clk/1000, true);
 
 #else
-  // Must have 6 sysclks per RMII clock for sampling RMII bus properly
-  uint32_t target_clk = 300000000;
+  // Must have 4 sysclks per RMII clock for sampling RMII bus properly
+  uint32_t target_clk = 200000000;
   
 #if defined(PICO_RP2350)
   #include "hardware/structs/qmi.h"
@@ -842,7 +842,7 @@ void arch_pico_init() {
   hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
 #endif
 
-  vreg_set_voltage(VREG_VOLTAGE_1_15);
+  vreg_set_voltage(VREG_VOLTAGE_1_10);
   set_sys_clock_khz(target_clk/1000, true);
 #endif
 

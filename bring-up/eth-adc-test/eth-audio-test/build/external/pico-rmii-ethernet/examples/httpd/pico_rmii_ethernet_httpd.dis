@@ -12043,7 +12043,7 @@ Disassembly of section .text:
 100079c6:	4b14      	ldr	r3, [pc, #80]	@ (10007a18 <arch_pico_init+0x6c>)
 100079c8:	4a14      	ldr	r2, [pc, #80]	@ (10007a1c <arch_pico_init+0x70>)
 100079ca:	68db      	ldr	r3, [r3, #12]
-100079cc:	200c      	movs	r0, #12
+100079cc:	200b      	movs	r0, #11
 100079ce:	f083 0304 	eor.w	r3, r3, #4
 100079d2:	b2db      	uxtb	r3, r3
 100079d4:	60d3      	str	r3, [r2, #12]
@@ -12072,7 +12072,7 @@ Disassembly of section .text:
 10007a16:	bf00      	nop
 10007a18:	400d0000 	.word	0x400d0000
 10007a1c:	400d1000 	.word	0x400d1000
-10007a20:	000493e0 	.word	0x000493e0
+10007a20:	00030d40 	.word	0x00030d40
 10007a24:	10011ed8 	.word	0x10011ed8
 10007a28:	40038000 	.word	0x40038000
 10007a2c:	00000000 	.word	0x00000000

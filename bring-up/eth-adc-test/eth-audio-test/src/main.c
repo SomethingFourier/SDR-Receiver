@@ -96,8 +96,8 @@ static volatile int32_t audio_last_send_err = 0;
 // Setup 50MHz clock output on GPIO23 for LAN8720 reference clock
 static void setup_50mhz_clock(uint gpio_pin) {
   // Select which clock output to use (GPIO23 uses GPOUT2)
-  // System clock is 300MHz by default after arch_pico_init()
-  // To get 50MHz: 300MHz / 6 = 50MHz
+  // System clock is 200MHz by default after arch_pico_init()
+  // To get 50MHz: 200MHz / 4 = 50MHz
   
   // Configure GPIO to output GPOUT2 clock
   gpio_init(gpio_pin);
@@ -105,10 +105,10 @@ static void setup_50mhz_clock(uint gpio_pin) {
   // Set GPIO to output GPOUT2 
   gpio_set_function(gpio_pin, GPIO_FUNC_GPCK);
   
-  // Configure GPOUT2 to output sys clock divided by 6
+  // Configure GPOUT2 to output sys clock divided by 4
   // GPOUT typically outputs clk_sys/divisor
-  // We need 300MHz / 6 = 50MHz
-  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 6);
+  // We need 200MHz / 4 = 50MHz
+  clock_gpio_init(gpio_pin, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 4);
   
   printf("50MHz clock configured on GPIO %d\n", gpio_pin);
 }

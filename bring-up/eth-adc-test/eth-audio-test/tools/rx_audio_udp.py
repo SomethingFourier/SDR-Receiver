@@ -117,6 +117,18 @@ def dump_first_frame(payload: bytes, channels: int, bytes_per_sample: int) -> st
     return " first_frame=" + ",".join(str(s) for s in samples)
 
 
+def s24_to_s32(raw_chunk: bytes) -> bytes:
+    """Convert packed 24-bit little-endian to 32-bit little-endian (shifted up to 32-bit full scale)."""
+    n_samples = len(raw_chunk) // 3
+    out = bytearray(n_samples * 4)
+    # The LSB (out[0::4]) remains 0x00, naturally shifting the 24-bit value left by 8 bits
+    # This sign-extends correctly in 32-bit space for CoreAudio / PyAudio
+    out[1::4] = memoryview(raw_chunk)[0::3]
+    out[2::4] = memoryview(raw_chunk)[1::3]
+    out[3::4] = memoryview(raw_chunk)[2::3]
+    return bytes(out)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Receive RP2350 UDP audio packets")
     parser.add_argument("--bind", default="0.0.0.0", help="Bind address (default: 0.0.0.0)")
@@ -194,7 +206,8 @@ def main() -> int:
                             if hdr.sample_rate_hz > 48000:
                                 chunk, ratecv_state = audioop.ratecv(chunk, 2, hdr.channels, hdr.sample_rate_hz, 48000, ratecv_state)
                         else:
-                            chunk = raw_chunk
+                            # Use our fast pure-Python converter to 32-bit to avoid Mac PortAudio paInt24 bugs
+                            chunk = s24_to_s32(raw_chunk)
                         
                         stream.write(chunk, exception_on_underflow=False)
                     except Exception as e:
@@ -260,14 +273,18 @@ def main() -> int:
                 
             if args.play:
                 if stream is None:
-                    pa_format = pyaudio.paInt16 if audioop is not None else pyaudio.paInt24
+                    pa_format = pyaudio.paInt16 if audioop is not None else pyaudio.paInt32
                     play_rate = hdr.sample_rate_hz
-                    # 100ms buffer frames
-                    frames_per_buffer = int(hdr.sample_rate_hz * 0.1)
                     
                     if audioop is not None and hdr.sample_rate_hz > 48000:
                         play_rate = 48000
-                        frames_per_buffer = int(48000 * 0.1)
+                        
+                    if sys.platform == "darwin":
+                        # CoreAudio hates large explicit frames_per_buffer in blocking mode. Use unspecified (0).
+                        frames_per_buffer = pyaudio.paFramesPerBufferUnspecified
+                    else:
+                        # Linux ALSA needs a large hardware buffer to prevent underflows from network jitter
+                        frames_per_buffer = int(play_rate * 0.1)
                         
                     stream = pa.open(format=pa_format,
                                      channels=hdr.channels,

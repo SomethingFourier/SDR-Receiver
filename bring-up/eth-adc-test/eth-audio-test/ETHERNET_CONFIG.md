@@ -56,7 +56,7 @@ This configuration method ensures:
 
 ## 50MHz Clock Setup
 
-The RP2350's system clock is set to 300MHz by `arch_pico_init()`. The `setup_50mhz_clock()` function divides this by 6 to produce a 50MHz output clock on GPIO23, which the LAN8720 PHY requires as a reference clock.
+The RP2350's system clock is set to 200MHz by `arch_pico_init()`. The `setup_50mhz_clock()` function divides this by 4 to produce a 50MHz output clock on GPIO23, which the LAN8720 PHY requires as a reference clock.
 
 ## Related Files
 
