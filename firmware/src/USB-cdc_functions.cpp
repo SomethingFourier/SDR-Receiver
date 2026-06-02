@@ -58,7 +58,7 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
         tud_cdc_n_write(0, response, strlen(response));
     }
     else if (strncmp(string_buffer, "FREQ,", 5) == 0) {
-        if (length < 10) { // return current frequency; 12 was chosen for a reason, trust
+        if (length < 8) { // return current frequency; 12 was chosen for a reason, trust
             // the FREQ command
             char response[64];
             int chars_written = snprintf(response, sizeof(response), "%d\nOK,%c,0\n", g_Si5351.Get_Actual_Frequency(), g_Si5351.Get_PLLA_Mode());
@@ -77,9 +77,9 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
             else if (parameter_count == 1) {
                 multicore_fifo_push_blocking((uint32_t)requested_frequency);
 
-                int actual_frequency = g_Si5351.Set_Golden_Frequency_Quadrature(requested_frequency);
+                int actual_frequency = (int)multicore_fifo_pop_blocking();
+                char pll_mode = (char)multicore_fifo_pop_blocking();
 
-                char pll_mode = g_Si5351.Get_PLLA_Mode();
                 int frequency_offset = actual_frequency - requested_frequency;
                 if (frequency_offset < 0) {
                     frequency_offset = -1*frequency_offset;
@@ -88,6 +88,10 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
                 char response[64];
                 int chars_written = snprintf(response, sizeof(response), "%d\nOK,%c,%d\n", requested_frequency, pll_mode, frequency_offset);
                 if (chars_written > 0) {
+                    tud_cdc_n_write(0, response, strlen(response));
+                }
+                else {
+                    const char* response = "ARGUMENT TOO LONG\r\n";
                     tud_cdc_n_write(0, response, strlen(response));
                 }
             }

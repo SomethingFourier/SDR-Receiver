@@ -422,7 +422,7 @@ class Hardware(BaseHardware):
         multiplier = 4 if self._johnson_counter else 1
         si5351_hz = int(round(candidate['lo'] * multiplier))
         self._send(
-            f"FREQ,{si5351_hz},{candidate['n']},{candidate['a']},{candidate['b']},{candidate['c']},{candidate['p1']},{candidate['p2']},{candidate['p3']}"
+            f"FREQ,{si5351_hz}"
         )
         self._readline()
         ok_line = self._readline().decode(errors='replace').strip()
@@ -518,7 +518,10 @@ class Hardware(BaseHardware):
 
     def _set_parameter(self, cmd, arg):
         self._send(cmd + "," + arg)
-        self._get_argument()
+        for _ in range(5):
+            data = self._readline()
+            if len(data) == 0 or data.startswith(b'OK'):
+                break
         return True
 
     def _get_argument(self):

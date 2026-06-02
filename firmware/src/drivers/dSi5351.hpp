@@ -17,6 +17,7 @@ class dSi5351 {
 		int Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk);
 		int Get_Actual_Frequency();
 		char Get_PLLA_Mode();
+		void Set_Actual_Frequency(int freq) { actual_frequency = freq; }
 
 	private:
 		int actual_frequency;
