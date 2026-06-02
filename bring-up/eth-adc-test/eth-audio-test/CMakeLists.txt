@@ -32,7 +32,7 @@ set(ETHERNET_PIN_DEFS
 add_compile_options(${ETHERNET_PIN_DEFS})
 
 # Add the external pico-rmii-ethernet library
-add_subdirectory(external/pico-rmii-ethernet_nce)
+add_subdirectory(external/pico-rmii-ethernet)
 
 # Create the executable for the main project
 add_executable(rp2350_app

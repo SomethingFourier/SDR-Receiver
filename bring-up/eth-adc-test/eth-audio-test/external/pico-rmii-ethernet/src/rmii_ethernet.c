@@ -1167,7 +1167,8 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
 
 #ifdef PICO_RMII_ETHERNET_RST_PIN
   // Deassert reset after a minimum of 25 ms with the RMII clock active
-  sleep_ms(25);
+  // Using 50ms for extra margin to let the LAN8720a PLL stabilize
+  sleep_ms(50);
   // Drive reset high (push-pull) - no on-board pull-up
   gpio_put(PICO_RMII_ETHERNET_RST_PIN, 1);
 #endif
