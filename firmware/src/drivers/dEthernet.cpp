@@ -18,8 +18,7 @@
 #define STATIC_NETMASK_ADDR(ipaddr) IP4_ADDR((ipaddr), 255, 255, 255, 0)
 #define STATIC_GATEWAY_ADDR(ipaddr)  IP4_ADDR((ipaddr), 192, 168, 1, 1)
 
-dEthernet::dEthernet()
-{
+dEthernet::dEthernet() {
     gpio_init(LAN_CLOCK);
     gpio_set_function(LAN_CLOCK, GPIO_FUNC_GPCK);
     clock_gpio_init(LAN_CLOCK, CLOCKS_CLK_GPOUT2_CTRL_AUXSRC_VALUE_CLK_SYS, 6); // 50 MHz clock

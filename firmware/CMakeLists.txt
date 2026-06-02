@@ -22,7 +22,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 pico_sdk_init()
 
-set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/i2s_receiver.pio)
+set(I2S_PIO ${CMAKE_CURRENT_LIST_DIR}/src/drivers/i2s_receiver.pio)
 
 add_executable(sdr
     src/main.cpp
@@ -31,6 +31,7 @@ add_executable(sdr
     src/drivers/dSSD1306.cpp
     src/drivers/dI2Srx.cpp
     src/drivers/dMUX.cpp
+    src/drivers/dEthernet.cpp
     src/interrupts.cpp
     src/drivers/i2s_receiver.pio
     src/SDR_State_Machine.cpp

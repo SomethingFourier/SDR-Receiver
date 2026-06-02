@@ -20,7 +20,7 @@ int dMUX::Get_Receiver_Configuration_State() {
     return state;
 } // Get_Receiver_Configuration_State
 
-bool dMUX::Set_Receiver_Configuration_State(enum receiver_configuration configuration_number) {
+void dMUX::Set_Receiver_Configuration_State(enum receiver_configuration configuration_number) {
     state = configuration_number;
 } // Set_Receiver_Configuration_State
 
