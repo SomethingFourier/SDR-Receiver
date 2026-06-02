@@ -97,7 +97,6 @@ void cdc_task(void) {
     if (g_Si5351.CDC_Programming_Response_Needed()) { // if a program frequency request was sent out and has been completed by core 1
         // acknowledge flag
         g_Si5351.cdc_programming_response_needed = false;
-        gpio_xor_mask(1u << LED_GREEN);
 
         // respond to the user once the si5351a has been programmed
         char response[64];
@@ -112,7 +111,6 @@ void cdc_task(void) {
         tud_cdc_n_write_flush(0);
     }
     else if (tud_cdc_n_available(0)) {
-        gpio_xor_mask(1u << LED_YELLOW);
         uint8_t message_buffer[64];
 
         uint32_t count = tud_cdc_n_read(0, message_buffer, sizeof(message_buffer));
