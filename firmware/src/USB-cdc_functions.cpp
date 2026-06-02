@@ -62,7 +62,7 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
         if (length < 8) {
             // the FREQ command
             char response[64];
-            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Actual_Frequency());
+            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Actual_Quadrature_Frequency());
 
             if (chars_written > 0) tud_cdc_n_write(0, response, strlen(response));
         }
@@ -101,7 +101,7 @@ void cdc_task(void) {
 
         // respond to the user once the si5351a has been programmed
         char response[64];
-        int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Desired_Frequency(), g_Si5351.Get_Actual_Frequency());
+        int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Desired_Quadrature_Frequency(), g_Si5351.Get_Actual_Quadrature_Frequency());
         if (chars_written > 0) {
             tud_cdc_n_write(0, response, strlen(response));
         }
@@ -110,7 +110,6 @@ void cdc_task(void) {
             tud_cdc_n_write(0, response, strlen(response));
         }
         tud_cdc_n_write_flush(0);
-        gpio_xor_mask(1u << LED_RED);
     }
     else if (tud_cdc_n_available(0)) {
         gpio_xor_mask(1u << LED_YELLOW);

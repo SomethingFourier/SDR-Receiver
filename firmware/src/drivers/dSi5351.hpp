@@ -14,10 +14,10 @@ class dSi5351 {
 		bool Start_Outputs();
 		bool Stop_Outputs();
 		void Request_Frequency_Programming(uint32_t target_frequency);
-		int Set_Golden_Frequency_Quadrature(uint32_t target_frequency);
+		int Set_Golden_Quadrature_Frequency(uint32_t target_frequency);
 		int Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk);
-		int Get_Actual_Frequency();
-		int Get_Desired_Frequency();
+		int Get_Actual_Quadrature_Frequency();
+		int Get_Desired_Quadrature_Frequency();
 		int Get_Frequency_Offset();
 		bool Programming_Request_Exists();
 		bool CDC_Programming_Response_Needed();
@@ -26,8 +26,8 @@ class dSi5351 {
 		bool programming_request_exists;
 		bool cdc_programming_response_needed;
 
-		int actual_frequency;
-		int requested_frequency;
+		int actual_quadrature_frequency;
+		int requested_quadrature_frequency;
 		int frequency_offset;
 
 		static const uint8_t Si5351_ADDR = 0x60;

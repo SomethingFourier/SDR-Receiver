@@ -23,8 +23,8 @@ static const uint8_t SI5351_REG_PLL_RESET = 177;
 static const uint8_t SI5351_REG_XTAL_CL = 183;
 
 dSi5351::dSi5351() {
-    actual_frequency = 0;
-    requested_frequency = 0;
+    actual_quadrature_frequency = 0;
+    requested_quadrature_frequency = 0;
     frequency_offset = 0;
     programming_request_exists = false;
     cdc_programming_response_needed = false;
@@ -132,12 +132,12 @@ bool dSi5351::Stop_Outputs() {
 } // Stop_Outputs()
 
 void dSi5351::Request_Frequency_Programming(uint32_t target_frequency) {
-    requested_frequency = target_frequency;
+    requested_quadrature_frequency = target_frequency;
     programming_request_exists = true;
 } // Request_Frequency_Programming
 
 
-int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_frequency) {
+int dSi5351::Set_Golden_Quadrature_Frequency(uint32_t target_frequency) {
     uint32_t best_multiplier = 0;
     uint32_t best_multisynth_divider = 0;
     uint32_t best_frequency = 0;
@@ -223,7 +223,7 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_frequency) {
     }
 
     frequency_offset = target_frequency - best_frequency;
-    return actual_frequency = best_frequency;
+    return actual_quadrature_frequency = best_frequency;
 } // Set_Golden_Frequency_Quadrature()
 
 int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) {
@@ -302,15 +302,15 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) 
         return 0;
     }
 
-    return actual_frequency = best_frequency;
+    return actual_quadrature_frequency = best_frequency;
 } // Set_Frequency_Integer_Clk()
 
-int dSi5351::Get_Actual_Frequency() {
-    return actual_frequency;
+int dSi5351::Get_Actual_Quadrature_Frequency() {
+    return actual_quadrature_frequency;
 } // Get_Actual_Frequency
 
-int dSi5351::Get_Desired_Frequency() {
-    return requested_frequency;
+int dSi5351::Get_Desired_Quadrature_Frequency() {
+    return requested_quadrature_frequency;
 } // Get_Desired_Frequency
 
 int dSi5351::Get_Frequency_Offset() {
