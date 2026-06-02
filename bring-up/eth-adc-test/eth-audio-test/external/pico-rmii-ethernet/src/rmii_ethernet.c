@@ -994,6 +994,9 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
   // Wrap write address on ring size byte boundary
   channel_config_set_ring(&rx_dma_channel_config, true, RX_BUF_SIZE_POW);
 
+  // Set to HIGH priority so bulk pbuf transfers don't starve the RX FIFO!
+  channel_config_set_high_priority(&rx_dma_channel_config, true);
+
   // Fetch from rx PIO FIFO
   channel_config_set_dreq(&rx_dma_channel_config,
 			  pio_get_dreq(PICO_RMII_ETHERNET_PIO,
@@ -1047,6 +1050,9 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
 
   // Wrap read address on ring size byte boundary
   channel_config_set_ring(&tx_dma_channel_config, false, TX_BUF_SIZE_POW);
+
+  // Set to HIGH priority so bulk pbuf transfers don't starve the TX FIFO!
+  channel_config_set_high_priority(&tx_dma_channel_config, true);
 
   // Let TX PIO engine request data
   channel_config_set_dreq(&tx_dma_channel_config,
