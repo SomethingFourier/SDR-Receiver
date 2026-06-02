@@ -50,11 +50,14 @@ target_include_directories(sdr PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/src/drivers
 )
 
+add_subdirectory(external/pico-rmii-ethernet_nce)
+
 target_link_libraries(sdr
     pico_stdlib
     pico_stdio
     pico_multicore
     pico_lwip
+    pico_rmii_ethernet
     hardware_clocks
     hardware_i2c
     hardware_dma

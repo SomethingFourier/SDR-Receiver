@@ -10,7 +10,21 @@
 #include <lwip/inet.h>
 #include <lwip/tcp.h>
 
+#include <rmii_ethernet/netif.h>
+#include <rmii_ethernet_phy_rx.pio.h>
+
+#include "dI2Srx.hpp"
+
 #define LAN_CLOCK 23
+
+#define AUDIO_UDP_PORT 4951
+#define AUDIO_SAMPLE_RATE_HZ 48000u
+#define AUDIO_CHANNEL_COUNT 2u
+#define AUDIO_BYTES_PER_SAMPLE 3u
+#define AUDIO_PACKET_MS 5u
+#define AUDIO_RING_OVERRUN_THRESHOLD 96u
+#define AUDIO_RING_RECOVER_FRAMES 32u
+#define AUDIO_HEADER_MAGIC 0x30445541u  // 'AUD0'
 
 // Set to 1 to use DHCP, or 0 to use the static IPv4 settings below.
 #define USE_DHCP 1
