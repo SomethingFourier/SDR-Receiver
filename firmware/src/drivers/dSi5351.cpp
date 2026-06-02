@@ -28,7 +28,7 @@ dSi5351::dSi5351() {
 
 
 bool dSi5351::Init() {
-    
+    /*
     uint8_t status = 0x80u;
 
     // Disable all outputs while configuring.
@@ -41,18 +41,28 @@ bool dSi5351::Init() {
         return false; 
     }
 
+    // CLK0 setup
+    if (!Reg_Write(SI5351_REG_CLK0_CTRL, 0x0Fu)) {
+        return false; 
+    }
+
+    // CLK1 setup
+    if (!Reg_Write(SI5351_REG_CLK1_CTRL, 0x0Fu)) {
+        return false; 
+    }
+
     // Set crystal load capacitance to 10 pF.
     if (!Reg_Write(SI5351_REG_XTAL_CL, 0xD2u)) {
         return false;
     }
 
     // Force Multi-Synth A into integer mode
-    if (!Reg_Write(SI5351_REG_MSNA_INT, 0x40)) {
+    if (!Reg_Write(SI5351_REG_MSNA_INT, 0x00u)) {
         return false;
     }
 
     // Force Multi-Synth B into integer mode
-    if (!Reg_Write(SI5351_REG_MSNB_INT, 0x40)) {
+    if (!Reg_Write(SI5351_REG_MSNB_INT, 0x00)) {
         return false;
     }
 
@@ -67,6 +77,36 @@ bool dSi5351::Init() {
         sleep_ms(5);
     }
 
+    return false;
+    */
+   uint8_t status = 0x80u;
+
+    // Disable all outputs while configuring.
+    if (!Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, 0xFFu))
+    {
+        return false;
+    }
+
+    // Set crystal load capacitance to 10 pF.
+    if (!Reg_Write(SI5351_REG_XTAL_CL, 0xD2u))
+    {
+        return false;
+    }
+
+    // Wait for SYS_INIT (bit 7) to clear.
+    for (int i = 0; i < 200; ++i)
+    {
+        if (!Reg_Read(SI5351_REG_DEVICE_STATUS, &status))
+        {
+            return false;
+        }
+        if ((status & 0x80u) == 0u)
+        {
+            return true;
+        }
+        sleep_ms(5);
+    }
+    
     return false;
 } // Init()
 
@@ -150,23 +190,39 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
         return 0;
     }
 
-    // Integer-mode search for N and even M in valid ranges.
-    for (uint32_t n = 25; n <= 36; ++n) {
-        uint32_t vco_hz = XTAL_HZ * n;
-        if (vco_hz < 600000000u || vco_hz > 900000000u) {
+    // Search for golden frequency with quadrature constraints
+    // For exact 90-degree phase offset, M must be a multiple of 4 up to 508.
+    for (uint32_t m = 4u; m <= 508u; m += 4u) {
+        
+        uint64_t target_vco_hz = (uint64_t)target_hz * m;
+        
+        // Round to nearest integer multiplier
+        uint32_t n = (uint32_t)((target_vco_hz + (XTAL_HZ / 2u)) / XTAL_HZ);
+
+        // PLL Multiplier limits in integer mode
+        if (n < 15u || n > 90u) {
             continue;
         }
 
-        for (uint32_t m = 8; m <= 127; m += 2) {
-            uint32_t f_hz = vco_hz / m;
-            uint32_t err = (f_hz > target_hz) ? (f_hz - target_hz) : (target_hz - f_hz);
-            if (err < best_error)
-            {
-                best_error = err;
-                best_multiplier = n;
-                best_multisynth_divider = m;
-                best_frequency = f_hz;
-            }
+        uint64_t actual_vco_hz = (uint64_t)n * XTAL_HZ;
+        
+        // Internal VCO frequency limits
+        if (actual_vco_hz < 600000000ULL || actual_vco_hz > 900000000ULL) {
+            continue;
+        }
+
+        uint32_t f_hz = (uint32_t)(actual_vco_hz / m);
+        uint32_t err = (f_hz > target_hz) ? (f_hz - target_hz) : (target_hz - f_hz);
+
+        if (err < best_error) {
+            best_error = err;
+            best_multiplier = n;
+            best_multisynth_divider = m;
+            best_frequency = f_hz;
+        }
+
+        if (err == 0u) {
+            break; // Exact match found
         }
     }
 
@@ -175,11 +231,10 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
     }
 
     uint8_t pll_data[8];
-    uint8_t ms0_data[8];
-    uint8_t ms1_data[8];
+    uint8_t ms_data[8];
+    
     Pack_Integer_Params(best_multiplier, pll_data);
-    Pack_Integer_Params(best_multisynth_divider, ms0_data);
-    Pack_Integer_Params(best_multisynth_divider, ms1_data);
+    Pack_Integer_Params(best_multisynth_divider, ms_data);
 
     if (!Stop_Outputs()) {
         return 0;
@@ -189,14 +244,14 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
     if (!Write_Block(SI5351_REG_PLLA_BASE, pll_data, 8)) {
         return 0;
     }
-    if (!Write_Block(SI5351_REG_MS0_BASE, ms0_data, 8)) {
+    if (!Write_Block(SI5351_REG_MS0_BASE, ms_data, 8)) {
         return 0;
     }
-    if (!Write_Block(SI5351_REG_MS1_BASE, ms1_data, 8)) {
+    if (!Write_Block(SI5351_REG_MS1_BASE, ms_data, 8)) {
         return 0;
     }
 
-    // Integer mode on PLLA for both clock outputs.
+    // Integer mode, PLLA source, 8mA drive for both clock outputs.
     if (!Reg_Write(SI5351_REG_CLK0_CTRL, 0x4Fu)) {
         return 0;
     }
@@ -204,14 +259,15 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
         return 0;
     }
 
-    // 90-degree phase shift for Q channel in integer mode.
+    // 90-degree phase shift for Q channel (CLK1)
     if (!Reg_Write(SI5351_REG_CLK0_PHOFF, 0x00u)) {
         return 0;
     }
-    if (!Reg_Write(SI5351_REG_CLK1_PHOFF, (uint8_t)best_multisynth_divider)) {
+    if (!Reg_Write(SI5351_REG_CLK1_PHOFF, (uint8_t)((best_multisynth_divider / 4u) & 0x7Fu))) {
         return 0;
     }
 
+    // Reset PLLA to apply the phase shift synchronously
     if (!Reg_Write(SI5351_REG_PLL_RESET, 0x20u)) {
         return 0;
     }
@@ -221,7 +277,7 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
     }
 
     actual_frequency = (int)best_frequency;
-    return best_frequency;
+    return actual_frequency;
 } // Set_Golden_Frequency_Quadrature()
 
 int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
