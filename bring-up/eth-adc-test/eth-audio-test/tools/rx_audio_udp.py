@@ -166,20 +166,39 @@ def main() -> int:
             print("Error: --play requires pyaudio. Please install it with 'pip install pyaudio'")
             sys.exit(1)
         pa = pyaudio.PyAudio()
-        audio_queue = queue.Queue(maxsize=100)
+        audio_queue = queue.Queue(maxsize=10000)
 
         def audio_player_task():
+            buffer = bytearray()
+            ratecv_state = None
+            print("Audio player thread started! Waiting for packets...")
+            
+            # Target 100ms chunks: 192000Hz * 0.1s = 19200 frames.
+            # 19200 frames * 6 bytes (24-bit stereo) = 115200 bytes.
+            # This requires 80 packets of 1440 bytes.
+            chunk_bytes = 115200
+            
             while True:
                 item = audio_queue.get()
                 if item is None:
                     break
-                try:
-                    if audioop is not None:
-                        item = audioop.lin2lin(item, 3, 2)
-                    # exception_on_underflow=False prevents stream crashes on Linux ALSA
-                    stream.write(item, exception_on_underflow=False)
-                except Exception as e:
-                    print(f"Playback error: {e}")
+                buffer.extend(item)
+                
+                while len(buffer) >= chunk_bytes:
+                    raw_chunk = bytes(buffer[:chunk_bytes])
+                    del buffer[:chunk_bytes]
+                    
+                    try:
+                        if audioop is not None:
+                            chunk = audioop.lin2lin(raw_chunk, 3, 2)
+                            if hdr.sample_rate_hz > 48000:
+                                chunk, ratecv_state = audioop.ratecv(chunk, 2, hdr.channels, hdr.sample_rate_hz, 48000, ratecv_state)
+                        else:
+                            chunk = raw_chunk
+                        
+                        stream.write(chunk, exception_on_underflow=False)
+                    except Exception as e:
+                        print(f"Playback error: {e}")
 
         player_thread = threading.Thread(target=audio_player_task, daemon=True)
 
@@ -242,11 +261,19 @@ def main() -> int:
             if args.play:
                 if stream is None:
                     pa_format = pyaudio.paInt16 if audioop is not None else pyaudio.paInt24
+                    play_rate = hdr.sample_rate_hz
+                    # 100ms buffer frames
+                    frames_per_buffer = int(hdr.sample_rate_hz * 0.1)
+                    
+                    if audioop is not None and hdr.sample_rate_hz > 48000:
+                        play_rate = 48000
+                        frames_per_buffer = int(48000 * 0.1)
+                        
                     stream = pa.open(format=pa_format,
                                      channels=hdr.channels,
-                                     rate=hdr.sample_rate_hz,
+                                     rate=play_rate,
                                      output=True,
-                                     frames_per_buffer=hdr.frame_count)
+                                     frames_per_buffer=frames_per_buffer)
                     player_thread.start()
                 try:
                     audio_queue.put_nowait(payload)

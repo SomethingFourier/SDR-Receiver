@@ -706,6 +706,19 @@ static err_t netif_rmii_ethernet_output(struct netif *netif, struct pbuf *p) {
   // Wait for space in buffer
   while (plen > tx_free) {
     sleep_us(10);
+    
+    // CRITICAL FIX: If the currently active DMA transfer finishes while we are waiting
+    // for space, we MUST start the next queued transfer! Otherwise, the DMA will remain
+    // idle, `curr_rd` will never advance, and we will deadlock forever.
+    // If the DMA stays idle, the PIO TX FIFO empties, the PIO state machine blocks,
+    // and the RMII clock COMPLETELY STOPS, crashing the LAN8720!
+    uint32_t irq_save = save_and_disable_interrupts();
+    if (!dma_channel_is_busy(tx_dma_chan) && tx_rd_pkt_ptr != tx_curr_pkt_ptr) {
+      dma_channel_hw_addr(tx_dma_chan)->al1_transfer_count_trig = tx_pkt_ptr[tx_rd_pkt_ptr];
+      tx_rd_pkt_ptr = (tx_rd_pkt_ptr + 1) & TX_NUM_MASK;
+    }
+    restore_interrupts(irq_save);
+
     curr_rd = (dma_hw->ch[tx_dma_chan].read_addr) & TX_BUF_MASK;
     tx_free = TX_BUF_SIZE - ((curr_wr - curr_rd) & TX_BUF_MASK);
   }
@@ -803,7 +816,7 @@ void arch_pico_init() {
 #ifdef GENERATE_RMII_CLK
   /* When generating the RMII clock internally we still want the
      system clock at 300 MHz so GPOUT divider produces the expected
-     reference. Enable higher VREG and set clk_sys to 300 MHz. */
+     reference. Set clk_sys to 300 MHz but use 1.15V for RP2350 to prevent overheat. */
   uint32_t target_clk = 300000000;
   
 #if defined(PICO_RP2350)
@@ -814,7 +827,7 @@ void arch_pico_init() {
   hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
 #endif
 
-  vreg_set_voltage(VREG_VOLTAGE_1_30);
+  vreg_set_voltage(VREG_VOLTAGE_1_15);
   set_sys_clock_khz(target_clk/1000, true);
 
 #else
@@ -829,7 +842,7 @@ void arch_pico_init() {
   hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
 #endif
 
-  vreg_set_voltage(VREG_VOLTAGE_1_30);
+  vreg_set_voltage(VREG_VOLTAGE_1_15);
   set_sys_clock_khz(target_clk/1000, true);
 #endif
 
@@ -1358,19 +1371,25 @@ void netif_rmii_ethernet_poll() {
       
     struct pbuf* p = pbuf_alloc(PBUF_RAW, rx_packet_byte_count, PBUF_POOL);
 
+    if (p == NULL) {
+      printf("!"); // Memory allocation failed or packet too large (corrupted)
+      continue;
+    }
+
     // Push packet from ring buffer into LWIP pbuf
     uint32_t rx_len = ethernet_frame_to_pbuf(rx_ring,
 					     p,
 					     rx_packet_byte_count,
 					     rx_packet_addr);
 
-    if (rmii_eth_netif->input(p, rmii_eth_netif) != ERR_OK) {
-      pbuf_free(p);
-    }
-
     // Indicate CRC errors
     if (rx_len == 0) {
       printf("*");
+      pbuf_free(p);
+      continue;
+    }
+
+    if (rmii_eth_netif->input(p, rmii_eth_netif) != ERR_OK) {
       pbuf_free(p);
     }
   }

@@ -640,9 +640,17 @@ int main() {
   // Initialize the PIO-based RMII Ethernet network interface
   // Run a quick MDIO bit-bang diagnostic before initializing the driver
 #ifdef PICO_RMII_ETHERNET_RST_PIN
+  // Hard reset the PHY to clear any weird states from previous runs
+  gpio_init(PICO_RMII_ETHERNET_RST_PIN);
+  gpio_set_dir(PICO_RMII_ETHERNET_RST_PIN, GPIO_OUT);
+  
+  // Pull reset low for 50ms
+  gpio_put(PICO_RMII_ETHERNET_RST_PIN, 0);
+  sleep_ms(50);
+  
   // Deassert reset pin so the PHY is active during diagnostic checks
   gpio_put(PICO_RMII_ETHERNET_RST_PIN, 1);
-  sleep_ms(100);
+  sleep_ms(150); // Give it time to boot and stabilize its PLLs
 #endif
   printf("Running MDIO bit-bang diagnostic...\n");
   fflush(stdout);
