@@ -22,6 +22,7 @@
 #include <string.h>
 #include "rmii_ethernet_phy_rx.pio.h"
 #include "hardware/clocks.h"
+#include "hardware/gpio.h"
 #include "audio_i2s.h"
 
 // Set to 1 to use DHCP, or 0 to use the static IPv4 settings below.
@@ -34,15 +35,15 @@
 #define AUDIO_REQUIRE_UNICAST_REQUEST 1
 
 #define AUDIO_UDP_PORT 4951
-#define AUDIO_SAMPLE_RATE_HZ 48000u
+#define AUDIO_SAMPLE_RATE_HZ 192000u
 #define AUDIO_CHANNEL_COUNT 2u
 #define AUDIO_BYTES_PER_SAMPLE 3u
-#define AUDIO_PACKET_MS 5u
-#define AUDIO_RING_OVERRUN_THRESHOLD 96u
-#define AUDIO_RING_RECOVER_FRAMES 32u
+#define AUDIO_PACKET_MS 1u
+#define AUDIO_RING_OVERRUN_THRESHOLD 384u
+#define AUDIO_RING_RECOVER_FRAMES 192u
 #define AUDIO_HEADER_MAGIC 0x30445541u  // 'AUD0'
 
-#define AUDIO_FRAMES_PER_PACKET ((AUDIO_SAMPLE_RATE_HZ * AUDIO_PACKET_MS) / 1000u)
+#define AUDIO_FRAMES_PER_PACKET 240u // 1.25ms at 192kHz fits perfectly under 1500 byte MTU
 #define AUDIO_PAYLOAD_BYTES (AUDIO_FRAMES_PER_PACKET * AUDIO_CHANNEL_COUNT * AUDIO_BYTES_PER_SAMPLE)
 
 typedef struct __attribute__((packed)) {

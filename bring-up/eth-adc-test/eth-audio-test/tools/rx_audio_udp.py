@@ -211,7 +211,7 @@ def main() -> int:
                 last_hello = time.time()
                 
             try:
-                packet, addr = sock.recvfrom(4096)
+                packet, addr = sock.recvfrom(8192)
             except socket.timeout:
                 continue
                 
