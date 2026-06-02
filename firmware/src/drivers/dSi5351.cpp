@@ -23,7 +23,11 @@ static const uint8_t SI5351_REG_PLL_RESET = 177;
 static const uint8_t SI5351_REG_XTAL_CL = 183;
 
 dSi5351::dSi5351() {
-    actual_frequency = 0;
+    actual_quadrature_frequency = 0;
+    requested_quadrature_frequency = 0;
+    frequency_offset = 0;
+    programming_request_exists = false;
+    cdc_programming_response_needed = false;
 } // constructor
 
 
@@ -127,14 +131,19 @@ bool dSi5351::Stop_Outputs() {
     return Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, 0xFFu);
 } // Stop_Outputs()
 
+void dSi5351::Request_Frequency_Programming(uint32_t target_frequency) {
+    requested_quadrature_frequency = target_frequency;
+    programming_request_exists = true;
+} // Request_Frequency_Programming
 
-int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
+
+int dSi5351::Set_Golden_Quadrature_Frequency(uint32_t target_frequency) {
     uint32_t best_multiplier = 0;
     uint32_t best_multisynth_divider = 0;
     uint32_t best_frequency = 0;
     uint32_t best_error = UINT_MAX;
 
-    if (target_hz == 0u) {
+    if (target_frequency == 0u) {
         return 0;
     }
 
@@ -152,7 +161,7 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
             }
 
             uint32_t f_hz = vco_hz / m;
-            uint32_t error = (f_hz > target_hz) ? (f_hz - target_hz) : (target_hz - f_hz);
+            uint32_t error = (f_hz > target_frequency) ? (f_hz - target_frequency) : (target_frequency - f_hz);
 
             if (error < best_error) {
                 best_error = error;
@@ -213,12 +222,13 @@ int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
         return 0;
     }
 
-    return actual_frequency = best_frequency;
+    frequency_offset = target_frequency - best_frequency;
+    return actual_quadrature_frequency = best_frequency;
 } // Set_Golden_Frequency_Quadrature()
 
-int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
+int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) {
 
-    if (target_hz == 0u || clk > 2u) {
+    if (target_frequency == 0u || clk > 2u) {
         return 0;
     }
 
@@ -236,7 +246,7 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
 
         for (uint32_t m = 6; m <= 254; m += 2) {
             uint32_t f_hz = vco_hz / m;
-            uint32_t error = (f_hz > target_hz) ? (f_hz - target_hz) : (target_hz - f_hz);
+            uint32_t error = (f_hz > target_frequency) ? (f_hz - target_frequency) : (target_frequency - f_hz);
             if (error < best_error) {
                 best_error = error;
                 best_multiplier = n;
@@ -292,24 +302,26 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
         return 0;
     }
 
-    return actual_frequency = best_frequency;
+    return actual_quadrature_frequency = best_frequency;
 } // Set_Frequency_Integer_Clk()
 
-int dSi5351::Get_Actual_Frequency() {
-    return actual_frequency;
+int dSi5351::Get_Actual_Quadrature_Frequency() {
+    return actual_quadrature_frequency;
 } // Get_Actual_Frequency
 
-char dSi5351::Get_PLLA_Mode() {
+int dSi5351::Get_Desired_Quadrature_Frequency() {
+    return requested_quadrature_frequency;
+} // Get_Desired_Frequency
 
-    uint8_t plla_control_register = 0;
-    if (!Reg_Read(22, &plla_control_register)) { 
-        // Error reading Register 22
-        return 'X';
-    }
-    
-    // Bit 6 is the PLLA integer mode flag
-    if (plla_control_register & 0x40u) { 
-        return 'G'; // Integer Mode
-    }
-    return 'F'; // Fractional Mode
-} // Get_PLLA_Mode
+int dSi5351::Get_Frequency_Offset() {
+    return frequency_offset;
+} // Get_Frequency_Offset
+
+bool dSi5351::Programming_Request_Exists() {
+    return programming_request_exists;
+} // Programming_Request_Exists
+
+bool dSi5351::CDC_Programming_Response_Needed() {
+    return cdc_programming_response_needed;
+} // Programming_Is_Complete
+

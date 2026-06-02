@@ -21,6 +21,7 @@ extern "C" {
 // Custom Libraries
 #include "dSi5351.hpp"
 #include "dI2C.hpp"
+#include "dGPIO.hpp"
 
 // respond depending on command
 static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
@@ -58,15 +59,15 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
         tud_cdc_n_write(0, response, strlen(response));
     }
     else if (strncmp(string_buffer, "FREQ,", 5) == 0) {
-        if (length < 8) { // return current frequency; 12 was chosen for a reason, trust
+        if (length < 8) {
             // the FREQ command
             char response[64];
-            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%c,0\n", g_Si5351.Get_Actual_Frequency(), g_Si5351.Get_PLLA_Mode());
+            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Actual_Quadrature_Frequency());
 
             if (chars_written > 0) tud_cdc_n_write(0, response, strlen(response));
         }
         else if (length < 25) { // program frequency
-            // program the si5351a
+            // set flag for core 1 to program the si5351a
             int requested_frequency;
             int parameter_count = sscanf(string_buffer, "FREQ,%d", &requested_frequency);
 
@@ -75,25 +76,9 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
                 tud_cdc_n_write(0, response, strlen(response));
             }
             else if (parameter_count == 1) {
-                multicore_fifo_push_blocking((uint32_t)requested_frequency);
-
-                int actual_frequency = (int)multicore_fifo_pop_blocking();
-                char pll_mode = (char)multicore_fifo_pop_blocking();
-
-                int frequency_offset = actual_frequency - requested_frequency;
-                if (frequency_offset < 0) {
-                    frequency_offset = -1*frequency_offset;
-                }
-
-                char response[64];
-                int chars_written = snprintf(response, sizeof(response), "%d\nOK,%c,%d\n", requested_frequency, pll_mode, frequency_offset);
-                if (chars_written > 0) {
-                    tud_cdc_n_write(0, response, strlen(response));
-                }
-                else {
-                    const char* response = "ARGUMENT TOO LONG\r\n";
-                    tud_cdc_n_write(0, response, strlen(response));
-                }
+                // put in the request and move on. core 0 will handle it.
+                g_Si5351.Request_Frequency_Programming(requested_frequency);
+                // we will check flags in cdc_task to see if core 0 has finished so we can respond later.
             }
         }
         else {
@@ -109,7 +94,25 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
 } // respond_serial_port
 
 void cdc_task(void) {
-    if (tud_cdc_n_available(0)) {
+    if (g_Si5351.CDC_Programming_Response_Needed()) { // if a program frequency request was sent out and has been completed by core 1
+        // acknowledge flag
+        g_Si5351.cdc_programming_response_needed = false;
+        gpio_xor_mask(1u << LED_GREEN);
+
+        // respond to the user once the si5351a has been programmed
+        char response[64];
+        int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Desired_Quadrature_Frequency(), g_Si5351.Get_Frequency_Offset());
+        if (chars_written > 0) {
+            tud_cdc_n_write(0, response, strlen(response));
+        }
+        else {
+            const char* response = "ARGUMENT TOO LONG\r\n";
+            tud_cdc_n_write(0, response, strlen(response));
+        }
+        tud_cdc_n_write_flush(0);
+    }
+    else if (tud_cdc_n_available(0)) {
+        gpio_xor_mask(1u << LED_YELLOW);
         uint8_t message_buffer[64];
 
         uint32_t count = tud_cdc_n_read(0, message_buffer, sizeof(message_buffer));

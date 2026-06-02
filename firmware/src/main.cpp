@@ -69,8 +69,6 @@ int main(void) {
 
   g_I2Srx.Start();
 
-  g_Si5351.Set_Golden_Frequency_Quadrature(7100000);
-
   while (true) {
     loop_timer = to_ms_since_boot(get_absolute_time()); // Start a stopwatch to measure loop duration
 
