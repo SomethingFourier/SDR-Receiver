@@ -71,10 +71,16 @@ public tx_start:                  // Entry point
 static inline void rmii_ethernet_phy_tx_init(PIO pio, uint sm, uint offset,
        uint pio_start, uint base_pin, uint retclk_pin, float div) {
 
-    // Use TX_[0,1,EN] in PIO mode
-    pio_gpio_init(pio, base_pin);
-    pio_gpio_init(pio, base_pin + 1);
-    pio_gpio_init(pio, base_pin + 2);
+    pio_gpio_init(pio, base_pin);      // TX_EN
+    pio_gpio_init(pio, base_pin + 1);  // TX0
+    pio_gpio_init(pio, base_pin + 2);  // TX1
+    pio_gpio_init(pio, retclk_pin);    // RETCLK
+
+    // Reduce drive strength to 2mA for all TX pins. High-speed edges on these pins
+    // can cause crosstalk to the clock trace and result in jitter/link drops.
+    gpio_set_drive_strength(base_pin, GPIO_DRIVE_STRENGTH_2MA);
+    gpio_set_drive_strength(base_pin + 1, GPIO_DRIVE_STRENGTH_2MA);
+    gpio_set_drive_strength(base_pin + 2, GPIO_DRIVE_STRENGTH_2MA);
 
     // Set TX_[0,1,EN] as output
     pio_sm_set_consecutive_pindirs(pio, sm, base_pin, 3, true);
@@ -108,6 +114,11 @@ static inline void rmii_ethernet_phy_tx_init(PIO pio, uint sm, uint offset,
     // Calculate absolute starting address of PIO program
     uint32_t abs_start = offset + pio_start;
     pio_sm_init(pio, sm, abs_start, &c);
+
+    // Reduce drive strength to 2mA for the 50MHz clock. The trace appears to be
+    // extremely sensitive to strong edges (8mA broke the link entirely). 
+    // Softening the edge should prevent the occasional ringing that crashes the PHY.
+    gpio_set_drive_strength(retclk_pin, GPIO_DRIVE_STRENGTH_2MA);
 
     // Set "mov x, status" threshold to Tx FIFO level 1 
     hw_clear_bits(&pio->sm[sm].execctrl, PIO_SM0_EXECCTRL_STATUS_N_BITS); 
