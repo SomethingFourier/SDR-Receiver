@@ -121,4 +121,6 @@ CMakeFiles/rp2350_app.dir/external/pico-rmii-ethernet/src/rmii_ethernet.c.o: \
  /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/pio.h \
  /home/pkcubed/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
  /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/build/external/pico-rmii-ethernet/rmii_ethernet_phy_tx.pio.h \
- /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/external/pico-rmii-ethernet/src/include/rmii_ethernet/netif.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_structs/include/hardware/structs/qmi.h \
+ /home/pkcubed/pico-sdk/src/rp2350/hardware_regs/include/hardware/regs/qmi.h

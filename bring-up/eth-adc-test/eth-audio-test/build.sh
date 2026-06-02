@@ -94,6 +94,7 @@ run_cmake() {
     
     cmake -DCMAKE_BUILD_TYPE=Release \
           -DPICO_BOARD=pico2 \
+          -DPICO_PLATFORM=rp2350 \
           ..
     
     printf "✓ CMake configuration complete\n"

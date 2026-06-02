@@ -66,11 +66,16 @@ static uint32_t audio_last_hello_ms = 0;
 
 static void audio_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port) {
   if (p != NULL) {
+    bool changed = !audio_use_unicast || (audio_udp_destination.addr != addr->addr);
     ip_addr_copy(audio_udp_destination, *addr);
     audio_use_unicast = true;
     audio_last_hello_ms = to_ms_since_boot(get_absolute_time());
     audio_last_bcast_addr = audio_udp_destination;
-    printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
+    
+    if (changed) {
+      printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
+    }
+    
     pbuf_free(p);
   }
 }
@@ -277,10 +282,17 @@ static void configure_networking(struct netif *netif) {
   }
 }
 
-static bool led_blink_cb(repeating_timer_t *rt) {
+static bool led_blink_fast_cb(repeating_timer_t *rt) {
   static bool on = false;
   on = !on;
   gpio_put(4, on);
+  return true;
+}
+
+static bool led_blink_normal_cb(repeating_timer_t *rt) {
+  static bool on = false;
+  on = !on;
+  gpio_put(5, on);
   return true;
 }
 
@@ -605,6 +617,14 @@ int main() {
   // LWIP network interface
   struct netif netif;
 
+  // Setup LEDs early to indicate startup
+  gpio_init(4);
+  gpio_set_dir(4, GPIO_OUT);
+  gpio_init(5);
+  gpio_set_dir(5, GPIO_OUT);
+  static repeating_timer_t led_timer;
+  add_repeating_timer_ms(100, led_blink_fast_cb, NULL, &led_timer);
+
   // Do board specific init
   arch_pico_init();
 
@@ -649,12 +669,6 @@ int main() {
   configure_networking(&netif);
   status_netif = &netif;
 
-  // Initialize LED on GPIO 4 and start 1 Hz blink timer
-  gpio_init(4);
-  gpio_set_dir(4, GPIO_OUT);
-  static repeating_timer_t led_timer;
-  add_repeating_timer_ms(500, led_blink_cb, NULL, &led_timer);
-
   // Periodic network status report.
   static repeating_timer_t network_status_timer;
   add_repeating_timer_ms(5000, network_status_cb, NULL, &network_status_timer);
@@ -683,6 +697,11 @@ int main() {
 
   // Core 1 runs lwIP poll + UDP audio sender to keep all lwIP calls on one core.
   multicore_launch_core1(core1_net_audio_loop);
+
+  // Startup complete: transition LEDs
+  cancel_repeating_timer(&led_timer);
+  gpio_put(4, 1); // Solid ON for GPIO4
+  add_repeating_timer_ms(500, led_blink_normal_cb, NULL, &led_timer); // Normal blink for GPIO5
 
   while (1) {
     tight_loop_contents();

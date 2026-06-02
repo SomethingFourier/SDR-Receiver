@@ -805,13 +805,31 @@ void arch_pico_init() {
      system clock at 300 MHz so GPOUT divider produces the expected
      reference. Enable higher VREG and set clk_sys to 300 MHz. */
   uint32_t target_clk = 300000000;
-  vreg_set_voltage(VREG_VOLTAGE_1_20);
+  
+#if defined(PICO_RP2350)
+  #include "hardware/structs/qmi.h"
+  hw_write_masked(&qmi_hw->m[0].timing, 4 << QMI_M0_TIMING_CLKDIV_LSB, QMI_M0_TIMING_CLKDIV_BITS);
+#else
+  #include "hardware/structs/ssi.h"
+  hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
+#endif
+
+  vreg_set_voltage(VREG_VOLTAGE_1_30);
   set_sys_clock_khz(target_clk/1000, true);
 
 #else
   // Must have 6 sysclks per RMII clock for sampling RMII bus properly
   uint32_t target_clk = 300000000;
-  vreg_set_voltage(VREG_VOLTAGE_1_20);
+  
+#if defined(PICO_RP2350)
+  #include "hardware/structs/qmi.h"
+  hw_write_masked(&qmi_hw->m[0].timing, 4 << QMI_M0_TIMING_CLKDIV_LSB, QMI_M0_TIMING_CLKDIV_BITS);
+#else
+  #include "hardware/structs/ssi.h"
+  hw_write_masked(&ssi_hw->baudr, 4, SSI_BAUDR_SCKDV_BITS);
+#endif
+
+  vreg_set_voltage(VREG_VOLTAGE_1_30);
   set_sys_clock_khz(target_clk/1000, true);
 #endif
 
@@ -1294,8 +1312,18 @@ void netif_rmii_ethernet_poll() {
     deferred_read = netif_rmii_ethernet_mdio_read_nb(phy_address, 1);
     if (deferred_read != -1) {
       link_status = (deferred_read & 0x04) >> 2;
-      if (netif_is_link_up(rmii_eth_netif) ^ link_status) {
-	if (link_status) {
+      
+      static uint8_t debounce_count = 0;
+      if (link_status) {
+        if (debounce_count < 3) debounce_count++;
+      } else {
+        if (debounce_count > 0) debounce_count--;
+      }
+      
+      uint16_t debounced_status = (debounce_count >= 2) ? 1 : 0;
+
+      if (netif_is_link_up(rmii_eth_netif) ^ debounced_status) {
+	if (debounced_status) {
 	  // printf("netif_set_link_up\n");
 	  netif_set_link_up(rmii_eth_netif);
 	} else {
