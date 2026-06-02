@@ -113,7 +113,6 @@ static inline void rmii_ethernet_phy_tx_init(PIO pio, uint sm, uint offset,
     hw_clear_bits(&pio->sm[sm].execctrl, PIO_SM0_EXECCTRL_STATUS_N_BITS); 
     hw_set_bits(&pio->sm[sm].execctrl, 1 << PIO_SM0_EXECCTRL_STATUS_N_LSB);
 
-    // Start Tx clock
-    pio_sm_set_enabled(pio, sm, true);
+    // The SM will be started synchronously with the RX SM later
 }
 %}

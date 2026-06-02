@@ -60,43 +60,21 @@ typedef struct __attribute__((packed)) {
 } audio_udp_header_t;
 
 static struct udp_pcb *audio_udp_pcb = NULL;
-
-#define MAX_AUDIO_CLIENTS 4
-
-typedef struct {
-  ip_addr_t addr;
-  uint32_t last_hello_ms;
-  bool active;
-} audio_client_t;
-
-static audio_client_t audio_clients[MAX_AUDIO_CLIENTS];
-static bool audio_broadcast_active = false;
+static ip_addr_t audio_udp_destination;
 static ip_addr_t audio_last_bcast_addr;
+static bool audio_use_unicast = false;
+static uint32_t audio_last_hello_ms = 0;
 
 static void audio_udp_recv_cb(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port) {
   if (p != NULL) {
-    int empty_idx = -1;
-    bool found = false;
-    for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
-      if (audio_clients[i].active && audio_clients[i].addr.addr == addr->addr) {
-        audio_clients[i].last_hello_ms = to_ms_since_boot(get_absolute_time());
-        found = true;
-        break;
-      }
-      if (!audio_clients[i].active && empty_idx == -1) {
-        empty_idx = i;
-      }
-    }
+    bool changed = !audio_use_unicast || (audio_udp_destination.addr != addr->addr);
+    ip_addr_copy(audio_udp_destination, *addr);
+    audio_use_unicast = true;
+    audio_last_hello_ms = to_ms_since_boot(get_absolute_time());
+    audio_last_bcast_addr = audio_udp_destination;
     
-    if (!found) {
-      if (empty_idx != -1) {
-        ip_addr_copy(audio_clients[empty_idx].addr, *addr);
-        audio_clients[empty_idx].last_hello_ms = to_ms_since_boot(get_absolute_time());
-        audio_clients[empty_idx].active = true;
-        printf("AUDIO: Added UNICAST destination %s (slot %d)\n", ipaddr_ntoa(addr), empty_idx);
-      } else {
-        printf("AUDIO: Max clients reached, ignoring %s\n", ipaddr_ntoa(addr));
-      }
+    if (changed) {
+      printf("AUDIO: Switched to UNICAST destination %s\n", ipaddr_ntoa(addr));
     }
     
     pbuf_free(p);
@@ -484,36 +462,30 @@ static bool audio_update_broadcast_destination(struct netif *netif) {
     return false;
   }
 
-  uint32_t now = to_ms_since_boot(get_absolute_time());
-  bool any_active = false;
-
-  for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
-    if (audio_clients[i].active) {
-      if (now - audio_clients[i].last_hello_ms > 3000) {
-        printf("AUDIO: Client %s timeout. Stopping unicast stream.\n", ipaddr_ntoa(&audio_clients[i].addr));
-        audio_clients[i].active = false;
-      } else {
-        any_active = true;
-      }
+  if (audio_use_unicast) {
+    if (to_ms_since_boot(get_absolute_time()) - audio_last_hello_ms > 3000) {
+      printf("AUDIO: Client timeout. Stopping unicast stream.\n");
+      audio_use_unicast = false;
     }
   }
 
-  audio_broadcast_active = false;
-#if !AUDIO_REQUIRE_UNICAST_REQUEST
-  if (!any_active) {
-    audio_broadcast_active = true;
+  if (!audio_use_unicast) {
+#if AUDIO_REQUIRE_UNICAST_REQUEST
+    return false;
+#else
     uint32_t bcast_host = (ip_host & mask_host) | (~mask_host);
     ip4_addr_t bcast_addr;
     ip4_addr_set_u32(&bcast_addr, lwip_htonl(bcast_host));
-    if (audio_last_bcast_addr.addr != bcast_addr.addr) {
-      audio_last_bcast_addr.addr = bcast_addr.addr;
-      printf("AUDIO: UDP broadcast destination ready on port %u (%s)\n", AUDIO_UDP_PORT, ipaddr_ntoa(&audio_last_bcast_addr));
-    }
-  }
+    ip_addr_copy_from_ip4(audio_udp_destination, bcast_addr);
 #endif
-
+  }
   udp_bind_netif(audio_udp_pcb, netif);
-  return any_active || audio_broadcast_active;
+
+  if (audio_last_bcast_addr.addr != audio_udp_destination.addr) {
+    audio_last_bcast_addr = audio_udp_destination;
+    printf("AUDIO: UDP destination ready on port %u (%s)\n", AUDIO_UDP_PORT, ipaddr_ntoa(&audio_udp_destination));
+  }
+  return true;
 }
 
 static void audio_udp_write_header(void) {
@@ -560,53 +532,22 @@ static void audio_udp_send_packet(struct netif *netif) {
     return;
   }
 
-  bool sent_any = false;
-  err_t send_err = ERR_OK;
-
-  for (int i = 0; i < MAX_AUDIO_CLIENTS; i++) {
-    if (audio_clients[i].active) {
-      send_err = udp_sendto_if_src(
-          audio_udp_pcb,
-          packet,
-          &audio_clients[i].addr,
-          AUDIO_UDP_PORT,
-          netif,
-          netif_ip4_addr(netif));
-          
-      if (send_err == ERR_OK) {
-        sent_any = true;
-      } else {
-        audio_send_errors++;
-        audio_last_send_err = send_err;
-      }
-    }
-  }
-
-  if (audio_broadcast_active) {
-    send_err = udp_sendto_if_src(
-        audio_udp_pcb,
-        packet,
-        &audio_last_bcast_addr,
-        AUDIO_UDP_PORT,
-        netif,
-        netif_ip4_addr(netif));
-    if (send_err == ERR_OK) {
-        sent_any = true;
-    } else {
-        audio_send_errors++;
-        audio_last_send_err = send_err;
-    }
-  }
-
+  err_t send_err = udp_sendto_if_src(
+      audio_udp_pcb,
+      packet,
+      &audio_udp_destination,
+      AUDIO_UDP_PORT,
+      netif,
+      netif_ip4_addr(netif));
   pbuf_free(packet);
 
-  if (sent_any) {
+  if (send_err == ERR_OK) {
     audio_packets_sent++;
   } else {
     audio_packets_dropped++;
-    if (send_err != ERR_OK) {
-        printf("AUDIO: udp_sendto_if_src failed err=%d\n", send_err);
-    }
+    audio_send_errors++;
+    audio_last_send_err = send_err;
+    printf("AUDIO: udp_sendto_if_src failed err=%d\n", send_err);
   }
 
   audio_frames_staged = 0;
@@ -688,34 +629,18 @@ int main() {
   // Do board specific init
   arch_pico_init();
 
-  // Setup 50MHz reference clock for LAN8720 on GPIO23
-  setup_50mhz_clock(23);
+  // NOTE: Do NOT call setup_50mhz_clock(23) here!
+  // The PIO TX program generates the RMII clock on GPIO23 via side-set.
+  // Having GPOUT2 also drive GPIO23 causes clock contention and CRC errors.
 
   printf("pico rmii ethernet - httpd + udp audio\n");
 
   // Initilize LWIP in NO_SYS mode
   lwip_init();
 
-  // Initialize the PIO-based RMII Ethernet network interface
-  // Run a quick MDIO bit-bang diagnostic before initializing the driver
-#ifdef PICO_RMII_ETHERNET_RST_PIN
-  // Hard reset the PHY to clear any weird states from previous runs
-  gpio_init(PICO_RMII_ETHERNET_RST_PIN);
-  gpio_set_dir(PICO_RMII_ETHERNET_RST_PIN, GPIO_OUT);
-  
-  // Pull reset low for 50ms
-  gpio_put(PICO_RMII_ETHERNET_RST_PIN, 0);
-  sleep_ms(50);
-  
-  // Deassert reset pin so the PHY is active during diagnostic checks
-  gpio_put(PICO_RMII_ETHERNET_RST_PIN, 1);
-  sleep_ms(150); // Give it time to boot and stabilize its PLLs
-#endif
-  printf("Running MDIO bit-bang diagnostic...\n");
-  fflush(stdout);
-  run_mdio_test(0);
-  // If registers read as 0xffff, scan all addresses to help debug wiring/address
-  scan_mdio_addresses();
+  // NOTE: Do NOT manually reset the PHY here.
+  // The driver's arch_pico_init() + netif_rmii_ethernet_low_init() handle
+  // the reset sequence with proper timing relative to the PIO clock startup.
 
   if (netif_rmii_ethernet_init(&netif) != ERR_OK) {
     printf("Failed to open ethernet interface\n");

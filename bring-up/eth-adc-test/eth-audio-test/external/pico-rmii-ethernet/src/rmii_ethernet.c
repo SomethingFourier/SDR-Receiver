@@ -42,7 +42,9 @@
 #include "rmii_ethernet/netif.h"
 
 // Uncomment to enable setting I/O thresholds to 1.8v
-#define EN_1V8
+// WARNING: Only enable this if your board's IOVDD is actually 1.8V!
+// On 3.3V boards (e.g. Pico 2), this causes CRC errors due to wrong input thresholds.
+//#define EN_1V8
 
 // Select PIO to use for Ethernet
 #define PICO_RMII_ETHERNET_PIO        pio0
@@ -83,6 +85,11 @@ static uint32_t rx_addr = 0;
 
 // Used by ethernet_poll()
 static uint32_t rx_prev_pkt_ptr = 0;
+
+// PIO RX recovery: restart SM after too many consecutive CRC errors
+// (indicates ISR bit-alignment corruption from a truncated packet)
+static uint32_t consecutive_crc_errors = 0;
+#define CRC_ERROR_RECOVERY_THRESHOLD 5
 
 // Max Ethernet frame size is:
 // mac src + mac dst + type + payload + crc
@@ -1140,8 +1147,9 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
   float tx_div = (float)clock_get_hz(clk_sys)/100e6;
 
 #ifdef GENERATE_RMII_CLK
-  // Run Rx PIO state machine at 2x RMII clk (i.e. 100 MHz)
-  float rx_div = (float)clock_get_hz(clk_sys)/100e6;
+  // Run Rx PIO state machine at 4x RMII clk (i.e. 200 MHz)
+  // This provides 5ns resolution, allowing us to perfectly center the sample point!
+  float rx_div = (float)clock_get_hz(clk_sys)/200e6;
 #else
   // Run Rx PIO state machine at 6x RMII clk (i.e. 300 MHz)
   float rx_div = (float)clock_get_hz(clk_sys)/300e6;
@@ -1165,9 +1173,20 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
 			    PICO_RMII_ETHERNET_RX_PIN,
 			    rx_div);
 
+  // CRITICAL: Start the TX and RX state machines perfectly synchronously.
+  // The TX SM generates the RMII clock, and the RX SM relies on its 100MHz
+  // clock edges being exactly phase-aligned with that generated clock.
+  // If started independently, their clock dividers can be out of phase,
+  // causing unpredictable phase alignment (and constant CRC errors) on boot.
+  pio_enable_sm_mask_in_sync(PICO_RMII_ETHERNET_PIO, 
+                             (1u << PICO_RMII_ETHERNET_SM_TX) | 
+                             (1u << PICO_RMII_ETHERNET_SM_RX));
+
+
 #ifdef PICO_RMII_ETHERNET_RST_PIN
   // Deassert reset after a minimum of 25 ms with the RMII clock active
-  sleep_ms(25);
+  // Using 50ms for extra margin to let the LAN8720a PLL stabilize
+  sleep_ms(50);
   // Drive reset high (push-pull) - no on-board pull-up
   gpio_put(PICO_RMII_ETHERNET_RST_PIN, 1);
 #endif
@@ -1386,8 +1405,32 @@ void netif_rmii_ethernet_poll() {
     if (rx_len == 0) {
       printf("*");
       pbuf_free(p);
+      consecutive_crc_errors++;
+
+      if (consecutive_crc_errors >= CRC_ERROR_RECOVERY_THRESHOLD) {
+        // The PIO RX input shift counter is likely misaligned from a truncated packet.
+        // Instead of disabling the SM (which breaks clock phase alignment with the TX SM),
+        // we force it to execute a 'push noblock' to clear the shift counter, 
+        // and a 'mov isr, null' to clear the data.
+        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
+                    pio_encode_push(false, false));
+        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
+                    pio_encode_mov(pio_isr, pio_null));
+
+        // Clear the FIFOs just in case
+        pio_sm_clear_fifos(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX);
+
+        // Reset packet tracking to current DMA position
+        rx_addr = (uint32_t)dma_hw->ch[rx_dma_chan].write_addr
+                  - (uint32_t)&rx_ring[0];
+        rx_prev_pkt_ptr = rx_curr_pkt_ptr;
+        consecutive_crc_errors = 0;
+        printf("\nRX_RST\n");
+        break;
+      }
       continue;
     }
+    consecutive_crc_errors = 0;
 
     if (rmii_eth_netif->input(p, rmii_eth_netif) != ERR_OK) {
       pbuf_free(p);

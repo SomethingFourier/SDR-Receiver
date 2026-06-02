@@ -51,11 +51,12 @@
 .program rmii_ethernet_phy_rx_data
 .wrap_target
 start:
+    mov isr, null     ; Clear leftover bits from any corrupted packet
     wait 1 gpio PICO_RMII_ETHERNET_RX_PIN ; Wait for CR_DV assertion
-    wait 1 pin 1 [2]  ; Wait for Start of Frame Delimiter, align to sample clk
+    wait 1 pin 1 [5]  ; Wait for Start of Frame Delimiter, delay 5 cycles (25ns) to perfectly center sample point
 sample:
     in pins, 2        ; accumulate di-bits
-    jmp PIN, sample   ; as long as CRS_DV is asserted (on a byte boundary)
+    jmp PIN, sample [2] ; loop takes 4 cycles total (20ns) to match 50MHz RMII
     irq set 0         ; Signal end of active packet
 .wrap
 //*/
@@ -105,10 +106,11 @@ static inline void rmii_ethernet_phy_rx_init(PIO pio, uint sm, uint offset, uint
     
     pio_sm_init(pio, sm, offset, &c);
 
-    // Set synchronizer bypass bits - remove two sysclock delays...
-    //hw_set_bits(&pio->input_sync_bypass, 0x7u << pin);
-    //hw_set_bits(&pio->input_sync_bypass, 1 << PICO_RMII_ETHERNET_RETCLK_PIN);
+    // The synchronizer adds 2-sysclk (10ns) delay, which is critical for
+    // phase alignment. With the [2] delay in the PIO program, this correctly
+    // shifts the sampling point to the middle of the 20ns RMII data period.
+    // hw_set_bits(&pio->input_sync_bypass, 0x7u << pin);
 
-    pio_sm_set_enabled(pio, sm, true);
+    // The SM will be started synchronously with the TX SM later
 }
 %}
