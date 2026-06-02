@@ -12,6 +12,8 @@ static const uint8_t SI5351_REG_DEVICE_STATUS = 0;
 static const uint8_t SI5351_REG_OUTPUT_ENABLE_CTRL = 3;
 static const uint8_t SI5351_REG_CLK0_CTRL = 16;
 static const uint8_t SI5351_REG_CLK1_CTRL = 17;
+static const uint8_t SI5351_REG_MSNA_INT = 22;
+static const uint8_t SI5351_REG_MSNB_INT = 23;
 static const uint8_t SI5351_REG_PLLA_BASE = 26;
 static const uint8_t SI5351_REG_MS0_BASE = 42;
 static const uint8_t SI5351_REG_MS1_BASE = 50;
@@ -30,12 +32,27 @@ bool dSi5351::Init() {
     uint8_t status = 0x80u;
 
     // Disable all outputs while configuring.
-    if (!Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, 0xFFu)) {
-        return false;
+    if (!Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, 0xFFu)){ 
+        return false; 
+    }
+
+    // PLL Input Source
+    if (!Reg_Write(15, 0x00u)) {
+        return false; 
     }
 
     // Set crystal load capacitance to 10 pF.
     if (!Reg_Write(SI5351_REG_XTAL_CL, 0xD2u)) {
+        return false;
+    }
+
+    // Force Multi-Synth A into integer mode
+    if (!Reg_Write(SI5351_REG_MSNA_INT, 0x40)) {
+        return false;
+    }
+
+    // Force Multi-Synth B into integer mode
+    if (!Reg_Write(SI5351_REG_MSNB_INT, 0x40)) {
         return false;
     }
 
@@ -121,88 +138,8 @@ bool dSi5351::Stop_Outputs() {
     return Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, 0xFFu);
 } // Stop_Outputs()
 
-uint32_t dSi5351::Program_With_Exact_Parameters(uint32_t target_frequency, uint32_t phase_offset_divider, uint32_t pll_multiplier_integer, uint32_t pll_multiplier_numerator, uint32_t pll_multiplier_denominator, uint32_t pll_parameter_1, uint32_t pll_parameter_2, uint32_t pll_parameter_3) {
 
-    if (!Stop_Outputs()) {
-        return 0;
-    }
-
-    uint8_t pll_a_data[8];
-    // Map PLL parameters to registers 26-33
-    pll_a_data[0] = (uint8_t)((pll_parameter_3 >> 8) & 0xFFu);
-    pll_a_data[1] = (uint8_t)(pll_parameter_3 & 0xFFu);
-    pll_a_data[2] = (uint8_t)((pll_parameter_1 >> 16) & 0x03u);
-    pll_a_data[3] = (uint8_t)((pll_parameter_1 >> 8) & 0xFFu);
-    pll_a_data[4] = (uint8_t)(pll_parameter_1 & 0xFFu);
-    pll_a_data[5] = (uint8_t)(((pll_parameter_3 >> 16) & 0x0Fu) << 4) | (uint8_t)((pll_parameter_2 >> 16) & 0x0Fu);
-    pll_a_data[6] = (uint8_t)((pll_parameter_2 >> 8) & 0xFFu);
-    pll_a_data[7] = (uint8_t)(pll_parameter_2 & 0xFFu);
-
-    if (!Write_Block(SI5351_REG_PLLA_BASE, pll_a_data, 8)) {
-        return 0;
-    }
-
-    // MS0 and MS1 operate in Integer mode for exact quadrature phase offset.
-    // multisynth_parameter_1 = 128 * N - 512
-    uint32_t multisynth_parameter_1 = 128u * phase_offset_divider - 512u;
-    uint32_t multisynth_parameter_2 = 0u;
-    uint32_t multisynth_parameter_3 = 1u;
-
-    uint8_t multisynth_data[8];
-    multisynth_data[0] = (uint8_t)((multisynth_parameter_3 >> 8) & 0xFFu);
-    multisynth_data[1] = (uint8_t)(multisynth_parameter_3 & 0xFFu);
-    multisynth_data[2] = (uint8_t)((multisynth_parameter_1 >> 16) & 0x03u);
-    multisynth_data[3] = (uint8_t)((multisynth_parameter_1 >> 8) & 0xFFu);
-    multisynth_data[4] = (uint8_t)(multisynth_parameter_1 & 0xFFu);
-    multisynth_data[5] = (uint8_t)(((multisynth_parameter_3 >> 16) & 0x0Fu) << 4) | (uint8_t)((multisynth_parameter_2 >> 16) & 0x0Fu);
-    multisynth_data[6] = (uint8_t)((multisynth_parameter_2 >> 8) & 0xFFu);
-    multisynth_data[7] = (uint8_t)(multisynth_parameter_2 & 0xFFu);
-
-    if (!Write_Block(SI5351_REG_MS0_BASE, multisynth_data, 8)) {
-        return 0;
-    }
-    if (!Write_Block(SI5351_REG_MS1_BASE, multisynth_data, 8)) {
-        return 0;
-    }
-
-    // Configure CLK0 and CLK1 to use PLLA, MS integer mode, no invert, 8mA dive
-    uint8_t clock_control_data[2] = {0x4Fu, 0x4Fu};
-    if (!Write_Block(SI5351_REG_CLK0_CTRL, clock_control_data, 2)) {
-        return 0;
-    }
-
-    // 90-degree phase shift: CLK0_PHOFF = 0, CLK1_PHOFF = phase_offset_divider
-    uint8_t phase_offset_data[2] = {0x00u, (uint8_t)(phase_offset_divider & 0x7Fu)};
-    if (!Write_Block(SI5351_REG_CLK0_PHOFF, phase_offset_data, 2)) {
-        return 0;
-    }
-
-    // Check if the PLL numerator is 0 (Integer mode)
-    uint8_t plla_ctrl = 0;
-    if (Reg_Read(22, &plla_ctrl)) {
-        if (pll_multiplier_numerator == 0) {
-            plla_ctrl |= 0x40u; // Set bit 6 for Integer Mode
-        } 
-        else {
-            plla_ctrl &= ~0x40u; // Clear bit 6 for Fractional Mode
-        }
-        Reg_Write(22, plla_ctrl);
-    }
-
-    // Reset PLLA (bit 5)
-    if (!Reg_Write(SI5351_REG_PLL_RESET, 0x20u)) {
-        return 0;
-    }
-
-    if (!Start_Outputs()) {
-        return 0;
-    }
-
-    actual_frequency = target_frequency;
-    return target_frequency;
-} // Program_With_Exact_Parameters
-
-uint32_t dSi5351::Set_Frequency_Integer_Quadrature(uint32_t target_hz) {
+int dSi5351::Set_Golden_Frequency_Quadrature(uint32_t target_hz) {
 
     uint32_t best_multiplier = 0;
     uint32_t best_multisynth_divider = 0;
@@ -283,11 +220,11 @@ uint32_t dSi5351::Set_Frequency_Integer_Quadrature(uint32_t target_hz) {
         return 0;
     }
 
-    actual_frequency = best_frequency;
+    actual_frequency = (int)best_frequency;
     return best_frequency;
-} // Set_Frequency_Integer_Quadrature()
+} // Set_Golden_Frequency_Quadrature()
 
-uint32_t dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
+int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
 
     if (target_hz == 0u || clk > 2u) {
         return 0;
@@ -364,10 +301,10 @@ uint32_t dSi5351::Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk) {
     }
 
     actual_frequency = best_frequency;
-    return best_frequency;
+    return actual_frequency;
 } // Set_Frequency_Integer_Clk()
 
-uint32_t dSi5351::Get_Actual_Frequency() {
+int dSi5351::Get_Actual_Frequency() {
     return actual_frequency;
 } // Get_Actual_Frequency
 

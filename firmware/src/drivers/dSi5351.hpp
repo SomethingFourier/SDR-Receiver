@@ -13,14 +13,13 @@ class dSi5351 {
 		bool Init();
 		bool Start_Outputs();
 		bool Stop_Outputs();
-		uint32_t Program_With_Exact_Parameters(uint32_t target_frequency, uint32_t phase_offset_divider, uint32_t pll_multiplier_integer, uint32_t pll_multiplier_numerator, uint32_t pll_multiplier_denominator, uint32_t pll_parameter_1, uint32_t pll_parameter_2, uint32_t pll_parameter_3);
-		uint32_t Set_Frequency_Integer_Quadrature(uint32_t target_hz);
-		uint32_t Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk);
-		uint32_t Get_Actual_Frequency();
+		int Set_Golden_Frequency_Quadrature(uint32_t target_hz);
+		int Set_Frequency_Integer_Clk(uint32_t target_hz, uint32_t clk);
+		int Get_Actual_Frequency();
 		char Get_PLLA_Mode();
 
 	private:
-		uint32_t actual_frequency;
+		int actual_frequency;
 
 		static const uint8_t Si5351_ADDR = 0x60;
 		static const uint32_t XTAL_HZ = 24576000u;

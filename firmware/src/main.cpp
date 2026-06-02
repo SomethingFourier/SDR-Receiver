@@ -58,12 +58,18 @@ int main(void) {
   g_I2C.Init();
   g_SSD1306.Init();
   g_I2Srx.Init();
-  g_Si5351.Init();
+  if (g_Si5351.Init()) {
+    g_SSD1306.Draw_Text(4, "clk init yay");
+  }
+  else {
+    g_SSD1306.Draw_Text(4, "clk no init :(");
+  }
+  g_SSD1306.Update();
   tusb_init();
 
-  for (int i = 0; i < 9; i++) g_SSD1306.Clear_Row(i);
-
   g_I2Srx.Start();
+
+  g_Si5351.Set_Golden_Frequency_Quadrature(7100000);
 
   while (true) {
     loop_timer = to_ms_since_boot(get_absolute_time()); // Start a stopwatch to measure loop duration
