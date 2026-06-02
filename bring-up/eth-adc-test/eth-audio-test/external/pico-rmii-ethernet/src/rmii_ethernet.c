@@ -1147,8 +1147,9 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
   float tx_div = (float)clock_get_hz(clk_sys)/100e6;
 
 #ifdef GENERATE_RMII_CLK
-  // Run Rx PIO state machine at 2x RMII clk (i.e. 100 MHz)
-  float rx_div = (float)clock_get_hz(clk_sys)/100e6;
+  // Run Rx PIO state machine at 4x RMII clk (i.e. 200 MHz)
+  // This provides 5ns resolution, allowing us to perfectly center the sample point!
+  float rx_div = (float)clock_get_hz(clk_sys)/200e6;
 #else
   // Run Rx PIO state machine at 6x RMII clk (i.e. 300 MHz)
   float rx_div = (float)clock_get_hz(clk_sys)/300e6;
@@ -1171,6 +1172,16 @@ static err_t netif_rmii_ethernet_low_init(struct netif *netif) {
 			    rx_sm_offset,
 			    PICO_RMII_ETHERNET_RX_PIN,
 			    rx_div);
+
+  // CRITICAL: Start the TX and RX state machines perfectly synchronously.
+  // The TX SM generates the RMII clock, and the RX SM relies on its 100MHz
+  // clock edges being exactly phase-aligned with that generated clock.
+  // If started independently, their clock dividers can be out of phase,
+  // causing unpredictable phase alignment (and constant CRC errors) on boot.
+  pio_enable_sm_mask_in_sync(PICO_RMII_ETHERNET_PIO, 
+                             (1u << PICO_RMII_ETHERNET_SM_TX) | 
+                             (1u << PICO_RMII_ETHERNET_SM_RX));
+
 
 #ifdef PICO_RMII_ETHERNET_RST_PIN
   // Deassert reset after a minimum of 25 ms with the RMII clock active
@@ -1397,16 +1408,17 @@ void netif_rmii_ethernet_poll() {
       consecutive_crc_errors++;
 
       if (consecutive_crc_errors >= CRC_ERROR_RECOVERY_THRESHOLD) {
-        // PIO RX ISR is likely misaligned from a truncated packet.
-        // Restart the state machine to clear corrupted state.
-        pio_sm_set_enabled(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX, false);
-        pio_sm_clear_fifos(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX);
-        // Clear ISR and reset PC to program start while SM is stopped
+        // The PIO RX input shift counter is likely misaligned from a truncated packet.
+        // Instead of disabling the SM (which breaks clock phase alignment with the TX SM),
+        // we force it to execute a 'push noblock' to clear the shift counter, 
+        // and a 'mov isr, null' to clear the data.
+        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
+                    pio_encode_push(false, false));
         pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
                     pio_encode_mov(pio_isr, pio_null));
-        pio_sm_exec(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX,
-                    pio_encode_jmp(rx_sm_offset));
-        pio_sm_set_enabled(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX, true);
+
+        // Clear the FIFOs just in case
+        pio_sm_clear_fifos(PICO_RMII_ETHERNET_PIO, PICO_RMII_ETHERNET_SM_RX);
 
         // Reset packet tracking to current DMA position
         rx_addr = (uint32_t)dma_hw->ch[rx_dma_chan].write_addr
