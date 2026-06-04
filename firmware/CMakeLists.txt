@@ -31,7 +31,6 @@ add_executable(sdr
     src/drivers/dSSD1306.cpp
     src/drivers/dI2Srx.cpp
     src/drivers/dMUX.cpp
-    src/drivers/dEthernet.cpp
     src/interrupts.cpp
     src/drivers/i2s_receiver.pio
     src/SDR_State_Machine.cpp
@@ -49,15 +48,10 @@ target_include_directories(sdr PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/src
     ${CMAKE_CURRENT_LIST_DIR}/src/drivers
 )
-
-add_subdirectory(external/pico-rmii-ethernet_nce)
-
 target_link_libraries(sdr
     pico_stdlib
     pico_stdio
     pico_multicore
-    pico_lwip
-    pico_rmii_ethernet
     hardware_clocks
     hardware_i2c
     hardware_dma
