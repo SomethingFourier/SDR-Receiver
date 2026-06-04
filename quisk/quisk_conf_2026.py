@@ -21,7 +21,7 @@ name_of_sound_play = "pulse"
 sample_rate = 48000
 
 openradio_lower = 3_800_000
-openradio_upper = 30_000_000
+openradio_upper = 200_000_000
 
 class Hardware(BaseHardware):
     def open(self):
