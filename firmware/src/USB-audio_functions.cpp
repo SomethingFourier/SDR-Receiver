@@ -93,7 +93,75 @@ bool tud_audio_tx_done_pre_load_cb(uint8_t rhport, uint8_t itf, uint8_t ep_in, u
 
 #define AUDIO_SAMPLES_PER_BUFFER 96 // 48 frames * 2 channels (stereo)
 
+#define FIR_TAPS 31
+#define GROUP_DELAY ((FIR_TAPS - 1) / 2)
 
+const float right_channel_fir[FIR_TAPS] = {
+    0.0000000000f,
+    0.0000252251f,
+    -0.0001130003f,
+    0.0002921727f,
+    -0.0006070140f,
+    0.0011177446f,
+    -0.0019004852f,
+    0.0030479248f,
+    -0.0046731958f,
+    0.0069218335f,
+    -0.0100023776f,
+    0.0142620445f,
+    -0.0203863546f,
+    0.0300168918f,
+    -0.0483142335f,
+    0.1034724461f,
+    0.9824377921f,
+    -0.0797596114f,
+    0.0380343665f,
+    -0.0226176381f,
+    0.0144309374f,
+    -0.0093848312f,
+    0.0060631797f,
+    -0.0038266940f,
+    0.0023260788f,
+    -0.0013405265f,
+    0.0007160139f,
+    -0.0003399082f,
+    0.0001299358f,
+    -0.0000287169f,
+    -0.0000000000f,
+};
+
+static float right_fir_history[FIR_TAPS] = {0};
+static int16_t left_delay_history[GROUP_DELAY] = {0};
+
+void apply_phase_correction(int16_t* buffer, int num_samples) {
+    for (int i = 0; i < num_samples; i += 2) {
+        // --- Left Channel (Integer Delay) ---
+        int16_t new_left = buffer[i];
+        buffer[i] = left_delay_history[GROUP_DELAY - 1];
+        
+        for (int j = GROUP_DELAY - 1; j > 0; j--) {
+            left_delay_history[j] = left_delay_history[j - 1];
+        }
+        left_delay_history[0] = new_left;
+
+        // --- Right Channel (FIR Filter) ---
+        // Shift history
+        for (int j = FIR_TAPS - 1; j > 0; j--) {
+            right_fir_history[j] = right_fir_history[j - 1];
+        }
+        right_fir_history[0] = (float)buffer[i + 1];
+        
+        float out_r = 0.0f;
+        for (int j = 0; j < FIR_TAPS; j++) {
+            out_r += right_fir_history[j] * right_channel_fir[j];
+        }
+        
+        if (out_r > 32767.0f) out_r = 32767.0f;
+        if (out_r < -32768.0f) out_r = -32768.0f;
+        
+        buffer[i + 1] = (int16_t)out_r;
+    }
+}
 
 void audio_task(void) {
     if (g_I2Srx.A_buffer_ready) {
@@ -110,6 +178,8 @@ void audio_task(void) {
         for (int i = 0; i < (bytes_to_write / 2); i++) {
             out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
         }
+
+        apply_phase_correction(out_buffer, bytes_to_write / 2);
 
         uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
         if (written > 0) {
@@ -129,6 +199,8 @@ void audio_task(void) {
         for (int i = 0; i < (bytes_to_write / 2); i++) {
             out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
         }
+
+        apply_phase_correction(out_buffer, bytes_to_write / 2);
 
         uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
         if (written > 0) {
