@@ -17,10 +17,17 @@ static const uint8_t SI5351_REG_MSNB_INT = 23;
 static const uint8_t SI5351_REG_PLLA_BASE = 26;
 static const uint8_t SI5351_REG_MS0_BASE = 42;
 static const uint8_t SI5351_REG_MS1_BASE = 50;
+static const uint8_t SI5351_REG_MS2_BASE = 58;
+static const uint8_t SI5351_REG_CLK2_CTRL = 18;
 static const uint8_t SI5351_REG_CLK0_PHOFF = 165;
 static const uint8_t SI5351_REG_CLK1_PHOFF = 166;
+static const uint8_t SI5351_REG_CLK2_PHOFF = 167;
 static const uint8_t SI5351_REG_PLL_RESET = 177;
 static const uint8_t SI5351_REG_XTAL_CL = 183;
+
+static uint32_t Round_Divide(uint64_t numerator, uint32_t denominator) {
+    return (uint32_t)((numerator + (uint64_t)(denominator / 2u)) / (uint64_t)denominator);
+}
 
 dSi5351::dSi5351() {
     actual_quadrature_frequency = 0;
@@ -245,7 +252,7 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) 
         }
 
         for (uint32_t m = 6; m <= 254; m += 2) {
-            uint32_t f_hz = vco_hz / m;
+            uint32_t f_hz = Round_Divide((uint64_t)vco_hz, m);
             uint32_t error = (f_hz > target_frequency) ? (f_hz - target_frequency) : (target_frequency - f_hz);
             if (error < best_error) {
                 best_error = error;
@@ -304,6 +311,122 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) 
 
     return actual_quadrature_frequency = best_frequency;
 } // Set_Frequency_Integer_Clk()
+
+int dSi5351::Set_VHF_Quadrature_Frequency(uint32_t target_frequency, uint32_t if_center_frequency, uint32_t if_span_hz) {
+
+    if (target_frequency == 0u || if_center_frequency == 0u) {
+        return 0;
+    }
+
+    uint32_t if_low = (if_center_frequency > if_span_hz) ? (if_center_frequency - if_span_hz) : 0u;
+    uint32_t if_high = if_center_frequency + if_span_hz;
+
+    uint32_t best_multiplier = 0;
+    uint32_t best_if_divider = 0;
+    uint32_t best_clk_divider = 0;
+    uint32_t best_if_frequency = 0;
+    uint32_t best_clk_frequency = 0;
+    uint32_t best_total_frequency = 0;
+    uint32_t best_error = UINT_MAX;
+    uint32_t best_if_center_error = UINT_MAX;
+
+    for (uint32_t n = 25; n <= 36; ++n) {
+        uint32_t vco_hz = XTAL_HZ * n;
+        if (vco_hz < 600000000u || vco_hz > 900000000u) {
+            continue;
+        }
+
+        for (uint32_t if_divider = 8; if_divider <= 126; if_divider += 2) {
+            if ((vco_hz % if_divider) != 0u) {
+                continue;
+            }
+
+            uint32_t if_frequency = vco_hz / if_divider;
+            if (if_frequency < if_low || if_frequency > if_high) {
+                continue;
+            }
+
+            for (uint32_t clk_divider = 6; clk_divider <= 254; clk_divider += 2) {
+                uint32_t clk_frequency = Round_Divide((uint64_t)vco_hz, clk_divider);
+                uint32_t total_frequency = if_frequency + clk_frequency;
+                uint32_t error = (total_frequency > target_frequency) ? (total_frequency - target_frequency) : (target_frequency - total_frequency);
+                uint32_t if_center_error = (if_frequency > if_center_frequency) ? (if_frequency - if_center_frequency) : (if_center_frequency - if_frequency);
+
+                if (error < best_error || (error == best_error && if_center_error < best_if_center_error)) {
+                    best_error = error;
+                    best_if_center_error = if_center_error;
+                    best_multiplier = n;
+                    best_if_divider = if_divider;
+                    best_clk_divider = clk_divider;
+                    best_if_frequency = if_frequency;
+                    best_clk_frequency = clk_frequency;
+                    best_total_frequency = total_frequency;
+                }
+            }
+        }
+    }
+
+    if (best_multiplier == 0u || best_if_divider == 0u || best_clk_divider == 0u) {
+        return 0;
+    }
+
+    uint8_t pll_data[8];
+    uint8_t if_data[8];
+    uint8_t clk_data[8];
+    Pack_Integer_Params(best_multiplier, pll_data);
+    Pack_Integer_Params(best_if_divider, if_data);
+    Pack_Integer_Params(best_clk_divider, clk_data);
+
+    if (!Stop_Outputs()) {
+        return 0;
+    }
+
+    if (!Write_Block(SI5351_REG_PLLA_BASE, pll_data, 8)) {
+        return 0;
+    }
+    if (!Write_Block(SI5351_REG_MS0_BASE, if_data, 8)) {
+        return 0;
+    }
+    if (!Write_Block(SI5351_REG_MS1_BASE, if_data, 8)) {
+        return 0;
+    }
+    if (!Write_Block(SI5351_REG_MS2_BASE, clk_data, 8)) {
+        return 0;
+    }
+
+    if (!Reg_Write(SI5351_REG_CLK0_CTRL, 0x4Fu)) {
+        return 0;
+    }
+    if (!Reg_Write(SI5351_REG_CLK1_CTRL, 0x4Fu)) {
+        return 0;
+    }
+    if (!Reg_Write(SI5351_REG_CLK2_CTRL, 0x4Fu)) {
+        return 0;
+    }
+
+    if (!Reg_Write(SI5351_REG_CLK0_PHOFF, 0x00u)) {
+        return 0;
+    }
+    if (!Reg_Write(SI5351_REG_CLK1_PHOFF, (uint8_t)best_if_divider)) {
+        return 0;
+    }
+    if (!Reg_Write(SI5351_REG_CLK2_PHOFF, 0x00u)) {
+        return 0;
+    }
+
+    if (!Reg_Write(SI5351_REG_PLL_RESET, 0x20u)) {
+        return 0;
+    }
+
+    if (!Start_Outputs()) {
+        return 0;
+    }
+
+    requested_quadrature_frequency = (int)target_frequency;
+    frequency_offset = (int)(target_frequency - best_total_frequency);
+    actual_quadrature_frequency = (int)best_total_frequency;
+    return (int)best_total_frequency;
+} // Set_VHF_Quadrature_Frequency()
 
 int dSi5351::Get_Actual_Quadrature_Frequency() {
     return actual_quadrature_frequency;

@@ -62,7 +62,7 @@ static void respond_serial_port(uint8_t cdc_buffer[], uint32_t count) {
         if (length < 8) {
             // the FREQ command
             char response[64];
-            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Actual_Quadrature_Frequency());
+            int chars_written = snprintf(response, sizeof(response), "%d\nOK,%d\n", g_Si5351.Get_Desired_Quadrature_Frequency(), g_Si5351.Get_Actual_Quadrature_Frequency());
 
             if (chars_written > 0) tud_cdc_n_write(0, response, strlen(response));
         }
