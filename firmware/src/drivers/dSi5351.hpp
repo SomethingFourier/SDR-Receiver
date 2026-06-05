@@ -31,6 +31,8 @@ class dSi5351 {
 		int requested_quadrature_frequency;
 		int frequency_offset;
 
+		int actual_clk2_frequency;
+
 		static const uint8_t Si5351_ADDR = 0x60;
 		static const uint32_t XTAL_HZ = 24576000u;
 

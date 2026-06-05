@@ -11,7 +11,7 @@ class dI2C {
 
 		// Public API
 		void Init(i2c_inst_t *i2c_instance = i2c0);
-		void Scan();
+		//void Scan();
 
 		i2c_inst_t *master_i2c_instance; // Pointer to the active i2c instance
 
