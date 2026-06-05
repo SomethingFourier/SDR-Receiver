@@ -122,8 +122,8 @@ bool dSi5351::Start_Outputs() {
         return false;
     }
 
-    // Enable CLK0 + CLK1 by clearing bits 0 and 1.
-    output_enable &= (uint8_t)(~0x03u);
+    // Enable CLK0 + CLK1 + CLK2 by clearing bits 0, 1, and 2.
+    output_enable &= (uint8_t)(~0x07u);
     return Reg_Write(SI5351_REG_OUTPUT_ENABLE_CTRL, output_enable);
 } // Start_Outputs()
 
