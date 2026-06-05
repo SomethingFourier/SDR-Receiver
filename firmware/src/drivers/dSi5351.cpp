@@ -302,7 +302,11 @@ int dSi5351::Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk) 
         return 0;
     }
 
-    return actual_quadrature_frequency = best_frequency;
+    if (clk == 2u) {
+        return actual_clk2_frequency = best_frequency;
+    } else {
+        return actual_quadrature_frequency = best_frequency;
+    }
 } // Set_Frequency_Integer_Clk()
 
 int dSi5351::Get_Actual_Quadrature_Frequency() {

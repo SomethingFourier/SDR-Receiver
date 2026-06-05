@@ -1,6 +1,6 @@
 #include "dI2C.hpp"
 
-#include <stdio.h>
+//#include <stdio.h>
 #include <hardware/i2c.h>
 #include <pico/stdlib.h>
 #include <pico/stdio.h>
@@ -20,6 +20,7 @@ void dI2C::Init(i2c_inst_t *i2c_instance) {
     gpio_set_function(SCL_PIN, GPIO_FUNC_I2C);
 } // Init()
 
+/*
 void dI2C::Scan() {
     // This was copied from the example in the pico-sdk docs 
     printf("\nI2C Bus Scan\n");
@@ -48,6 +49,7 @@ void dI2C::Scan() {
 
     printf("Done.\n");
 } // Scan()
+ */
 
 bool dI2C::Reserved_Address(uint8_t address) {
     return (address & 0x78) == 0 || (address & 0x78) == 0x78;

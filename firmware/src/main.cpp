@@ -57,14 +57,16 @@ int main(void) {
   // driver initializations
   g_I2C.Init();
   g_SSD1306.Init();
-  g_I2Srx.Init();
+  
   if (g_Si5351.Init()) {
-    g_SSD1306.Draw_Text(4, "clk init yay");
+    g_SSD1306.Draw_Text(7, "clk init yay");
   }
   else {
-    g_SSD1306.Draw_Text(4, "clk no init :(");
+    g_SSD1306.Draw_Text(7, "clk no init :(");
   }
   g_SSD1306.Update();
+
+  g_I2Srx.Init();
   tusb_init();
 
   g_I2Srx.Start();
