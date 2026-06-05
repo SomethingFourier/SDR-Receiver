@@ -15,6 +15,7 @@ class dSi5351 {
 		bool Stop_Outputs();
 		void Request_Frequency_Programming(uint32_t target_frequency);
 		int Set_Golden_Quadrature_Frequency(uint32_t target_frequency);
+		int Set_VHF_Quadrature_Frequency(uint32_t target_frequency, uint32_t if_center_frequency, uint32_t if_span_hz);
 		int Set_Frequency_Integer_Clk(uint32_t target_frequency, uint32_t clk);
 		int Get_Actual_Quadrature_Frequency();
 		int Get_Desired_Quadrature_Frequency();
