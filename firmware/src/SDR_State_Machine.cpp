@@ -25,7 +25,11 @@ void sdr_state_machine() {
 			}
 			else {
 				// VHF Mode
-				g_MUX.Set_Receiver_Configuration_State(dMUX::receiver_configuration::VHF_CHARLES);
+				if (g_Si5351.requested_quadrature_frequency < 110e6) {
+					g_MUX.Set_Receiver_Configuration_State(dMUX::receiver_configuration::VHF_EXTERNAL);
+				} else {
+					g_MUX.Set_Receiver_Configuration_State(dMUX::receiver_configuration::VHF_CHARLES);
+				}
 				g_Si5351.Set_VHF_Quadrature_Frequency(g_Si5351.requested_quadrature_frequency, 25e6, 5e6);
 				g_Si5351.programming_request_exists = false;
 				g_Si5351.cdc_programming_response_needed = true;
