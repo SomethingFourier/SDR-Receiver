@@ -22,6 +22,7 @@ class dI2Srx {
         volatile bool B_buffer_ready = false;
 
     private:
+        PIO pio_instance;
         // PIO state machine index in use (0..3)
         int pio_state_machine;
 

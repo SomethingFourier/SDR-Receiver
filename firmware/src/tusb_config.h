@@ -36,8 +36,8 @@ extern "C" {
 // Max isochronous packet: 193 samples × 2 ch × 2 bytes = 772 B worst-case
 #define CFG_TUD_AUDIO_FUNC_1_EP_IN_SZ_MAX     772
 
-// Software FIFO: double-buffer (1536 B = 2 × 768 nominal)
-#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SW_BUF_SZ  1536
+// Software FIFO: double-buffer + padding to prevent lock-free ring buffer N-1 issues
+#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SW_BUF_SZ  3072
 
 
 #ifdef __cplusplus

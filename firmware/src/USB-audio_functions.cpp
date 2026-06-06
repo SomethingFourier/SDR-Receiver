@@ -135,29 +135,44 @@ const float right_channel_fir[FIR_TAPS] = {
 
 static float right_fir_history[FIR_TAPS] = {0};
 static int16_t left_delay_history[GROUP_DELAY] = {0};
+static int fir_idx = 0;
+static int delay_idx = 0;
 
 void apply_phase_correction(int16_t* buffer, int num_samples) {
 #if ENABLE_FIR_FILTER
     for (int i = 0; i < num_samples; i += 2) {
         // --- Left Channel (Integer Delay) ---
         int16_t new_left = buffer[i];
-        buffer[i] = left_delay_history[GROUP_DELAY - 1];
         
-        for (int j = GROUP_DELAY - 1; j > 0; j--) {
-            left_delay_history[j] = left_delay_history[j - 1];
+        // Read the delayed sample and overwrite it with the new sample (circular buffer)
+        buffer[i] = left_delay_history[delay_idx];
+        left_delay_history[delay_idx] = new_left;
+        
+        delay_idx++;
+        if (delay_idx >= GROUP_DELAY) {
+            delay_idx = 0;
         }
-        left_delay_history[0] = new_left;
 
         // --- Right Channel (FIR Filter) ---
-        // Shift history
-        for (int j = FIR_TAPS - 1; j > 0; j--) {
-            right_fir_history[j] = right_fir_history[j - 1];
-        }
-        right_fir_history[0] = (float)buffer[i + 1];
+        right_fir_history[fir_idx] = (float)buffer[i + 1];
         
         float out_r = 0.0f;
-        for (int j = 0; j < FIR_TAPS; j++) {
-            out_r += right_fir_history[j] * right_channel_fir[j];
+        int j = 0;
+        
+        // Optimize inner loop by splitting it into two contiguous history segments
+        // Segment 1: from current index down to 0
+        for (int k = fir_idx; k >= 0; k--, j++) {
+            out_r += right_fir_history[k] * right_channel_fir[j];
+        }
+        
+        // Segment 2: from end of buffer down to current index + 1
+        for (int k = FIR_TAPS - 1; k > fir_idx; k--, j++) {
+            out_r += right_fir_history[k] * right_channel_fir[j];
+        }
+        
+        fir_idx++;
+        if (fir_idx >= FIR_TAPS) {
+            fir_idx = 0;
         }
         
         if (out_r > 32767.0f) out_r = 32767.0f;
@@ -176,21 +191,36 @@ void audio_task(void) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
         // Grab the IN endpoint FIFO and check how many bytes are backed up.
-        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes).
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 768) {
+        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes) to prevent overrun.
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 1152) {
             bytes_to_write -= 4; 
         }
-
-        int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
-        int32_t *in_buffer = (int32_t *)g_I2Srx.Get_A_Buffer();
-        for (int i = 0; i < (bytes_to_write / 2); i++) {
-            out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
+        // If the FIFO is draining below 0.5ms (384 bytes), add 1 frame (4 bytes) to prevent underrun.
+        else if (tu_fifo_count(tud_audio_get_ep_in_ff()) < 384) {
+            bytes_to_write += 4;
         }
 
-        apply_phase_correction(out_buffer, bytes_to_write / 2);
+        if (tu_fifo_remaining(tud_audio_get_ep_in_ff()) >= bytes_to_write) {
+            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER + 2]; // +2 for duplicate frame
+            int32_t *in_buffer = (int32_t *)g_I2Srx.Get_A_Buffer();
+            
+            // Always process the base buffer
+            for (int i = 0; i < AUDIO_SAMPLES_PER_BUFFER; i++) {
+                out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
+            }
+            
+            // Apply phase correction on EXACTLY the base buffer (384 samples)
+            // This ensures the FIR history is perfectly contiguous and never rings!
+            apply_phase_correction(out_buffer, AUDIO_SAMPLES_PER_BUFFER);
+            
+            // If we are dropping a frame, bytes_to_write/2 will be AUDIO_SAMPLES_PER_BUFFER - 2.
+            // If we are adding a frame, we duplicate the last filtered frame.
+            if (bytes_to_write > AUDIO_SAMPLES_PER_BUFFER * 2) {
+                out_buffer[AUDIO_SAMPLES_PER_BUFFER] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 2];
+                out_buffer[AUDIO_SAMPLES_PER_BUFFER + 1] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 1];
+            }
 
-        uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
-        if (written > 0) {
+            tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
             g_I2Srx.A_buffer_ready = false;
         }
     }
@@ -198,20 +228,37 @@ void audio_task(void) {
     if (g_I2Srx.B_buffer_ready) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 768) {
+        // Grab the IN endpoint FIFO and check how many bytes are backed up.
+        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes) to prevent overrun.
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 1152) {
             bytes_to_write -= 4; 
         }
-
-        int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
-        int32_t *in_buffer = (int32_t *)g_I2Srx.Get_B_Buffer();
-        for (int i = 0; i < (bytes_to_write / 2); i++) {
-            out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
+        // If the FIFO is draining below 0.5ms (384 bytes), add 1 frame (4 bytes) to prevent underrun.
+        else if (tu_fifo_count(tud_audio_get_ep_in_ff()) < 384) {
+            bytes_to_write += 4;
         }
 
-        apply_phase_correction(out_buffer, bytes_to_write / 2);
+        if (tu_fifo_remaining(tud_audio_get_ep_in_ff()) >= bytes_to_write) {
+            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER + 2]; // +2 for duplicate frame
+            int32_t *in_buffer = (int32_t *)g_I2Srx.Get_B_Buffer();
+            
+            // Always process the base buffer
+            for (int i = 0; i < AUDIO_SAMPLES_PER_BUFFER; i++) {
+                out_buffer[i] = (int16_t)(in_buffer[i] >> 16);
+            }
+            
+            // Apply phase correction on EXACTLY the base buffer (384 samples)
+            // This ensures the FIR history is perfectly contiguous and never rings!
+            apply_phase_correction(out_buffer, AUDIO_SAMPLES_PER_BUFFER);
+            
+            // If we are dropping a frame, bytes_to_write/2 will be AUDIO_SAMPLES_PER_BUFFER - 2.
+            // If we are adding a frame, we duplicate the last filtered frame.
+            if (bytes_to_write > AUDIO_SAMPLES_PER_BUFFER * 2) {
+                out_buffer[AUDIO_SAMPLES_PER_BUFFER] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 2];
+                out_buffer[AUDIO_SAMPLES_PER_BUFFER + 1] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 1];
+            }
 
-        uint16_t written = tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
-        if (written > 0) {
+            tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
             g_I2Srx.B_buffer_ready = false;
         }
     }
