@@ -16,7 +16,10 @@ extern "C" {
 #define FIRMWARE_VERSION "1.0"
 #define FIRMWARE_MODE "DIRECT"
 #define AUDIO_EP_IN 0x81
-#define AUDIO_SAMPLE_RATE_HZ 48000u
+#define AUDIO_SAMPLE_RATE_HZ 192000u
+
+// Set to 0 to disable FIR phase correction entirely
+#define ENABLE_FIR_FILTER 1
 
 static uint8_t current_mute[3] = {0, 0, 0};
 
@@ -91,49 +94,50 @@ bool tud_audio_tx_done_pre_load_cb(uint8_t rhport, uint8_t itf, uint8_t ep_in, u
     return true; // We manage data feeding manually in audio_task()
 }
 
-#define AUDIO_SAMPLES_PER_BUFFER 96 // 48 frames * 2 channels (stereo)
+#define AUDIO_SAMPLES_PER_BUFFER 384 // 192 frames * 2 channels (stereo)
 
 #define FIR_TAPS 31
 #define GROUP_DELAY ((FIR_TAPS - 1) / 2)
 
 const float right_channel_fir[FIR_TAPS] = {
-    0.0000000000f,
-    0.0000252251f,
-    -0.0001130003f,
-    0.0002921727f,
-    -0.0006070140f,
-    0.0011177446f,
-    -0.0019004852f,
-    0.0030479248f,
-    -0.0046731958f,
-    0.0069218335f,
-    -0.0100023776f,
-    0.0142620445f,
-    -0.0203863546f,
-    0.0300168918f,
-    -0.0483142335f,
-    0.1034724461f,
-    0.9824377921f,
-    -0.0797596114f,
-    0.0380343665f,
-    -0.0226176381f,
-    0.0144309374f,
-    -0.0093848312f,
-    0.0060631797f,
-    -0.0038266940f,
-    0.0023260788f,
-    -0.0013405265f,
-    0.0007160139f,
-    -0.0003399082f,
-    0.0001299358f,
-    -0.0000287169f,
     -0.0000000000f,
+    -0.0000850254f,
+    0.0003767077f,
+    -0.0009618252f,
+    0.0019694923f,
+    -0.0035658081f,
+    0.0059431792f,
+    -0.0093064184f,
+    0.0138590017f,
+    -0.0197942491f,
+    0.0272980892f,
+    -0.0365736113f,
+    0.0479059997f,
+    -0.0618090841f,
+    0.0793632436f,
+    -0.1030959417f,
+    0.1398300714f,
+    -0.2139528740f,
+    0.5077906466f,
+    0.7437000505f,
+    -0.1712360100f,
+    0.0802195400f,
+    -0.0436304902f,
+    0.0247286202f,
+    -0.0139596256f,
+    0.0076210718f,
+    -0.0039056174f,
+    0.0017944558f,
+    -0.0006680303f,
+    0.0001444412f,
+    0.0000000000f,
 };
 
 static float right_fir_history[FIR_TAPS] = {0};
 static int16_t left_delay_history[GROUP_DELAY] = {0};
 
 void apply_phase_correction(int16_t* buffer, int num_samples) {
+#if ENABLE_FIR_FILTER
     for (int i = 0; i < num_samples; i += 2) {
         // --- Left Channel (Integer Delay) ---
         int16_t new_left = buffer[i];
@@ -161,6 +165,10 @@ void apply_phase_correction(int16_t* buffer, int num_samples) {
         
         buffer[i + 1] = (int16_t)out_r;
     }
+#else
+    (void)buffer;
+    (void)num_samples;
+#endif
 }
 
 void audio_task(void) {
@@ -168,8 +176,8 @@ void audio_task(void) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
         // Grab the IN endpoint FIFO and check how many bytes are backed up.
-        // If there's more than 1ms of audio (192 bytes) waiting, drop 1 frame (4 bytes).
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 192) {
+        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes).
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 768) {
             bytes_to_write -= 4; 
         }
 
@@ -190,7 +198,7 @@ void audio_task(void) {
     if (g_I2Srx.B_buffer_ready) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
         
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 192) {
+        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 768) {
             bytes_to_write -= 4; 
         }
 
