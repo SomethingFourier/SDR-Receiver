@@ -189,19 +189,9 @@ void apply_phase_correction(int16_t* buffer, int num_samples) {
 void audio_task(void) {
     if (g_I2Srx.A_buffer_ready) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
-        
-        // Grab the IN endpoint FIFO and check how many bytes are backed up.
-        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes) to prevent overrun.
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 1152) {
-            bytes_to_write -= 4; 
-        }
-        // If the FIFO is draining below 0.5ms (384 bytes), add 1 frame (4 bytes) to prevent underrun.
-        else if (tu_fifo_count(tud_audio_get_ep_in_ff()) < 384) {
-            bytes_to_write += 4;
-        }
 
         if (tu_fifo_remaining(tud_audio_get_ep_in_ff()) >= bytes_to_write) {
-            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER + 2]; // +2 for duplicate frame
+            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
             int32_t *in_buffer = (int32_t *)g_I2Srx.Get_A_Buffer();
             
             // Always process the base buffer
@@ -212,13 +202,6 @@ void audio_task(void) {
             // Apply phase correction on EXACTLY the base buffer (384 samples)
             // This ensures the FIR history is perfectly contiguous and never rings!
             apply_phase_correction(out_buffer, AUDIO_SAMPLES_PER_BUFFER);
-            
-            // If we are dropping a frame, bytes_to_write/2 will be AUDIO_SAMPLES_PER_BUFFER - 2.
-            // If we are adding a frame, we duplicate the last filtered frame.
-            if (bytes_to_write > AUDIO_SAMPLES_PER_BUFFER * 2) {
-                out_buffer[AUDIO_SAMPLES_PER_BUFFER] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 2];
-                out_buffer[AUDIO_SAMPLES_PER_BUFFER + 1] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 1];
-            }
 
             tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
             g_I2Srx.A_buffer_ready = false;
@@ -227,19 +210,9 @@ void audio_task(void) {
 
     if (g_I2Srx.B_buffer_ready) {
         int bytes_to_write = AUDIO_SAMPLES_PER_BUFFER * 2;
-        
-        // Grab the IN endpoint FIFO and check how many bytes are backed up.
-        // If there's more than 1ms of audio (768 bytes) waiting, drop 1 frame (4 bytes) to prevent overrun.
-        if (tu_fifo_count(tud_audio_get_ep_in_ff()) > 1152) {
-            bytes_to_write -= 4; 
-        }
-        // If the FIFO is draining below 0.5ms (384 bytes), add 1 frame (4 bytes) to prevent underrun.
-        else if (tu_fifo_count(tud_audio_get_ep_in_ff()) < 384) {
-            bytes_to_write += 4;
-        }
 
         if (tu_fifo_remaining(tud_audio_get_ep_in_ff()) >= bytes_to_write) {
-            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER + 2]; // +2 for duplicate frame
+            int16_t out_buffer[AUDIO_SAMPLES_PER_BUFFER];
             int32_t *in_buffer = (int32_t *)g_I2Srx.Get_B_Buffer();
             
             // Always process the base buffer
@@ -250,13 +223,6 @@ void audio_task(void) {
             // Apply phase correction on EXACTLY the base buffer (384 samples)
             // This ensures the FIR history is perfectly contiguous and never rings!
             apply_phase_correction(out_buffer, AUDIO_SAMPLES_PER_BUFFER);
-            
-            // If we are dropping a frame, bytes_to_write/2 will be AUDIO_SAMPLES_PER_BUFFER - 2.
-            // If we are adding a frame, we duplicate the last filtered frame.
-            if (bytes_to_write > AUDIO_SAMPLES_PER_BUFFER * 2) {
-                out_buffer[AUDIO_SAMPLES_PER_BUFFER] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 2];
-                out_buffer[AUDIO_SAMPLES_PER_BUFFER + 1] = out_buffer[AUDIO_SAMPLES_PER_BUFFER - 1];
-            }
 
             tud_audio_write((uint8_t *)out_buffer, bytes_to_write);
             g_I2Srx.B_buffer_ready = false;
