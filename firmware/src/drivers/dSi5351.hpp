@@ -4,6 +4,10 @@
 #include <hardware/i2c.h>
 #include <pico/types.h>
 
+#define SI5351_CLK0_CLK1_INTEGER_MODE 1
+#define SI5351_CLK2_INTEGER_MODE 0
+
+
 class dSi5351 {
 	
 	public:
@@ -40,6 +44,8 @@ class dSi5351 {
 		bool Reg_Read(uint8_t reg, uint8_t *value);
 		bool Write_Block(uint8_t start_reg, const uint8_t *data, uint8_t len);
 		void Pack_Integer_Params(uint32_t a, uint8_t out[8]);
+		void Pack_Fractional_Params(uint32_t a, uint32_t b, uint32_t c, uint8_t out[8]);
+
 
 		friend void sdr_state_machine();
 		friend void cdc_task(void);

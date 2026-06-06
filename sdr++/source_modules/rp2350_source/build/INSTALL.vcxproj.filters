@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\peter\Documents\GitHub\SDR-Receiver\sdr++\source_modules\rp2350_source\build\CMakeFiles\ba570769e6f79d5acaee74c7a755e74a\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB52CF52-DA26-3297-8429-1703C003CFF2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

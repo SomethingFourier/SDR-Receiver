@@ -1,0 +1,4 @@
+C:/Users/peter/Documents/GitHub/SDR-Receiver/sdr++/source_modules/rp2350_source/build/CMakeFiles/rp2350_source.dir
+C:/Users/peter/Documents/GitHub/SDR-Receiver/sdr++/source_modules/rp2350_source/build/CMakeFiles/INSTALL.dir
+C:/Users/peter/Documents/GitHub/SDR-Receiver/sdr++/source_modules/rp2350_source/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/peter/Documents/GitHub/SDR-Receiver/sdr++/source_modules/rp2350_source/build/CMakeFiles/ZERO_CHECK.dir

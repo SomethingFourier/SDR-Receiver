@@ -22,13 +22,14 @@ class dI2Srx {
         volatile bool B_buffer_ready = false;
 
     private:
+        PIO pio_instance;
         // PIO state machine index in use (0..3)
         int pio_state_machine;
 
         // Buffer sizing constants (lab recommended)
-        static const int FRAMES_PER_HALF = 48;    // 2 ms at 48 kHz
+        static const int FRAMES_PER_HALF = 192;   // 1 ms at 192 kHz
         static const int CHANNEL_COUNT = 2;       // stereo
-        static const int WORDS_PER_HALF = FRAMES_PER_HALF * CHANNEL_COUNT; // 192 words
+        static const int WORDS_PER_HALF = FRAMES_PER_HALF * CHANNEL_COUNT; // 384 words
 
         // Interleaved stereo half-buffers (persistent storage for DMA)
         int audio_A_buffer[WORDS_PER_HALF];

@@ -1,6 +1,6 @@
 import numpy as np
 
-fs = 48000
+fs = 192000
 delay_us = 18.8803
 delay_samples = delay_us * 1e-6 * fs
 

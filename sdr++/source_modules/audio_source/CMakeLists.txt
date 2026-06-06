@@ -7,10 +7,10 @@ include(${SDRPP_MODULE_CMAKE})
 
 if (MSVC)
     # Lib path
-    target_link_directories(audio_source PRIVATE "C:/Program Files (x86)/RtAudio/lib")
+    target_link_directories(audio_source PRIVATE "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/rtaudio/build/Release")
 
     # Misc headers
-    target_include_directories(audio_source PRIVATE "C:/Program Files (x86)/RtAudio/include/rtaudio")
+    target_include_directories(audio_source PRIVATE "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/rtaudio")
 
     target_link_libraries(audio_source PRIVATE rtaudio)
 else (MSVC)
