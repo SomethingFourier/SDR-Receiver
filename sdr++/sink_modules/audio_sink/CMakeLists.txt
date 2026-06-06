@@ -6,12 +6,9 @@ file(GLOB SRC "src/*.cpp")
 include(${SDRPP_MODULE_CMAKE})
 
 if (MSVC)
-    # Lib path
-    target_link_directories(audio_sink PRIVATE "C:/Program Files (x86)/RtAudio/lib")
-
-    # Misc headers
-    target_include_directories(audio_sink PRIVATE "C:/Program Files (x86)/RtAudio/include/rtaudio")
-
+    # Lif (MSVC)
+    target_link_directories(audio_sink PRIVATE "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/rtaudio/build/Release")
+    target_include_directories(audio_sink PRIVATE "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/rtaudio")
     target_link_libraries(audio_sink PRIVATE rtaudio)
 else (MSVC)
     find_package(PkgConfig)

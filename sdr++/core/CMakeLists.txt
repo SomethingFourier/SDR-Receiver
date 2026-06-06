@@ -75,10 +75,10 @@ endif (OPT_OVERRIDE_STD_FILESYSTEM)
 
 if (MSVC)
     # Lib path
-    target_link_directories(sdrpp_core PUBLIC "C:/Program Files/PothosSDR/lib/")
+    target_link_directories(sdrpp_core PUBLIC "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/PothosSDR/lib/")
 
     # Misc headers
-    target_include_directories(sdrpp_core PUBLIC "C:/Program Files/PothosSDR/include/")
+    target_include_directories(sdrpp_core PUBLIC "C:/Users/peter/Documents/GitHub/SDR-Receiver/deps/PothosSDR/include/")
 
     # Volk
     target_link_libraries(sdrpp_core PUBLIC volk)

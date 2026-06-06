@@ -22,14 +22,40 @@ SDRPP_MOD_INFO{
 
 ConfigManager config;
 
+class RingWriterBlock : public dsp::block {
+public:
+    void init(dsp::stream<dsp::stereo_t>* in, dsp::buffer::RingBuffer<dsp::stereo_t>* rb) {
+        _in = in;
+        _rb = rb;
+        dsp::block::registerInput(_in);
+        dsp::block::_block_init = true;
+    }
+    int run() {
+        int count = _in->read();
+        if (count < 0) { return -1; }
+        _rb->write(_in->readBuf, count);
+        _in->flush();
+        return count;
+    }
+    void start() {
+        dsp::block::start();
+    }
+    void stop() {
+        dsp::block::stop();
+    }
+    dsp::stream<dsp::stereo_t>* _in;
+    dsp::buffer::RingBuffer<dsp::stereo_t>* _rb;
+};
+
 class AudioSink : SinkManager::Sink {
 public:
     AudioSink(SinkManager::Stream* stream, std::string streamName) {
         _stream = stream;
         _streamName = streamName;
         s2m.init(_stream->sinkOut);
-        monoPacker.init(&s2m.out, 512);
-        stereoPacker.init(_stream->sinkOut, 512);
+        
+        ringBuffer.init(48000 * 2); // 2 second max buffer is plenty
+        ringWriter.init(_stream->sinkOut, &ringBuffer);
 
 #if RTAUDIO_VERSION_MAJOR >= 6
         audio.setErrorCallback(&errorCallback);
@@ -187,16 +213,15 @@ private:
         RtAudio::StreamParameters parameters;
         parameters.deviceId = deviceIds[devId];
         parameters.nChannels = 2;
-        unsigned int bufferFrames = sampleRate / 60;
+        unsigned int bufferFrames = sampleRate / 200;
         RtAudio::StreamOptions opts;
         opts.flags = RTAUDIO_MINIMIZE_LATENCY;
         opts.streamName = _streamName;
 
         try {
             audio.openStream(&parameters, NULL, RTAUDIO_FLOAT32, sampleRate, &bufferFrames, &callback, this, &opts);
-            stereoPacker.setSampleCount(bufferFrames);
+            ringWriter.start();
             audio.startStream();
-            stereoPacker.start();
         }
         catch (const std::exception& e) {
             flog::error("Could not open audio device {0}", e.what());
@@ -209,30 +234,45 @@ private:
 
     void doStop() {
         s2m.stop();
-        monoPacker.stop();
-        stereoPacker.stop();
-        monoPacker.out.stopReader();
-        stereoPacker.out.stopReader();
+        ringWriter.stop();
+        ringBuffer.stopReader();
+        ringBuffer.stopWriter();
         audio.stopStream();
         audio.closeStream();
-        monoPacker.out.clearReadStop();
-        stereoPacker.out.clearReadStop();
+        ringBuffer.clearReadStop();
+        ringBuffer.clearWriteStop();
     }
 
     static int callback(void* outputBuffer, void* inputBuffer, unsigned int nBufferFrames, double streamTime, RtAudioStreamStatus status, void* userData) {
         AudioSink* _this = (AudioSink*)userData;
-        int count = _this->stereoPacker.out.read();
-        if (count < 0) { return 0; }
+        
+        int readable = _this->ringBuffer.getReadable(true);
+        unsigned int prebuffer = _this->sampleRate / 20; // 50ms pre-buffer
 
-        memcpy(outputBuffer, _this->stereoPacker.out.readBuf, nBufferFrames * sizeof(dsp::stereo_t));
-        _this->stereoPacker.out.flush();
+        if (_this->starved) {
+            if (readable >= prebuffer) {
+                _this->starved = false;
+            } else {
+                memset(outputBuffer, 0, nBufferFrames * sizeof(dsp::stereo_t));
+                return 0;
+            }
+        }
+
+        if (readable >= nBufferFrames) {
+            _this->ringBuffer.read((dsp::stereo_t*)outputBuffer, nBufferFrames);
+        } else {
+            _this->starved = true;
+            memset(outputBuffer, 0, nBufferFrames * sizeof(dsp::stereo_t));
+        }
+
         return 0;
     }
 
     SinkManager::Stream* _stream;
     dsp::convert::StereoToMono s2m;
-    dsp::buffer::Packer<float> monoPacker;
-    dsp::buffer::Packer<dsp::stereo_t> stereoPacker;
+    dsp::buffer::RingBuffer<dsp::stereo_t> ringBuffer;
+    RingWriterBlock ringWriter;
+    bool starved = true;
 
     std::string _streamName;
 
