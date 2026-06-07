@@ -76,13 +76,53 @@ public:
         }
         config.release();
         select(device);
+        openAudioStream();
         
         sigpath::sourceManager.registerSource("RP2350", &handler);
     }
 
     ~RP2350SourceModule() {
         stop(this);
+#ifdef _WIN32
+        if (serial_fd != INVALID_HANDLE_VALUE) {
+            CloseHandle(serial_fd);
+        }
+#else
+        if (serial_fd >= 0) {
+            close(serial_fd);
+        }
+#endif
+        if (audio.isStreamOpen()) {
+            audio.stopStream();
+            audio.closeStream();
+        }
         sigpath::sourceManager.unregisterSource("RP2350");
+    }
+
+    void openAudioStream() {
+        if (audio.isStreamOpen()) {
+            audio.stopStream();
+            audio.closeStream();
+        }
+
+        if (selectedDevice.empty()) return;
+
+        RtAudio::StreamParameters parameters;
+        parameters.deviceId = devices[devId].id;
+        parameters.nChannels = 2;
+        unsigned int bufferFrames = sampleRate / 200;
+        RtAudio::StreamOptions opts;
+        opts.flags = RTAUDIO_MINIMIZE_LATENCY;
+        opts.streamName = "RP2350 IQ Source";
+
+        try {
+            if (audio.openStream(NULL, &parameters, RTAUDIO_FLOAT32, sampleRate, &bufferFrames, callback, this, &opts) == 0) {
+                audio.startStream();
+            }
+        }
+        catch (const std::exception& e) {
+            flog::error("Error opening audio device: {}", e.what());
+        }
     }
 
     void postInit() {}
@@ -167,36 +207,47 @@ public:
         }
         
         devId = devices.keyId(devname);
-        selectedDevice = devname;
         auto info = devices.value(devId).info;
+        selectedDevice = devname;
 
+        // List samplerates and save ID of the preference one
         sampleRates.clear();
         for (const auto& sr : info.sampleRates) {
-            std::string name = std::to_string(sr) + " Hz";
-            if (sr >= 1000) name = std::to_string(sr / 1000) + " kHz";
+            std::string name = getBandwdithScaled(sr);
             sampleRates.define(sr, name, sr);
             if (sr == info.preferredSampleRate) {
                 srId = sampleRates.valueId(sr);
             }
         }
 
-        config.acquire();
-        if (config.conf["devices"][selectedDevice].contains("sampleRate")) {
-            sampleRate = config.conf["devices"][selectedDevice]["sampleRate"];
-            if (sampleRates.keyExists(sampleRate)) {
-                srId = sampleRates.keyId(sampleRate);
-            }
+        // If no preferred, just pick the highest or default
+        if (!sampleRates.empty() && srId >= sampleRates.size()) {
+            srId = 0;
         }
-        config.release();
 
         if (sampleRates.empty()) {
             sampleRate = 192000.0;
         } else {
             sampleRate = sampleRates[srId];
         }
+        core::setInputSampleRate(sampleRate);
     }
 
 private:
+    std::string getBandwdithScaled(double bw) {
+        char buf[1024];
+        if (bw >= 1000000.0) {
+            snprintf(buf, sizeof(buf), "%.1lfMHz", bw / 1000000.0);
+        }
+        else if (bw >= 1000.0) {
+            snprintf(buf, sizeof(buf), "%.1lfKHz", bw / 1000.0);
+        }
+        else {
+            snprintf(buf, sizeof(buf), "%.1lfHz", bw);
+        }
+        return std::string(buf);
+    }
+
     static void menuSelected(void* ctx) {
         RP2350SourceModule* _this = (RP2350SourceModule*)ctx;
         core::setInputSampleRate(_this->sampleRate);
@@ -216,23 +267,12 @@ private:
 
         core::setInputSampleRate(_this->sampleRate);
         
-        RtAudio::StreamParameters parameters;
-        parameters.deviceId = _this->devices[_this->devId].id;
-        parameters.nChannels = 2;
-        unsigned int bufferFrames = _this->sampleRate / 200;
-        RtAudio::StreamOptions opts;
-        opts.flags = RTAUDIO_MINIMIZE_LATENCY;
-        opts.streamName = "RP2350 IQ Source";
+        // Ensure stream is open in case it failed earlier
+        if (!_this->audio.isStreamRunning()) {
+            _this->openAudioStream();
+        }
 
-        try {
-            _this->audio.openStream(NULL, &parameters, RTAUDIO_SINT16, _this->sampleRate, &bufferFrames, callback, _this, &opts);
-            _this->audio.startStream();
-            _this->running = true;
-        }
-        catch (const std::exception& e) {
-            flog::error("Error opening audio device: {}", e.what());
-            return;
-        }
+        _this->running = true;
         
         // Open serial port for tuning
 #ifdef _WIN32
@@ -292,6 +332,7 @@ private:
                     tty.c_cflag &= ~(PARENB | PARODD);
                     tty.c_cflag &= ~CSTOPB;
                     tty.c_cflag &= ~CRTSCTS;
+                    tty.c_cflag &= ~HUPCL; // Prevent dropping DTR on close
                     tcsetattr(_this->serial_fd, TCSANOW, &tty);
                     
                     // Sync frequency on start
@@ -302,7 +343,7 @@ private:
                 flog::error("RP2350SourceModule: Failed to open port {}", port);
             }
         } else {
-            flog::warn("RP2350SourceModule: No COM port selected for tuning!");
+            flog::warn("RP2350SourceModule: No /dev/cu.usbmodem* device found for tuning!");
         }
 #endif
 
@@ -324,8 +365,8 @@ private:
             _this->tuneThread = nullptr;
         }
 
-        _this->audio.stopStream();
-        _this->audio.closeStream();
+        // DO NOT stop or close the audio stream here! 
+        // We leave it running in the background to bypass macOS CoreAudio bugs.
 
 #ifdef _WIN32
         if (_this->serial_fd != INVALID_HANDLE_VALUE) {
@@ -381,6 +422,7 @@ private:
             config.acquire();
             config.conf["device"] = dev;
             config.release(true);
+            _this->openAudioStream();
         }
 
         SmGui::FillWidth();
@@ -404,32 +446,68 @@ private:
             config.release(true);
         }
 
-        SmGui::SameLine();
+        if (_this->running) { SmGui::EndDisabled(); }
+
         SmGui::FillWidth();
         SmGui::ForceSync();
         if (SmGui::Button(CONCAT("Refresh##_rp2350_refr_", _this->name))) {
             _this->refresh();
             _this->select(_this->selectedDevice);
-            core::setInputSampleRate(_this->sampleRate);
+            _this->openAudioStream();
         }
-
-        if (_this->running) { SmGui::EndDisabled(); }
-
-        SmGui::FillWidth();
-        SmGui::ForceSync();
-        SmGui::SliderFloat(CONCAT("Digital Gain##_rp2350_gain_", _this->name), &_this->digitalGain, 1.0f, 1000.0f);
     }
 
     static int callback(void* outputBuffer, void* inputBuffer, unsigned int nBufferFrames, double streamTime, RtAudioStreamStatus status, void* userData) {
         RP2350SourceModule* _this = (RP2350SourceModule*)userData;
         
-        int16_t* ibuf = (int16_t*)inputBuffer;
-        float* wbuf = (float*)_this->stream.writeBuf;
-        for (unsigned int i = 0; i < nBufferFrames * 2; i++) {
-            wbuf[i] = ((float)ibuf[i]) / 32768.0f;
+        if (!_this->running) {
+            return 0; // discard data
         }
+
+        // Sync frequency in the background (non-blocking)
+        if (_this->tuneThread == nullptr) {
+#ifdef _WIN32
+            if (_this->serial_fd != INVALID_HANDLE_VALUE && _this->currentFreq != _this->lastSentFreq) {
+                auto now = std::chrono::steady_clock::now();
+                if (std::chrono::duration_cast<std::chrono::milliseconds>(now - _this->lastSentTime).count() > 50) {
+                    _this->lastSentTime = now;
+                    _this->lastSentFreq = _this->currentFreq;
+                    std::string cmd = "FREQ," + std::to_string(static_cast<long long>(_this->currentFreq)) + "\n";
+                    DWORD bytesWritten;
+                    WriteFile(_this->serial_fd, cmd.c_str(), cmd.length(), &bytesWritten, NULL);
+                }
+            }
+#else
+            if (_this->serial_fd >= 0 && _this->currentFreq != _this->lastSentFreq) {
+                auto now = std::chrono::steady_clock::now();
+                if (std::chrono::duration_cast<std::chrono::milliseconds>(now - _this->lastSentTime).count() > 50) {
+                    _this->lastSentTime = now;
+                    _this->lastSentFreq = _this->currentFreq;
+                    std::string cmd = "FREQ," + std::to_string(static_cast<long long>(_this->currentFreq)) + "\n";
+                    if (write(_this->serial_fd, cmd.c_str(), cmd.length()) < 0) {
+                        close(_this->serial_fd);
+                        _this->serial_fd = -1;
+                    }
+                }
+            }
+#endif
+        }
+
+        // Optional debug: Print peak amplitude every ~1 second to verify data isn't silent
+        static int debug_counter = 0;
+        if (debug_counter++ % 200 == 0) {
+            float* fbuf = (float*)inputBuffer;
+            float max_val = 0.0f;
+            for (unsigned int i = 0; i < nBufferFrames * 2; i++) {
+                if (std::abs(fbuf[i]) > max_val) max_val = std::abs(fbuf[i]);
+            }
+            flog::info("RP2350 Audio Peak Amplitude: {:.6f}. Raw Samples: {:.4f}, {:.4f}, {:.4f}, {:.4f}", max_val, fbuf[0], fbuf[1], fbuf[2], fbuf[3]);
+        }
+
+        memcpy(_this->stream.writeBuf, inputBuffer, nBufferFrames * sizeof(dsp::complex_t));
         
         if (_this->digitalGain != 1.0f) {
+            float* wbuf = (float*)_this->stream.writeBuf;
             for (unsigned int i = 0; i < nBufferFrames * 2; i++) {
                 wbuf[i] *= _this->digitalGain;
             }

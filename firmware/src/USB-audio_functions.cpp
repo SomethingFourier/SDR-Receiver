@@ -27,8 +27,23 @@ static uint8_t current_mute[3] = {0, 0, 0};
 bool tud_audio_set_itf_cb(uint8_t rhport, const tusb_control_request_t *p_request) {
     (void) rhport;
     (void) p_request;
+    
+    // Clear the stale data out of the TinyUSB FIFO when stream state changes
+    tud_audio_clear_ep_in_ff();
+    
+    // Reset our I2S flags so we don't immediately write stale buffer data
+    g_I2Srx.A_buffer_ready = false;
+    g_I2Srx.B_buffer_ready = false;
+
     return true;
 }
+/*
+bool tud_audio_set_itf_cb(uint8_t rhport, const tusb_control_request_t *p_request) {
+    (void) rhport;
+    (void) p_request;
+    return true;
+}
+    */
 
 bool tud_audio_get_itf_close_ep_cb(uint8_t rhport, const tusb_control_request_t *p_request) {
     (void) rhport;
