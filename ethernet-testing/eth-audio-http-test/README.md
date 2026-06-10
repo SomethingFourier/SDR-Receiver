@@ -62,5 +62,7 @@ These issues are likely caused by a combination of tight timing margins on the 2
 ## Instructions to Stream Audio
 Run the current working UF2 on the RP2350. It is configured with a static IP address of 192.168.1.100.
 Run the rx_audio_udp.py file under the tools directory with the following parameters:
-```python3 rx_audio_udp.py --port 4951 --target 192.168.1.100 --play --device 17```
+```
+python3 rx_audio_udp.py --port 4951 --target 192.168.1.100 --play --device 17
+```
 
