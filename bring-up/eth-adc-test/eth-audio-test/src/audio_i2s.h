@@ -4,9 +4,9 @@
 #include <stdint.h>
 #include "hardware/dma.h"
 
-// Ring buffer containing exactly 512 stereo frames of 24-bit audio (in 32-bit words)
+// Ring buffer containing exactly 4096 stereo frames of 24-bit audio (in 32-bit words)
 // (Each frame is 2 words: Left then Right)
-#define AUDIO_RING_FRAMES 512
+#define AUDIO_RING_FRAMES 4096
 #define AUDIO_RING_WORDS (AUDIO_RING_FRAMES * 2)
 extern uint32_t audio_ring_buffer[AUDIO_RING_WORDS];
 

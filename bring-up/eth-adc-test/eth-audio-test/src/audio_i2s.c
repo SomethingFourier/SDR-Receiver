@@ -14,8 +14,8 @@
 #define ADC_MD0 6
 #define ADC_MD1 7
 
-// The DMA ring buffer must be aligned to its size in bytes (512 frames * 8 bytes = 4096)
-uint32_t audio_ring_buffer[AUDIO_RING_WORDS] __attribute__((aligned(4096)));
+// The DMA ring buffer must be aligned to its size in bytes (4096 frames * 8 bytes = 32768)
+uint32_t audio_ring_buffer[AUDIO_RING_WORDS] __attribute__((aligned(32768)));
 
 static int dma_channel_i2s;
 static pio_hw_t *pio_hw = pio1;
@@ -57,7 +57,7 @@ void audio_i2s_init(void) {
     channel_config_set_read_increment(&c, false);
     channel_config_set_write_increment(&c, true);
     channel_config_set_dreq(&c, pio_get_dreq(pio_hw, sm, false));
-    channel_config_set_ring(&c, true, 12); // 1<<12 = 4096 bytes
+    channel_config_set_ring(&c, true, 15); // 1<<15 = 32768 bytes
 
     dma_channel_configure(
         dma_channel_i2s,

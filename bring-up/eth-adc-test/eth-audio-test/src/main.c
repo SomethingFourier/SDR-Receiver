@@ -26,7 +26,7 @@
 #include "audio_i2s.h"
 
 // Set to 1 to use DHCP, or 0 to use the static IPv4 settings below.
-#define USE_DHCP 1
+#define USE_DHCP 0
 #define STATIC_IP_ADDR(ipaddr)      IP4_ADDR((ipaddr), 192, 168, 1, 100)
 #define STATIC_NETMASK_ADDR(ipaddr) IP4_ADDR((ipaddr), 255, 255, 255, 0)
 #define STATIC_GATEWAY_ADDR(ipaddr)  IP4_ADDR((ipaddr), 192, 168, 1, 1)
@@ -39,8 +39,8 @@
 #define AUDIO_CHANNEL_COUNT 2u
 #define AUDIO_BYTES_PER_SAMPLE 3u
 #define AUDIO_PACKET_MS 1u
-#define AUDIO_RING_OVERRUN_THRESHOLD 384u
-#define AUDIO_RING_RECOVER_FRAMES 192u
+#define AUDIO_RING_OVERRUN_THRESHOLD 3072u
+#define AUDIO_RING_RECOVER_FRAMES 2048u
 #define AUDIO_HEADER_MAGIC 0x30445541u  // 'AUD0'
 
 #define AUDIO_FRAMES_PER_PACKET 240u // 1.25ms at 192kHz fits perfectly under 1500 byte MTU
