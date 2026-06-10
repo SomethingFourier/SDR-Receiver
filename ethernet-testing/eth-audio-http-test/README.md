@@ -57,3 +57,10 @@ This project is highly experimental. The custom PCB is currently on its first re
 * **Degradation over time:** Even on a "lucky boot," the system will occasionally desync after a few minutes of operation, resulting in a sudden flood of CRC errors and dropped packets.
 
 These issues are likely caused by a combination of tight timing margins on the 200MHz PIO, clock skew on the 50MHz reference clock, or trace impedance mismatches on the v1 PCB. Resolving these physical and timing-layer bugs is the main focus for hardware v2.
+
+
+## Instructions to Stream Audio
+Run the current working UF2 on the RP2350. It is configured with a static IP address of 192.168.1.100.
+Run the rx_audio_udp.py file under the tools directory with the following parameters:
+`python3 rx_audio_udp.py --port 4951 --target 192.168.1.100 --play --device 17`
+
