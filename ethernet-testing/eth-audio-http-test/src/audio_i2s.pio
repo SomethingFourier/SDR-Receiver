@@ -1,0 +1,72 @@
+.program audio_i2s
+
+; I2S Slave Receiver for 24-bit audio in 32-bit words
+.define BCLK 19
+.define WS 20
+
+public entry_point:
+    wait 1 gpio WS
+    wait 0 gpio WS
+
+left_channel:
+    ; Skip 1 BCLK (LSB of Right channel)
+    wait 1 gpio BCLK
+    wait 0 gpio BCLK
+
+    ; Read top 24 bits of Left channel
+    set x, 23
+left_loop:
+    wait 1 gpio BCLK
+    in pins, 1
+    wait 0 gpio BCLK
+    jmp x-- left_loop
+
+    ; Shift left by 8 to align MSB to bit 31 (creates a 32-bit signed integer)
+    in null, 8
+
+    ; Push Left channel (32-bit word)
+    push noblock
+
+    ; Wait for Right channel
+    wait 1 gpio WS
+
+right_channel:
+    ; Skip 1 BCLK (LSB of Left channel)
+    wait 1 gpio BCLK
+    wait 0 gpio BCLK
+
+    ; Read top 24 bits of Right channel
+    set x, 23
+right_loop:
+    wait 1 gpio BCLK
+    in pins, 1
+    wait 0 gpio BCLK
+    jmp x-- right_loop
+
+    ; Shift left by 8 to align MSB to bit 31
+    in null, 8
+
+    ; Push Right channel (32-bit word)
+    push noblock
+    jmp entry_point
+
+% c-sdk {
+static inline void audio_i2s_program_init(PIO pio, uint sm, uint offset, uint data_pin, uint bclk_pin, uint ws_pin) {
+    pio_gpio_init(pio, data_pin);
+    pio_gpio_init(pio, bclk_pin);
+    pio_gpio_init(pio, ws_pin);
+
+    gpio_disable_pulls(data_pin);
+    gpio_disable_pulls(bclk_pin);
+    gpio_disable_pulls(ws_pin);
+
+    pio_sm_config c = audio_i2s_program_get_default_config(offset);
+    sm_config_set_in_pins(&c, data_pin);
+    sm_config_set_in_shift(&c, false, false, 32);
+    sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_RX);
+    pio_sm_init(pio, sm, offset, &c);
+    
+    uint32_t pin_mask = (1u << data_pin) | (1u << bclk_pin) | (1u << ws_pin);
+    pio_sm_set_pindirs_with_mask(pio, sm, 0, pin_mask);
+}
+%}
