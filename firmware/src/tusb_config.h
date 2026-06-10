@@ -33,11 +33,11 @@ extern "C" {
 // Enable the IN endpoint (device → host audio data)
 #define CFG_TUD_AUDIO_ENABLE_EP_IN             1
 
-// Max isochronous packet: 49 samples × 2 ch × 2 bytes = 196 B worst-case
-#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SZ_MAX     196
+// Max isochronous packet: 193 samples × 2 ch × 2 bytes = 772 B worst-case
+#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SZ_MAX     772
 
-// Software FIFO: double-buffer (384 B = 2 × 192 nominal)
-#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SW_BUF_SZ  384
+// Software FIFO: double-buffer + padding to prevent lock-free ring buffer N-1 issues
+#define CFG_TUD_AUDIO_FUNC_1_EP_IN_SW_BUF_SZ  3072
 
 
 #ifdef __cplusplus

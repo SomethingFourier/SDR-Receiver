@@ -5,3 +5,4 @@ firmware/build/*
 bring-up/eth-test/build/*
 bring-up/adc-test/build/*
 .vscode/
+/sdr++/build

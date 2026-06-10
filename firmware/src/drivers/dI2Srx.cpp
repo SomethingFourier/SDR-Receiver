@@ -39,7 +39,7 @@ void dI2Srx::Init(PIO i2s_pio_instance) {
   // USB
   ///*
   gpio_put(ADC_M0, 0);
-  gpio_put(ADC_M1, 0);
+  gpio_put(ADC_M1, 1);
   //*/
   gpio_put(ADC_RST, 0);
 
@@ -65,7 +65,7 @@ void dI2Srx::Init(PIO i2s_pio_instance) {
   bool success = pio_claim_free_sm_and_add_program_for_gpio_range(&i2s_receiver_program, &i2s_pio_instance, &sm, &offset, MIN_I2S_PIN, I2S_PIN_COUNT, true);
   if (success) {
     i2s_receiver_program_init(i2s_pio_instance, sm, offset, I2S_SD, I2S_BCLK, I2S_WS);
-    pio_sm_set_enabled(i2s_pio_instance, sm, true);
+    // Don't enable PIO here, wait until DMA is started in Core 1!
     g_SSD1306.Draw_Text(0, "PIO SM Claim success!");
     g_SSD1306.Update();
   }
@@ -75,6 +75,7 @@ void dI2Srx::Init(PIO i2s_pio_instance) {
   }
 
   if (success) {
+    this->pio_instance = i2s_pio_instance;
     // DREQ must match the PIO RX FIFO for the chosen SM
     this->pio_state_machine = sm;
     uint dreq = pio_get_dreq(i2s_pio_instance, sm, false);
@@ -130,6 +131,9 @@ void dI2Srx::core1_entry() {
 
   // Start the first channel; chaining will trigger the partner automatically
   dma_channel_start(g_I2Srx.audio_A_dma_channel);
+
+  // NOW enable the PIO. It will wait for LRCK, ensuring perfect L/R sync and avoiding FIFO overflow
+  pio_sm_set_enabled(g_I2Srx.pio_instance, g_I2Srx.pio_state_machine, true);
 
   // Remain on Core 1; DMA IRQ will do the work
   sdr_state_machine();
