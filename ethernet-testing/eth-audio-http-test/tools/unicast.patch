@@ -1,0 +1,25 @@
+--- tools/rx_audio_udp.py
++++ tools/rx_audio_udp.py
+@@ -124,6 +124,11 @@
+         type=Path,
+         help="Optional output file for writing received audio to a WAV file",
+     )
++    parser.add_argument(
++        "--target",
++        type=str,
++        help="Optional IP address of the board. Sends a packet to tell the board to Unicast back to us (fixes Wi-Fi drops).",
++    )
+     args = parser.parse_args()
+ 
+     out_fp = None
+@@ -140,6 +145,10 @@
+     sock.bind((args.bind, args.port))
+ 
+     print(f"Listening on {args.bind}:{args.port}")
++    if args.target:
++        print(f"Sending connect packet to {args.target}:{args.port} to request UNICAST...")
++        sock.sendto(b"HELLO", (args.target, args.port))
++        
+     stats = Stats()
+ 
+     try:

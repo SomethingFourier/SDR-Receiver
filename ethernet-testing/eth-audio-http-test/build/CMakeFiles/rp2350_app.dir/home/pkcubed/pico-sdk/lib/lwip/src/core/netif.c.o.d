@@ -1,0 +1,65 @@
+CMakeFiles/rp2350_app.dir/home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c.o: \
+ /home/pkcubed/pico-sdk/lib/lwip/src/core/netif.c \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/opt.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/external/pico-rmii-ethernet/src/lwip/lwipopts.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/debug.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/arch.h \
+ /home/pkcubed/Documents/GitHub/SDR-Receiver/bring-up/eth-adc-test/eth-audio-test/external/pico-rmii-ethernet/src/lwip/arch/cc.h \
+ /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/stdio.h \
+ /usr/include/newlib/stdlib.h /usr/include/newlib/machine/stdlib.h \
+ /usr/include/newlib/alloca.h \
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+ /usr/include/newlib/inttypes.h /usr/include/newlib/sys/_intsup.h \
+ /usr/include/newlib/sys/_locale.h \
+ /usr/lib/gcc/arm-none-eabi/13.2.1/include/limits.h \
+ /usr/include/newlib/ctype.h /usr/include/newlib/string.h \
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip_addr.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip4_addr.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip6_addr.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/def.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/netif.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/err.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/pbuf.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/stats.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/mem.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/memp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_std.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/memp_priv.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/mem_priv.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/tcp_priv.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/tcpbase.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip4.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip4.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/ip6.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ip.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/icmp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/icmp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/tcp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/udp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/udp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/priv/raw_priv.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/raw.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/snmp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/igmp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/etharp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ethernet.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/ieee.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/etharp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/sys.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/netif/ethernet.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/dhcp.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/acd.h \
+ /home/pkcubed/pico-sdk/lib/lwip/src/include/lwip/prot/acd.h

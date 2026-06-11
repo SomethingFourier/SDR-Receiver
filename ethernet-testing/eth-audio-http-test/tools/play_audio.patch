@@ -1,0 +1,77 @@
+--- tools/rx_audio_udp.py
++++ tools/rx_audio_udp.py
+@@ -140,52 +140,24 @@
+     audio_queue = None
+ 
+     if args.play:
+         if pyaudio is None:
+             print("Error: --play requires pyaudio. Please install it with 'pip install pyaudio'")
+             sys.exit(1)
+         pa = pyaudio.PyAudio()
+         audio_queue = queue.Queue(maxsize=100)
+-        audio_buffer = bytearray()
+-        
+-        def audio_callback(in_data, frame_count, time_info, status):
+-            try:
+-                bytes_needed = frame_count * 2 * 2 # 2 channels, 16-bit (2 bytes)
+-                
+-                # Drain queue
+-                while True:
+-                    try:
+-                        item = audio_queue.get_nowait()
+-                        if item is None:
+-                            return (b'\x00' * bytes_needed, pyaudio.paComplete)
+-                        if audioop is not None:
+-                            item = audioop.lin2lin(item, 3, 2)
+-                        audio_buffer.extend(item)
+-                    except queue.Empty:
+-                        break
+-                        
+-                max_bytes = 48000 * 2 * 2
+-                if len(audio_buffer) > max_bytes:
+-                    bytes_to_delete = len(audio_buffer) - max_bytes
+-                    bytes_to_delete -= bytes_to_delete % 4 # Preserve 4-byte frame alignment!
+-                    del audio_buffer[:bytes_to_delete]
+-                    
+-                if len(audio_buffer) >= bytes_needed:
+-                    out_data = bytes(audio_buffer[:bytes_needed])
+-                    del audio_buffer[:bytes_needed]
+-                    return (out_data, pyaudio.paContinue)
+-                else:
+-                    out_data = bytes(audio_buffer) + b'\x00' * (bytes_needed - len(audio_buffer))
+-                    audio_buffer.clear()
+-                    return (out_data, pyaudio.paContinue)
+-            except Exception as e:
+-                print(f"\n[PyAudio Callback Exception] {e}\n{traceback.format_exc()}\n")
+-                return (b'\x00' * (frame_count * 4), pyaudio.paAbort)
++
++        def audio_player_task():
++            while True:
++                item = audio_queue.get()
++                if item is None:
++                    break
++                try:
++                    if audioop is not None:
++                        item = audioop.lin2lin(item, 3, 2)
++                    # exception_on_underflow=False prevents stream crashes on Linux ALSA
++                    stream.write(item, exception_on_underflow=False)
++                except Exception as e:
++                    print(f"Playback error: {e}")
++
++        player_thread = threading.Thread(target=audio_player_task, daemon=True)
+ 
+     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+@@ -183,11 +155,12 @@
+                 if stream is None:
+                     pa_format = pyaudio.paInt16 if audioop is not None else pyaudio.paInt24
+                     stream = pa.open(format=pa_format,
+                                      channels=hdr.channels,
+                                      rate=hdr.sample_rate_hz,
+                                      output=True,
+-                                     stream_callback=audio_callback)
+-                    stream.start_stream()
++                                     frames_per_buffer=hdr.frame_count)
++                    player_thread.start()
+                 try:
+                     audio_queue.put_nowait(payload)
+                 except queue.Full:
